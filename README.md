@@ -77,7 +77,8 @@ It’s a training posture:
 │   ├── train_bible_stage2_christ_anchor.py
 │   └── train_bible_stage3_kavod.py
 ├── eval/
-│   └── eval_christomorphic.py                 # evaluation prompts
+│   ├── behaviour_prompts.json                 # evaluation prompts
+│   └── eval_christomorphic.py                 # evaluation script
 └── README.md
 ```
 
