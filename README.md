@@ -67,19 +67,17 @@ It’s a training posture:
 ```
 .
 ├── data/
-│   ├── bible_segments_stage1.jsonl        # local only (do not commit copyrighted texts)
-│   └── README_DATA.md                     # how to build datasets from your own source
+│   ├── bible_segments_stage1.jsonl                  # ESV Bible dataset
+│   ├── English Standard Version Bible 2001 ESV.txt
+│   └── build_bible_segments.py                      # dataset builder (segments, splits, metadata stubs)
 ├── scripts/
-│   ├── build_bible_segments.py            # dataset builder (segments, splits, metadata stubs)
-│   ├── mine_repentance_pairs.py           # optional: mine before/after patterns
-│   └── eval_prompts.jsonl                 # evaluation prompts
+│   └── chat_qa.py                         # chat with model
 ├── train/
 │   ├── train_bible_stage1_ce.py
 │   ├── train_bible_stage2_christ_anchor.py
 │   └── train_bible_stage3_kavod.py
 ├── eval/
-│   ├── run_eval.py
-│   └── rubrics.md
+│   └── eval_christomorphic.py                 # evaluation prompts
 └── README.md
 ```
 
