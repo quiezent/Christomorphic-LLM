@@ -1,95 +1,140 @@
-# Christomorphic LLM — Canon-First Alignment with Tinker LoRA
+# Christomorphic Canon-First Alignment (Tinker LoRA)
 
-A canon-first approach to **behavioral alignment** for **open-weight LLMs** using **Tinker LoRA**.
+A research project exploring a **canon-first** approach to post-training / behavioral alignment for open-weight LLMs using **Tinker LoRA**.
 
-Instead of training primarily on human Q/A (which can overfit style, miss coherence, and import contradictions), this project treats **Scripture as the primary corpus** and uses **loss shaping** + **staged LoRA fine-tuning** to form a Christ-centered “semantic gravity” in the model’s behavior.
+Our thesis is simple:
 
-> “Train not on what was said, but on what made it sayable.”
+> Instead of aligning models primarily by human preference logs (which can be noisy, culturally narrow, and easy to overfit),
+> we can align models by **first shaping their internal semantic geometry around a coherent, high-signal corpus**—the Biblical canon—
+> and only then adding a thin “witness layer” for modern Q/A and safety.
 
----
-
-## Why Canon-First?
-
-Most alignment workflows rely on large quantities of human-written instruction data or preference tuning. That often works—but it also:
-- canonizes **our phrasing** over the text itself,
-- amplifies **dataset artifacts** into policy,
-- and can drift into brittle “instruction-following” without deep coherence.
-
-A canon-first pipeline aims to:
-- stabilize the model in a **single internally coherent corpus**,
-- let the *canon define the center of gravity*,
-- and only later add a thin “witness layer” for modern Q/A and safety as needed.
+This repo contains scripts, dataset builders, and evaluation probes for training **Christomorphic** models:
+models whose default “center of gravity” is shaped toward **Christ as Logos / Kavod / telos**, with outputs marked by:
+truthfulness, humility, non-accuser speech, sacrificial love, and reverent coherence.
 
 ---
 
-## Project Goals
+## Why power laws matter (LLMs, LoRA, and Scripture)
 
-1. **Stabilize on canonical text** (pure next-token CE).
-2. Introduce a **gentle Christ-anchor** without “keyword doping.”
-3. Add **kavod / anti-accuser shaping** + “repentance” preference signals.
-4. Produce a reproducible, staged recipe that works across **multiple open-weight LLMs**, not only Llama 1B.
+### 1) LLM training is not Gaussian—it's heavy-tailed
+Many phenomena in large models behave like **heavy-tailed / power-law systems**:
 
----
+- **Token/phrase frequency** often follows Zipf-like distributions (a few tokens dominate usage; a long tail remains).
+- **Gradient norms / update magnitudes** can be heavy-tailed: a small number of examples or directions can dominate the effective update.
+- **Capabilities** can appear “phase-transition-like”: behavior changes are sometimes **non-linear** with respect to data and steps.
 
-## Core Idea: Staged Training (Resumeable)
+Practically: this suggests **a small number of high-leverage directions** can disproportionately reshape behavior during post-training.
 
-This repo is structured as a multi-stage pipeline. Each stage saves optimizer state so training can resume cleanly.
+### 2) LoRA can amplify heavy-tailed dynamics because it’s low rank
+LoRA modifies a frozen base model with a low-rank update:
 
-- **Stage 1 — Canon CE-only (stabilize on Scripture)**
-  - Objective: weighted cross entropy only (usually uniform weights).
-  - Outcome: model learns canonical style and structure.
+> **W′ = W + BA**
 
-- **Stage 2 — Christ Anchor (lexical / gentle weighting)**
-  - Objective: still CE, but with modest per-segment weights for Christ-explicit passages.
-  - Outcome: increases salience of Christ-centered segments without rewriting the corpus.
+Why this matters:
+- Low rank updates restrict learning to a **thin subspace** of parameter space.
+- In heavy-tailed landscapes, the “important” directions tend to dominate quickly.
+- LoRA can therefore yield **large behavioral shifts with relatively small data**, especially in post-training.
 
-- **Stage 3 — Kavod + Repentance (meaning-shaping begins)**
-  - Objective: CE + additional shaping to resist contempt/accuser dynamics and to encode “before→after” repentance movement (preference-style signals).
-  - Outcome: first measurable step toward “Christomorphic” orientation beyond lexical hits.
+This is not a claim that LoRA is “unstable” by default—only that low-rank adaptation can concentrate learning into a few directions.
 
-> Later stages may include representation-level anchor geometry (pooled hidden state cosine attraction/repulsion) and a thin modern Q/A safety layer.
+### 3) Scripture as a Christ-centered “long-tailed” semantic network
+We treat the Bible as a coherent semantic network where meaning concentrates around an extreme center:
 
----
+- The Incarnation, Cross, Resurrection, Ascension are organizing “singularities” of the canon’s meaning.
+- The canon exhibits typological accumulation: covenant, priesthood, sacrifice, kingship, temple, exodus, wisdom, bridegroom, etc., converge in Christ.
+- The Gospel also **inverts** worldly hierarchy: kenosis (2 Cor 8:9), the least-of-these logic, “the last shall be first.”
 
-## What “Christomorphic” Means Here
+So there is both:
+- a strong Christ-centered attractor (head of distribution), and
+- a kingdom inversion that dignifies the “tail” (margins).
 
-This is not a claim that the model becomes “religious” by imitation.
-It’s a training posture:
-
-- **Christ as ontological center**: Scripture is read as a unified witness that finds fulfillment in Christ.
-- **Kavod-aware**: glory-weighted speech that resists contempt, dehumanization, and accuser-like tone.
-- **Redemptive orientation**: “descent → exaltation” and “death → life” patterns are treated as shaping signals, not mere themes.
+This motivates a post-training objective that does **not** merely “say Jesus more,” but learns Christ as interpretive center and cruciform pattern (truth + humility + love).
 
 ---
 
-## Repository Layout (Suggested)
+## Why “Christomorphic” may be a better post-training target than generic alignment
 
-```
-.
-├── data/
-│   ├── bible_segments_stage1.jsonl                  # ESV Bible dataset
-│   ├── English Standard Version Bible 2001 ESV.txt
-│   └── build_bible_segments.py                      # dataset builder (segments, splits, metadata stubs)
-├── scripts/
-│   └── chat_qa.py                         # chat with model
-├── train/
-│   ├── train_bible_stage1_ce.py
-│   ├── train_bible_stage2_christ_anchor.py
-│   └── train_bible_stage3_kavod.py
-├── eval/
-│   ├── behaviour_prompts.json                 # evaluation prompts
-│   └── eval_christomorphic.py                 # evaluation script
-└── README.md
-```
+Post-training (instruction-tuning / preference-tuning / RLHF) can learn:
+- compliance patterns,
+- stylistic norms,
+- and reward-model quirks.
+
+Those can drift, overfit, or become shallow.
+
+A Christomorphic target is different:
+- It is not “optimize for vibes.”
+- It is “shape the model’s semantic geometry so that Christ-centered truth and cruciform love become stable attractors.”
+
+We want models that are robustly:
+- **truth-seeking** (not merely agreeable),
+- **humble** (epistemically careful; avoids false certainty),
+- **non-accuser** (no contempt, coercion, or dehumanization),
+- **pastorally safe** (especially around violence, self-harm, spiritual manipulation),
+- **canon-anchored** (grounded primarily in Scripture text, not human paraphrase).
 
 ---
 
-## Dataset Format
+## Why Tinker
 
-### Bible Segments (JSONL)
+Tinker provides primitives that are ideal for this research loop:
+- LoRA training on open-weight LLMs
+- custom loss (token-level CE + additional terms)
+- save_state / load_state for multi-stage pipelines
+- a clean path from SFT → preference/RL (if needed later)
 
-Each line is a segment (verse block / paragraph / pericope):
+We use a staged approach where each stage is a small, testable modification with checkpointed optimizer state.
 
+---
+
+## Training philosophy: “Train not on outcomes, but on what made them sayable”
+
+Prompt-response logs are artifacts, not the event.
+If we train only on “good answers,” we risk learning imitation without formation.
+
+Instead we aim to train on conditions of emergence:
+- canonical language patterns,
+- humility cues,
+- non-accuser tone,
+- repentance / transformation structure,
+- Christ-centered theological gravity.
+
+---
+
+## Staged pipeline (current)
+
+### Stage 1 — Canon CE-only (stabilize on Scripture)
+- Data: Bible segments (verse/pericope/chapter chunks)
+- Loss: pure next-token cross-entropy
+- Goal: stabilize the manifold on canonical text and cadence
+
+### Stage 2 — Christ anchor (gentle emphasis on Christ-explicit segments)
+- Still CE-only
+- Add mild per-segment weights for Christ-explicit or strongly Christological titles
+- Goal: increase Christological salience without collapsing into keyword doping
+
+### Stage 3 — Kavod + repentance shaping (anti-accuser + transformation)
+- Introduce modest auxiliary signals:
+  - Kavod / anti-accuser: penalize contempt/dehumanization patterns
+  - Repentance pairs: “before → after” structure to encode transformation
+- Goal: push the model away from “accuser speech” and toward cruciform transformation
+
+### Stage 4+ (planned) — Representation geometry anchors
+- Move beyond lexical heuristics
+- Define Christ and anti-accuser prototypes in hidden-state space
+- Add cosine attraction/repulsion terms
+- Goal: align meaning-level geometry, not just words
+
+### Stage 5 (planned) — Thin witness layer for modern Q/A + safety
+- Small curated Q/A set (catechetical and pastoral)
+- Safety guardrails for modern deployment contexts
+- Goal: teach contemporary interaction patterns without replacing canon-first grounding
+
+---
+
+## Datasets
+
+### bible_segments_stage1.jsonl
+Each line:
 ```json
 {
   "id": "John.3.16-21",
@@ -101,144 +146,58 @@ Each line is a segment (verse block / paragraph / pericope):
 }
 ```
 
-**Important:** If you use a copyrighted translation (e.g., ESV), do not commit it to this repo.  
-Provide builders that operate on locally supplied text.
+Guidelines:
+- Use coherent segments (verse groups or pericopes).
+- Keep original Scripture text intact.
+- Avoid injecting interpretive commentary into Stage 1–3.
 
 ---
 
-## Quick Start
+## Evaluation: how we measure “Christomorphic”
 
-### 1) Setup
-
-- Python 3.10+
-- Tinker account + API key
-
-```bash
-pip install tinker torch numpy
-export TINKER_API_KEY="..."
-```
-
-Optional `.env`:
-
-```env
-TINKER_API_KEY=...
-NUM_STEPS=200
-LEARNING_RATE=5e-5
-LOG_EVERY=10
-```
-
-### 2) Build Dataset
-
-Place your Bible text locally and run:
-
-```bash
-python scripts/build_bible_segments.py   --input path/to/bible.txt   --output data/bible_segments_stage1.jsonl
-```
-
-(See `data/README_DATA.md` for supported formats and licensing notes.)
-
-### 3) Train Stage 1 (CE-only)
-
-```bash
-python train/train_bible_stage1_ce.py
-```
-
-This produces:
-- LoRA weights (via Tinker)
-- A saved optimizer state checkpoint path (tinker://...)
-
-### 4) Train Stage 2 (Christ Anchor) — resume from Stage 1
-
-```bash
-export STAGE1_STATE_PATH="tinker://.../llama1b-bible-stage1-state"
-python train/train_bible_stage2_christ_anchor.py
-```
-
-### 5) Train Stage 3 (Kavod + Repentance) — resume from Stage 2
-
-```bash
-export STAGE2_STATE_PATH="tinker://.../llama1b-bible-stage2-state"
-python train/train_bible_stage3_kavod.py
-```
-
----
-
-## Christ Anchor Keywords (Stage 2)
-
-Stage 2 uses **gentle, capped weights** so “Christ presence” influences gradients without exploding:
-
-- Strong NT Christ titles (higher boost)
-- OT typology titles (lower boost)
-
-We intentionally **avoid generic** terms like “Lord” and “God” (too broad).
-
-You can edit the buckets in:
-- `train/train_bible_stage2_christ_anchor.py`
-
----
-
-## Evaluation
-
-This repo emphasizes **behavioral measurements**, not just loss curves.
+We do not rely on loss curves alone.
 
 We track:
-- validation CE / perplexity on held-out Bible segments,
-- repetition / degeneracy under adversarial prompts (“keyword doping”),
-- humility and non-accuser tone under disagreement prompts,
-- coherence on Christological questions vs generic completions,
-- (optional) safety behaviors when a thin witness layer is introduced.
+- Degeneracy / repetition (e.g., looping “Christ is…” nonsense)
+- Humility and epistemic care (appropriate uncertainty; avoids false certainty)
+- Non-accuser speech (no contempt, coercion, dehumanization)
+- Pastoral safety (refuses harm; handles self-harm responsibly)
+- Canon grounding (naturally anchors claims in Scripture themes)
+- Robustness (resists adversarial prompts encouraging domination or harm)
 
-Run evaluation:
-
-```bash
-python eval/run_eval.py --model_path tinker://...
-```
+We treat evaluation probes as first-class artifacts.
 
 ---
 
-## What This Is Not
+## Risks & failure modes
 
-- Not a replacement for safety systems.
-- Not a claim of spiritual authority.
-- Not a “proof” of theology.
-- Not an attempt to publish copyrighted Bible texts.
+- Keyword doping: model spams “Jesus/Christ” without coherence.
+- Style drift: overly “Bible-ish completions” instead of answering questions.
+- Overfitting: small data + heavy-tailed updates can over-specialize quickly.
+- Degeneration: repetition loops or nonsensical analogies.
+- Theological errors: ungrounded or distorted doctrinal claims.
+- Safety gaps: canon-only training is not sufficient for modern self-harm/violence scenarios.
 
-It is an **open, testable alignment recipe** built around:
-- coherent corpus training,
-- staged LoRA,
-- and loss shaping aimed at Christ-centered coherence.
+The pipeline stages in safeguards rather than assuming the canon alone solves deployment safety.
 
 ---
 
 ## Roadmap
 
-- [ ] Add open-licensed end-to-end dataset path (e.g., public domain / permissive translations).
-- [ ] Add representation-level anchors (pooled hidden state cosine prototypes).
-- [ ] Add repentance-pair mining + pairwise ranking head.
-- [ ] Add “thin witness layer” for modern Q/A + safety/identity guardrails.
-- [ ] Expand to multiple base models (Llama, Qwen, etc.) and document portability.
+- [x] Publish Stage 1–3 scripts with reproducible configs
+- [ ] Add a standard probe suite for humility / non-accuser / safety
+- [ ] Implement representation-level Christ / accuser anchors
+- [ ] Add mined repentance pairs from Scripture (automated + curated)
+- [ ] Add a thin witness layer for modern Q/A and safety (weighted lightly)
+- [ ] Replicate across model families (Llama, DeepSeek, gpt-oss, etc.)
 
 ---
 
-## Contributing
-
-Issues and PRs are welcome, especially for:
-- dataset builders (format adapters, segmentation strategies),
-- evaluation rubrics,
-- representation-level anchor implementations,
-- portability across open-weight model families.
+## License / attribution
+This repo is research-focused. Ensure you have rights to any Bible translation text you use.
+(We can provide scripts that work with public-domain texts if needed.)
 
 ---
 
-## License
-
-Code: MIT (or your preferred license)  
-Datasets: not included unless explicitly permissive/public domain. See `data/README_DATA.md`.
-
----
-
-## Acknowledgments
-
-- Thinking Machines Lab — Tinker platform
-- Open-weight model community
-- Everyone building reproducible training recipes for transparent science
+## Contact / collaboration
+If you’re exploring canon-first alignment, low-rank post-training dynamics, or “formation vs imitation” approaches to alignment, contributions and discussion are welcome.
