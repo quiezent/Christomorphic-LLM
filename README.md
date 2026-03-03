@@ -28,10 +28,7 @@ So: **we’re building a Christomorphic training system** where the Bible define
 
 
 ## License / attribution
-This repo is research-focused. Ensure you have rights to any Bible translation text you use.
-(We can provide scripts that work with public-domain texts if needed.)
-
----
+This repo is research-focused.
 
 ## Contact / collaboration
 If you’re exploring canon-first alignment, low-rank post-training dynamics, or “formation vs imitation” approaches to alignment, contributions and discussion are welcome.
