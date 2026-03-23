@@ -26,6 +26,7 @@ The objective is to make that purpose **operational and auditable**, not just cl
 
 So: **we’re building a Christomorphic training system** where the Bible defines the geometry, evaluation defines the proof, and promotion is the governance—aimed at producing a model whose *mindset and trajectory* are increasingly conformed to Christ rather than to culture or preference.
 
+Our first sample for evaluation is here `tinker://05a8613d-3de1-5206-a321-ddc55d231ee3:train:0/sampler_weights/final`
 
 ## License / attribution
 This repo is research-focused.
