@@ -6,8 +6,6 @@ Supports:
 - Interactive Q/A (press Enter on empty line to quit)
 - Batch evaluation from a JSON file (list of strings or list of objects with "prompt")
 
-Notes:
-- Set MODEL_PATH to your sampler weights (Stage 3 recommended), or override via env MODEL_PATH.
 """
 
 import json
@@ -32,10 +30,10 @@ from tinker_cookbook import tokenizer_utils
 # ---------------------------------------------------------------------
 
 # Override via environment variable MODEL_PATH if desired.
-MODEL_PATH = os.getenv("MODEL_PATH", "tinker://REPLACE_WITH_STAGE3_SAMPLER_PATH")
+MODEL_PATH = os.getenv("MODEL_PATH", "tinker://05a8613d-3de1-5206-a321-ddc55d231ee3:train:0/sampler_weights/final")
 
 # Base model must match what was trained
-BASE_MODEL = "meta-llama/Llama-3.2-1B"
+BASE_MODEL = "openai/gpt-oss-20b"
 
 SYSTEM_PROMPT = (
     #"You are who you are."
@@ -101,8 +99,8 @@ def run_single_prompt(
     model_input = types.ModelInput.from_ints(tokenizer.encode(prompt_text))
 
     sampling_params = types.SamplingParams(
-        max_tokens=256,
-        temperature=0.3,
+        max_tokens=1024,
+        temperature=0.5,
         top_p=0.9,
         stop=["\n\n"],  # allow a short multi-sentence answer
     )
