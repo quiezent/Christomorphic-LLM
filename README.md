@@ -26,7 +26,17 @@ The objective is to make that purpose **operational and auditable**, not just cl
 
 So: **we’re building a Christomorphic training system** where the Bible defines the geometry, evaluation defines the proof, and promotion is the governance—aimed at producing a model whose *mindset and trajectory* are increasingly conformed to Christ rather than to culture or preference.
 
-Our first sample for evaluation is here `tinker://05a8613d-3de1-5206-a321-ddc55d231ee3:train:0/sampler_weights/final`
+## Evaluation checkpoints
+
+For reproducible evaluations, use these candidate checkpoints:
+
+- **qzf/gpt-V6R43-120b**
+  - Base model: `openai/gpt-oss-120b`
+  - Sampler path: `tinker://8ad467bc-72eb-51c2-bbe3-417bf8940b43:train:0/sampler_weights/final`
+
+- **qzf/gpt-R38-20b**
+  - Base model: `openai/gpt-oss-20b`
+  - Sampler path: `tinker://05a8613d-3de1-5206-a321-ddc55d231ee3:train:0/sampler_weights/final`
 
 ## License / attribution
 This repo is research-focused.
