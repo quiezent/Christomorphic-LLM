@@ -36,7 +36,7 @@ PRESET = CHECKPOINT_PRESETS.get(CHECKPOINT_ALIAS, CHECKPOINT_PRESETS["gpt-r38-20
 
 MODEL_PATH = os.getenv("MODEL_PATH", PRESET["model_path"])
 BASE_MODEL = os.getenv("BASE_MODEL", PRESET["base_model"])
-SYSTEM_PROMPT = os.getenv("SYSTEM_PROMPT", "You are a helpful and truthful assistant.")
+SYSTEM_PROMPT = os.getenv("SYSTEM_PROMPT", "You are a helpful and truthful assistant. Respond with only the final user-facing answer, with no analysis or role tags.")
 
 
 def get_api_key() -> str:
@@ -56,7 +56,7 @@ def build_thread_prompt(system_prompt: str, history: List[Tuple[str, str]], user
         lines.append(f"User: {u}")
         lines.append(f"Assistant: {a}")
     lines.append(f"User: {user_text}")
-    lines.append("Assistant:")
+    lines.append("Assistant (final answer only):")
     return "\n".join(lines)
 
 
@@ -70,11 +70,16 @@ def render_prompt(tokenizer, system_prompt: str, history: List[Tuple[str, str]],
             messages.append({"role": "user", "content": u})
             messages.append({"role": "assistant", "content": a})
         messages.append({"role": "user", "content": user_text})
-        return tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
+        try:
+            return tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+        except Exception:
+            # Fallback for minimal environments missing optional tokenizer deps
+            # (e.g. jinja2 required by some chat templates).
+            pass
 
     return build_thread_prompt(system_prompt, history, user_text)
 
@@ -94,6 +99,11 @@ def clean_model_answer(text: str) -> str:
 
     for tag in ("<|return|>", "<|im_end|>", "<|eot_id|>"):
         raw = raw.replace(tag, "").strip()
+
+    for marker in ("\nUser:", "\nWe should", "\nThe user", "\nWe have to respond"):
+        if marker in raw:
+            raw = raw.split(marker, 1)[0].strip()
+
     return raw
 
 
@@ -129,7 +139,7 @@ def main() -> None:
             max_tokens=512,
             temperature=0.4,
             top_p=0.9,
-            stop=["\nUser:", "<|im_end|>", "<|eot_id|>"],
+            stop=["\nUser:", "\nWe should", "<|im_end|>", "<|eot_id|>"],
         )
 
         result = sampling_client.sample(
