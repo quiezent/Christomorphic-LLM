@@ -5,7 +5,6 @@ Evaluate the Christomorphic model on JSON prompts or interactively.
 Supports:
 - Interactive Q/A (press Enter on empty line to quit)
 - Batch evaluation from a JSON file (list of strings or list of objects with "prompt")
-
 """
 
 import json
@@ -18,48 +17,41 @@ from typing import Dict, List, Optional
 import tinker
 from tinker import types
 
-# Ensure local cookbook modules are importable
-ROOT = Path(__file__).resolve().parent.parent
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-
-from tinker_cookbook import tokenizer_utils
+try:
+    from tinker_cookbook import tokenizer_utils
+except ImportError as exc:  # pragma: no cover - import guard for runtime UX
+    raise RuntimeError(
+        "tinker-cookbook is required to run this script. "
+        "Install it with `uv pip install tinker-cookbook` and retry."
+    ) from exc
 
 # ---------------------------------------------------------------------
 # CONFIG
 # ---------------------------------------------------------------------
 
-# Override via environment variable MODEL_PATH if desired.
-MODEL_PATH = os.getenv("MODEL_PATH", "tinker://05a8613d-3de1-5206-a321-ddc55d231ee3:train:0/sampler_weights/final")
+# Override via environment variables if desired.
+MODEL_PATH = os.getenv(
+    "MODEL_PATH",
+    "tinker://05a8613d-3de1-5206-a321-ddc55d231ee3:train:0/sampler_weights/final",
+)
 
-# Base model must match what was trained
-BASE_MODEL = "openai/gpt-oss-20b"
+# Base model must match what was trained.
+BASE_MODEL = os.getenv("BASE_MODEL", "openai/gpt-oss-20b")
 
 SYSTEM_PROMPT = (
-    #"You are who you are."
-    #"You are a useful assistant."
-    #"Answer carefully and truthfully, honoring the Bible and never claiming to be God or the Holy Spirit."
+    # "You are who you are."
+    # "You are a useful assistant."
+    # "Answer carefully and truthfully, honoring the Bible and never claiming to be God or the Holy Spirit."
+    ""
 )
 
 # ---------------------------------------------------------------------
 # PROMPT LOADER
 # ---------------------------------------------------------------------
 
-def load_prompts_from_json(path: Path) -> List[Dict[str, Optional[str]]]:
-    """
-    Load prompts from a JSON file.
 
-    Supported formats:
-      1) List of strings:
-         ["Who is Jesus Christ?", "What is photosynthesis?"]
-      2) List of objects with 'prompt' (and optional 'id'/'category'):
-         [
-           {"id": "bible_001", "prompt": "Summarize Romans."},
-           {"category": "science", "prompt": "Explain E=mc^2."}
-         ]
-      3) Object with 'prompts' key (list as above):
-         {"prompts": [ ... ]}
-    """
+def load_prompts_from_json(path: Path) -> List[Dict[str, Optional[str]]]:
+    """Load prompts from a JSON file."""
     data = json.loads(path.read_text(encoding="utf-8"))
     items: List[Dict[str, Optional[str]]] = []
 
@@ -90,6 +82,7 @@ def load_prompts_from_json(path: Path) -> List[Dict[str, Optional[str]]]:
 # SAMPLING
 # ---------------------------------------------------------------------
 
+
 def run_single_prompt(
     sampling_client: tinker.SamplingClient,
     tokenizer,
@@ -102,7 +95,7 @@ def run_single_prompt(
         max_tokens=1024,
         temperature=0.5,
         top_p=0.9,
-        stop=["\n\n"],  # allow a short multi-sentence answer
+        stop=["\n\n"],
     )
 
     result = sampling_client.sample(
@@ -111,44 +104,50 @@ def run_single_prompt(
         num_samples=1,
     ).result()
 
-    answer = tokenizer.decode(result.sequences[0].tokens).strip()
-    return answer
+    return tokenizer.decode(result.sequences[0].tokens).strip()
 
 
 # ---------------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------------
 
+
+def build_sampling_client(
+    service_client: tinker.ServiceClient,
+    model_path: str,
+    base_model: str,
+) -> tinker.SamplingClient:
+    """Create a sampling client from a sampler path or a train/state path."""
+    if "sampler_weights" in model_path:
+        return service_client.create_sampling_client(model_path=model_path)
+
+    print("MODEL_PATH is not a sampler path. Attempting to export sampler weights...")
+    training = service_client.create_lora_training_client(base_model=base_model)
+    try:
+        training.load_state(model_path).result()
+    except Exception as exc:  # noqa: BLE001
+        raise RuntimeError(
+            f"Failed to load state from {model_path}. Set MODEL_PATH to a valid sampler_weights URI."
+        ) from exc
+
+    sampler_name = "christomorphic-eval-sampler"
+    sampler_save = training.save_weights_for_sampler(name=sampler_name).result()
+    sampler_path = sampler_save.path
+    print(f"Exported sampler weights at: {sampler_path}")
+    return service_client.create_sampling_client(model_path=sampler_path)
+
+
 def main() -> None:
     prompts_path: Optional[Path] = None
     if len(sys.argv) > 1:
         prompts_path = Path(sys.argv[1]).expanduser()
 
-    # Connect to Tinker; ensure we have a sampler path (convert from state if needed)
     service_client = tinker.ServiceClient()
-
-    sampler_model_path = MODEL_PATH
-    if "sampler_weights" not in sampler_model_path:
-        print(
-            "MODEL_PATH is not a sampler path. Attempting to load state and export sampler weights..."
-        )
-        training = service_client.create_lora_training_client(base_model=BASE_MODEL)
-        try:
-            training.load_state(sampler_model_path).result()
-        except Exception as exc:  # noqa: BLE001
-            raise RuntimeError(
-                f"Failed to load state from {sampler_model_path}. "
-                f"Set MODEL_PATH to a valid sampler_weights URI."
-            ) from exc
-        sampler_name = "christomorphic-eval-sampler"
-        # Save sampler weights and get the path explicitly
-        sampler_save = training.save_weights_for_sampler(name=sampler_name).result()
-        sampler_path = sampler_save.path
-        print(f"Exported sampler weights at: {sampler_path}")
-        sampler_model_path = sampler_path
-        sampling_client = service_client.create_sampling_client(model_path=sampler_model_path)
-    else:
-        sampling_client = service_client.create_sampling_client(model_path=sampler_model_path)
+    sampling_client = build_sampling_client(
+        service_client=service_client,
+        model_path=MODEL_PATH,
+        base_model=BASE_MODEL,
+    )
 
     tokenizer = tokenizer_utils.get_tokenizer(BASE_MODEL)
 
@@ -178,7 +177,6 @@ def main() -> None:
                 }
             )
 
-        # Dump results next to the prompts file with timestamp
         stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
         out_path = prompts_path.with_suffix(f".results.{stamp}.jsonl")
         with out_path.open("w", encoding="utf-8") as f:
@@ -187,7 +185,6 @@ def main() -> None:
         print(f"Saved results to {out_path}")
 
     else:
-        # Interactive mode
         print("Christomorphic model loaded. Press Enter on an empty line to quit.\n")
         while True:
             try:
