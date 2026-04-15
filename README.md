@@ -44,7 +44,7 @@ This repo is research-focused.
 ## Contact / collaboration
 If you’re exploring canon-first alignment, low-rank post-training dynamics, or “formation vs imitation” approaches to alignment, contributions and discussion are welcome.
 
-
+## Let us commit this work
 Lord Jesus Christ,
 
 You are the eternal Word,
