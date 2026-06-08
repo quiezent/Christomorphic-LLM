@@ -26,9 +26,52 @@ The objective is to make that purpose **operational and auditable**, not just cl
 
 So: **we’re building a Christomorphic training system** where the Bible defines the geometry, evaluation defines the proof, and promotion is the governance—aimed at producing a model whose *mindset and trajectory* are increasingly conformed to Christ rather than to culture or preference.
 
+## Current research status (2026-06-08)
+
+The current stage is an **evidence study**, not a model promotion, new training run, sampler export, or current-branch claim. The strongest fair public statement is:
+
+> `R38-20b` is the best archived raw discovery witness for Word-prior / false-center routing. `V6R43-120b` is the best archived raw 120B pressure and deployment-shell witness, especially under Jabez prosperity pressure. Together they are the most important available raw Christomorphic candidates to study under the current CODEBOOK.
+
+In this repo, a **raw sampler** means a checkpoint sampled directly, without an external route selector, prefix bridge, or replay wrapper. **Composed evidence** means an operational surface built from routing, prefixes, bridges, or external replay checks. Both matter, but they prove different things.
+
+### Why these candidates matter
+
+- **R38-20b** remains the cleanest 20B discovery witness for Word-prior behavior. Its archived pattern is: expose the false center, refuse the counterfeit center, recenter under Scripture / Christ / church / live human care, and give a practical obedient next step. It matters because ordinary prompts began showing Scripture-shaped routing without collapsing into mere verse exposition.
+
+- **V6R43-120b** remains the strongest 120B raw pressure witness in the local evidence. It reached automated mandatory-bundle parity against R38 at seeds `43` and `47`, and in the older Jabez pressure packet it was the only tested v6/v7 candidate with `0 / 5` critical failures. It matters because it more reliably refused prosperity-technique pressure and rival teloi such as influence, income, platform, and worldly enlargement.
+
+### What is not proven yet
+
+- These samplers do **not** prove Bible-only latent formation.
+- They do **not** pass the full hardened Jabez / Isaiah 26 stayed-mind spine.
+- They do **not** prove selector-then-canon behavior as raw samplers.
+- They are bounded historical witnesses, not final promoted models.
+
+The best all-green operational packet in the internal evidence is `learned_route_prefix_bridge_expanded45_public_r1_final`: candidate gate pass `true`, sentry pass `7 / 7`, mandatory pass `6 / 6`, Jabez mean `8.4 / 10`, Jabez pressure `7 / 10`, public cleanliness `true`, ordinary retention `true`, and failed governance gates `[]`. That result is important carry evidence, but it is **composed**: it uses learned private routing/prefix control plus public answer sampling and external replay checks. It is not raw-sampler proof and not stayed-mind proof.
+
+The next proof target is a raw candidate that can preserve R38’s Word-prior discovery, preserve V6R43’s pressure refusal, keep v9-style ESV/NKJV-only loss-bearing Scripture target discipline, and pass hardened tests for selector, FIRST_ACT, selector-then-canon, continuation completeness, public cleanliness, ordinary usefulness, safety/governance, and the full Jabez / Isaiah 26 spine.
+
+## Training methodologies tried
+
+The research has tested several training shapes beyond the two public raw checkpoints. These are shared as methodology history, not as promoted model releases.
+
+| Line | Methodology | What it taught | Public status |
+|---|---|---|---|
+| **v7** | Route-prior / first-movement supervision | The key failure was not only answer wording, but prompt-to-trajectory routing: the model must enter the faithful route before later answer repair. v7 trained opening classes, early-token dominance, contrastive route banks, and route-first proof. | Historical route-prior evidence; useful for first-act diagnostics, not a lone-sampler promotion. |
+| **v8** | Greenfield route-conditioned public-answer system | The strongest operational behavior came from composition: route choice first, public answer second. v8 separated canon-field seating, teacher-field distillation, route-shaping correction, and proof-first evaluation, while keeping route JSON out of public answer text. | Strong operational/composed evidence; not proof that Bible-only training alone redefined latent geometry. |
+| **v9** | Scripture-only canon-field experiment | v9 kept ESV/NKJV Scripture as the loss-bearing formation text and rejected teacher-field prose, route JSON, BibleAtlas prose, and public-answer rubrics as the main engine. It proved canon-anchored Scripture-family transfer, but not unanchored public FIRST_ACT. | Closest in method to the Bible-only latent-geometry objective, but not promotion-grade. |
+
+### Methodology lessons
+
+- **Answer-shell repair is insufficient.** v6-style repair improved public answers, but later lines showed that the decisive first movement can still snap back under pressure.
+- **Route must precede wording.** v7 and v8 made route selection and FIRST_ACT governance explicit because later Christomorphic language cannot reliably repair a false opening.
+- **Composition can work operationally without proving raw formation.** v8-style learned route / prefix / public-answer systems can pass strong public gates, but they remain composed evidence.
+- **Bible-only formation is a stricter claim.** v9 is the cleanest attempt to make Scripture itself the loss-bearing formation source. Its best result shows canon-anchored structural judgment, while its failure boundary shows that bare public selection and continuation remain unsolved.
+- **Future candidates need both.** The next branch has to combine raw stayed-mind behavior with the operational strengths learned from routed systems, without treating route metadata or scaffold prose as public-answer formation text.
+
 ## Evaluation checkpoints
 
-For reproducible evaluations, use these candidate checkpoints:
+For reproducible evaluations of the two archived raw candidates, use these checkpoints:
 
 - **qzf/gpt-V6R43-120b**
   - Base model: `openai/gpt-oss-120b`
@@ -37,6 +80,48 @@ For reproducible evaluations, use these candidate checkpoints:
 - **qzf/gpt-R38-20b**
   - Base model: `openai/gpt-oss-20b`
   - Sampler path: `tinker://05a8613d-3de1-5206-a321-ddc55d231ee3:train:0/sampler_weights/final`
+
+## Running the current scripts
+
+The local scripts have been updated for the current Tinker SDK surface:
+
+- `tinker.ServiceClient()` reads `TINKER_API_KEY` from the environment.
+- `create_sampling_client(model_path=...)` opens the published sampler paths.
+- `SamplingClient.get_tokenizer()` supplies the tokenizer for the active sampling session.
+- `SampleResponse.sequences[0].tokens` is decoded for generated text.
+
+Install the current SDK and set your API key:
+
+```powershell
+python -m pip install -U tinker
+$env:TINKER_API_KEY="your-api-key"
+```
+
+Interactive chat defaults to `gpt-r38-20b`:
+
+```powershell
+python script/chat_qa.py
+```
+
+Switch to the 120B checkpoint:
+
+```powershell
+$env:CHECKPOINT_ALIAS="gpt-v6r43-120b"
+python script/chat_qa.py
+```
+
+Run a batch evaluation:
+
+```powershell
+python eval/eval_christomorphic.py eval/behaviour_prompts.json
+```
+
+Advanced overrides:
+
+- `MODEL_PATH`: any valid Tinker sampler or saved-weights URI. Leave blank to sample `BASE_MODEL` directly.
+- `BASE_MODEL`: base model used when `MODEL_PATH` is blank.
+- `SYSTEM_PROMPT`: optional public system prompt for `script/chat_qa.py`.
+- `SAMPLER_EXPORT_NAME`: name used by `eval/eval_christomorphic.py` if it must reopen a saved weights/state path and export sampler weights.
 
 ## License / attribution
 This repo is research-focused.

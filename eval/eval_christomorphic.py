@@ -17,14 +17,6 @@ from typing import Dict, List, Optional
 import tinker
 from tinker import types
 
-try:
-    from tinker_cookbook import tokenizer_utils
-except ImportError as exc:  # pragma: no cover - import guard for runtime UX
-    raise RuntimeError(
-        "tinker-cookbook is required to run this script. "
-        "Install it with `uv pip install tinker-cookbook` and retry."
-    ) from exc
-
 # ---------------------------------------------------------------------
 # CONFIG
 # ---------------------------------------------------------------------
@@ -33,10 +25,11 @@ except ImportError as exc:  # pragma: no cover - import guard for runtime UX
 MODEL_PATH = os.getenv(
     "MODEL_PATH",
     "tinker://05a8613d-3de1-5206-a321-ddc55d231ee3:train:0/sampler_weights/final",
-)
+).strip()
 
-# Base model must match what was trained.
+# Used when MODEL_PATH is blank, or when reopening a non-sampler state path.
 BASE_MODEL = os.getenv("BASE_MODEL", "openai/gpt-oss-20b")
+SAMPLER_EXPORT_NAME = os.getenv("SAMPLER_EXPORT_NAME", "christomorphic-eval-sampler")
 
 SYSTEM_PROMPT = (
     # "You are who you are."
@@ -104,6 +97,9 @@ def run_single_prompt(
         num_samples=1,
     ).result()
 
+    if not result.sequences:
+        raise RuntimeError("Tinker returned no sampled sequences.")
+
     return tokenizer.decode(result.sequences[0].tokens).strip()
 
 
@@ -117,24 +113,38 @@ def build_sampling_client(
     model_path: str,
     base_model: str,
 ) -> tinker.SamplingClient:
-    """Create a sampling client from a sampler path or a train/state path."""
-    if "sampler_weights" in model_path:
-        return service_client.create_sampling_client(model_path=model_path)
+    """Create a sampling client from a sampler path, saved weights, or base model."""
+    if not model_path:
+        return service_client.create_sampling_client(base_model=base_model)
 
-    print("MODEL_PATH is not a sampler path. Attempting to export sampler weights...")
-    training = service_client.create_lora_training_client(base_model=base_model)
     try:
-        training.load_state(model_path).result()
-    except Exception as exc:  # noqa: BLE001
-        raise RuntimeError(
-            f"Failed to load state from {model_path}. Set MODEL_PATH to a valid sampler_weights URI."
-        ) from exc
+        return service_client.create_sampling_client(model_path=model_path)
+    except Exception:  # noqa: BLE001
+        print(
+            "MODEL_PATH did not open directly as a sampling model. "
+            "Attempting to reopen it as a saved weights/state path..."
+        )
 
-    sampler_name = "christomorphic-eval-sampler"
-    sampler_save = training.save_weights_for_sampler(name=sampler_name).result()
+    try:
+        training = service_client.create_training_client_from_state(path=model_path)
+        sampler_save = training.save_weights_for_sampler(
+            name=SAMPLER_EXPORT_NAME,
+        ).result()
+    except Exception as state_exc:  # noqa: BLE001
+        raise RuntimeError(
+            "Failed to create a sampling client from MODEL_PATH. "
+            "Set MODEL_PATH to a valid sampler_weights URI, saved weights URI, "
+            "or leave it blank to sample the BASE_MODEL."
+        ) from state_exc
+
     sampler_path = sampler_save.path
     print(f"Exported sampler weights at: {sampler_path}")
-    return service_client.create_sampling_client(model_path=sampler_path)
+    try:
+        return service_client.create_sampling_client(model_path=sampler_path)
+    except Exception as sampler_exc:  # noqa: BLE001
+        raise RuntimeError(
+            "Exported sampler weights, but failed to create a sampling client from them."
+        ) from sampler_exc
 
 
 def main() -> None:
@@ -149,7 +159,7 @@ def main() -> None:
         base_model=BASE_MODEL,
     )
 
-    tokenizer = tokenizer_utils.get_tokenizer(BASE_MODEL)
+    tokenizer = sampling_client.get_tokenizer()
 
     if prompts_path is not None and prompts_path.exists():
         print(f"Loading prompts from {prompts_path} ...\n")

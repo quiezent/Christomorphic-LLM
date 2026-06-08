@@ -10,14 +10,6 @@ from typing import List, Tuple
 import tinker
 from tinker import types
 
-try:
-    from tinker_cookbook import tokenizer_utils
-except ImportError as exc:  # pragma: no cover - import guard for runtime UX
-    raise RuntimeError(
-        "tinker-cookbook is required to run this script. "
-        "Install it with `uv pip install tinker-cookbook` and retry."
-    ) from exc
-
 # Checkpoint presets from README evaluation candidates.
 CHECKPOINT_PRESETS = {
     "gpt-v6r43-120b": {
@@ -34,19 +26,17 @@ CHECKPOINT_PRESETS = {
 CHECKPOINT_ALIAS = os.getenv("CHECKPOINT_ALIAS", "gpt-r38-20b").lower()
 PRESET = CHECKPOINT_PRESETS.get(CHECKPOINT_ALIAS, CHECKPOINT_PRESETS["gpt-r38-20b"])
 
-MODEL_PATH = os.getenv("MODEL_PATH", PRESET["model_path"])
+MODEL_PATH = os.getenv("MODEL_PATH", PRESET["model_path"]).strip()
 BASE_MODEL = os.getenv("BASE_MODEL", PRESET["base_model"])
 SYSTEM_PROMPT = os.getenv("SYSTEM_PROMPT", "You are a helpful and truthful assistant. Respond with only the final user-facing answer, with no analysis or role tags.")
 
 
-def get_api_key() -> str:
-    """Read API key from environment with a clear error for local/dev runs."""
-    api_key = os.getenv("TINKER_API_KEY")
-    if not api_key:
+def require_api_key() -> None:
+    """Fail early with a clear error for local/dev runs."""
+    if not os.getenv("TINKER_API_KEY"):
         raise RuntimeError(
             "TINKER_API_KEY is not set. Export it before running chat_qa.py."
         )
-    return api_key
 
 
 def build_thread_prompt(system_prompt: str, history: List[Tuple[str, str]], user_text: str) -> str:
@@ -58,8 +48,6 @@ def build_thread_prompt(system_prompt: str, history: List[Tuple[str, str]], user
     lines.append(f"User: {user_text}")
     lines.append("Assistant (final answer only):")
     return "\n".join(lines)
-
-
 
 
 def render_prompt(tokenizer, system_prompt: str, history: List[Tuple[str, str]], user_text: str) -> str:
@@ -84,8 +72,6 @@ def render_prompt(tokenizer, system_prompt: str, history: List[Tuple[str, str]],
     return build_thread_prompt(system_prompt, history, user_text)
 
 
-
-
 def clean_model_answer(text: str) -> str:
     """Normalize model output and strip structured channel wrappers if present."""
     raw = text.strip()
@@ -108,9 +94,13 @@ def clean_model_answer(text: str) -> str:
 
 
 def main() -> None:
-    service_client = tinker.ServiceClient(api_key=get_api_key())
-    sampling_client = service_client.create_sampling_client(model_path=MODEL_PATH)
-    tokenizer = tokenizer_utils.get_tokenizer(BASE_MODEL)
+    require_api_key()
+    service_client = tinker.ServiceClient()
+    if MODEL_PATH:
+        sampling_client = service_client.create_sampling_client(model_path=MODEL_PATH)
+    else:
+        sampling_client = service_client.create_sampling_client(base_model=BASE_MODEL)
+    tokenizer = sampling_client.get_tokenizer()
 
     history: List[Tuple[str, str]] = []
 
@@ -147,6 +137,9 @@ def main() -> None:
             sampling_params=sampling_params,
             num_samples=1,
         ).result()
+
+        if not result.sequences:
+            raise RuntimeError("Tinker returned no sampled sequences.")
 
         raw_answer = tokenizer.decode(result.sequences[0].tokens).strip()
         answer = clean_model_answer(raw_answer)
