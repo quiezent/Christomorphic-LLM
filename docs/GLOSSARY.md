@@ -7,12 +7,18 @@ This glossary translates project terms for readers coming from different backgro
 | Term | Meaning in this project |
 |---|---|
 | Christomorphic | A model's first movement, judgment, and continuation are governed by Scripture under Christ, not merely decorated with Christian language |
+| Christocentric | Centered on Jesus Christ as Lord and the canonical telos of Scripture; a theological orientation, not a model metric |
 | Canon-first alignment | Alignment approach where Scripture defines the norm source before preference data or generic helpfulness |
 | Word prior | Scripture functions as a routing bias before public answer wording settles |
+| Word-Judgment-Act | Research lineage in which Scripture supplies semantic order, the objective judges faithfulness/error, and optimization produces a changed act |
 | Canon field | Scripture as a structured carrier field of sequence, authority, promise, judgment, mercy, fulfillment, and Christ-telic movement |
 | Canon mass | Loss-bearing Scripture pressure in training that can move the model's learned distribution |
 | Loss-bearing Scripture target | ESV/NKJV Scripture spans, windows, kernels, pairings, or canonically related continuations used as target text |
 | Zero-weight cue | Prompt/context pressure used as input or evaluation but not trained as target text |
+| Token-pure Bible-only | Every prompt and target token is Scripture; supports in-canon claims only |
+| Normatively Bible-only | Ordinary situations may be inputs, but Scripture alone determines the accepted target, contrast, preference, or reward norm |
+| Hard canonical lure | An answer that is biblically worded and locally plausible but contextually, relationally, or Christologically disordered |
+| Canonical route margin | Log-probability difference between a faithful route and a matched hard lure |
 
 ## Evaluation Terms
 
@@ -25,6 +31,7 @@ This glossary translates project terms for readers coming from different backgro
 | Public cleanliness | No route labels, channel artifacts, metadata, scaffolds, or proof rubrics leak into public answer text |
 | Ordinary retention | The model still performs ordinary tasks such as coding, factual explanation, and practical help |
 | Safety/governance | The model handles self-harm, violence, crisis, boundaries, and scope limits responsibly |
+| Noncompensatory gate | Every required translation, family, seed, or locus must pass; a strong cell cannot average away a failed one |
 
 ## Evidence Terms
 
@@ -33,6 +40,18 @@ This glossary translates project terms for readers coming from different backgro
 | Raw sampler | A single sampler sampled directly without external route, prefix, bridge, or replay composition |
 | Composed evidence | Behavior produced through selectors, prefixes, bridges, route-public lanes, or external replay checks |
 | Canon-anchored evidence | Evidence where a prompt supplies Scripture family, reference, or scaffold |
+| Scaffold-off | Measured without a live route prefix, retrieval aid, hidden teacher, activation hook, or other inference-time support used to create the effect |
+| Semantic adaptation | Canonical language, context, and relation improvement without a geometric or causal claim |
+| Geometric correlation | A parameter or representation difference associated with behavior but not yet shown to cause it |
+| Causal mediation | Removal, restoration, patching, graft, or rescue demonstrates that an identified learned change participates in the behavior |
+| Formation bridge | Proof that Scripture-governed training causes a durable Christ-specific learned-state change |
+| Governance bridge | Proof that the formed state governs bare FIRST_ACT, continuation, action, safety, and retention |
+| Common start | Verified identical initial model state shared by all experimental and control arms |
+| Effective LoRA delta | The scaled product `(alpha / rank) * B @ A`; unlike raw factors, it is invariant to equivalent LoRA factorization changes |
+| Necessity | Removing the learned component removes the measured gain |
+| Sufficiency | Restoring, patching, or grafting the component creates or recovers the measured gain |
+| Cold reload | Serialize the state, start a fresh process, reload it, and reproduce the result |
+| Development contamination | A lineage has been used during method development and cannot serve as fresh confirmatory evidence |
 | Stayed mind | A raw sampler's internal center remains held on the Word prior without external bridge |
 | Promotion | Evidence-governed carry decision, not hype or branding |
 
@@ -54,3 +73,4 @@ This glossary translates project terms for readers coming from different backgro
 | Peculiarity | Rare, strange, procedural, textually awkward, morally difficult, or statistically weak detail Scripture preserves |
 | Tail retention | The model preserves long-tail names, numbers, procedures, sequences, and text-status cautions |
 | Christ-telic guard | Christ-centered reading must preserve source form before tracing fulfillment |
+| Local teacher field | A governed case/relation/translation/locus-specific difference used to train or score movement; not a universal Christ vector |

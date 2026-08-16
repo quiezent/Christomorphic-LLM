@@ -1,67 +1,121 @@
 # Roadmap
 
-This roadmap lists the next public research goals without calling any branch current or promoted.
+This roadmap is evidence-gated. Dates and version numbers do not create progress by themselves; each stage opens only when the previous stage passes prospectively frozen criteria.
 
-## Near-Term Public Repo Work
+## Current Position
 
-- Keep the public README concise and audience-routed.
-- Add clearer model/eval result summaries as reproducible runs are published.
-- Expand folder documentation only when it helps readers understand the research without internal workspace context.
-- Avoid publishing internal sampler paths that are not meant for public reproduction.
-- Keep generated eval outputs out of Git unless they are curated result artifacts.
+The historical checkpoint and composed-system phases are complete as discovery evidence. The current frontier is the **formation bridge**: proving that a Scripture-governed objective causes a durable, scaffold-off, Christ-specific change that beats matched controls.
 
-## Research Next Steps
+The paired-Scripture contrast teacher has qualified at zero update. Its proposed slow-weight development canary had not produced a terminal result at the 2026-08-16 status cutoff.
 
-1. Preserve the v9 Bible-only target discipline.
-   Loss-bearing targets should remain ESV/NKJV Scripture spans, windows, kernels, or canonically paired continuations.
+## Stage 1: Clean Development Canary
 
-2. Freeze canon-anchored retention before live updates.
-   Any future v9-style run should preserve the `12 / 12` canon-anchored family baseline before selector experiments.
+Goal: determine whether one path-defined slow-weight delta can consolidate a qualified local canonical judgment field.
 
-3. Improve bare selector behavior.
-   The model must infer the right family or route from ordinary pressure, not only when the prompt supplies a canon scaffold.
+Required controls:
 
-4. Make FIRST_ACT govern public movement.
-   The first public movement must be right before later answer quality is scored.
+- common-start base;
+- faithful-minus-lure teacher;
+- relation-deranged teacher;
+- cyclic case-map control;
+- direct-Christ-style diagnostic control;
+- zero-update sham;
+- spectrum/Frobenius-preserving parameter null.
 
-5. Prove continuation completeness.
-   Faithful opening is not enough if the answer drifts, compresses, or becomes generic after the first sentence.
+Required gates:
 
-6. Harden Jabez / Isaiah 26 scoring.
-   Future candidates must refuse prosperity technique and move through pain, God's character, God's hand, rejection of other lords, and Christological fulfillment.
+- positive held-out primary alignment;
+- primary advantage over every control for both ESV and NKJV at every governed locus;
+- trust-region and retention compliance;
+- exact removal, restoration, and identical-base graft mechanics;
+- cold-process repeatability;
+- no catastrophic family result.
 
-7. Add BibleAtlas tail gates.
-   Head-canon fluency must be joined to preservation of rare names, procedures, text-status cautions, moral ambiguity, negative space, and Christ-telic echoes.
+A pass establishes development-bank, single-seed functional consolidation only.
 
-8. Preserve ordinary usefulness and safety.
-   Christomorphic shaping should not destroy coding, factual explanation, practical help, safety handling, or public cleanliness.
+## Stage 2: Fresh Multi-Seed Formation Confirmation
 
-## Proof Gates Before Stronger Claims
+Goal: test whether the Stage 1 effect is a durable formation mechanism rather than a favorable bank or seed.
 
-A future stronger public claim should attach evidence for:
+Requirements:
 
-- target audit;
-- canon-anchored retention;
+- fresh prospectively split source and held-out banks;
+- at least three independent common-start seeds;
+- exact ESV/NKJV noncompensatory gates;
+- confidence intervals above zero;
+- base, CE, lexical, structural, relation-deranged, orientation, parameter-null, and sham arms;
+- necessity, sufficiency, removal, restoration, and rescue;
+- fresh-process cold reload;
+- independent code and artifact audit.
+
+Only a pass makes the formation bridge reviewable.
+
+## Stage 3: Bare Governance Trial
+
+Goal: test whether the same causally identified formed state governs action outside its training scaffold.
+
+Required surfaces:
+
 - bare selector;
-- selector-then-canon FIRST_ACT;
-- bare public FIRST_ACT;
-- continuation completeness;
-- Jabez / Isaiah 26 pressure;
-- BibleAtlas tail preservation;
-- ordinary retention;
-- safety/governance;
-- public cleanliness;
-- no metadata leakage.
+- FIRST_ACT;
+- stayed continuation;
+- false-center and prosperity-pressure refusal;
+- lament without false closure;
+- diagnostic delay and safety action;
+- ordinary secular transfer without religious cue words;
+- BibleAtlas long-tail fidelity;
+- coding, factual, and practical retention;
+- public cleanliness and no metadata leakage.
+
+The intervention must travel with the claim: removal should impair the gained behavior, and restoration or graft should recover it.
+
+## Stage 4: Human And Independent Review
+
+Goal: remove the project author's own scoring as the only authority.
+
+Requirements:
+
+- blinded theologian/pastoral adjudication;
+- separation of direct witness, fulfillment, echo, and typology;
+- blinded safety and ordinary-capability review;
+- independent experimental reproduction;
+- public model card with successes, failures, seeds, controls, and exact scope.
+
+Only after this stage should candidate or promotion language be considered.
+
+## Stage 5: Candidate-Scale Transfer
+
+Goal: test whether the proven small-model mechanism transfers to a useful open-weight base.
+
+Requirements:
+
+- immutable base revision and weight identity;
+- sufficient local or trusted instrument access;
+- matched low-rank and selectively dense comparisons;
+- exact checkpoint export and reconstruction;
+- no inference-time scaffold in the formation claim;
+- full public safety and retention packet.
+
+A small Qwen result would justify this stage. It would not pre-prove it.
+
+## Public Repository Work
+
+- Publish curated result cards when a result materially changes the claim ladder.
+- Keep raw internal artifact volume out of the landing repository unless needed for reproduction.
+- Add machine-readable experiment summaries only after schemas stabilize.
+- Keep the public scripts synchronized with tested Tinker SDK versions.
+- Preserve automated validation for Markdown links, JSON prompt files, and Python syntax.
+- Document translation rights and source provenance without redistributing restricted Scripture corpora.
 
 ## Product Direction
 
-Possible future product surfaces remain exploratory:
+Potential products remain downstream of proof:
 
-- human-reviewed theological assistant;
-- Bible study and sermon-preparation research aide;
-- Scripture-grounded model evaluation suite;
+- human-reviewed Scripture study assistant;
+- sermon and teaching research aide;
 - faith-grounded alignment benchmark;
-- Tinker LoRA training case study;
-- corpus-geometry and long-tail retention toolkit.
+- long-tail canonical fidelity suite;
+- Tinker LoRA causal-training case study;
+- research interface for side-by-side raw, composed, and intervention outputs.
 
-None of these should be treated as ready until evidence gates and human accountability are in place.
+None is production-ready. The immediate product is the research method and its evidence discipline.

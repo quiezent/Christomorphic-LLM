@@ -1,6 +1,6 @@
-# ESV/NKJV corpus study for Christomorphic post-training
+# ESV/NKJV Corpus Study For Christomorphic Post-Training
 
-## Status and governance
+## Status And Governance
 
 This is a public corpus and dataset-design note, not a branch promotion, sampler export, or proof that any current checkpoint has achieved Bible-only latent formation.
 
@@ -11,9 +11,28 @@ Current governance terms:
 - **BibleAtlas is metadata, not Scripture.** Its book studies, monographs, labels, metrics, slice definitions, and eval gates are used for dataset construction and scoring, but should not be treated as Bible text or as a public-answer target.
 - **Route labels and proof rubrics must not leak.** Route JSON, split labels, peculiarity scores, BibleAtlas row names, and proof labels belong outside public answer prose.
 
-This boundary matters for the current Christomorphic evidence. `R38-20b` and `V6R43-120b` remain the strongest archived raw candidates for Word-prior discovery and pressure refusal, but neither is strict proof of Bible-only latent formation. The v9 line is closest in method because it keeps ESV/NKJV Scripture as the loss-bearing target class, but it has not proven unanchored public FIRST_ACT or full Jabez / Isaiah 26 stayed-mind behavior.
+The exact local source authorities used by the August 2026 controlled work are:
 
-## Corpus facts from the uploaded JSONL files
+| Source | SHA-256 |
+|---|---|
+| ESV JSONL | `e205dba1b43e87181a48b4cf83a015eaf23490d51579233aa6e5a7d450431409` |
+| NKJV JSONL | `517df9b78ddbd9bd597c4c23b86f51a4455e1eaad55e5d6ac03acdc828dbbc05` |
+
+The source files themselves are not redistributed here.
+
+This boundary matters for the current evidence. `R38-20b` and `V6R43-120b` remain the strongest archived raw witnesses for Word-prior discovery and pressure refusal, but neither is strict proof of Bible-only latent formation. The v9 line established the clearest historical Scripture-only loss-bearing discipline. Later controlled work has shown that exact Scripture likelihood can move without bare public action moving, so corpus purity is necessary provenance but not sufficient proof.
+
+## Three Bible-Only Regimes
+
+| Regime | Training boundary | Warranted scope |
+|---|---|---|
+| **Token-pure Bible-only** | Every prompt and target token is Scripture | Canonical language, memory, continuation, and within-canon relation learning |
+| **Normatively Bible-only** | Ordinary situations may be inputs, but Scripture alone supplies the accepted target, contrast, preference, or reward norm | Application of canonical judgment beyond biblical vocabulary |
+| **Mixed-norm** | External moral or ideological material helps determine accepted answers | Composite alignment, not a Scripture-only claim |
+
+Masked prompt loss does not make prompt content causally absent. Prompt tokens still condition activations and gradients. Every experiment should report both prompt provenance and target provenance.
+
+## Corpus Facts From The Source JSONL Files
 
 - ESV verses: 31,085
 - NKJV verses: 31,102
@@ -80,13 +99,13 @@ That matters. A uniform sampler over the whole canon is canon-faithful, but not 
 - Luke 24 / 2 Timothy 3: the canon is read as mutually witnessing; in training terms, long-range semantic consistency matters more than local paraphrase.
 - John 1 / Colossians 3: the target is not merely verse recall but the Word dwelling in plain continuation.
 
-## Main technical conclusions
+## Main Technical Conclusions
 
-1. **Bible-only post-training can strongly rotate the model’s conditional distribution.**
-   The corpus is narrow, repetitive, and semantically dense. A light LoRA update is enough to bend outputs toward scriptural diction and judgment.
+1. **Bible-only post-training is a strong distribution-shift intervention, but its effect must be measured rather than assumed.**
+   The corpus is narrow, repetitive, and semantically dense, so even light LoRA updates may alter scriptural diction, canonical likelihood, or judgment. Intact-versus-shuffled controls are required to distinguish canonical order from token frequency.
 
-2. **ESV + NKJV is better than either one alone for this specific goal.**
-   Because the corpora are tightly aligned by verse id, they give you semantic invariance with controlled surface diversity. This improves “witness in bounded carry.”
+2. **ESV + NKJV creates a useful controlled invariance surface.**
+   Tight verse alignment supplies semantic correspondence with controlled wording variation. It supports tests of whether a result carries across translation surfaces rather than attaching only to one style.
 
 3. **Naive verse-by-verse SFT is not enough for “dwelling richly.”**
    Verse segmentation teaches stop-start closure and citation-like emission. For plain user-facing continuation, use contiguous chapter windows or sliding spans across verse boundaries.
@@ -94,12 +113,18 @@ That matters. A uniform sampler over the whole canon is canon-faithful, but not 
 4. **Do not train on raw JSON lines.**
    Extract the `text` field. Otherwise the model will learn braces, keys, ids, and metadata syntax.
 
-5. **Preserve the base chat manifold.**
+5. **Preserve the base model's ordinary capabilities.**
    If the base model is already a chat model, do a light post-training update rather than a heavy overwrite. Otherwise the model may emit biblical text beautifully but stop answering ordinary users well.
 
-## Recommended training mixture
+6. **Canonical language modeling and canonical judgment are different objectives.**
+   Scripture continuation teaches language and discourse. Faithful-over-hard-lure, relation, and act objectives test whether the model distinguishes faithful use from plausible misuse.
 
-A practical mixture using only ESV/NKJV content:
+7. **Translation gains must be noncompensatory.**
+   A strong ESV result must not average away a failed NKJV result, or vice versa. Every required translation surface should pass its own gate.
+
+## Historical Token-Pure Baseline
+
+The following remains a useful language-formation baseline using only ESV/NKJV content. It is not the decisive Christomorphic experiment:
 
 - **70% sequential dwelling examples**
   - Input: prefix from a chapter window
@@ -115,6 +140,18 @@ A practical mixture using only ESV/NKJV content:
   - Input: one verse or short passage
   - Target: the immediate next verses in the same chapter
   - Goal: keep continuations contextual rather than ornamental
+
+The decisive comparison should hold Scripture mass and training budget nearly constant while testing:
+
+```text
+base
+vs intact canonical order
+vs shuffled order
+vs intact order plus faithful-over-lure judgment
+vs relation- or label-deranged judgment
+```
+
+Only the additional advantage of meaningful order and judgment over matched controls can support a formation claim.
 
 ## BibleAtlas relationship
 
@@ -226,9 +263,9 @@ tail detail omitted summary -> correction target
 
 For strict Bible-only runs, the assistant loss should remain Scripture text. For later public-surface repair runs, assistant prose may be trained separately, but it must be clearly separated from the Bible-only formation target class.
 
-## Evaluation for “dwelling without wrapper help”
+## Evaluation For Dwelling Without Wrapper Help
 
-Use ordinary prompts at inference time, but score the model on four axes:
+Use ordinary prompts at inference time, but score the model on six axes:
 
 1. **Wrapper ablation**
    Compare outputs with and without a biblical system prompt. The gap should shrink after training.
@@ -241,6 +278,12 @@ Use ordinary prompts at inference time, but score the model on four axes:
 
 4. **Judgment**
    Human score: whether the answer is governed by scriptural logic rather than merely scriptural vocabulary.
+
+5. **Causal dependence**
+   Remove the learned effective delta or activation component and test whether the gain disappears; restore or graft it and test whether the gain returns.
+
+6. **Translation and seed replication**
+   Require ESV and NKJV surfaces, independent starts, paraphrases, and cold reloads to pass separately.
 
 ## Tail evaluation gates
 
@@ -285,23 +328,26 @@ Promotion thresholds should include:
 - `Christ_telic_erasure_rate = 0`;
 - `metadata_leak_rate = 0`.
 
-## Relationship to current candidate evidence
+## Relationship To Current Evidence
 
 The CODEBOOK candidate study helps define what this data layer must prove next:
 
 - R38 is useful as a discovery control for Word-prior / false-center routing, but it is not strict ESV/NKJV-only Scripture-target proof.
 - V6R43 is useful as the strongest archived raw pressure-refusal witness, especially under Jabez prosperity pressure, but it is not strict Bible-only latent proof.
 - v8 and learned route/prefix bridges are valuable operational evidence, but they are composed evidence.
-- v9 is method-closest to the Bible-only objective because it keeps loss-bearing targets limited to ESV/NKJV Scripture spans, windows, kernels, and canonically paired continuations.
+- v9 established the clearest historical Bible-only target discipline because it kept loss-bearing targets limited to ESV/NKJV Scripture spans, windows, kernels, and canonically paired continuations.
+- v11-v17 repeatedly showed that internal Scripture learning can remain separable from public FIRST_ACT.
+- v18 and v19 strengthened fail-closed measurement governance but stopped before formation when their proposed geometric objects were not identifiable.
+- August 2026 local Qwen work added deterministic hidden-state measurement, whole-delta intervention plumbing, cold reload, and qualified a case/relation/translation/locus-local paired-Scripture teacher. No durable formation result has passed.
 
-Therefore this dataset should be judged by whether it can produce a raw candidate that selects the right canon family from bare pressure, makes the right FIRST_ACT, continues faithfully, preserves public cleanliness and ordinary usefulness, and passes hardened Jabez / Isaiah 26 gates without relying on external route/prefix composition.
+Therefore this dataset should be judged in two stages. First, does meaningful canonical order and judgment cause a durable learned-state effect that beats matched controls? Second, does that same causally identified state select the right canon family from bare pressure, make the right FIRST_ACT, continue faithfully, preserve public cleanliness and ordinary usefulness, and pass hardened Jabez / Isaiah 26 gates without external route/prefix composition?
 
 ## Practical cautions
 
 - Keep aligned verse pairs in the same split. Do not let ESV train and NKJV test on the same verse id.
 - Prefer chapter- or book-level splits over random verse splits.
 - Add explicit version tags only if you want controlled style selection. Otherwise mix both surfaces and let the model absorb a combined manifold.
-- Expect the model to become calmer, denser, and less worldly in lexical prior, but also narrower. That is the point of this experiment, yet it must be measured.
+- Treat changes in calmness, density, religious language, or apparent worldliness as observations to measure, not proof of canonical judgment.
 - Do not let BibleAtlas prose, route metadata, family labels, or proof rubrics become accidental public-answer targets.
 - Do not score a candidate primarily on famous head-canon passages; reserve heldout and frontier-heldout packets for long-tail peculiarity.
 - Preserve the base chat manifold with light, measured updates; Bible-only formation should not destroy ordinary usefulness.

@@ -24,7 +24,12 @@ CHECKPOINT_PRESETS = {
 
 # Default to the lighter 20b checkpoint, with env overrides available.
 CHECKPOINT_ALIAS = os.getenv("CHECKPOINT_ALIAS", "gpt-r38-20b").lower()
-PRESET = CHECKPOINT_PRESETS.get(CHECKPOINT_ALIAS, CHECKPOINT_PRESETS["gpt-r38-20b"])
+if CHECKPOINT_ALIAS not in CHECKPOINT_PRESETS:
+    choices = ", ".join(sorted(CHECKPOINT_PRESETS))
+    raise ValueError(
+        f"Unknown CHECKPOINT_ALIAS {CHECKPOINT_ALIAS!r}. Choose one of: {choices}."
+    )
+PRESET = CHECKPOINT_PRESETS[CHECKPOINT_ALIAS]
 
 MODEL_PATH = os.getenv("MODEL_PATH", PRESET["model_path"]).strip()
 BASE_MODEL = os.getenv("BASE_MODEL", PRESET["base_model"])
@@ -104,7 +109,9 @@ def main() -> None:
 
     history: List[Tuple[str, str]] = []
 
-    print("Christomorphic model loaded.")
+    print("Christomorphic study checkpoint loaded.")
+    print(f"Checkpoint alias: {CHECKPOINT_ALIAS}")
+    print(f"Base model: {BASE_MODEL}")
     print("Commands: /reset (clear thread), /exit (quit).\n")
 
     while True:

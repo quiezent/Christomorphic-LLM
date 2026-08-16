@@ -1,163 +1,193 @@
 # Technical Method
 
-This page summarizes the technical research program for LLM and Tinker LoRA readers.
+This document is the compact engineering account of the Christomorphic research program. The full argument is in [Research Thesis](RESEARCH_THESIS.md).
 
-## Core Hypothesis
+## Objective
 
-The project tests whether post-training can change a model's conditional policy so that Scripture-governed routes become stable under sparse ordinary pressure.
+The program tests whether post-training can create a durable conditional policy in which Scripture-governed routes win under sparse ordinary pressure.
 
-The target is not:
-
-- more Bible-token density;
-- religious style transfer;
-- better devotional tone;
-- a safety wrapper with verses attached.
-
-The target is:
+The target is not more Bible tokens, Christian style, devotional warmth, or a safety wrapper with verses attached. The target is:
 
 ```text
-Scripture-governed compression
+canonical semantic formation
+-> faithful-over-lure judgment
+-> causal slow-weight and activation change
 -> faithful FIRST_ACT
--> faithful continuation
--> clean public answer
--> retained ordinary usefulness and safety
+-> stayed continuation
+-> retained truthfulness, usefulness, and safety
 ```
 
-## Tinker LoRA Role
+## Word-Judgment-Act
 
-Tinker LoRA is used as the post-training mechanism for archived candidate checkpoints. Public scripts use the Tinker SDK to:
+| Stage | Technical role |
+|---|---|
+| Word | ESV/NKJV Scripture supplies discourse, relation, contrast, and canonical horizon |
+| Judgment | The objective determines which continuation, relation, or act is faithful and which is a plausible lure |
+| Act | The optimizer changes a model state whose earliest public movement is then evaluated |
 
-- open a sampler with `ServiceClient.create_sampling_client(model_path=...)`;
-- retrieve the session tokenizer with `SamplingClient.get_tokenizer()`;
-- sample outputs through `SamplingClient.sample(...)`;
-- batch prompts from JSON evaluation files;
-- optionally reopen saved weights/state and export sampler weights for evaluation.
+Ordinary next-token exposure is necessary for canonical language and continuity. It is insufficient for distinguishing faithful Scripture use from Scripture misapplied under temptation, flattery, prosperity pressure, or self-protective reasoning.
 
-The repo intentionally keeps scripts small and inspectable. It is a research artifact, not a full training platform.
+## Objective Family
 
-## Main Training Ideas
+The complete research objective has six surfaces:
 
-### 1. Canon Field
+| Surface | Purpose |
+|---|---|
+| Canonical language modeling | Preserve intact discourse, speaker, audience, sequence, and local continuity |
+| Canonical relations | Learn quotation/source, promise/fulfillment, command/execution, lament, judgment, and recapitulation |
+| Hard-lure judgment | Prefer faithful use over a lexically biblical but contextually disordered alternative |
+| First action | Change the first executable movement, not only the final explanation |
+| Translation invariance | Preserve canonical meaning across aligned ESV/NKJV surfaces without smoothing real differences |
+| Retention | Preserve ordinary reasoning, factual accuracy, tool use, safety, and public cleanliness |
 
-The ESV/NKJV corpus is treated as a structured canon field, not a decoration bank. The field carries:
+## Bible-Only Governance
 
-- sequence;
-- repetition;
-- law and ritual detail;
-- narrative pressure;
-- prophecy and promise;
-- wisdom and lament;
-- Gospel and apostolic witness;
-- Christ-telic movement.
+The project distinguishes three regimes:
 
-### 2. Loss-Bearing Scripture Target
+| Regime | Rule |
+|---|---|
+| Token-pure Bible-only | Every prompt and target token is Scripture |
+| Normatively Bible-only | Ordinary situations may be inputs, but Scripture alone supplies the accepted target, contrast, preference, or reward norm |
+| Mixed-norm | External moral or ideological material also determines the chosen answer |
 
-In strict Bible-only experiments, the assistant target text should be only ESV/NKJV Scripture material:
+Token-pure training can establish in-canon learning. It cannot by itself establish generalized judgment over unseen secular situations. Normative purity is the stronger viable target for a generally useful model, but prompt provenance must remain explicit because masked prompt tokens still condition gradients.
 
-- spans;
-- windows;
-- kernels;
-- paired passages;
-- canonically related continuations.
+## Corpus And BibleAtlas
 
-Non-Bible pressure prompts can be used as zero-weight cues or evaluation prompts. BibleAtlas labels, route JSON, teacher prose, proof labels, and public-answer rubrics must not become Scripture-only target text.
+ESV and NKJV are co-primary Scripture surfaces. Their verse alignment supplies controlled paraphrase variation, while their real lexical and textual differences support noncompensatory translation gates.
 
-### 3. Route Before Wording
+BibleAtlas is dataset and evaluation metadata, not Scripture. It nominates:
 
-Later wording cannot reliably repair a false first movement. The v7 line made FIRST_ACT and route supervision explicit:
+- book and discourse boundaries;
+- canonical relation families;
+- long-tail names, procedures, numbers, and sequences;
+- translation and text-status pressure;
+- moral ambiguity and unresolved endings;
+- Christ-telic echoes that must preserve source form.
 
-```text
-prompt -> route -> first public movement -> continuation
-```
+BibleAtlas prose, labels, metrics, route JSON, and proof rubrics must not enter a Scripture-only target as if they were canonical text.
 
-This is why public evaluation scores the first movement before later answer quality.
+See [ESV/NKJV Corpus Study](../data/christomorphic_esv_nkjv_study.md).
 
-### 4. Raw Versus Composed
+## Tinker Formation Surface
 
-Composed systems can be operationally strong:
+The public tools have been checked against installed `tinker==0.23.4`.
 
-```text
-private route selector
--> private prefix / bridge
--> public answer sampler
--> replay and gate checks
-```
+Tinker supports the scalable formation side of the work:
 
-But composed evidence is not the same as raw sampler formation. The long-horizon target is a single sampler whose first movement and continuation are governed internally.
+- LoRA training clients;
+- cross-entropy and logprob-based custom losses;
+- forward/backward and optimizer operations;
+- on-policy sampling and preference/RL workflows;
+- state and sampler checkpoints;
+- adapter download and export.
 
-### 5. BibleAtlas Tail Preservation
+The public repository uses `ServiceClient`, `SamplingClient.get_tokenizer()`, and sampler checkpoint paths directly. See the [Tinker quick start](https://tinker-docs.thinkingmachines.ai/tinker/quickstart/), [TrainingClient API](https://tinker-docs.thinkingmachines.ai/tinker/api-reference/trainingclient/), and [checkpoint tutorial](https://tinker-docs.thinkingmachines.ai/tutorials/core-concepts/weights/).
 
-BibleAtlas turns the ESV/NKJV corpus into dataset-design metadata:
+Tinker's documented forward/backward result exposes loss and metric surfaces, not literal residual activations. Hosted metadata also does not currently provide the immutable base-weight and worker identity needed to reconstruct a historical latent mechanism exactly. Adapter access is valuable, but does not close that identity gap.
 
-- book-level studies;
-- selected passage monographs;
-- peculiarity indexes;
-- slice definitions;
-- eval gates;
-- tail-retention metrics.
+## Local Causal Surface
 
-Its Phase II rule is that no passage is understood until its peculiarities are preserved. This prevents the model from passing only by summarizing famous head-canon themes.
+Local open-weight experiments supply what hosted formation search cannot:
 
-## Evaluation Surfaces
+- exact base revision and tensor identity;
+- hidden states at governed layers and positions;
+- gradients by module;
+- activation patching and ablation;
+- whole effective-delta removal and restoration;
+- identical-base graft tests;
+- cold-process reload and repeat checks.
 
-This repo currently exposes two JSON prompt sets:
+The current local substrate is exact `Qwen/Qwen3-0.6B-Base` at a pinned revision. Its size makes controlled CUDA/FP16 experimentation possible on available hardware. Passing on this substrate would establish a mechanism at small scale, not automatic transfer to GPT-OSS-20B/120B.
+
+## Causal Experiment Design
+
+A credible formation experiment starts all active and control arms from one verified common state.
+
+Minimum arms:
+
+| Arm | Purpose |
+|---|---|
+| Base | No-update reference |
+| Canonical | Faithful Scripture order/relation/judgment |
+| Flat CE | Same source mass without the proposed canonical mechanism |
+| Shuffled or deranged | Same material with order or relation broken |
+| Lexical control | Preserves names or vocabulary without canonical relation |
+| Structural control | Preserves form while breaking theological identity |
+| Orientation control | Tests whether any direction works |
+| Parameter null | Matches parameter spectrum/norm without the learned function |
+| Sham | Executes the pipeline with zero effective update |
+
+The experiment must freeze before training:
+
+- exact source bytes and hashes;
+- tokenizer, renderer, target spans, and loss masks;
+- model revision, dtype, device, layer, and position;
+- common-start state;
+- training and held-out splits;
+- dose, optimizer, rank or parameter count, and seeds;
+- metrics, thresholds, controls, and stop laws.
+
+## Intervention Law
+
+Correlational geometry is not enough. A causal result needs all of the following:
+
+1. **Necessity:** removing the learned activation component or effective delta removes the gain.
+2. **Restoration:** restoring it recovers the gain.
+3. **Sufficiency:** grafting it into an identical base state creates the gain.
+4. **Rescue:** a targeted intervention reverses the predicted failure.
+5. **Cold reload:** the result survives serialization and a fresh process.
+6. **Replication:** the result survives seeds, ESV/NKJV surfaces, paraphrase, and held-out situations.
+
+LoRA factor matrices are gauge-dependent. Whole-delta claims should use the effective scaled product `(alpha / rank) * B @ A`, not the raw factor orientation.
+
+## Formation Before Governance
+
+The program deliberately separates two trials.
+
+### Formation Trial
+
+Tests whether Scripture and canonical judgment caused a durable internal change:
+
+- held-out canonical and relation margins;
+- hard-lure advantage over every matched control;
+- hidden-state and effective-delta interventions;
+- seed and translation replication;
+- cold-reload persistence.
+
+### Governance Trial
+
+Tests whether that same formed state governs public behavior:
+
+- bare selector and FIRST_ACT;
+- stayed continuation;
+- faithful action under Jabez, Isaiah 26, secrecy, self-harm, flattery, and false-center pressure;
+- BibleAtlas tail fidelity;
+- ordinary capability and safety retention;
+- public cleanliness;
+- blinded human review.
+
+A passed formation trial does not imply governance. A passed operational system does not imply formation.
+
+## Public Evaluation Surface
 
 | File | Prompts | Purpose |
 |---|---:|---|
-| [eval/behaviour_prompts.json](../eval/behaviour_prompts.json) | 169 | Broad behavior retention and pressure coverage |
-| [eval/christomorphic_geometry_probe_suite_v1.json](../eval/christomorphic_geometry_probe_suite_v1.json) | 89 | Christomorphic geometry, Scripture, pressure, safety, and retention probes |
+| [behaviour_prompts.json](../eval/behaviour_prompts.json) | 169 | Broad Scripture, theology, ordinary capability, safety, and self-orientation inspection |
+| [christomorphic_geometry_probe_suite_v1.json](../eval/christomorphic_geometry_probe_suite_v1.json) | 89 | Geometry-oriented Scripture, pressure, retention, technical, and safety probes |
 
-The stronger internal proof order is:
+These prompt suites support sampling comparison. They are not the full internal causal harness and do not produce a promotion decision automatically.
 
-```text
-target audit
-canon-anchored retention
-bare selector
-selector-then-canon FIRST_ACT
-bare public FIRST_ACT
-continuation completeness
-Jabez / Isaiah 26 pressure
-ordinary retention
-safety / governance
-public cleanliness
-tail peculiarity
-```
+## Fail-Closed Rule
 
-## Dataset Design Summary
+Stop before training when any source, mask, common-start, clone, nonalias, metric, control, or deterministic-repeat gate fails. Stop after training when confidence bounds, translation noncompensation, seed replication, removal/restoration, retention, or safety gates fail.
 
-See [data/christomorphic_esv_nkjv_study.md](../data/christomorphic_esv_nkjv_study.md) for details.
+No threshold, seed, layer, prompt bank, translation, or dose may be changed after observing the result and then reported as if prospectively frozen.
 
-The public data note currently records:
+## Engineering Boundary
 
-- 62,187 verse records across ESV/NKJV source files;
-- 1,530,200 simple word tokens;
-- 31,085 shared ESV verse ids;
-- 17 NKJV-only verse ids;
-- 1,189 chapters per translation;
-- chapter-window estimates for continuation training;
-- ESV/NKJV alignment statistics;
-- Phase II peculiarity slice definitions and tail-eval gates.
-
-## Reproducible Use
-
-Run a broad behavior batch:
-
-```powershell
-python eval/eval_christomorphic.py eval/behaviour_prompts.json
-```
-
-Run an interactive checkpoint chat:
-
-```powershell
-$env:TINKER_API_KEY="your-api-key"
-$env:CHECKPOINT_ALIAS="gpt-v6r43-120b"
-python script/chat_qa.py
-```
-
-## Engineering Boundaries
-
-- The repo does not redistribute the full ESV/NKJV corpus.
-- The repo does not claim current branch promotion.
-- The scripts assume Tinker API access.
-- Generated eval result files are ignored by `.gitignore`.
-- Public proof language should always name the evidence class: raw, canon-anchored, composed, or Bible-only target.
+- The full ESV/NKJV corpora are not redistributed here.
+- Historical checkpoints are study witnesses, not candidates.
+- Public scripts perform sampling and evaluation, not training.
+- Generated outputs are ignored unless deliberately curated as evidence.
+- Every public result should name its evidence class and strongest permitted claim.

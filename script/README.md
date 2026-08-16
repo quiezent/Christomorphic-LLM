@@ -1,12 +1,13 @@
 # Scripts
 
-This folder contains runnable Tinker sampling utilities.
+This folder contains runnable Tinker sampling utilities for the archived public checkpoints. The script has been checked against installed `tinker==0.23.4`.
 
 ## Interactive Chat
 
 [chat_qa.py](chat_qa.py) opens a Tinker sampling client and runs a multi-turn terminal chat.
 
 ```powershell
+python -m pip install -r requirements.txt
 $env:TINKER_API_KEY="your-api-key"
 python script/chat_qa.py
 ```
@@ -36,4 +37,8 @@ python script/chat_qa.py
 
 ## Boundary
 
-This script is for sampling and research inspection. It is not a production chat service and does not include full safety orchestration, logging, or deployment controls.
+This script is for sampling and research inspection. It is not a production chat service and does not include full safety orchestration, audit logging, rate limits, human escalation, or deployment controls.
+
+The system prompt used by this convenience script is an inference scaffold. Output sampled with that prompt is not bare-prompt formation evidence. Set `SYSTEM_PROMPT` explicitly and report it when comparing results.
+
+The archived checkpoints predate the current prospective causal standard. Sampling them can reproduce historical behavioral evidence, but cannot retroactively create fresh common starts, matched controls, immutable hosted-base identity, or hidden-state proof.

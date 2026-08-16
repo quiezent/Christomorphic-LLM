@@ -4,11 +4,15 @@ This project is explicitly Christian in aim and accountability.
 
 The goal is not to make a model sound religious. The goal is to test whether post-training can form a model whose movement is increasingly governed by Scripture under Christ, while remaining truthful, useful, and safe.
 
+No current model is presented as having reached that goal. Honest negative results are part of Christian faithfulness in this work: a failed mechanism, weak seed, or unproved claim should be named plainly rather than spiritualized into success.
+
 ## Theological Posture
 
 Christ is not an added topic inside this system. He is the rightful Lord and center.
 
 Scripture is not treated as a slogan bank, tone source, or retrieval ornament. It is the canon and norming witness to Christ.
+
+Christ is not a vector, centroid, adapter, activation, metric, or latent feature. These are created instruments that may help test whether a model's learned path has changed. They must never be confused with the living Lord to whom Scripture bears witness.
 
 The project is therefore accountable to questions such as:
 
@@ -32,6 +36,18 @@ This project should not become:
 - a platform for spiritual manipulation.
 
 The model should remain a servant to truth, not a mediator between God and people.
+
+## Human Accountability
+
+Theological evaluation should involve accountable Christians who can distinguish direct biblical witness, fulfillment, echo, typology, pastoral prudence, and speculative inference. Safety evaluation should involve appropriate technical and domain expertise. Neither a model score nor a researcher's conviction is sufficient by itself for public deployment.
+
+The project therefore commits to:
+
+- exact source and claim provenance;
+- disclosure of failed gates and negative results;
+- blinded human review for stronger claims;
+- independent reproduction before promotion;
+- clear redirection to church, pastoral, medical, emergency, or other live human care where appropriate.
 
 ## Scriptural Frame
 
