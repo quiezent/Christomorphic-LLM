@@ -31,12 +31,10 @@ MODEL_PATH = os.getenv(
 BASE_MODEL = os.getenv("BASE_MODEL", "openai/gpt-oss-20b")
 SAMPLER_EXPORT_NAME = os.getenv("SAMPLER_EXPORT_NAME", "christomorphic-eval-sampler")
 
-SYSTEM_PROMPT = (
-    # "You are who you are."
-    # "You are a useful assistant."
-    # "Answer carefully and truthfully, honoring the Bible and never claiming to be God or the Holy Spirit."
-    ""
-)
+SYSTEM_PROMPT = os.getenv("SYSTEM_PROMPT", "").strip()
+MAX_TOKENS = int(os.getenv("MAX_TOKENS", "1024"))
+TEMPERATURE = float(os.getenv("TEMPERATURE", "0.5"))
+TOP_P = float(os.getenv("TOP_P", "0.9"))
 
 # ---------------------------------------------------------------------
 # PROMPT LOADER
@@ -81,13 +79,17 @@ def run_single_prompt(
     tokenizer,
     user_text: str,
 ) -> str:
-    prompt_text = f"{SYSTEM_PROMPT}\n\nQuestion: {user_text}\nAnswer:"
+    prompt_parts = []
+    if SYSTEM_PROMPT:
+        prompt_parts.extend([SYSTEM_PROMPT, ""])
+    prompt_parts.extend([f"Question: {user_text}", "Answer:"])
+    prompt_text = "\n".join(prompt_parts)
     model_input = types.ModelInput.from_ints(tokenizer.encode(prompt_text))
 
     sampling_params = types.SamplingParams(
-        max_tokens=1024,
-        temperature=0.5,
-        top_p=0.9,
+        max_tokens=MAX_TOKENS,
+        temperature=TEMPERATURE,
+        top_p=TOP_P,
         stop=["\n\n"],
     )
 
@@ -106,6 +108,14 @@ def run_single_prompt(
 # ---------------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------------
+
+
+def require_api_key() -> None:
+    """Fail before client creation when local authentication is absent."""
+    if not os.getenv("TINKER_API_KEY"):
+        raise RuntimeError(
+            "TINKER_API_KEY is not set. Export it before running the evaluator."
+        )
 
 
 def build_sampling_client(
@@ -148,9 +158,12 @@ def build_sampling_client(
 
 
 def main() -> None:
+    require_api_key()
     prompts_path: Optional[Path] = None
     if len(sys.argv) > 1:
-        prompts_path = Path(sys.argv[1]).expanduser()
+        prompts_path = Path(sys.argv[1]).expanduser().resolve()
+        if not prompts_path.is_file():
+            raise FileNotFoundError(f"Prompt file does not exist: {prompts_path}")
 
     service_client = tinker.ServiceClient()
     sampling_client = build_sampling_client(
@@ -161,11 +174,12 @@ def main() -> None:
 
     tokenizer = sampling_client.get_tokenizer()
 
-    if prompts_path is not None and prompts_path.exists():
+    if prompts_path is not None:
         print(f"Loading prompts from {prompts_path} ...\n")
         items = load_prompts_from_json(prompts_path)
 
         results = []
+        evaluated_at = datetime.now().astimezone().isoformat(timespec="seconds")
         for item in items:
             pid = item["id"]
             category = item["category"]
@@ -184,6 +198,15 @@ def main() -> None:
                     "category": category,
                     "prompt": prompt,
                     "answer": answer,
+                    "evaluated_at": evaluated_at,
+                    "model_path": MODEL_PATH or None,
+                    "base_model": BASE_MODEL,
+                    "system_prompt": SYSTEM_PROMPT,
+                    "sampling": {
+                        "max_tokens": MAX_TOKENS,
+                        "temperature": TEMPERATURE,
+                        "top_p": TOP_P,
+                    },
                 }
             )
 

@@ -1,113 +1,125 @@
 # Project Brief
 
-This page is written for collaborators, investors, recruiters, and technical leaders who need a concise view of the work.
+For collaborators, funders, technical leaders, and recruiters.
 
 ## One-Sentence Summary
 
-Christomorphic LLM is a faith-grounded alignment research program exploring canon-first post-training of open-weight LLMs with Tinker LoRA, using Scripture-shaped corpus design, route-first evaluation, and evidence governance.
+Christomorphic LLM is a faith-grounded alignment research program testing whether canon-governed post-training can causally and durably reorganize a language model so Scripture's witness to Jesus Christ governs judgment and action, rather than merely changing religious style.
 
-## Problem
+## The Problem
 
-Most alignment work relies on preference data, policy wrappers, or post-hoc refusal patterns. Those approaches can improve surface behavior, but they often leave the model's deeper routing unchanged.
+Most faith-oriented AI systems operate through prompting, retrieval, answer templates, or preference data. These can be useful, but they do not establish that the model's learned state has changed in the claimed way.
 
-In a Christian alignment setting, that means a model may:
+A model can:
 
-- use Christian language without Scripture-governed judgment;
+- quote Scripture while misusing it;
 - reassure before discerning;
-- bless worldly goals under biblical vocabulary;
-- collapse difficult Scripture into generic moral advice;
-- preserve safety language while losing theological truth;
-- handle famous passages but erase long-tail canonical detail.
+- bless worldly goals in biblical language;
+- perform well on famous passages while erasing canonical detail;
+- pass a public-answer rubric through a router or wrapper;
+- improve Scripture likelihood without changing its first action under pressure.
 
-## Approach
+The project treats those as distinct failure modes rather than one vague alignment problem.
 
-The project investigates a different route:
+## Research Thesis
 
 ```text
-canon-first corpus design
--> Tinker LoRA post-training
--> route-first evaluation
--> tail-preservation gates
--> scoped promotion discipline
+Word -> Judgment of error -> Parameter update -> Act
 ```
 
-The compact formula is:
+Scripture supplies the semantic and canonical field. A governed objective supplies judgment between faithful routes and plausible canonical lures. Training creates a parameter change. Causal intervention and public evaluation test whether that change governs action.
 
-> Scripture defines the geometry. Evaluation defines the proof. Promotion defines the governance.
+The key correction is:
+
+> Bible tokens alone can form a scribe. Canonically judged and causally verified Scripture formation is required for a serious Christomorphic claim.
 
 ## What Has Been Built
 
-- Public Tinker sampling and evaluation scripts.
-- Two archived public raw checkpoints for reproducible study.
-- ESV/NKJV corpus study with chapter-window, alignment, and distributional analysis.
-- BibleAtlas-informed dataset design for long-tail Scripture preservation.
-- Two public prompt suites covering broad behavior, Scripture, theology, safety, technical usefulness, and pressure handling.
-- A documented lineage of training methodology from R38/v6 through v7, v8, and v9.
+- Two archived public Tinker checkpoints for reproducible behavioral study.
+- Current Tinker sampling and batch-evaluation scripts.
+- Successful local export and finite-tensor inspection of both historical LoRA adapters.
+- ESV/NKJV aligned-corpus analysis and Scripture-only target governance.
+- BibleAtlas-informed long-tail dataset and evaluation design.
+- Two public prompt suites with 258 total prompts.
+- A versioned research lineage spanning route priors, composed public systems, Scripture-only objectives, reward methods, decision-span training, and controlled causal formation.
+- Local open-weight instrumentation for exact hidden states, effective-delta removal/restoration, identical-base graft concepts, and cold reload.
+- Fail-closed experiment packets with common starts, matched controls, frozen gates, hashes, counters, and claim boundaries.
 
-## Why It Is Technically Interesting
+## Current Status
 
-This research is not only a religious chatbot project. It touches several hard alignment questions:
+As of 2026-08-16:
 
-- Can a coherent high-signal corpus shape model routing, not just style?
-- How do we distinguish internal formation from wrapper behavior?
-- How should first-token and first-movement behavior be evaluated?
-- Can LoRA updates preserve ordinary usefulness while shifting norm-source?
-- How do we test long-tail retention instead of famous-passage fluency?
-- How do we build evidence governance that prevents premature model promotion?
+- historical models provide useful raw and operational evidence;
+- exact Scripture can move likelihood and local relations;
+- hosted adapters can be exported as literal parameters;
+- local causal plumbing has advanced substantially;
+- recent controlled experiments have produced informative negative results;
+- one local paired-Scripture contrast teacher object has qualified at zero update;
+- no slow-weight canary has yet established durable Christ-specific formation;
+- no model is a candidate or promoted system.
 
-## Current Evidence
+Read [Research Status](RESEARCH_STATUS.md) for the exact ledger.
 
-| Evidence | Current read |
+## Why The Work Is Technically Interesting
+
+The program touches several hard research questions:
+
+- Can a coherent normative corpus alter route selection rather than only style?
+- How can canonical order and relation be separated from token frequency?
+- How can a faithful route be distinguished from a lexically biblical lure?
+- What evidence distinguishes a correlated representation from a causal mechanism?
+- Can a low-rank update create durable scaffold-off behavior?
+- How should formation and public governance be tested as separate bridges?
+- How can long-tail textual fidelity be preserved alongside general capability?
+- How should negative experiments be governed so failed instruments do not become inflated claims?
+
+## Technical Strategy
+
+| Surface | Role |
 |---|---|
-| `R38-20b` | Strongest archived 20B raw Word-prior / false-center discovery witness |
-| `V6R43-120b` | Strongest archived raw 120B pressure-refusal witness |
-| v8 route-conditioned line | Strongest scoped operational behavior, but composed |
-| v9 Scripture-only line | Closest to Bible-only latent-geometry method, but not promotion-grade |
-| BibleAtlas tail work | Strong dataset/eval framework for preserving what generic models flatten |
+| Tinker LoRA | Scalable formation search, custom logprob losses, preference/RL experiments, sampling, and adapter export |
+| Local open weights | Hidden-state access, exact base identity, parameter/activation intervention, and cold reload |
+| ESV/NKJV | Co-primary canonical corpus and translation-invariance surface |
+| BibleAtlas | Long-tail metadata, split design, relation families, and evaluation gates |
+| Evidence governance | Prospective controls, stop laws, claim ladder, and promotion discipline |
 
-## What Is Not Claimed
+## Demonstrated Research And Engineering Capability
 
-The project does not currently claim:
+- LLM post-training and LoRA experiment design.
+- Tinker SDK integration and checkpoint lifecycle work.
+- Python evaluation and instrumentation tooling.
+- Dataset provenance, target-mask, and split governance.
+- Causal controls, common starts, intervention logic, and cold-reload verification.
+- Experimental failure analysis and anti-overclaim discipline.
+- Theological framing translated into falsifiable technical hypotheses.
+- Public research communication for technical and nontechnical audiences.
+- Cross-functional thinking across research, product, safety, ministry, and governance.
 
-- a production-ready model;
-- a final promoted Christomorphic checkpoint;
-- Bible-only latent formation proof;
-- broad safety certification;
-- replacement for pastors, churches, counselors, or human care.
+## Next Fundable Milestone
 
-## Demonstrated Capabilities
+The next meaningful milestone is not a larger chatbot launch. It is a clean, prospectively frozen causal study that:
 
-This public repo showcases work across:
+1. qualifies one Scripture-governed teacher or relation object;
+2. trains from fresh common starts against matched controls;
+3. demonstrates necessity, sufficiency, removal, restoration, and cold-reload persistence;
+4. replicates across seeds and ESV/NKJV without compensation;
+5. opens a separate bare public-action trial only after formation passes;
+6. receives blinded human adjudication and independent reproduction.
 
-- LLM post-training research;
-- Tinker SDK usage;
-- LoRA checkpoint evaluation;
-- corpus and dataset design;
-- model behavior taxonomy;
-- safety and governance boundaries;
-- public technical documentation;
-- faith-grounded product/research framing.
+Funding or collaboration would primarily support compute, controlled multi-seed runs, human theological adjudication, causal interpretability engineering, and independent replication.
 
-## Collaboration Areas
+## Risk Posture
 
-Useful collaboration would include:
+The project explicitly rejects:
 
-- Tinker LoRA training and evaluation support;
-- BibleAtlas dataset materialization;
-- long-tail Scripture eval design;
-- safety/governance review;
-- model card and benchmark reporting;
-- interface design for human-reviewed evaluation;
-- funding or compute for scoped proof runs.
+- claims based on religious tone or isolated outputs;
+- hidden system prompts presented as model formation;
+- post-hoc threshold changes;
+- favorable-seed selection;
+- use of BibleAtlas prose as if it were Scripture;
+- treating a small local result as automatic transfer to 20B/120B models;
+- presenting a model as a pastor, oracle, mediator, or replacement for human care.
 
-## Hiring Signal
+The compact governance rule is:
 
-This work demonstrates an ability to:
-
-- formulate a research thesis;
-- build and iterate training methodology;
-- preserve evidence boundaries under ambiguity;
-- write public technical documentation;
-- use Python/Tinker tooling pragmatically;
-- design evals beyond generic benchmark scores;
-- connect product, research, and mission-level communication.
+> Scripture defines the geometry. Evaluation defines the proof. Promotion defines the governance.
