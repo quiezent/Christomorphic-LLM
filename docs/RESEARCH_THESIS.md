@@ -2,6 +2,8 @@
 
 Public thesis revision: **2026-08-16**
 
+**Empirical addendum, 2026-09-24:** I have now measured the original GPT-OSS-20B Scripture Reconstruction adapter and the historical R38/V6R43 output adapters. The reconstruction operators show a strong inverse-rank singular spectrum; the historical references show distinctive *relative* Jesus/Christ output-row updates after removing a common softmax-invariant shift. These are concrete parameter observations, not a discovered Christ-centered force, a contextual distance law, or causal proof of faithful action. The [new research note](TENSOR_GRAVITY_STUDY.md) gives the measurements and the proposed intervention.
+
 ## Thesis
 
 Scripture is semantically renewing in itself as the training corpus. It becomes geometrically renewing when a canon-governed objective converts its semantic distinctions into gradients that reorient the model.

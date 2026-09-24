@@ -1,0 +1,288 @@
+{
+  "schema": "exploratory_spectral_rank_and_literal_token_audit_v1",
+  "original_model": "GPT-OSS-20B Reconstruction Seed 2, seed2026092142",
+  "source_sha256": "5776c8d4f6561aeef039eebb94697ccdb936b9dd0b0b02552efe63187000eb8b",
+  "tokenizer_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+  "analysis_code_sha256": "24e4969104360fc4b27d31d6116cc938d2f9d3ee981b45e19558352854037eab",
+  "groups": {
+    "all_nonzero": {
+      "operators": 2386,
+      "power_better_full_rank_log_rmse_count": 2384,
+      "power_better_rank_tail_forecast_count": 2383,
+      "median_power_exponent": 0.7418996013102711,
+      "median_power_log_rmse": 0.12784722782250418,
+      "median_power_log_r2": 0.9605672994487348,
+      "median_exponential_decay": 0.060165777333404516,
+      "median_exponential_log_rmse": 0.30809310469270984,
+      "median_head_1_to_8_power_exponent": 0.9493934491805385,
+      "median_tail_9_to_32_power_exponent": 0.7275897736228376,
+      "median_power_17_to_32_forecast_log_rmse": 0.1442582526130943,
+      "median_exponential_17_to_32_forecast_log_rmse": 1.0035920667375215
+    },
+    "attn.k_proj": {
+      "operators": 24,
+      "power_better_full_rank_log_rmse_count": 24,
+      "power_better_rank_tail_forecast_count": 24,
+      "median_power_exponent": 0.7626361464689695,
+      "median_power_log_rmse": 0.1273669880493371,
+      "median_power_log_r2": 0.9624889386704168,
+      "median_exponential_decay": 0.06710392428900858,
+      "median_exponential_log_rmse": 0.2050580347972887,
+      "median_head_1_to_8_power_exponent": 0.6876689478915863,
+      "median_tail_9_to_32_power_exponent": 0.992654840802037,
+      "median_power_17_to_32_forecast_log_rmse": 0.2301934343483327,
+      "median_exponential_17_to_32_forecast_log_rmse": 0.6661353191298747
+    },
+    "attn.o_proj": {
+      "operators": 24,
+      "power_better_full_rank_log_rmse_count": 24,
+      "power_better_rank_tail_forecast_count": 24,
+      "median_power_exponent": 0.7844613432272265,
+      "median_power_log_rmse": 0.11001578180254028,
+      "median_power_log_r2": 0.9710424891248847,
+      "median_exponential_decay": 0.06380143616225498,
+      "median_exponential_log_rmse": 0.3190752444884599,
+      "median_head_1_to_8_power_exponent": 0.9963574659960928,
+      "median_tail_9_to_32_power_exponent": 0.7949383651543453,
+      "median_power_17_to_32_forecast_log_rmse": 0.10456639073100887,
+      "median_exponential_17_to_32_forecast_log_rmse": 1.0535745040422455
+    },
+    "attn.q_proj": {
+      "operators": 24,
+      "power_better_full_rank_log_rmse_count": 23,
+      "power_better_rank_tail_forecast_count": 22,
+      "median_power_exponent": 0.7687073821115762,
+      "median_power_log_rmse": 0.14138124339190117,
+      "median_power_log_r2": 0.9509832820766768,
+      "median_exponential_decay": 0.0667176164912818,
+      "median_exponential_log_rmse": 0.21916887685741882,
+      "median_head_1_to_8_power_exponent": 0.7542305530477197,
+      "median_tail_9_to_32_power_exponent": 1.0095014136135938,
+      "median_power_17_to_32_forecast_log_rmse": 0.2222240109415627,
+      "median_exponential_17_to_32_forecast_log_rmse": 0.6403512437038366
+    },
+    "attn.v_proj": {
+      "operators": 24,
+      "power_better_full_rank_log_rmse_count": 24,
+      "power_better_rank_tail_forecast_count": 24,
+      "median_power_exponent": 0.9488983791934944,
+      "median_power_log_rmse": 0.15738942684441076,
+      "median_power_log_r2": 0.960541840997835,
+      "median_exponential_decay": 0.0827996256283707,
+      "median_exponential_log_rmse": 0.26522705382986994,
+      "median_head_1_to_8_power_exponent": 0.9302709956226396,
+      "median_tail_9_to_32_power_exponent": 1.1824540789098394,
+      "median_power_17_to_32_forecast_log_rmse": 0.23983190201526405,
+      "median_exponential_17_to_32_forecast_log_rmse": 0.7990368539130102
+    },
+    "mlp.experts.w1": {
+      "operators": 761,
+      "power_better_full_rank_log_rmse_count": 761,
+      "power_better_rank_tail_forecast_count": 761,
+      "median_power_exponent": 0.7215822384919383,
+      "median_power_log_rmse": 0.13550254576879203,
+      "median_power_log_r2": 0.9512681564634172,
+      "median_exponential_decay": 0.058576183752162614,
+      "median_exponential_log_rmse": 0.2978408909116443,
+      "median_head_1_to_8_power_exponent": 0.9088771093005306,
+      "median_tail_9_to_32_power_exponent": 0.724883641923424,
+      "median_power_17_to_32_forecast_log_rmse": 0.12096876696278226,
+      "median_exponential_17_to_32_forecast_log_rmse": 0.917524979607531
+    },
+    "mlp.experts.w2": {
+      "operators": 768,
+      "power_better_full_rank_log_rmse_count": 768,
+      "power_better_rank_tail_forecast_count": 768,
+      "median_power_exponent": 0.7372165741830604,
+      "median_power_log_rmse": 0.12239571792251785,
+      "median_power_log_r2": 0.9669916184867864,
+      "median_exponential_decay": 0.05811005168663749,
+      "median_exponential_log_rmse": 0.34603864631534165,
+      "median_head_1_to_8_power_exponent": 1.0423649703757905,
+      "median_tail_9_to_32_power_exponent": 0.6048542891679655,
+      "median_power_17_to_32_forecast_log_rmse": 0.20357978565956422,
+      "median_exponential_17_to_32_forecast_log_rmse": 1.1581261151865696
+    },
+    "mlp.experts.w3": {
+      "operators": 761,
+      "power_better_full_rank_log_rmse_count": 760,
+      "power_better_rank_tail_forecast_count": 760,
+      "median_power_exponent": 0.7611869586376386,
+      "median_power_log_rmse": 0.13306874516268083,
+      "median_power_log_r2": 0.9593775344723201,
+      "median_exponential_decay": 0.06215189721153497,
+      "median_exponential_log_rmse": 0.3060931767353172,
+      "median_head_1_to_8_power_exponent": 0.9447979297842279,
+      "median_tail_9_to_32_power_exponent": 0.7673859338445088,
+      "median_power_17_to_32_forecast_log_rmse": 0.12169176283287676,
+      "median_exponential_17_to_32_forecast_log_rmse": 0.9767318622843284
+    }
+  },
+  "literal_tokenizations": [
+    {
+      "text": "Jesus",
+      "ids": [
+        68394
+      ],
+      "vocabulary_pieces": [
+        "Jesus"
+      ],
+      "decoded_individual_pieces": [
+        "Jesus"
+      ]
+    },
+    {
+      "text": " Jesus",
+      "ids": [
+        10537
+      ],
+      "vocabulary_pieces": [
+        "\u0120Jesus"
+      ],
+      "decoded_individual_pieces": [
+        " Jesus"
+      ]
+    },
+    {
+      "text": "\nJesus",
+      "ids": [
+        198,
+        68394
+      ],
+      "vocabulary_pieces": [
+        "\u010a",
+        "Jesus"
+      ],
+      "decoded_individual_pieces": [
+        "\n",
+        "Jesus"
+      ]
+    },
+    {
+      "text": "JESUS",
+      "ids": [
+        41,
+        1759,
+        3042
+      ],
+      "vocabulary_pieces": [
+        "J",
+        "ES",
+        "US"
+      ],
+      "decoded_individual_pieces": [
+        "J",
+        "ES",
+        "US"
+      ]
+    },
+    {
+      "text": "jesus",
+      "ids": [
+        7590,
+        385
+      ],
+      "vocabulary_pieces": [
+        "jes",
+        "us"
+      ],
+      "decoded_individual_pieces": [
+        "jes",
+        "us"
+      ]
+    },
+    {
+      "text": "Jesus Christ",
+      "ids": [
+        68394,
+        4380
+      ],
+      "vocabulary_pieces": [
+        "Jesus",
+        "\u0120Christ"
+      ],
+      "decoded_individual_pieces": [
+        "Jesus",
+        " Christ"
+      ]
+    },
+    {
+      "text": " Lord Jesus Christ",
+      "ids": [
+        13434,
+        10537,
+        4380
+      ],
+      "vocabulary_pieces": [
+        "\u0120Lord",
+        "\u0120Jesus",
+        "\u0120Christ"
+      ],
+      "decoded_individual_pieces": [
+        " Lord",
+        " Jesus",
+        " Christ"
+      ]
+    },
+    {
+      "text": "Christ",
+      "ids": [
+        25437
+      ],
+      "vocabulary_pieces": [
+        "Christ"
+      ],
+      "decoded_individual_pieces": [
+        "Christ"
+      ]
+    },
+    {
+      "text": " Christ",
+      "ids": [
+        4380
+      ],
+      "vocabulary_pieces": [
+        "\u0120Christ"
+      ],
+      "decoded_individual_pieces": [
+        " Christ"
+      ]
+    },
+    {
+      "text": "He",
+      "ids": [
+        2066
+      ],
+      "vocabulary_pieces": [
+        "He"
+      ],
+      "decoded_individual_pieces": [
+        "He"
+      ]
+    },
+    {
+      "text": " he",
+      "ids": [
+        501
+      ],
+      "vocabulary_pieces": [
+        "\u0120he"
+      ],
+      "decoded_individual_pieces": [
+        " he"
+      ]
+    }
+  ],
+  "comparison": "OLS log singular ratio = intercept - p log rank versus intercept - b rank; fixed ranks1..32; head1..8/tail9..32 separate descriptions; fit1..16 extrapolated17..32.",
+  "limits": [
+    "Spectral rank is not spatial/semantic distance, and singular amplitude is not causal judgment influence.",
+    "Thirty-two available singular values per operator are constrained by the selected LoRA rank.",
+    "Operators share factors and are not independent experimental replications.",
+    "Lower residual than one exponential fit does not establish a power-law generating process or exclude other curves.",
+    "No hidden activations, embedding-row norms, Jesus semantic direction, routing or causal influence was measured.",
+    "Neither R38 nor v6r43 tensor spectra are substituted for these original Reconstruction Seed2 data."
+  ],
+  "provider_calls": 0,
+  "model_loads": 0,
+  "optimizer_steps": 0
+}

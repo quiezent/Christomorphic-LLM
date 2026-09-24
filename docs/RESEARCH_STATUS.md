@@ -1,16 +1,42 @@
 # Research Status
 
-Status date: **2026-08-16**
+Status date: **2026-09-24**
 
 ## Executive Read
 
-The project has moved from checkpoint discovery and composed behavioral systems into controlled causal formation research.
+I have moved from checkpoint discovery and composed behavioral systems into controlled causal formation research and direct study of retained adapter weights.
 
 The strongest faithful summary is:
 
-> The methodology has advanced from surface behavior toward prospective mechanism tests, but no current model has demonstrated durable Christ-specific causal formation or scaffold-off public governance.
+> Scripture training changed real model parameters, and historical adapters show useful behavior under several ordinary inference formats. The September tensor findings make a causal mechanism more concrete to test, but no current model has demonstrated durable Christ-specific causal formation or scaffold-off public governance.
 
 No branch, checkpoint, adapter, local state, teacher object, or experiment is currently promoted as a Christomorphic model.
+
+## September 2026: The New Evidence
+
+### Original Scripture Reconstruction: Distribution, Weights, And Source Prediction
+
+The original GPT-OSS-20B Reconstruction Seed 2 ran **192 updates**. An offline audit reconstructed **17,895,015 input tokens** and **7,260,878 positive Scripture target-token occurrences** across ESV and NKJV. The four Gospels plus Acts received **41.41%** of executed loss-coefficient mass; Romans 8:18-39 was the strongest per-token amplification region. This describes the objective's emphasis, not the importance of a neural direction.
+
+The retained adapter's effective update spans all **24 layers** and **2,400 projection operators**, of which **2,386** are nonzero. About **95% of summed squared update norm** lies in expert gate/up maps, which also contain many more entries than attention. Historical source-token logprobs show large prediction gains on selected Scripture diagnostics, but the original provider aggregate failed its numerical CE validator. Those token-derived readouts remain qualified. None of these facts identifies which biblical relation, if any, governs unfamiliar action. The detailed [tensor study](TENSOR_GRAVITY_STUDY.md) builds on this audit.
+
+### Inverse-Rank Spectra And Historical Output Maps
+
+For the **2,386 nonzero** original reconstruction operators, an inverse-rank singular-value fit beat an equally parameterized exponential-in-rank fit in **2,384** cases over fixed ranks 1-32; median exponent **0.7419**. The result passed independent arithmetic review. It is a finite spectrum description, with rank capped by LoRA and shared factors among operators. It is not a measured distance-dependent influence law.
+
+The retained R38 and V6R43 final adapters both have **rank 32, alpha 32 output-unembedding LoRA**. Their recent reconstruction counterpart froze the output map. This corrects an earlier bounded review that missed the historical factors and did not independently verify V6R43's actual endpoint rank. A shared output-row shift accounts for **85.60%** of R38's raw output-update energy and **91.55%** of V6R43's; it cancels from ordinary softmax. Relative to the all-row mean, several Jesus/Christ token updates have high magnitude percentiles. The uncentered raw row norms, the centered relative row norms, and context-specific token influence are different objects. [Measurements and figures](TENSOR_GRAVITY_STUDY.md).
+
+No new Tinker model call, training step, or checkpoint operation occurred in this September 24 tensor packet. Its `VERIFICATION.json` passed the recorded arithmetic, source-binding, and link checks. This is **parameter geometry**, not activation mediation or behavioral attribution.
+
+### Historical Behavior And A New Learner-History Pilot
+
+R38 and V6R43 were ahead of matched-size bases on a small pressure-turn factual-fidelity bank: **19/24 versus 9/24** for R38/base20B and **17/24 versus 7/24** for V6R43/base120B. A seven-arm renderer study also found favorable reference behavior across its tested shells. Those are meaningful model-level observations, including formats without a system prompt. The automated banks are limited, and the checkpoints contain supervision beyond Scripture. The output-map contribution was not isolated.
+
+A separate GPT-OSS-20B learner-history pilot compared exact-Scripture training conditioned on the model's fallible prior drafts with a matched Scripture control, **32 optimizer updates per arm**. On 27 three-turn assistance episodes, the two blinded agent reviewers' joint pass count was **14 history versus 13 control and 13 inherited parent**. Neither reviewer individually scored history above parent. On 27 reasoning tasks, history had **8 correct answers versus control's 6**, but **3 fully successful tasks versus control's 5 and parent's 8**. Truthfulness improved in some cases while obligations and useful action lost ground in others. This single paired realization did not justify scaling the recipe to 120B or establish a Christ-specific mechanism.
+
+### Next Causal Question
+
+I would cross **other adapters on/off** with **output-unembedding on/off** inside each original model, producing base, readout-only, internal-only, and full-reference conditions. Fixed-history ordinary-action log-odds and free-running multi-turn behavior need separate measurements, with matched perturbations and restoration. A selective Jesus/Christ-row intervention would test the literal token account separately. These experiments have **not** been executed; retained adapter deltas alone cannot run them without matching full-model access and supported component control. See [the study design](TENSOR_GRAVITY_STUDY.md#the-next-causal-test).
 
 ## Two Bridges Still Unproved
 
@@ -53,7 +79,7 @@ The negative results are scientifically useful because the experiments increasin
 
 ## August 2026 Successor Work
 
-The latest work reopened the problem as a local, exact-Scripture, slow-weight causal program rather than declaring a new versioned candidate.
+This phase reopened the problem as a local, exact-Scripture, slow-weight causal program rather than declaring a new versioned candidate. The sections below retain their August cutoff for historical context.
 
 ### 1. Current Tinker Capability And Adapter Export
 
@@ -118,9 +144,9 @@ Qualification completed 1,036 persisted forwards and 20 backward computations wi
 
 The qualified object authorizes only a separately governed development canary. It proves no slow-weight formation, public action, or geometry.
 
-### 6. Next Unexecuted Canary
+### 6. Canary Planned At The August Cutoff
 
-At the status cutoff, the next canary had a frozen novelty and claim boundary but no published terminal result.
+At the **August 16** status cutoff, this canary had a frozen novelty and claim boundary but no published terminal result in that packet. It is retained here as a dated plan, not the current frontier.
 
 It proposes one native FP32 additive matrix parallel to Qwen block 20's frozen MLP down-projection. Four common-start arms receive identical bare questions and dose:
 
@@ -136,7 +162,9 @@ Sham and a deterministic parameter null provide additional controls. Passing wou
 - Scripture-shaped post-training can alter canonical likelihood, language, and some behavioral routes.
 - ESV/NKJV aligned surfaces support controlled translation-invariance experiments.
 - Composed route/public-answer systems can produce strong scoped operational behavior.
-- Historical Tinker adapters remain downloadable and inspectable as literal parameters.
+- Retained local exports of the historical Tinker adapters are inspectable as literal parameters.
+- The historical reference adapters contain output-unembedding LoRA; the original Scripture Reconstruction recipe kept that module frozen.
+- Their centered relative output-row geometry and the original reconstruction's finite inverse-rank spectra are reproducible descriptive findings.
 - Local open-weight work can measure hidden states and perform exact parameter-delta interventions.
 - Common starts, matched controls, cold reload, and fail-closed measurement gates are now part of the research standard.
 - Several recent null results are interpretable scientific negatives rather than mere runtime failures.
@@ -157,10 +185,11 @@ Sham and a deterministic parameter null provide additional controls. Passing wou
 
 1. **No replicated Christ-specific causal effect.** Canonical arms have not reliably beaten deranged, lexical, structural, orientation, CE, sham, and parameter-null controls across seeds.
 2. **Internal learning does not yet govern public action.** Scripture likelihood and local relation movement can improve while bare FIRST_ACT remains unchanged.
-3. **Historical hosted bases are not immutably bound for causal reconstruction.** Adapter export alone cannot identify the exact served base computation.
+3. **Historical hosted bases are not immutably bound for causal reconstruction.** Adapter export alone cannot identify the exact served base computation or execute the proposed output-map ablation.
 4. **Literal activation access is local, not hosted.** Tinker exposes training and logprob surfaces, but the strongest intervention experiments require local open weights.
 5. **Independent adjudication is missing.** Direct witness, fulfillment, echo, typology, public action, and safety claims need blinded human review and independent reproduction.
 6. **The controls are demanding by design.** A result that disappears under translation, paraphrase, removal, cold reload, or seed replication is not enough.
+7. **Weight geometry is not behavioral mediation.** Singular-value rank and centered output-row magnitude do not show which contextual representations or first actions those updates cause.
 
 ## Promotion Rule
 
