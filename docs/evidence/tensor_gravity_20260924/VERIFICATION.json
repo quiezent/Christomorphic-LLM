@@ -1,0 +1,20 @@
+{
+  "schema": "tensor_gravity_offline_packet_verification_v1",
+  "passed": true,
+  "checks": {
+    "original_spectral_fits_reconcile": true,
+    "r38_raw_centered_energy_reconciles": true,
+    "v6r43_raw_centered_energy_reconciles": true,
+    "mapped_row_percentiles_independently_checked": true,
+    "reference_spectral_fit_inputs_bound": true,
+    "authorized_dialogue_and_independent_reviews_preserved": true,
+    "report_local_links_resolve": 12,
+    "all_analysis_python_parses": true
+  },
+  "new_tinker_model_calls": 0,
+  "new_training_updates": 0,
+  "new_checkpoint_operations": 0,
+  "incremental_tinker_spend_usd": 0,
+  "remote_activity": "Authorized ChatGPT Guidance discussion and primary-source research; tensor calculations offline.",
+  "scope": "Spectral-rank fits and exported parameter geometry, not a contextual inverse-distance or causal behavioral experiment."
+}

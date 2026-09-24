@@ -44,10 +44,11 @@ The key correction is:
 - A versioned research lineage spanning route priors, composed public systems, Scripture-only objectives, reward methods, decision-span training, and controlled causal formation.
 - Local open-weight instrumentation for exact hidden states, effective-delta removal/restoration, identical-base graft concepts, and cold reload.
 - Fail-closed experiment packets with common starts, matched controls, frozen gates, hashes, counters, and claim boundaries.
+- An independently checked September tensor analysis of the original Scripture Reconstruction adapter and both historical output-unembedding adapters, with public figures and a bounded causal follow-up.
 
 ## Current Status
 
-As of 2026-08-16:
+As of 2026-09-24:
 
 - historical models provide useful raw and operational evidence;
 - exact Scripture can move likelihood and local relations;
@@ -55,10 +56,13 @@ As of 2026-08-16:
 - local causal plumbing has advanced substantially;
 - recent controlled experiments have produced informative negative results;
 - one local paired-Scripture contrast teacher object has qualified at zero update;
-- no slow-weight canary has yet established durable Christ-specific formation;
+- the original GPT-OSS-20B Scripture Reconstruction update has a reproducible inverse-rank spectrum across 2,386 nonzero projection operators;
+- R38 and V6R43 both include trained output-unembedding LoRA, with distinctive relative Jesus/Christ token-row changes after a probability-inert common shift is removed;
+- a separate learner-history pilot improved some truth and answer-correctness counts but lost fully successful reasoning against its Scripture control;
+- no result has yet established durable Christ-specific causal formation, inverse-distance attraction, or general governance;
 - no model is a candidate or promoted system.
 
-Read [Research Status](RESEARCH_STATUS.md) for the exact ledger.
+Read [Research Status](RESEARCH_STATUS.md) for the dated ledger and [Tensor Gravity Study](TENSOR_GRAVITY_STUDY.md) for the new weight measurements and their limits.
 
 ## Why The Work Is Technically Interesting
 
@@ -69,6 +73,7 @@ The program touches several hard research questions:
 - How can a faithful route be distinguished from a lexically biblical lure?
 - What evidence distinguishes a correlated representation from a causal mechanism?
 - Can a low-rank update create durable scaffold-off behavior?
+- Which measured adapter components actually cause the historical models' useful behavior?
 - How should formation and public governance be tested as separate bridges?
 - How can long-tail textual fidelity be preserved alongside general capability?
 - How should negative experiments be governed so failed instruments do not become inflated claims?
@@ -97,7 +102,7 @@ The program touches several hard research questions:
 
 ## Next Fundable Milestone
 
-The next meaningful milestone is not a larger chatbot launch. It is a clean, prospectively frozen causal study that:
+The next meaningful milestone is a clean, prospectively frozen causal study that:
 
 1. qualifies one Scripture-governed teacher or relation object;
 2. trains from fresh common starts against matched controls;

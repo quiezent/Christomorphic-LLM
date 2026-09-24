@@ -4,9 +4,15 @@ This roadmap is evidence-gated. Dates and version numbers do not create progress
 
 ## Current Position
 
-The historical checkpoint and composed-system phases are complete as discovery evidence. The current frontier is the **formation bridge**: proving that a Scripture-governed objective causes a durable, scaffold-off, Christ-specific change that beats matched controls.
+The historical checkpoint and composed-system phases are complete as discovery evidence. The current frontier is the **formation bridge**: proving that a Scripture-governed objective causes a durable, scaffold-off, Christ-specific change that beats matched controls. The [September tensor study](TENSOR_GRAVITY_STUDY.md) also creates a concrete component question about the historical output-unembedding adapters.
 
-The paired-Scripture contrast teacher has qualified at zero update. Its proposed slow-weight development canary had not produced a terminal result at the 2026-08-16 status cutoff.
+The paired-Scripture contrast teacher had qualified at zero update by the 2026-08-16 status cutoff. A separate September learner-history pilot produced mixed behavior and did not justify 120B scaling. The latest spectral and output-map analyses were offline and took no training step.
+
+## Historical Checkpoint Component Test
+
+I would first obtain supported access to each matching full base and to inference-time adapter component control. Within R38 and within V6R43 separately, I would cross output-unembedding on/off with the remaining adapters on/off. The four conditions are base, readout only, internal adapters only, and full reference. Fixed-history ordinary-action log-odds, then free-running multi-turn action, would measure readout contributions and interactions with internal changes. Matched perturbations, restoration, and selective name-row interventions would help distinguish a specific effect from generic disruption of co-adaptation.
+
+This test is **proposed**, not completed. It cannot identify which historical training objective caused a component, and it cannot be run from adapter exports alone.
 
 ## Stage 1: Clean Development Canary
 

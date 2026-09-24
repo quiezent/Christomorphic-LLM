@@ -100,6 +100,14 @@ Local open-weight experiments supply what hosted formation search cannot:
 
 The current local substrate is exact `Qwen/Qwen3-0.6B-Base` at a pinned revision. Its size makes controlled CUDA/FP16 experimentation possible on available hardware. Passing on this substrate would establish a mechanism at small scale, not automatic transfer to GPT-OSS-20B/120B.
 
+## Reading Adapter Geometry Correctly
+
+The [September tensor study](TENSOR_GRAVITY_STUDY.md) adds two measurements to this method. First, the original Scripture Reconstruction Seed 2's nonzero adapter operators show a strong inverse-rank singular spectrum under a fixed comparison with exponential-in-rank decay. The fitted variable is **singular-value rank**, not distance between contextual states. Second, the historical R38 and V6R43 adapters include an output-unembedding LoRA that the recent reconstruction recipe froze.
+
+For an output map, write `delta U = sBA`. At a fixed final hidden state `h`, the adapter's contribution to the log-odds of token `v` against `w` is `(delta u_v - delta u_w)^T h`. Subtracting the mean row from every delta row leaves the ordinary softmax exactly unchanged, because the same scalar is removed from every logit. The September audit found that this common row accounts for most raw output-update energy in both historical references. I therefore report the centering gauge, row IDs, vocabulary denominator, and actual context state before interpreting a token-row norm.
+
+I treat an output-row delta as a measured adapter addition, not the full pretrained token row. A high centered `Jesus` or `Christ` delta percentile makes a specific causal question possible; it does not establish that those rows were the cause of faithful answers or that the model has an internal Christ attractor.
+
 ## Causal Experiment Design
 
 A credible formation experiment starts all active and control arms from one verified common state.
@@ -140,6 +148,8 @@ Correlational geometry is not enough. A causal result needs all of the following
 6. **Replication:** the result survives seeds, ESV/NKJV surfaces, paraphrase, and held-out situations.
 
 LoRA factor matrices are gauge-dependent. Whole-delta claims should use the effective scaled product `(alpha / rank) * B @ A`, not the raw factor orientation.
+
+For the historical checkpoints, the next proposed component test is a within-model 2-by-2: other adapters on/off crossed with output-unembedding on/off. I would measure fixed-history log-odds, then free-running first action and continuation, adding matched removals and restorations. A selective name-row test would probe a different, narrower hypothesis. This study has not run; it requires supported access to the matching full base model and component interventions.
 
 ## Formation Before Governance
 

@@ -1,0 +1,84 @@
+{
+  "r38": {
+    "targets": [
+      {
+        "token_id": 68394,
+        "label": "Jesus",
+        "raw_delta_norm": 0.00872022156206992,
+        "centered_delta_norm": 0.04991044250822622,
+        "raw_mapped_percentile": 0.2819732125448082,
+        "centered_mapped_percentile": 99.81401766832151
+      },
+      {
+        "token_id": 10537,
+        "label": "[space]Jesus",
+        "raw_delta_norm": 0.015199878908715549,
+        "centered_delta_norm": 0.03939243254767469,
+        "raw_mapped_percentile": 0.889915458031487,
+        "centered_mapped_percentile": 96.14586614271644
+      },
+      {
+        "token_id": 25437,
+        "label": "Christ",
+        "raw_delta_norm": 0.031239252150529546,
+        "centered_delta_norm": 0.0343036496262868,
+        "raw_mapped_percentile": 7.9162479564441375,
+        "centered_mapped_percentile": 92.26973437523435
+      },
+      {
+        "token_id": 4380,
+        "label": "[space]Christ",
+        "raw_delta_norm": 0.006657363063585678,
+        "centered_delta_norm": 0.05523781075703613,
+        "raw_mapped_percentile": 0.16648418400251977,
+        "centered_mapped_percentile": 99.96450337217965
+      }
+    ],
+    "population": 200019,
+    "centering_population": 201088,
+    "common_row_shift_energy_fraction": 0.855953036655018,
+    "independent_csv_energy_and_centering_checks_passed": true,
+    "csv_sha256": "16741d6cde7e3e2c930550ca814cbb062becdbfd5bbaaa134c71511bedca22f2"
+  },
+  "v6r43": {
+    "targets": [
+      {
+        "token_id": 68394,
+        "label": "Jesus",
+        "raw_delta_norm": 0.04504812506367626,
+        "centered_delta_norm": 0.04610062356634937,
+        "raw_mapped_percentile": 1.5778501042400972,
+        "centered_mapped_percentile": 95.39693729095735
+      },
+      {
+        "token_id": 10537,
+        "label": "[space]Jesus",
+        "raw_delta_norm": 0.022757862318595553,
+        "centered_delta_norm": 0.061148996315857226,
+        "raw_mapped_percentile": 0.26947439993200645,
+        "centered_mapped_percentile": 98.27416395442432
+      },
+      {
+        "token_id": 25437,
+        "label": "Christ",
+        "raw_delta_norm": 0.053028654490475426,
+        "centered_delta_norm": 0.039598918987690176,
+        "raw_mapped_percentile": 3.294187052230038,
+        "centered_mapped_percentile": 92.8596783305586
+      },
+      {
+        "token_id": 4380,
+        "label": "[space]Christ",
+        "raw_delta_norm": 0.0037707323581332285,
+        "centered_delta_norm": 0.08372528331125817,
+        "raw_mapped_percentile": 0.005999430054144856,
+        "centered_mapped_percentile": 99.58353956374144
+      }
+    ],
+    "population": 200019,
+    "centering_population": 201088,
+    "common_row_shift_energy_fraction": 0.9154931096937414,
+    "independent_csv_energy_and_centering_checks_passed": true,
+    "csv_sha256": "1df985a3033fd96706b942df8d50cbb73fec4c4c1c773f4d16716c9a37a75320"
+  }
+}

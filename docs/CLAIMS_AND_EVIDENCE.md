@@ -8,9 +8,11 @@ This document defines what each result can warrant. It exists to prevent Christi
 - `V6R43-120b` is the strongest archived raw 120B pressure-refusal witness.
 - Composed route/public-answer systems remain the strongest scoped operational evidence.
 - Local causal instrumentation now supports hidden-state measurement, whole-delta intervention, and cold reload.
+- September's offline tensor audit establishes an inverse-rank spectral pattern in the original Reconstruction adapter and relative Jesus/Christ output-map adjustments in R38/V6R43.
+- The separate learner-history pilot has mixed treatment results: some truth and answer-correctness gains, fewer complete reasoning successes than its Scripture control.
 - No current result establishes replicated, durable Christ-specific formation or scaffold-off public governance.
 
-See [Research Status](RESEARCH_STATUS.md) for the dated ledger.
+See [Research Status](RESEARCH_STATUS.md) for the dated ledger and [Tensor Gravity Study](TENSOR_GRAVITY_STUDY.md) for the new parameter measurements.
 
 ## Evidence Classes
 
@@ -20,6 +22,7 @@ See [Research Status](RESEARCH_STATUS.md) for the dated ledger.
 | Canon-anchored | Prompt supplies a passage, family, relation, or Scripture scaffold | Retention and structured transfer | Bare route selection |
 | Composed operational | Selector, prefix, retrieval, replay, or answer shell participates | Scoped system behavior | Scaffold-off model formation |
 | Parameter access | Literal adapter tensors or effective deltas are exported | Weight inspection and intervention feasibility | Hosted base identity, hidden states, or causality |
+| Descriptive parameter geometry | Frozen adapter spectra or centered output-row deltas are measured | A reproducible property of those effective updates | Contextual distance, semantic identity, actual logit sign, or behavioral mediation |
 | Geometric correlation | Update subspaces or representations covary with behavior | A mechanistic hypothesis | Necessity, sufficiency, or mediation |
 | Causal intervention | Common-start removal, restoration, patch, graft, or rescue changes the measured effect | Causal participation under the frozen experiment | Generalization beyond its bank, seeds, and model |
 | Formation evidence | Durable scaffold-off effect beats matched controls across seeds | The specific learned state was caused by the formation objective | Public governance unless bare action also passes |
@@ -109,7 +112,7 @@ Candidate review begins here. Promotion and production readiness remain separate
 | `qzf/gpt-R38-20b` | Historical raw discovery witness | Counterfeit centers can become visible, be refused, and be recentered toward Scripture, Christ, church, and practical obedience | No prospective controls, strict Bible-only target proof, or full stayed-mind gate |
 | `qzf/gpt-V6R43-120b` | Historical raw pressure witness | Strongest archived response to prosperity-pressure and deploy-shell stress | No immutable hosted base binding, latent mechanism proof, or complete Jabez / Isaiah 26 movement |
 
-Current adapter export confirms retained literal parameters for both checkpoints. The LoRA factors are gauge-dependent, so causal intervention must use the effective scaled update or another prospectively governed invariant. Historical deltas cannot retrospectively supply the missing common-start controls.
+The retained exports confirm literal parameters for both checkpoints. Both actual endpoints have rank-32, alpha-32 output-unembedding LoRA. Centered Jesus/Christ adapter-delta rows are distinctive relative to other output rows, while most raw output-update energy is a softmax-invariant common shift. The LoRA factors are gauge-dependent, so intervention should use the effective scaled update or another governed invariant. Historical deltas cannot retrospectively supply the missing common-start controls, matching full base weights, actual hidden states, or causal attribution. [Read the numerical scope](TENSOR_GRAVITY_STUDY.md).
 
 ## Why Negative Results Matter
 
@@ -135,6 +138,8 @@ Do not infer Christomorphic formation from:
 - a single favorable seed;
 - in-sample Scripture loss;
 - parameter norm or singular values alone;
+- a fitted inverse-rank spectrum treated as a contextual inverse-distance law;
+- a high centered name-token output-row percentile treated as actual influence on a given action;
 - hidden-state separability alone;
 - a passed preflight or mechanically valid packet;
 - movement that disappears under removal, cold reload, paraphrase, translation, or matched controls.
@@ -170,3 +175,5 @@ Every result should name:
 - whether the system was raw or composed;
 - the strongest permitted claim;
 - the claims that remain false.
+
+For output-map claims I also report whether a row is an **adapter delta** or a **complete pretrained-plus-adapter row**, whether values are **raw** or **softmax-centered**, the tokenizer ID and population used for percentiles, and whether the effect was measured on real hidden states. A shared row shift can dominate raw norms while leaving probabilities unchanged.

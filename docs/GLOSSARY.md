@@ -48,6 +48,11 @@ This glossary translates project terms for readers coming from different backgro
 | Governance bridge | Proof that the formed state governs bare FIRST_ACT, continuation, action, safety, and retention |
 | Common start | Verified identical initial model state shared by all experimental and control arms |
 | Effective LoRA delta | The scaled product `(alpha / rank) * B @ A`; unlike raw factors, it is invariant to equivalent LoRA factorization changes |
+| Output unembedding | The map from a final hidden state to vocabulary logits; R38 and V6R43 contain LoRA updates to this map |
+| Common output-row shift | The same update vector added to every output row; at a fixed hidden state its logit shift cancels exactly from ordinary softmax |
+| Centered output-row delta | An adapter row update after subtracting the mean across all output rows; its norm describes relative readout change, not actual context-specific influence |
+| Inverse-rank spectrum | A descriptive fit of singular-value size against its rank; rank is not contextual distance or a measured force |
+| Tensor gravity | A proposed Christ-centered influence mechanism requiring independently defined distance, influence, and causal behavioral tests; not an established property of these adapters |
 | Necessity | Removing the learned component removes the measured gain |
 | Sufficiency | Restoring, patching, or grafting the component creates or recovers the measured gain |
 | Cold reload | Serialize the state, start a fresh process, reload it, and reproduce the result |
