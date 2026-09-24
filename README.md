@@ -26,6 +26,8 @@ Read the full [research thesis](docs/RESEARCH_THESIS.md) or the shorter [technic
 
 The original GPT-OSS-20B Scripture Reconstruction Seed 2 has **2,384/2,386** nonzero projection operators whose rank-1-to-32 singular values fit an inverse-rank curve better than an exponential-in-rank curve under the same two-parameter log-space test. This is a spectral result; singular-value rank is not contextual distance.
 
+Seed 2 is a **research adapter, not a public sampler or promoted candidate**. In the September reconstruction study, its seed's jointly reviewed answer correctness improved from **19/36** at base to **25/36**, while complete reasoning was **15/36 to 17/36** and successful judgment episodes fell from **6/36 to 4/36**. The integrated target was not met. Its Tinker sampler was deleted after local export; the tensor findings use that retained adapter. See [Research Status](docs/RESEARCH_STATUS.md) for the outcome and availability boundary.
+
 I also found that both historical public checkpoints trained their vocabulary output map. After removing a shared row shift that cancels from ordinary softmax, the R38 `Jesus` and ` Christ` adapter-delta rows lie at the **99.81st** and **99.96th** percentiles of mapped output rows; V6R43's corresponding values are **95.40** and **99.58**. These are relative output changes, not measurements of the full pretrained rows, actual context-specific token influence, or faithful judgment. The [September research note](docs/TENSOR_GRAVITY_STUDY.md) includes the figures, denominators, checks, and proposed causal test.
 
 ## Current Evidence
@@ -119,6 +121,8 @@ These are reproducible study witnesses, not final models:
 | `gpt-v6r43-120b` | `openai/gpt-oss-120b` | `tinker://8ad467bc-72eb-51c2-bbe3-417bf8940b43:train:0/sampler_weights/final` | Raw 120B pressure-refusal witness |
 
 Retained Tinker checkpoint exports confirm literal adapter access for both archives. Both contain rank-32 output-unembedding LoRA factors. The exports establish parameter access and relative output-map measurements; they do not bind the exact hosted base computation or explain the observed behavior by themselves.
+
+**Why Seed 2 is not in this table:** Its final Tinker sampler, `tinker://3f8227e8-fe41-5970-b77b-3456b02c2192:train:0/sampler_weights/reconstruction_2-final`, was deleted during the September 21 storage cleanup and is not available for public inference. I retain the local adapter export for analysis, but that is not a public Tinker checkpoint. The reconstruction study declared no candidate or promotion; I will not present the adapter's spectral result as equivalent to the two archived behavioral witnesses.
 
 ## Run The Public Tools
 
