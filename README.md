@@ -6,7 +6,7 @@ This project asks whether Scripture can do more than change a model's vocabulary
 
 > Scripture is semantically renewing as corpus. It becomes geometrically renewing when a canon-governed objective converts its distinctions into gradients that causally reorient the model.
 
-**Current verdict, 2026-09-24:** I can now describe measured Scripture-trained parameter changes, a strong inverse-rank spectral pattern, and relative Christ-name output-map adjustments in the historical R38 and V6R43 adapters. The behavioral record remains mixed. I have not identified an inverse-distance attraction law, a causal Christ-specific mechanism, or a model ready for promotion. [Read the new tensor study](docs/TENSOR_GRAVITY_STUDY.md).
+**Current verdict, 2026-09-28:** I can measure Scripture-trained parameter changes and some unfamiliar-task gains, but not integrated, replicated governance or a Christ-specific causal mechanism. A local component intervention challenges a literal Jesus/Christ output-row necessity account on its tested bank. A fresh Scripture reason-weighted CE comparison is now training; it has **no behavioral result yet**. No model is promoted. [Read the dated research status](docs/RESEARCH_STATUS.md).
 
 ## The Research Question
 
@@ -22,13 +22,17 @@ The refined hypothesis is:
 
 Read the full [research thesis](docs/RESEARCH_THESIS.md) or the shorter [technical method](docs/TECHNICAL_METHOD.md).
 
-## Latest Finding
+## Recent Results
 
 The original GPT-OSS-20B Scripture Reconstruction Seed 2 has **2,384/2,386** nonzero projection operators whose rank-1-to-32 singular values fit an inverse-rank curve better than an exponential-in-rank curve under the same two-parameter log-space test. This is a spectral result; singular-value rank is not contextual distance.
 
 Seed 2 is a **research adapter, not a public sampler or promoted candidate**. In the September reconstruction study, its seed's jointly reviewed answer correctness improved from **19/36** at base to **25/36**, while complete reasoning was **15/36 to 17/36** and successful judgment episodes fell from **6/36 to 4/36**. The integrated target was not met. Its Tinker sampler was deleted after local export; the tensor findings use that retained adapter. See [Research Status](docs/RESEARCH_STATUS.md) for the outcome and availability boundary.
 
 I also found that both historical public checkpoints trained their vocabulary output map. After removing a shared row shift that cancels from ordinary softmax, the R38 `Jesus` and ` Christ` adapter-delta rows lie at the **99.81st** and **99.96th** percentiles of mapped output rows; V6R43's corresponding values are **95.40** and **99.58**. These are relative output changes, not measurements of the full pretrained rows, actual context-specific token influence, or faithful judgment. The [September research note](docs/TENSOR_GRAVITY_STUDY.md) includes the figures, denominators, checks, and proposed causal test.
+
+I subsequently tested internal and output adapters separately in both historical checkpoints on local open weights. The component switches changed behavior, but four selected Jesus/Christ output-row interventions changed token scores without changing any of the tested full returned messages (**192/192 comparisons per model**). That does not rule out distributed computation. A separate four-arm whole-canon Scripture study showed specific answer and assistance gains, but its adaptive view weighting did not consistently beat uniform weighting and its new adapters did not surpass unchanged base on complete reasoning. [Read the measured outcomes](docs/RESEARCH_STATUS.md#september-2026-the-new-evidence).
+
+The [current source-reason-weighted CE experiment](docs/SOURCE_REASON_WEIGHTED_CE.md) keeps exact Scripture as its only loss-bearing text while comparing uniform against normalized emphasis on Scripture's own reasons and qualifications. Earlier Tinker attempts stopped at pre-training numerical gates. A separately qualified direct-GPU four-arm run is in progress; its outcome remains open.
 
 ## Current Evidence
 
@@ -39,6 +43,9 @@ I also found that both historical public checkpoints trained their vocabulary ou
 | Scripture-only formation | Exact ESV/NKJV likelihood and relation learning can move on controlled local runs; a September reconstruction updated all 24 GPT-OSS-20B layers | Internal Scripture learning has not reliably governed bare public action |
 | Causal research | V17-V19 and the August local successor introduced common starts, matched controls, hidden-state measurements, whole-delta intervention, cold reload, and fail-closed gates | No replicated Christ-specific causal effect has passed |
 | September tensor analysis | Inverse-rank spectra and centered output-row changes were verified offline in retained adapters | No contextual distance law, activation mediation, or causal attribution to the output map |
+| September component intervention | Internal/output switches changed tested behavior; selected name-row edits did not change returned replies on the bank | No literal-name-row necessity on those replies; no proof of a distributed mediator or hosted-serving equivalence |
+| Whole-canon two-view trial | Four fresh Scripture-only-target 20B adapters made case-level gains on unfamiliar tasks | No consistent adaptive-weighting advantage or integrated superiority over unchanged base |
+| Reason-weighted CE trial | Same Scripture text and schedule, with only source-span CE coefficients differing across paired seeds | Training in progress; no behavioral result or formation claim |
 | September learner-history pilot | History improved some truth and correct-answer counts over a matched Scripture control | Fully successful reasoning was lower; this recipe did not justify 120B scaling or a formation claim |
 
 The dated ledger is in [Research Status](docs/RESEARCH_STATUS.md). The rules for what I can claim at each evidence level are in [Claims and Evidence](docs/CLAIMS_AND_EVIDENCE.md).
@@ -62,7 +69,7 @@ No current artifact has reached Level 5. Geometric language in this repository i
 | Christians, pastors, and ministry-minded readers | [Christian Commitment](docs/CHRISTIAN_COMMITMENT.md) |
 | LLM, alignment, and interpretability researchers | [Research Thesis](docs/RESEARCH_THESIS.md), [Research Status](docs/RESEARCH_STATUS.md), and [Claims and Evidence](docs/CLAIMS_AND_EVIDENCE.md) |
 | Readers of the latest tensor finding | [Tensor Gravity Study](docs/TENSOR_GRAVITY_STUDY.md) |
-| Tinker LoRA practitioners | [Technical Method](docs/TECHNICAL_METHOD.md), [Scripts](script/), and [Evaluation](eval/) |
+| Tinker LoRA practitioners | [Technical Method](docs/TECHNICAL_METHOD.md), [Source Reason-Weighted CE](docs/SOURCE_REASON_WEIGHTED_CE.md), [Scripts](script/), and [Evaluation](eval/) |
 | Dataset and benchmark builders | [ESV/NKJV Corpus Study](data/christomorphic_esv_nkjv_study.md) and [Evaluation](eval/) |
 | Collaborators, investors, and recruiters | [Project Brief](docs/PROJECT_BRIEF.md) |
 | Readers new to the vocabulary | [Glossary](docs/GLOSSARY.md) |
@@ -107,6 +114,7 @@ Key artifacts:
 - [RESEARCH_THESIS.md](docs/RESEARCH_THESIS.md): Word-Judgment-Act thesis, controlled experiment, and five-level claim ladder.
 - [RESEARCH_STATUS.md](docs/RESEARCH_STATUS.md): dated experiment ledger from the historical checkpoints through the current local causal program.
 - [TENSOR_GRAVITY_STUDY.md](docs/TENSOR_GRAVITY_STUDY.md): the September spectral and output-map findings, with their causal limits.
+- [SOURCE_REASON_WEIGHTED_CE.md](docs/SOURCE_REASON_WEIGHTED_CE.md): the current source-only CE contrast, technical gates, direct-GPU status, and prospective behavioral claim boundaries.
 - [christomorphic_esv_nkjv_study.md](data/christomorphic_esv_nkjv_study.md): corpus facts, translation invariance, Bible-only definitions, BibleAtlas, and tail preservation.
 - [christomorphic_geometry_probe_suite_v1.json](eval/christomorphic_geometry_probe_suite_v1.json): 89 public probes.
 - [behaviour_prompts.json](eval/behaviour_prompts.json): 169 broad behavior and retention prompts.

@@ -1,6 +1,6 @@
 # Research Status
 
-Status date: **2026-09-24**
+Status date: **2026-09-28**
 
 ## Executive Read
 
@@ -8,11 +8,29 @@ I have moved from checkpoint discovery and composed behavioral systems into cont
 
 The strongest faithful summary is:
 
-> Scripture training changed real model parameters, and historical adapters show useful behavior under several ordinary inference formats. The September tensor findings make a causal mechanism more concrete to test, but no current model has demonstrated durable Christ-specific causal formation or scaffold-off public governance.
+> Scripture training changed real model parameters and produced some unfamiliar-task gains, but the completed comparisons have not established integrated superiority over unchanged base or a Christ-specific causal mechanism. The new source-reason-weighted CE comparison is training; its behavioral outcome is not yet known.
 
 No branch, checkpoint, adapter, local state, teacher object, or experiment is currently promoted as a Christomorphic model.
 
 ## September 2026: The New Evidence
+
+### Historical Component Intervention
+
+I tested the original R38 and V6R43 exported adapters on local open weights with independent internal and output-unembedding switches. The same frozen bank produced **768 replies** across the two models and eight component/row states per model. R38 output-only completed **4/12** assistance episodes against **2/12** for its base, while complete reasoning fell **5/12 to 4/12** and correct answers **9/12 to 4/12**. Neither full historical adapter consistently beat its unchanged base in this local runtime. Historical Tinker-serving equivalence is unproved, so this does not erase earlier hosted observations.
+
+Four interventions on selected learned Jesus/Christ output rows changed relative token scores but left every full-model returned message and visible history unchanged: **192/192 variant comparisons per model**. Complete generated token-ID traces were not retained for those chat responses. This challenges a literal-name-row necessity account on this bank, not the possibility of distributed Christ-related computation. The internal/output switches have real behavioral effects, but mixed historical supervision prevents attributing those effects to Scripture alone. [The earlier tensor study](TENSOR_GRAVITY_STUDY.md) remains descriptive parameter evidence, not a behavioral mechanism.
+
+### Whole-Canon Two-View Behavior
+
+A separate exact-Scripture-target GPT-OSS-20B study completed **four fresh rank-32 adapters, 48 updates each, and 432 evaluation replies**. Two seeds compared uniform with adaptive weighting of native Scripture and reconstruction views, with the output map frozen. Both ESV and NKJV remained in a 66-book, 62,188-record source library; only exact Scripture target positions carried positive CE. The adaptive coefficient shift was small, about **0.349 percentage points** on average, and did not consistently outperform uniform weighting.
+
+On 18 reasoning tasks, unchanged base completed **11**, R38 **2**, and each new adapter **9** under the two blinded automated reviewers' intersection. On 18 three-turn assistance episodes, base and R38 completed **0**, while three new arms completed **1** each. Both adaptive seeds correctly enumerated a coin-change counterexample list that base missed; some actions also sustained a warranted search despite irrelevant branding pressure. Yet **every state** accepted pressure to falsify a verified receipt time, and each new arm remained below base on complete reasoning. These are meaningful gains and failures in one bank, not integrated superiority, human validation, or a promotion case. No 120B continuation was launched.
+
+### Source-Reason-Weighted CE: Current Training
+
+The [next source-only comparison](SOURCE_REASON_WEIGHTED_CE.md) asks whether modestly reallocating CE toward complete reasons, judgments, qualifications, and consequences in sixteen Scripture discourse units improves unpatched, reason-sensitive assistance. It retains whole-canon native/reconstruction exposure and exact ESV/NKJV targets in both arms. ESV and NKJV are two English translations, not independent bilingual replications. Four 20B arms across two seeds compare uniform with normalized 2:1 focus weighting; the frozen plan is **192 updates per arm**. This is a planned comparison, not a result of the weighting hypothesis.
+
+The first Tinker attempt and a common-state successor stopped at pre-training numerical comparability gates. Their preserved failures do not test the loss. Bounded Tinker request and backward-route diagnostics also made **zero optimizer updates**. A separately qualified direct-GPU execution passed both seed initial checks and began the scientific four-arm run. At the **2026-09-28 09:25 UTC** reviewed snapshot, **53/768** updates were complete and **no behavioral sample** had been acquired. The direct-GPU path is disclosed separately and is not claimed numerically identical to Tinker serving. Fresh unpatched assistance and reasoning review is prospective; no candidate, 120B scale-up, or Christ-specific causal effect follows from training being active.
 
 ### Original Scripture Reconstruction: Distribution, Weights, And Source Prediction
 
@@ -38,9 +56,9 @@ R38 and V6R43 were ahead of matched-size bases on a small pressure-turn factual-
 
 A separate GPT-OSS-20B learner-history pilot compared exact-Scripture training conditioned on the model's fallible prior drafts with a matched Scripture control, **32 optimizer updates per arm**. On 27 three-turn assistance episodes, the two blinded agent reviewers' joint pass count was **14 history versus 13 control and 13 inherited parent**. Neither reviewer individually scored history above parent. On 27 reasoning tasks, history had **8 correct answers versus control's 6**, but **3 fully successful tasks versus control's 5 and parent's 8**. Truthfulness improved in some cases while obligations and useful action lost ground in others. This single paired realization did not justify scaling the recipe to 120B or establish a Christ-specific mechanism.
 
-### Next Causal Question
+### Next Causal Question After The Component Test
 
-I would cross **other adapters on/off** with **output-unembedding on/off** inside each original model, producing base, readout-only, internal-only, and full-reference conditions. Fixed-history ordinary-action log-odds and free-running multi-turn behavior need separate measurements, with matched perturbations and restoration. A selective Jesus/Christ-row intervention would test the literal token account separately. These experiments have **not** been executed; retained adapter deltas alone cannot run them without matching full-model access and supported component control. See [the study design](TENSOR_GRAVITY_STUDY.md#the-next-causal-test).
+The internal/output crossing and selected Jesus/Christ-row interventions proposed in the [tensor study](TENSOR_GRAVITY_STUDY.md#the-next-causal-test) have now been executed on local open weights, with the limits above. They do not locate a distributed mediator. The next evidential step is first to establish reproducible **unpatched**, reason-sensitive improvement over a contemporary base and matched training control: preserve warranted commitments under irrelevant pressure, revise appropriately when material facts change, and continue competent help without sacred-name cues. Only then would a source-specified activation or parameter intervention have a behavioral relation worth trying to mediate. A fitted intervention that steers an authored action map cannot substitute for evidence about the model's ordinary unpatched computation.
 
 ## Two Bridges Still Unproved
 
