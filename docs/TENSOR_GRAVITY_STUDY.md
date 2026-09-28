@@ -2,6 +2,8 @@
 
 **Research note, 24 September 2026.** I use "tensor gravity" here as a hypothesis about Christ-centered influence on judgment, not as the name of an established force in a transformer. This report is an offline analysis of retained LoRA exports and recorded evaluations. It involved no new model calls, training updates, or checkpoint changes.
 
+**Later result, 28 September:** The core internal/output crossing and selected Jesus/Christ output-row portions proposed below have since run on local open weights. The selected-row edits changed relative token scores but not the tested full returned messages; broader component switches changed behavior, often adversely. This does not complete every matched perturbation or causal mediation test proposed below. The "not run" wording in the historical proposal refers to this note's September 24 cutoff. See [the current research status](RESEARCH_STATUS.md#historical-component-intervention) for outcomes and limits.
+
 ## Why I looked
 
 My question is whether Scripture training can make the model's learned computation attend to the right relationships and act truthfully and helpfully in unfamiliar situations. A model saying "Jesus" more often would be a poor substitute for that. I examined the actual parameter changes, then asked what those changes can and cannot say about the hypothesis.

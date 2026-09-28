@@ -98,7 +98,7 @@ Local open-weight experiments supply what hosted formation search cannot:
 - identical-base graft tests;
 - cold-process reload and repeat checks.
 
-The current local substrate is exact `Qwen/Qwen3-0.6B-Base` at a pinned revision. Its size makes controlled CUDA/FP16 experimentation possible on available hardware. Passing on this substrate would establish a mechanism at small scale, not automatic transfer to GPT-OSS-20B/120B.
+The August small-model causal substrate was exact `Qwen/Qwen3-0.6B-Base` at a pinned revision. It made controlled CUDA/FP16 hidden-state and whole-delta work practical, but a small-model result cannot be assumed to transfer to GPT-OSS-20B/120B. The current source-reason-weighted CE comparison instead trains pinned GPT-OSS-20B on a separately qualified direct-GPU runtime. That larger training route does not by itself supply a hidden-state causal result or numerical identity with historical Tinker serving.
 
 ## Reading Adapter Geometry Correctly
 
@@ -149,7 +149,9 @@ Correlational geometry is not enough. A causal result needs all of the following
 
 LoRA factor matrices are gauge-dependent. Whole-delta claims should use the effective scaled product `(alpha / rank) * B @ A`, not the raw factor orientation.
 
-For the historical checkpoints, the next proposed component test is a within-model 2-by-2: other adapters on/off crossed with output-unembedding on/off. I would measure fixed-history log-odds, then free-running first action and continuation, adding matched removals and restorations. A selective name-row test would probe a different, narrower hypothesis. This study has not run; it requires supported access to the matching full base model and component interventions.
+For the historical checkpoints, the within-model internal/output 2-by-2 and selected Jesus/Christ output-row tests **have run** on local open weights. Component switches changed delivered behavior; the selected-row patches changed relative scores without changing any of the tested returned full messages. This is narrower than the necessity, sufficiency, restoration, rescue, and replication law above. Historical Tinker-serving equivalence remains unproved. See [Research Status](RESEARCH_STATUS.md#historical-component-intervention).
+
+The current [Scripture reason-weighted CE comparison](SOURCE_REASON_WEIGHTED_CE.md) first asks whether the training package improves fresh **unpatched** reason-sensitive service. It reallocates ordinary source-token CE within complete Scripture arguments while holding the text and schedule fixed. Two Tinker attempts failed pre-training numerical comparability; a separately qualified direct-GPU run is underway. Technical qualification, source likelihood, behavioral transfer, and causal mediation remain separate claims.
 
 ## Formation Before Governance
 
