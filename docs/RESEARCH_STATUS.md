@@ -1,6 +1,6 @@
 # Research Status
 
-Status date: **2026-09-28**
+Status date: **2026-09-29**
 
 ## Executive Read
 
@@ -30,7 +30,7 @@ On 18 reasoning tasks, unchanged base completed **11**, R38 **2**, and each new 
 
 The [next source-only comparison](SOURCE_REASON_WEIGHTED_CE.md) asks whether modestly reallocating CE toward complete reasons, judgments, qualifications, and consequences in sixteen Scripture discourse units improves unpatched, reason-sensitive assistance. It retains whole-canon native/reconstruction exposure and exact ESV/NKJV targets in both arms. ESV and NKJV are two English translations, not independent bilingual replications. Four 20B arms across two seeds compare uniform with normalized 2:1 focus weighting; the frozen plan is **192 updates per arm**. This is a planned comparison, not a result of the weighting hypothesis.
 
-The first Tinker attempt and a common-state successor stopped at pre-training numerical comparability gates. Their preserved failures do not test the loss. Bounded Tinker request and backward-route diagnostics also made **zero optimizer updates**. A separately qualified direct-GPU execution passed both seed initial checks and began the scientific four-arm run. At the **2026-09-28 09:25 UTC** reviewed snapshot, **53/768** updates were complete and **no behavioral sample** had been acquired. The direct-GPU path is disclosed separately and is not claimed numerically identical to Tinker serving. Fresh unpatched assistance and reasoning review is prospective; no candidate, 120B scale-up, or Christ-specific causal effect follows from training being active.
+The first Tinker attempt and a common-state successor stopped at pre-training numerical comparability gates. Their preserved failures do not test the loss. Bounded Tinker request and backward-route diagnostics also made **zero optimizer updates**. A separately qualified direct-GPU execution passed both seed initial checks and began the scientific four-arm run. On **2026-09-29**, its first arm, **seed-1 uniform control**, completed all **192** updates and passed final source, receipt, and saved-adapter verification. It processed **58,135,956 input positions** and **25,178,849 positive exact-Scripture target occurrences**. This is one verified training trajectory, not a focused-treatment result or a selection of the best model. The other three arms and the fresh six-state behavioral comparison remain pending, with **no behavioral sample** at the verification cutoff. The direct-GPU path is disclosed separately and is not claimed numerically identical to Tinker serving. No candidate, 120B scale-up, or Christ-specific causal effect follows from this milestone.
 
 ### Original Scripture Reconstruction: Distribution, Weights, And Source Prediction
 
