@@ -50,7 +50,7 @@ The key correction is:
 
 ## Current Status
 
-As of 2026-09-28:
+As of 2026-09-29:
 
 - historical models provide useful raw and operational evidence;
 - exact Scripture can move likelihood and local relations;
@@ -63,7 +63,7 @@ As of 2026-09-28:
 - a separate learner-history pilot improved some truth and answer-correctness counts but lost fully successful reasoning against its Scripture control;
 - selected Jesus/Christ output-row interventions changed token scores without changing the tested returned replies, while broader adapter-component switches changed behavior;
 - a fresh whole-canon Scripture two-view study produced specific unfamiliar-task gains but no consistent adaptive-weighting advantage or integrated superiority over unchanged base;
-- the current source-reason-weighted CE trial has passed direct-GPU initial checks and begun training, with no behavioral sample or result yet;
+- the first uniform-control arm of the source-reason-weighted CE trial completed 192 verified updates; the matched treatment, other seed pair, and behavioral evaluation remain pending;
 - no result has yet established durable Christ-specific causal formation, inverse-distance attraction, or general governance;
 - no model is a candidate or promoted system.
 

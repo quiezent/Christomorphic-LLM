@@ -6,7 +6,7 @@ This project asks whether Scripture can do more than change a model's vocabulary
 
 > Scripture is semantically renewing as corpus. It becomes geometrically renewing when a canon-governed objective converts its distinctions into gradients that causally reorient the model.
 
-**Current verdict, 2026-09-28:** I can measure Scripture-trained parameter changes and some unfamiliar-task gains, but not integrated, replicated governance or a Christ-specific causal mechanism. A local component intervention challenges a literal Jesus/Christ output-row necessity account on its tested bank. A fresh Scripture reason-weighted CE comparison is now training; it has **no behavioral result yet**. No model is promoted. [Read the dated research status](docs/RESEARCH_STATUS.md).
+**Current verdict, 2026-09-29:** I can measure Scripture-trained parameter changes and some unfamiliar-task gains, but not integrated, replicated governance or a Christ-specific causal mechanism. A local component intervention challenges a literal Jesus/Christ output-row necessity account on its tested bank. The first **uniform-control** arm of a fresh Scripture reason-weighted CE comparison has completed and passed final verification; the remaining arms and behavioral comparison are pending. No model is promoted. [Read the dated research status](docs/RESEARCH_STATUS.md).
 
 ## The Research Question
 
@@ -32,7 +32,7 @@ I also found that both historical public checkpoints trained their vocabulary ou
 
 I subsequently tested internal and output adapters separately in both historical checkpoints on local open weights. The component switches changed behavior, but four selected Jesus/Christ output-row interventions changed token scores without changing any of the tested full returned messages (**192/192 comparisons per model**). That does not rule out distributed computation. A separate four-arm whole-canon Scripture study showed specific answer and assistance gains, but its adaptive view weighting did not consistently beat uniform weighting and its new adapters did not surpass unchanged base on complete reasoning. [Read the measured outcomes](docs/RESEARCH_STATUS.md#september-2026-the-new-evidence).
 
-The [current source-reason-weighted CE experiment](docs/SOURCE_REASON_WEIGHTED_CE.md) keeps exact Scripture as its only loss-bearing text while comparing uniform against normalized emphasis on Scripture's own reasons and qualifications. Earlier Tinker attempts stopped at pre-training numerical gates. A separately qualified direct-GPU four-arm run is in progress; its outcome remains open.
+The [current source-reason-weighted CE experiment](docs/SOURCE_REASON_WEIGHTED_CE.md) keeps exact Scripture as its only loss-bearing text while comparing uniform against normalized emphasis on Scripture's own reasons and qualifications. Earlier Tinker attempts stopped at pre-training numerical gates. In the separately qualified direct-GPU run, the first of four arms, seed-1 uniform control, completed **192 source-bound updates**. The focused treatment and fresh behavioral comparison have no result yet.
 
 ## Current Evidence
 
@@ -45,7 +45,7 @@ The [current source-reason-weighted CE experiment](docs/SOURCE_REASON_WEIGHTED_C
 | September tensor analysis | Inverse-rank spectra and centered output-row changes were verified offline in retained adapters | No contextual distance law, activation mediation, or causal attribution to the output map |
 | September component intervention | Internal/output switches changed tested behavior; selected name-row edits did not change returned replies on the bank | No literal-name-row necessity on those replies; no proof of a distributed mediator or hosted-serving equivalence |
 | Whole-canon two-view trial | Four fresh Scripture-only-target 20B adapters made case-level gains on unfamiliar tasks | No consistent adaptive-weighting advantage or integrated superiority over unchanged base |
-| Reason-weighted CE trial | Same Scripture text and schedule, with only source-span CE coefficients differing across paired seeds | Training in progress; no behavioral result or formation claim |
+| Reason-weighted CE trial | First uniform-control arm completed 192 verified updates; matched focused and other arms remain in progress | No weighted-versus-uniform behavioral result or formation claim |
 | September learner-history pilot | History improved some truth and correct-answer counts over a matched Scripture control | Fully successful reasoning was lower; this recipe did not justify 120B scaling or a formation claim |
 
 The dated ledger is in [Research Status](docs/RESEARCH_STATUS.md). The rules for what I can claim at each evidence level are in [Claims and Evidence](docs/CLAIMS_AND_EVIDENCE.md).
