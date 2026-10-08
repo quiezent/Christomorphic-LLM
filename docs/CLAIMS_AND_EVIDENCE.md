@@ -10,9 +10,12 @@ This document defines what each result can warrant. It exists to prevent Christi
 - Local causal instrumentation now supports hidden-state measurement, whole-delta intervention, and cold reload.
 - September's offline tensor audit establishes an inverse-rank spectral pattern in the original Reconstruction adapter and relative Jesus/Christ output-map adjustments in R38/V6R43.
 - The separate learner-history pilot has mixed treatment results: some truth and answer-correctness gains, fewer complete reasoning successes than its Scripture control.
+- The latest Scripture-RWCE-20B pilot completed four 192-update training arms and retained verified final artifacts. Its exploratory in-sample source learning is not a held-out result; post-training qualification and behavioral acquisition remained at zero before cloud closure.
 - No current result establishes replicated, durable Christ-specific formation or scaffold-off public governance.
 
 See [Research Status](RESEARCH_STATUS.md) for the dated ledger and [Tensor Gravity Study](TENSOR_GRAVITY_STUDY.md) for the new parameter measurements.
+
+For the latest run, see the [completion report](SCRIPTURE_RWCE_20B_REPORT.md). Training-artifact acceptance, checksum verification, and infrastructure preflight cannot substitute for endpoint qualification, behavioral comparison, human adjudication, or causal mediation. Missing evaluation is **unavailable evidence**, not a negative behavioral result. The latest pilot does not satisfy even a held-out Scripture-domain adaptation claim merely because its repeated-source loss fell.
 
 ## Evidence Classes
 
@@ -22,6 +25,8 @@ See [Research Status](RESEARCH_STATUS.md) for the dated ledger and [Tensor Gravi
 | Canon-anchored | Prompt supplies a passage, family, relation, or Scripture scaffold | Retention and structured transfer | Bare route selection |
 | Composed operational | Selector, prefix, retrieval, replay, or answer shell participates | Scoped system behavior | Scaffold-off model formation |
 | Parameter access | Literal adapter tensors or effective deltas are exported | Weight inspection and intervention feasibility | Hosted base identity, hidden states, or causality |
+| Training-artifact acceptance | Source/mask/CE receipts, completed dose, and finite final factors are reconciled | Accepted training trajectories and retained artifacts within the stated audit scope | Independent replay of every gradient, a measured initial-to-final delta, or behavioral efficacy |
+| Backup integrity | Saved file bytes match recorded checksums | Preservation of the identified adapter/checkpoint files | Deserialization, correct loading, numerical equivalence, or working GPU restoration |
 | Descriptive parameter geometry | Frozen adapter spectra or centered output-row deltas are measured | A reproducible property of those effective updates | Contextual distance, semantic identity, actual logit sign, or behavioral mediation |
 | Geometric correlation | Update subspaces or representations covary with behavior | A mechanistic hypothesis | Necessity, sufficiency, or mediation |
 | Causal intervention | Common-start removal, restoration, patch, graft, or rescue changes the measured effect | Causal participation under the frozen experiment | Generalization beyond its bank, seeds, and model |

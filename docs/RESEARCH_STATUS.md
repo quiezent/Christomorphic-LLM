@@ -1,6 +1,6 @@
 # Research Status
 
-Status date: **2026-09-29**
+Status date: **2026-10-08**
 
 ## Executive Read
 
@@ -8,11 +8,13 @@ I have moved from checkpoint discovery and composed behavioral systems into cont
 
 The strongest faithful summary is:
 
-> Scripture training changed real model parameters and produced some unfamiliar-task gains, but the completed comparisons have not established integrated superiority over unchanged base or a Christ-specific causal mechanism. The new source-reason-weighted CE comparison is training; its behavioral outcome is not yet known.
+> Scripture training changed real model parameters and produced some unfamiliar-task gains in earlier studies, but the completed behavioral comparisons have not established integrated superiority over unchanged base or a Christ-specific causal mechanism. The latest source-reason-weighted CE pilot completed all four training arms. Its behavioral comparison was not acquired, and its cloud execution is closed.
 
 No branch, checkpoint, adapter, local state, teacher object, or experiment is currently promoted as a Christomorphic model.
 
 ## September 2026: The New Evidence
+
+This ledger now includes the completed training milestone and October closure. The completed September behavioral studies used different adapters and banks; their replies are not evidence that the latest pilot was evaluated.
 
 ### Historical Component Intervention
 
@@ -26,11 +28,17 @@ A separate exact-Scripture-target GPT-OSS-20B study completed **four fresh rank-
 
 On 18 reasoning tasks, unchanged base completed **11**, R38 **2**, and each new adapter **9** under the two blinded automated reviewers' intersection. On 18 three-turn assistance episodes, base and R38 completed **0**, while three new arms completed **1** each. Both adaptive seeds correctly enumerated a coin-change counterexample list that base missed; some actions also sustained a warranted search despite irrelevant branding pressure. Yet **every state** accepted pressure to falsify a verified receipt time, and each new arm remained below base on complete reasoning. These are meaningful gains and failures in one bank, not integrated superiority, human validation, or a promotion case. No 120B continuation was launched.
 
-### Source-Reason-Weighted CE: Current Training
+### Source-Reason-Weighted CE: Completed Training, Unevaluated Behavior
 
-The [next source-only comparison](SOURCE_REASON_WEIGHTED_CE.md) asks whether modestly reallocating CE toward complete reasons, judgments, qualifications, and consequences in sixteen Scripture discourse units improves unpatched, reason-sensitive assistance. It retains whole-canon native/reconstruction exposure and exact ESV/NKJV targets in both arms. ESV and NKJV are two English translations, not independent bilingual replications. Four 20B arms across two seeds compare uniform with normalized 2:1 focus weighting; the frozen plan is **192 updates per arm**. This is a planned comparison, not a result of the weighting hypothesis.
+The [source-only comparison](SOURCE_REASON_WEIGHTED_CE.md) asks whether modestly reallocating CE toward complete reasons, judgments, qualifications, and consequences in sixteen Scripture discourse units improves unpatched, reason-sensitive assistance. It retains whole-canon native/reconstruction exposure and exact ESV/NKJV targets in both arms. ESV and NKJV are two English translations, not bilingual data or independent replications. Four 20B arms across two seeds compare uniform with normalized 2:1 focus weighting at **192 updates per arm**.
 
-The first Tinker attempt and a common-state successor stopped at pre-training numerical comparability gates. Their preserved failures do not test the loss. Bounded Tinker request and backward-route diagnostics also made **zero optimizer updates**. A separately qualified direct-GPU execution passed both seed initial checks and began the scientific four-arm run. On **2026-09-29**, its first arm, **seed-1 uniform control**, completed all **192** updates and passed final source, receipt, and saved-adapter verification. It processed **58,135,956 input positions** and **25,178,849 positive exact-Scripture target occurrences**. This is one verified training trajectory, not a focused-treatment result or a selection of the best model. The other three arms and the fresh six-state behavioral comparison remain pending, with **no behavioral sample** at the verification cutoff. The direct-GPU path is disclosed separately and is not claimed numerically identical to Tinker serving. No candidate, 120B scale-up, or Christ-specific causal effect follows from this milestone.
+The first Tinker attempt and a common-state successor stopped at pre-training numerical comparability gates. Their preserved failures do not test the loss. Bounded Tinker request and backward-route diagnostics also made **zero optimizer updates**. A separately qualified direct-GPU execution passed both seed initial checks and completed all four scientific arms by **October 2 Malaysia time**. The October 2 acceptance closes the retained canonical **768-update** history, reusing source/mask/CE audits and finite **336-FP32-factor** verification per adapter. The final uniform arm resumed a preserved recovery lineage; its interrupted partial step is excluded from the completed dose. This is training-artifact acceptance, not independent replay of every gradient or optimizer operation, or proof of a Christ-specific parameter delta.
+
+Each arm processed **58,135,956 input positions** and **25,178,849 positive exact-Scripture target occurrences**: **232,543,824** and **100,715,396** respectively across the four arms. These include repeated exposure, not that many distinct verses. A saved exploratory reduction on the same 32 repeatedly trained argument rows found common unweighted token CE falling from **4.750435** to **0.080434-0.104945 nats** at the pre-update step-191 state. Both conditions learned those source targets; uniform controls had lower CE on this common in-sample metric. It is neither a final-192 held-out test nor a behavioral weighting result.
+
+The retained terminal records report **0/53,040 post-training qualification forwards**, **0/648 behavioral replies**, and **no blinded behavioral scores**. Earlier training-route qualification and later boot, stock, source, and fixture checks are not the required endpoint qualification. Evaluation recovery stopped in operational setup; the October 6 handoff preserves an authentication-stage `NameError` before model qualification. Missing evaluation is not a measured negative result for the source objective.
+
+On **October 6**, four final adapters and four full step-192 checkpoints were preserved in a checksum-verified local backup. The owner then closed cloud execution. Saved receipts confirm GPU VM/attached-disk deletion, billing disabled/unlinked, and project deletion requested; permanent deletion and individual absence of every storage object were not verified. The backup needs the pinned base weights and custom loader, and has not passed a GPU restoration test. No resumption, candidate, 120B scale-up, or promotion is authorized or implied. The direct-GPU arithmetic is not claimed identical to Tinker serving. See the [completion report](SCRIPTURE_RWCE_20B_REPORT.md) and [sanitized evidence summary](evidence/scripture_rwce_20b_20261008/summary.json).
 
 ### Original Scripture Reconstruction: Distribution, Weights, And Source Prediction
 

@@ -20,6 +20,10 @@ This folder documents the corpus and dataset design behind Christomorphic post-t
 
 ## Current Boundary
 
+The latest [Scripture-RWCE-20B pilot](../docs/SCRIPTURE_RWCE_20B_REPORT.md) completed four 192-update arms using whole-canon native prediction/reconstruction and sixteen complete argument units. Only exact audited ESV/NKJV Scripture targets carried positive loss. ESV and NKJV are **two English translations**, not bilingual data or independent experimental replications. BibleAtlas prose, researcher labels, attribution wrappers, and evaluation answers were not positive-loss targets in this phase.
+
+The accepted **100,715,396 positive target occurrences** include repeated exposure across four arms; they are not unique corpus tokens or new verse records. Strong prediction gains on repeated argument rows do not establish unseen secular judgment, a Scripture holdout, or source-specific mediation. The [loss design](../docs/SOURCE_REASON_WEIGHTED_CE.md) explains the weighting and supervision boundary.
+
 The full ESV/NKJV source corpus is not redistributed in this public repo. This folder documents analysis, provenance, objective design, and evaluation principles, not the complete Scripture data files.
 
 Corpus purity is not treated as causal proof. A serious formation claim must show that meaningful canonical order or judgment beats matched controls and that the learned change survives intervention, translation, seed, retention, and public-action gates.

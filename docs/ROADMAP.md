@@ -4,15 +4,23 @@ This roadmap is evidence-gated. Dates and version numbers do not create progress
 
 ## Current Position
 
-The historical checkpoint and composed-system phases are complete as discovery evidence. The current frontier is the **formation bridge**: proving that a Scripture-governed objective causes a durable, scaffold-off, Christ-specific change that beats matched controls. The [September tensor study](TENSOR_GRAVITY_STUDY.md) also creates a concrete component question about the historical output-unembedding adapters.
+As of **2026-10-08**, the historical checkpoint and composed-system phases remain discovery evidence. The latest [Scripture-RWCE-20B pilot](SCRIPTURE_RWCE_20B_REPORT.md) completed four 192-update arms, but its required endpoint qualification and behavioral comparison were not acquired. Its adapters and full checkpoints are retained locally; cloud execution was closed at the owner's direction on October 6. No model is promoted.
+
+The immediate unanswered question is functional: does normalized emphasis on Scripture's reasons improve **unpatched, reason-sensitive useful action** over uniform CE in both seeds without reducing complete reasoning? I would establish that before seeking a distributed mediator. Ordinary semantic learning could implement a beneficial Scripture-training effect; source-specific contribution, Christian uniqueness, and causal mediation are separate questions. The canonical horizon remains intact, with James 2 one witness rather than a replacement curriculum.
 
 The paired-Scripture contrast teacher had qualified at zero update by the 2026-08-16 status cutoff. A separate September learner-history pilot produced mixed behavior and did not justify 120B scaling. The latest spectral and output-map analyses were offline and took no training step.
 
+## Conditional Next Milestone
+
+No active cloud continuation is authorized. Any future work requires fresh owner approval and a reviewed execution/resource plan. A possible sequence is compatible-runtime restoration, unchanged endpoint qualification, and then the retained six-state behavioral comparison. Checksum preservation alone does not guarantee restoration. The planned two automated review lanes would report disagreement and sensitivity, not human validation.
+
+Only a qualified, reproducible behavioral gain would motivate internal localization. A null or negative behavioral result would count against the tested transfer package; the current absence of measurements does not answer that question. The stages below retain the longer-term proof requirements, not permission to launch them or a promise that one intervention must succeed.
+
 ## Historical Checkpoint Component Test
 
-I would first obtain supported access to each matching full base and to inference-time adapter component control. Within R38 and within V6R43 separately, I would cross output-unembedding on/off with the remaining adapters on/off. The four conditions are base, readout only, internal adapters only, and full reference. Fixed-history ordinary-action log-odds, then free-running multi-turn action, would measure readout contributions and interactions with internal changes. Matched perturbations, restoration, and selective name-row interventions would help distinguish a specific effect from generic disruption of co-adaptation.
+The local within-model internal/output 2-by-2 and selected Jesus/Christ output-row tests **have been completed** for R38 and V6R43. Broader component switches changed behavior; selected name-row changes altered relative scores without changing the tested returned messages. Neither full historical model consistently surpassed unchanged base in that runtime. See the [measured component results](RESEARCH_STATUS.md#historical-component-intervention).
 
-This test is **proposed**, not completed. It cannot identify which historical training objective caused a component, and it cannot be run from adapter exports alone.
+These tests challenge literal-name-row necessity on their bank, but do not establish a distributed mediator or historical Tinker-serving equivalence. Any stronger removal, restoration, graft, or rescue experiment needs new controls and supported matching-base access. The historical results cannot identify which original training objective caused a component.
 
 ## Stage 1: Clean Development Canary
 

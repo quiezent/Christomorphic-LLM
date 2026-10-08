@@ -46,11 +46,11 @@ The key correction is:
 - Fail-closed experiment packets with common starts, matched controls, frozen gates, hashes, counters, and claim boundaries.
 - An independently checked September tensor analysis of the original Scripture Reconstruction adapter and both historical output-unembedding adapters, with public figures and a bounded causal follow-up.
 - A local historical-component intervention and a completed four-arm whole-canon Scripture behavioral comparison, including both gains and failures.
-- A frozen Scripture reason-weighted CE comparison that is currently training on a separately qualified direct-GPU path after two Tinker execution attempts stopped at numerical gates.
+- Four completed Scripture reason-weighted CE training arms on a separately qualified direct-GPU path after Tinker attempts stopped at numerical gates, with retained source history and locally backed-up adapters/checkpoints.
 
 ## Current Status
 
-As of 2026-09-29:
+As of 2026-10-08:
 
 - historical models provide useful raw and operational evidence;
 - exact Scripture can move likelihood and local relations;
@@ -63,11 +63,14 @@ As of 2026-09-29:
 - a separate learner-history pilot improved some truth and answer-correctness counts but lost fully successful reasoning against its Scripture control;
 - selected Jesus/Christ output-row interventions changed token scores without changing the tested returned replies, while broader adapter-component switches changed behavior;
 - a fresh whole-canon Scripture two-view study produced specific unfamiliar-task gains but no consistent adaptive-weighting advantage or integrated superiority over unchanged base;
-- the first uniform-control arm of the source-reason-weighted CE trial completed 192 verified updates; the matched treatment, other seed pair, and behavioral evaluation remain pending;
+- all four source-reason-weighted CE arms completed 192 updates each, 768 total, with strong prediction gains on repeatedly trained Scripture rows;
+- the intended latest behavioral comparison was not acquired: 0/53,040 post-training qualification forwards, 0/648 replies, and no blinded scores;
+- a checksum-verified local backup preserves four final custom LoRA adapters and four full adapter/optimizer/RNG checkpoints; base weights and a tested GPU restore are not included;
+- cloud execution was closed at the owner's direction on October 6, with compute deletion and billing disconnection confirmed in saved receipts;
 - no result has yet established durable Christ-specific causal formation, inverse-distance attraction, or general governance;
 - no model is a candidate or promoted system.
 
-Read [Research Status](RESEARCH_STATUS.md) for the dated ledger, [Tensor Gravity Study](TENSOR_GRAVITY_STUDY.md) for the weight measurements, and [Source Reason-Weighted CE](SOURCE_REASON_WEIGHTED_CE.md) for the current trial and its limits.
+Read [Research Status](RESEARCH_STATUS.md) for the dated ledger, [Tensor Gravity Study](TENSOR_GRAVITY_STUDY.md) for the weight measurements, and the [Scripture-RWCE-20B report](SCRIPTURE_RWCE_20B_REPORT.md) for completed training, missing evaluation, and preservation limits.
 
 ## Why The Work Is Technically Interesting
 
@@ -99,6 +102,7 @@ The program touches several hard research questions:
 - Tinker SDK integration and checkpoint lifecycle work.
 - Python evaluation and instrumentation tooling.
 - Dataset provenance, target-mask, and split governance.
+- Custom GPT-OSS attention/MLP LoRA execution, interrupted-run lineage reconciliation, and adapter/checkpoint preservation.
 - Causal controls, common starts, intervention logic, and cold-reload verification.
 - Experimental failure analysis and anti-overclaim discipline.
 - Theological framing translated into falsifiable technical hypotheses.
@@ -107,7 +111,7 @@ The program touches several hard research questions:
 
 ## Next Fundable Milestone
 
-The immediate milestone is to finish the frozen four-arm Scripture reason-weighted CE comparison and its fresh unpatched behavioral evaluation within the existing governance and budget. A positive result would justify, but not complete, a later causal study that:
+Training is complete, but the source-weighting behavioral question remains unanswered. A possible next milestone is to restore and qualify the retained artifacts on a compatible runtime, then acquire the declared six-state unpatched comparison. This requires fresh owner authorization, a reviewed execution plan, and funding; the closed cloud run and its historical budget are not active continuation authority. Restoration may itself fail. A positive, properly qualified behavioral result would justify, but not complete, a later causal study that:
 
 1. predeclares the source relation and behavioral contrast before seeking its internal mediator;
 2. compares trained and unchanged states from matched starts without steering their ordinary replies;
