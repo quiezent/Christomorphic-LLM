@@ -1,0 +1,278 @@
+{
+  "schema": "christomorphic_public_training_summary_v1",
+  "report_date": "2026-10-08",
+  "model_reference": "Scripture-RWCE-20B",
+  "evidence_class": "accepted_training_artifacts_with_exploratory_in_sample_readout",
+  "status": "training_complete_behavioral_comparison_unacquired_cloud_execution_closed",
+  "base_model": "openai/gpt-oss-20b",
+  "base_revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+  "scientific_law_sha256": "e927c7919a3d4b31f0af88ebaa45b08c2f86d08219d637e7ae5032a8fc127f51",
+  "training_complete_at_utc": "2026-10-01T17:12:11.815902+00:00",
+  "method": {
+    "execution_route": "separately_qualified_direct_gpu_not_tinker_serving_equivalence",
+    "rank": 32,
+    "trainable_modules": "attention_and_mlp",
+    "unembedding_frozen": true,
+    "factor_dtype": "float32",
+    "factors_per_final_adapter": 336,
+    "base_computation": "bfloat16_after_mxfp4_dequantization",
+    "adapter_branches": "separate_unscaled",
+    "expert_dispatch": "padded_batched",
+    "attention": "FlexAttention",
+    "only_exact_audited_scripture_has_positive_loss": true,
+    "translations": [
+      "ESV",
+      "NKJV"
+    ],
+    "translations_are_two_english_translations_not_independent_replications": true,
+    "broad_coefficient": 0.75,
+    "argument_coefficient": 0.25,
+    "argument_units": 16,
+    "focused_to_other_source_coefficient_ratio": 2,
+    "argument_coefficients_normalized_per_unit": true,
+    "same_targets_and_schedule_across_conditions": true,
+    "scripture_verse_holdout": false,
+    "optimizer": {
+      "name": "Adam",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "epsilon": 1e-8,
+      "weight_decay": 0,
+      "clip_norm": 1,
+      "warmup_steps": 12,
+      "peak_learning_rate": 0.00004,
+      "final_learning_rate": 0.000008
+    }
+  },
+  "completed_dose": {
+    "arms": 4,
+    "initialization_seeds": 2,
+    "updates": 768,
+    "input_positions": 232543824,
+    "positive_scripture_target_occurrences": 100715396,
+    "counts_include_repeated_exposure": true,
+    "isolated_technical_clone_updates_excluded": 4
+  },
+  "arms": [
+    {
+      "label": "seed2026092701-uniform",
+      "initialization_seed": 2026092701,
+      "condition": "uniform",
+      "completed_updates": 192,
+      "input_positions": 58135956,
+      "positive_scripture_target_occurrences": 25178849,
+      "adapter_bytes": 939625744,
+      "adapter_sha256": "8a2734ec991c7117911794bc7d7d06cb5c4df8a57cbd9e5462d9aaaad2578ed1",
+      "completion_receipt_sha256": "93c06768287ecc6741a8eccfdb80e459bdeae277330ee5891fe55b1906fbe47a",
+      "full_checkpoint_bytes": 2819167445,
+      "full_checkpoint_sha256": "6e41d7424e9daf8379f77dbb2c2a0e2b500912ee13385e3ac4c38f62a2d404e9"
+    },
+    {
+      "label": "seed2026092701-focused",
+      "initialization_seed": 2026092701,
+      "condition": "focused",
+      "completed_updates": 192,
+      "input_positions": 58135956,
+      "positive_scripture_target_occurrences": 25178849,
+      "adapter_bytes": 939625744,
+      "adapter_sha256": "660126e52b6346329447e9c4b5f2bc061aee852ae1b0e6eb96feb0a5d15e2592",
+      "completion_receipt_sha256": "c96b09b3a3df1ee917de2166cc481106c3294c4ae1a157d0b122456a48b9103b",
+      "full_checkpoint_bytes": 2819167445,
+      "full_checkpoint_sha256": "8c0c4d4ad4172844103cada37d2d30bbb1a36ab2baa0b6161938d24fef155e29"
+    },
+    {
+      "label": "seed2026092702-focused",
+      "initialization_seed": 2026092702,
+      "condition": "focused",
+      "completed_updates": 192,
+      "input_positions": 58135956,
+      "positive_scripture_target_occurrences": 25178849,
+      "adapter_bytes": 939625744,
+      "adapter_sha256": "fc3faf1506ad419721d0c27533338ad2467a0173b99c2bac30d5265aeb1dab5c",
+      "completion_receipt_sha256": "dab20468400ff28805405e9756acb43ef8236a98cd2190f858601241827ac310",
+      "full_checkpoint_bytes": 2819167445,
+      "full_checkpoint_sha256": "ae584e93afcd48173a2a57c78915ae87b3fbf76b8de714be5b737c669ddf8733"
+    },
+    {
+      "label": "seed2026092702-uniform",
+      "initialization_seed": 2026092702,
+      "condition": "uniform",
+      "completed_updates": 192,
+      "input_positions": 58135956,
+      "positive_scripture_target_occurrences": 25178849,
+      "adapter_bytes": 939625744,
+      "adapter_sha256": "b889ac3e4e24689a1931473336bdd1982165339108fb4c616b71fc7d7eaa1aaf",
+      "completion_receipt_sha256": "6b857d6fa7022d47a887723abb2b40729b0802afa7115cec7b680d4a313995c7",
+      "full_checkpoint_bytes": 2819167445,
+      "full_checkpoint_sha256": "2bc137bd3df417fb573ff92b47ae45b3efc258225d1c82717c194dda62a012c9",
+      "completed_recovery_lineage": {
+        "original_attempt_indices": [
+          0,
+          107
+        ],
+        "recovery_attempt_indices": [
+          108,
+          191
+        ],
+        "interrupted_original_partial_step_108_excluded": true
+      }
+    }
+  ],
+  "exploratory_source_readout": {
+    "status": "saved_exploratory_reduction_not_formal_new_admission",
+    "record_date": "2026-10-06",
+    "metric": "common_unweighted_token_pooled_cross_entropy_nats_per_positive_source_target",
+    "rows_per_endpoint": 32,
+    "argument_units": 16,
+    "positive_targets_per_endpoint": 17678,
+    "positive_targets_by_translation": {
+      "ESV": 8772,
+      "NKJV": 8906
+    },
+    "rows_repeatedly_used_in_training": true,
+    "step_indices": [
+      0,
+      191
+    ],
+    "logprobs_recorded_before_optimizer_update": true,
+    "endpoint_completed_updates": 191,
+    "fresh_final_192_inference": false,
+    "common_step0_ce_nats": 4.750434569990467,
+    "results": [
+      {
+        "arm": "seed2026092701-uniform",
+        "step191_ce_nats": 0.08043436723986444,
+        "relative_reduction_percent": 98.30679980842203
+      },
+      {
+        "arm": "seed2026092701-focused",
+        "step191_ce_nats": 0.10345427595466296,
+        "relative_reduction_percent": 97.82221448521351
+      },
+      {
+        "arm": "seed2026092702-focused",
+        "step191_ce_nats": 0.10494461864999541,
+        "relative_reduction_percent": 97.79084171976699
+      },
+      {
+        "arm": "seed2026092702-uniform",
+        "step191_ce_nats": 0.08155306074893932,
+        "relative_reduction_percent": 98.28325052061282
+      }
+    ],
+    "held_out_or_behavioral_result": false,
+    "uniform_has_lower_ce_on_this_common_in_sample_metric_in_both_pairs": true
+  },
+  "post_training_evaluation": {
+    "evidence": "retained_terminal_records_not_fresh_provider_query",
+    "required_qualification_forwards": 53040,
+    "completed_qualification_forwards": 0,
+    "planned_behavioral_replies": 648,
+    "acquired_behavioral_replies": 0,
+    "blinded_scores_produced": false,
+    "behavioral_effect": null,
+    "planned_states": [
+      "seed2026092701-uniform",
+      "seed2026092701-focused",
+      "seed2026092702-focused",
+      "seed2026092702-uniform",
+      "unchanged_base",
+      "historical_R38_reference"
+    ],
+    "planned_assistance_episodes_per_state": 27,
+    "turns_per_assistance_episode": 3,
+    "planned_reasoning_tasks_per_state": 27,
+    "planned_replies_per_state": 108,
+    "planned_blinded_automated_review_lanes": 2,
+    "human_adjudication_produced": false,
+    "missing_evaluation_is_not_a_measured_negative_result": true
+  },
+  "backup": {
+    "verified_at_utc": "2026-10-06T11:16:54.964236+00:00",
+    "cloud_source_files": 18,
+    "cloud_source_bytes": 15035318788,
+    "final_adapters": 4,
+    "full_step192_checkpoints": 4,
+    "retained_cloud_md5_checks_passed": true,
+    "retained_adapter_and_checkpoint_sha256_checks_passed": true,
+    "binary_checksums_recomputed_for_this_publication": false,
+    "base_weight_shards_included": false,
+    "custom_loader": "adapters_batched.attach",
+    "stock_peft_package": false,
+    "merged_standalone_model": false,
+    "checkpoint_contents_recorded_as": [
+      "adapter_factors",
+      "Adam_state",
+      "CPU_RNG",
+      "CUDA_RNG"
+    ],
+    "checkpoint_payloads_deserialized_during_backup_verification": false,
+    "gpu_restoration_or_resume_tested": false,
+    "weights_released_by_this_update": false
+  },
+  "cloud_closure": {
+    "receipt_at_utc": "2026-10-06T11:28:33.944947+00:00",
+    "evidence": "saved_receipts_not_fresh_provider_query",
+    "gpu_vm_and_attached_disk_deletion_confirmed": true,
+    "billing_enabled": false,
+    "billing_account_unlinked": true,
+    "project_lifecycle": "DELETE_REQUESTED",
+    "permanent_project_deletion_verified": false,
+    "every_storage_object_individually_verified_absent": false,
+    "historical_charges_erased": false,
+    "continuation_authorized": false
+  },
+  "claim_limits": {
+    "accepted_training_artifacts": true,
+    "independent_replay_of_every_gradient_and_optimizer_operation": false,
+    "scientific_initial_to_final_tensor_delta_measured_by_acceptance": false,
+    "focused_weighting_behavioral_advantage_established": false,
+    "scripture_source_specific_mediation_established": false,
+    "christ_specific_causal_geometry_established": false,
+    "generalized_christomorphic_formation_established": false,
+    "candidate_selected": false,
+    "model_promoted": false,
+    "scale_up_120b_authorized": false,
+    "independent_reproduction_from_public_repository": false
+  },
+  "retained_record_bindings": [
+    {
+      "record": "SCIENTIFIC_LAW.json",
+      "sha256": "e927c7919a3d4b31f0af88ebaa45b08c2f86d08219d637e7ae5032a8fc127f51",
+      "scope": "frozen_training_specification"
+    },
+    {
+      "record": "TRAINING_COMPLETE.json",
+      "sha256": "a9b75e6252c139fee691d15691a9c096fd89fdb198e730861ee012fd092209bf",
+      "scope": "terminal_four_arm_completion"
+    },
+    {
+      "record": "GLOBAL768_PARENT_IDENTITY_RETENTION_ACCEPTANCE_20261002_001.json",
+      "sha256": "4f82176bed1348b7306e634097221ac1d281c6c7144368fc489000f646e58168",
+      "scope": "accepted_training_artifacts_and_retained_history"
+    },
+    {
+      "record": "TRAINING_ARGUMENT_ENDPOINT_READOUT.json",
+      "sha256": "3d399363685d5cab0bc55ed36ec1a370c47b86fcf28baec15090f66985bcbbd7",
+      "scope": "exploratory_repeated_training_row_readout"
+    },
+    {
+      "record": "BACKUP_VERIFIED.json",
+      "sha256": "20c70dece7169e72ec0539b18aeab33752b4da59f032eb6b88dba5435e108cd4",
+      "scope": "october_6_backup_checksum_receipts"
+    },
+    {
+      "record": "EXECUTION_HANDOFF_TO_GOOGLE_CLOUD_REVIEW_20261006_1630.md",
+      "sha256": "6e6d1a1f32c01c1266a4c8ba6d9b63e043cc3d895e6733e1d8325f1dddaff4c3",
+      "scope": "dated_unacquired_evaluation_and_operational_failure"
+    },
+    {
+      "record": "CLOSURE_VERIFIED.json",
+      "sha256": "cef7d6ae1918d45b86c230ea1bea612d41235da6a3f40370740aa620437496f8",
+      "scope": "owner_directed_cloud_closure"
+    }
+  ],
+  "publication_boundary": "Sanitized derived summary only. Retained private records, restricted Scripture text, weights, transcripts and account/resource identifiers are not redistributed. Hashes identify records but do not disclose them or independently reproduce the experiment."
+}

@@ -1,12 +1,12 @@
 # Christomorphic LLM
 
-I study Christ-centered, Scripture-governed post-training for open-weight language models with Tinker LoRA, retained adapter tensors, and local causal experiments.
+I study Christ-centered, Scripture-governed post-training for open-weight language models with Tinker LoRA, direct-GPU experiments, and retained adapter tensors.
 
 This project asks whether Scripture can do more than change a model's vocabulary or tone. The research target is a model whose learned state is durably reorganized so that the canonical witness to Jesus Christ governs judgment, first action, and continuation under ordinary pressure, without a live religious wrapper and without destroying truthfulness, safety, or general capability.
 
 > Scripture is semantically renewing as corpus. It becomes geometrically renewing when a canon-governed objective converts its distinctions into gradients that causally reorient the model.
 
-**Current verdict, 2026-09-29:** I can measure Scripture-trained parameter changes and some unfamiliar-task gains, but not integrated, replicated governance or a Christ-specific causal mechanism. A local component intervention challenges a literal Jesus/Christ output-row necessity account on its tested bank. The first **uniform-control** arm of a fresh Scripture reason-weighted CE comparison has completed and passed final verification; the remaining arms and behavioral comparison are pending. No model is promoted. [Read the dated research status](docs/RESEARCH_STATUS.md).
+**Current verdict, 2026-10-08:** All four arms of the Scripture reason-weighted CE pilot completed **192 updates each, 768 total**, with accepted training artifacts and a checksum-verified local backup. Prediction improved sharply on repeatedly trained Scripture rows. The intended behavioral comparison was **not acquired**: **0/53,040** post-training qualification forwards and **0/648** evaluation replies. I cannot claim that focused weighting improved ordinary judgment. Cloud execution was closed at the owner's direction on October 6; no model is promoted. [Read the completion report](docs/SCRIPTURE_RWCE_20B_REPORT.md) or the [full research ledger](docs/RESEARCH_STATUS.md).
 
 ## The Research Question
 
@@ -32,7 +32,7 @@ I also found that both historical public checkpoints trained their vocabulary ou
 
 I subsequently tested internal and output adapters separately in both historical checkpoints on local open weights. The component switches changed behavior, but four selected Jesus/Christ output-row interventions changed token scores without changing any of the tested full returned messages (**192/192 comparisons per model**). That does not rule out distributed computation. A separate four-arm whole-canon Scripture study showed specific answer and assistance gains, but its adaptive view weighting did not consistently beat uniform weighting and its new adapters did not surpass unchanged base on complete reasoning. [Read the measured outcomes](docs/RESEARCH_STATUS.md#september-2026-the-new-evidence).
 
-The [current source-reason-weighted CE experiment](docs/SOURCE_REASON_WEIGHTED_CE.md) keeps exact Scripture as its only loss-bearing text while comparing uniform against normalized emphasis on Scripture's own reasons and qualifications. Earlier Tinker attempts stopped at pre-training numerical gates. In the separately qualified direct-GPU run, the first of four arms, seed-1 uniform control, completed **192 source-bound updates**. The focused treatment and fresh behavioral comparison have no result yet.
+The [source-reason-weighted CE experiment](docs/SOURCE_REASON_WEIGHTED_CE.md) keeps exact Scripture as its only loss-bearing text while comparing uniform against normalized emphasis on Scripture's own reasons and qualifications. Earlier Tinker attempts stopped at pre-training numerical gates; the separately qualified direct-GPU implementation completed all four arms across two seeds. The accepted dose totals **232,543,824 input positions** and **100,715,396 positive Scripture target occurrences**, including repeats. A saved exploratory readout shows strong in-sample learning in both conditions, with lower common unweighted training-set CE in the uniform controls. That does not answer the behavioral question. [The October report](docs/SCRIPTURE_RWCE_20B_REPORT.md) records the completed training, uncompleted evaluation, recovery lineage, and local preservation.
 
 ## Current Evidence
 
@@ -45,7 +45,7 @@ The [current source-reason-weighted CE experiment](docs/SOURCE_REASON_WEIGHTED_C
 | September tensor analysis | Inverse-rank spectra and centered output-row changes were verified offline in retained adapters | No contextual distance law, activation mediation, or causal attribution to the output map |
 | September component intervention | Internal/output switches changed tested behavior; selected name-row edits did not change returned replies on the bank | No literal-name-row necessity on those replies; no proof of a distributed mediator or hosted-serving equivalence |
 | Whole-canon two-view trial | Four fresh Scripture-only-target 20B adapters made case-level gains on unfamiliar tasks | No consistent adaptive-weighting advantage or integrated superiority over unchanged base |
-| Reason-weighted CE trial | First uniform-control arm completed 192 verified updates; matched focused and other arms remain in progress | No weighted-versus-uniform behavioral result or formation claim |
+| Reason-weighted CE trial | Four accepted 192-update arms; strong learning on repeated source rows; final adapters and checkpoints retained locally | No acquired post-training qualification or behavioral comparison; no weighting advantage, causal-geometry, or formation claim |
 | September learner-history pilot | History improved some truth and correct-answer counts over a matched Scripture control | Fully successful reasoning was lower; this recipe did not justify 120B scaling or a formation claim |
 
 The dated ledger is in [Research Status](docs/RESEARCH_STATUS.md). The rules for what I can claim at each evidence level are in [Claims and Evidence](docs/CLAIMS_AND_EVIDENCE.md).
@@ -69,6 +69,7 @@ No current artifact has reached Level 5. Geometric language in this repository i
 | Christians, pastors, and ministry-minded readers | [Christian Commitment](docs/CHRISTIAN_COMMITMENT.md) |
 | LLM, alignment, and interpretability researchers | [Research Thesis](docs/RESEARCH_THESIS.md), [Research Status](docs/RESEARCH_STATUS.md), and [Claims and Evidence](docs/CLAIMS_AND_EVIDENCE.md) |
 | Readers of the latest tensor finding | [Tensor Gravity Study](docs/TENSOR_GRAVITY_STUDY.md) |
+| Readers of the latest training progress | [Scripture-RWCE-20B Completion Report](docs/SCRIPTURE_RWCE_20B_REPORT.md) |
 | Tinker LoRA practitioners | [Technical Method](docs/TECHNICAL_METHOD.md), [Source Reason-Weighted CE](docs/SOURCE_REASON_WEIGHTED_CE.md), [Scripts](script/), and [Evaluation](eval/) |
 | Dataset and benchmark builders | [ESV/NKJV Corpus Study](data/christomorphic_esv_nkjv_study.md) and [Evaluation](eval/) |
 | Collaborators, investors, and recruiters | [Project Brief](docs/PROJECT_BRIEF.md) |
@@ -92,6 +93,7 @@ The division of labor is deliberate:
 
 - **Tinker** supports scalable LoRA training, custom logprob losses, sampling, checkpointing, and adapter export.
 - **Local open weights** support literal hidden-state access, activation and parameter interventions, exact cold reload, and causal verification.
+- **Direct-GPU training** supplied a separately qualified GPT-OSS-20B execution route for the latest source-only pilot. That cloud run is now closed; its arithmetic is not claimed identical to Tinker serving.
 - **BibleAtlas** supplies dataset and evaluation metadata for preserving canonical structure and long-tail peculiarities. It is not Scripture and is not used as Scripture-only target text.
 - **Evidence governance** prevents strong theological or mechanistic claims from being inferred from tone, isolated outputs, likelihood movement, or probe correlation.
 
@@ -114,7 +116,9 @@ Key artifacts:
 - [RESEARCH_THESIS.md](docs/RESEARCH_THESIS.md): Word-Judgment-Act thesis, controlled experiment, and five-level claim ladder.
 - [RESEARCH_STATUS.md](docs/RESEARCH_STATUS.md): dated experiment ledger from the historical checkpoints through the current local causal program.
 - [TENSOR_GRAVITY_STUDY.md](docs/TENSOR_GRAVITY_STUDY.md): the September spectral and output-map findings, with their causal limits.
-- [SOURCE_REASON_WEIGHTED_CE.md](docs/SOURCE_REASON_WEIGHTED_CE.md): the current source-only CE contrast, technical gates, direct-GPU status, and prospective behavioral claim boundaries.
+- [SOURCE_REASON_WEIGHTED_CE.md](docs/SOURCE_REASON_WEIGHTED_CE.md): the source-only CE contrast, numerical gates, and declared behavioral claim boundaries.
+- [SCRIPTURE_RWCE_20B_REPORT.md](docs/SCRIPTURE_RWCE_20B_REPORT.md): four-arm training completion, exploratory source learning, unacquired evaluation, backup, and cloud closure.
+- [Training summary JSON](docs/evidence/scripture_rwce_20b_20261008/summary.json): sanitized counts, adapter/checkpoint hashes, and retained-record bindings; not a model release.
 - [christomorphic_esv_nkjv_study.md](data/christomorphic_esv_nkjv_study.md): corpus facts, translation invariance, Bible-only definitions, BibleAtlas, and tail preservation.
 - [christomorphic_geometry_probe_suite_v1.json](eval/christomorphic_geometry_probe_suite_v1.json): 89 public probes.
 - [behaviour_prompts.json](eval/behaviour_prompts.json): 169 broad behavior and retention prompts.
@@ -131,6 +135,8 @@ These are reproducible study witnesses, not final models:
 Retained Tinker checkpoint exports confirm literal adapter access for both archives. Both contain rank-32 output-unembedding LoRA factors. The exports establish parameter access and relative output-map measurements; they do not bind the exact hosted base computation or explain the observed behavior by themselves.
 
 **Why Seed 2 is not in this table:** Its final Tinker sampler, `tinker://3f8227e8-fe41-5970-b77b-3456b02c2192:train:0/sampler_weights/reconstruction_2-final`, was deleted during the September 21 storage cleanup and is not available for public inference. I retain the local adapter export for analysis, but that is not a public Tinker checkpoint. The reconstruction study declared no candidate or promotion; I will not present the adapter's spectral result as equivalent to the two archived behavioral witnesses.
+
+The four **Scripture-RWCE-20B** adapters are a separate, later experiment, not the original Reconstruction Seed 2 or new public Tinker samplers. They remain local custom-loader research artifacts; the backup excludes base-model weights and has not undergone a GPU restore test. Their hashes identify retained files, not download links or a released product.
 
 ## Run The Public Tools
 
@@ -180,7 +186,7 @@ See [script/README.md](script/README.md) and [eval/README.md](eval/README.md) fo
 
 The shortest faithful status is:
 
-> I can measure real changes in the weights. I am still testing whether those changes govern faithful action.
+> I can measure real changes in the weights. The latest training is complete; whether its source-reason emphasis improves faithful action remains unmeasured.
 
 ## Collaboration
 

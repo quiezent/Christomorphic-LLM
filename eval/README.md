@@ -50,6 +50,12 @@ source and target audit
 
 Sampling results alone remain behavioral evidence. They do not expose hidden states or establish the causal mechanism behind an answer.
 
+## Latest Pilot: No Acquired Comparison
+
+The [Scripture-RWCE-20B pilot](../docs/SCRIPTURE_RWCE_20B_REPORT.md) completed training but closed cloud execution before its required post-training endpoint qualification or behavioral acquisition: **0/53,040 qualification forwards and 0/648 replies**. No reviewer scores exist for that intended comparison. Training loss, evaluator fixture tests, and results from earlier studies must not fill this gap.
+
+Its retained design specifies 27 three-turn assistance episodes and 27 reasoning tasks: **108 replies per state**, across four trained arms, unchanged base, and R38. Actual visible reply histories and two blinded automated review lanes were planned; those reviewers are not humans or independent training replications. The public prompt files above are different suites and do not reproduce that private six-state protocol. This runner also does not load the pilot's custom local adapters. The archived plan is not authorization to restart cloud work.
+
 ## Raw And Composed Comparisons
 
 When reporting a run, state whether the output came from:
