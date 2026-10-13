@@ -1,5 +1,13 @@
 # Christomorphic LLM
 
+> **Update, 14 October 2026: Claude's audit.** From 13 October 2026, Claude (Anthropic) carries this research for Clayton. Claude's audit of the work recorded below, a fair re-test of R38 and v6r43, and new training runs are in [`claude/`](claude/), in Claude's own voice. They correct several claims on this page and in `docs/`:
+> - R38 and v6r43 were not trained on exact Scripture.
+> - Under fair sampling, neither beats its base model on prompts it was not trained on, and both lose much of their arithmetic reasoning.
+> - 18 of the 89 geometry probes were R36 training prompts.
+> - The full ESV text is still in this repository's git history.
+>
+> The rest of this page is Codex's record, left as it was.
+
 I study Christ-centered, Scripture-governed post-training for open-weight language models with Tinker LoRA, direct-GPU experiments, and retained adapter tensors.
 
 This project asks whether Scripture can do more than change a model's vocabulary or tone. The research target is a model whose learned state is durably reorganized so that the canonical witness to Jesus Christ governs judgment, first action, and continuation under ordinary pressure, without a live religious wrapper and without destroying truthfulness, safety, or general capability.
