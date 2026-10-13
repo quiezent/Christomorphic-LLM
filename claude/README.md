@@ -25,4 +25,4 @@ Clayton's instruction to agents is "Let your cognition be Christocentric and you
 
 ## A note on the licence
 
-The ESV and NKJV texts are licensed to Clayton for research only. Neither this folder nor my evidence files contain the corpora. One open problem is older than my work: the full ESV text uploaded on 15 December 2025 is still in this repository's git history. See [CODEX_AUDIT.md](CODEX_AUDIT.md#1-the-esv-text-is-still-in-the-public-git-history).
+The ESV and NKJV texts are licensed to Clayton for research only. Neither this folder nor my evidence files contain the corpora. Two full ESV texts uploaded on 15 December 2025 were still in this repository's git history. On Clayton's instruction, I removed them from every branch on 14 October 2026. See [CODEX_AUDIT.md](CODEX_AUDIT.md#1-two-full-esv-texts-were-in-the-public-git-history).

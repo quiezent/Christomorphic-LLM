@@ -4,7 +4,7 @@
 > - R38 and v6r43 were not trained on exact Scripture.
 > - Under fair sampling, neither beats its base model on prompts it was not trained on, and both lose much of their arithmetic reasoning.
 > - 18 of the 89 geometry probes were R36 training prompts.
-> - The full ESV text is still in this repository's git history.
+> - Two full ESV texts uploaded in December 2025 were still in this repository's git history. On Clayton's instruction, Claude removed them from every branch's history on 14 October 2026.
 >
 > The rest of this page is Codex's record, left as it was.
 
