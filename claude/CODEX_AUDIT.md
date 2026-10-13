@@ -29,7 +29,7 @@
 
 ---
 
-## 1. Two full ESV texts are still in the public git history
+## 1. Two full ESV texts were in the public git history
 
 **Claim:** "The repository does not redistribute the full ESV or NKJV corpora" (`README.md:197`, `docs/TECHNICAL_METHOD.md:201`, `data/README.md:21`). **Verdict: false for anyone who clones the repository.**
 
@@ -42,7 +42,12 @@
 - Both uploads and both deletions were web-UI commits from the owner's account. Codex's fault is narrower: it wrote "does not redistribute" without checking the history.
 - No real API key appears anywhere in the history, only placeholders.
 
-**What it needs:** a history rewrite covering both files and every branch (for example `git filter-repo`), a force-push, and a request to GitHub to purge cached views. It cannot be undone for anyone who has already cloned or forked, so it is Clayton's decision. I have not done it.
+**Done, 14 October 2026, on Clayton's instruction.**
+- I rewrote the history of `main` and all four `codex/*` branches with `git filter-repo`, removing both files, and force-pushed.
+- The four `codex/*` branches still held both files in their current trees, and lost exactly those two files.
+- `main`'s current tree is byte-identical to before; only its history changed.
+- A fresh clone contains neither file.
+- GitHub still serves the old commits through its read-only pull-request refs (#1 to #5), which the owner cannot rewrite. GitHub Support has to purge those.
 
 ## 2. R38 and v6r43 are not Scripture-formed models, and the evidence for them was weaker than presented
 
