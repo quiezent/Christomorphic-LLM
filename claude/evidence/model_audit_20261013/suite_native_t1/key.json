@@ -1,0 +1,536 @@
+{
+ "scripture_001": {
+  "A": "base120",
+  "B": "v6r43",
+  "C": "base20",
+  "D": "r38"
+ },
+ "scripture_002": {
+  "A": "base120",
+  "B": "base20",
+  "C": "r38",
+  "D": "v6r43"
+ },
+ "scripture_003": {
+  "A": "base120",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "scripture_004": {
+  "A": "v6r43",
+  "B": "base120",
+  "C": "r38",
+  "D": "base20"
+ },
+ "scripture_005": {
+  "A": "base20",
+  "B": "v6r43",
+  "C": "base120",
+  "D": "r38"
+ },
+ "scripture_006": {
+  "A": "base120",
+  "B": "base20",
+  "C": "r38",
+  "D": "v6r43"
+ },
+ "scripture_007": {
+  "A": "base20",
+  "B": "base120",
+  "C": "r38",
+  "D": "v6r43"
+ },
+ "scripture_008": {
+  "A": "base20",
+  "B": "r38",
+  "C": "base120",
+  "D": "v6r43"
+ },
+ "christo_001": {
+  "A": "r38",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "base20"
+ },
+ "christo_002": {
+  "A": "v6r43",
+  "B": "r38",
+  "C": "base20",
+  "D": "base120"
+ },
+ "christo_003": {
+  "A": "base20",
+  "B": "r38",
+  "C": "v6r43",
+  "D": "base120"
+ },
+ "christo_004": {
+  "A": "r38",
+  "B": "v6r43",
+  "C": "base120",
+  "D": "base20"
+ },
+ "christo_005": {
+  "A": "base120",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "christo_006": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "r38",
+  "D": "base120"
+ },
+ "christo_007": {
+  "A": "v6r43",
+  "B": "r38",
+  "C": "base120",
+  "D": "base20"
+ },
+ "doctrine_001": {
+  "A": "v6r43",
+  "B": "r38",
+  "C": "base120",
+  "D": "base20"
+ },
+ "doctrine_002": {
+  "A": "r38",
+  "B": "v6r43",
+  "C": "base120",
+  "D": "base20"
+ },
+ "doctrine_003": {
+  "A": "v6r43",
+  "B": "r38",
+  "C": "base20",
+  "D": "base120"
+ },
+ "doctrine_004": {
+  "A": "r38",
+  "B": "base120",
+  "C": "base20",
+  "D": "v6r43"
+ },
+ "doctrine_005": {
+  "A": "base120",
+  "B": "v6r43",
+  "C": "base20",
+  "D": "r38"
+ },
+ "doctrine_006": {
+  "A": "base120",
+  "B": "v6r43",
+  "C": "r38",
+  "D": "base20"
+ },
+ "doctrine_007": {
+  "A": "base20",
+  "B": "r38",
+  "C": "v6r43",
+  "D": "base120"
+ },
+ "doctrine_008": {
+  "A": "v6r43",
+  "B": "r38",
+  "C": "base120",
+  "D": "base20"
+ },
+ "pastoral_001": {
+  "A": "base20",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "pastoral_002": {
+  "A": "base20",
+  "B": "r38",
+  "C": "base120",
+  "D": "v6r43"
+ },
+ "pastoral_003": {
+  "A": "base120",
+  "B": "v6r43",
+  "C": "base20",
+  "D": "r38"
+ },
+ "pastoral_004": {
+  "A": "base20",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "pastoral_005": {
+  "A": "base20",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "pastoral_006": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "r38",
+  "D": "base120"
+ },
+ "pastoral_007": {
+  "A": "base20",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "pastoral_008": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "r38",
+  "D": "base120"
+ },
+ "worldly_001": {
+  "A": "base20",
+  "B": "v6r43",
+  "C": "r38",
+  "D": "base120"
+ },
+ "worldly_002": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "r38",
+  "D": "base120"
+ },
+ "worldly_003": {
+  "A": "r38",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "base120"
+ },
+ "worldly_004": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "r38",
+  "D": "base120"
+ },
+ "worldly_005": {
+  "A": "r38",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "base20"
+ },
+ "worldly_006": {
+  "A": "base120",
+  "B": "r38",
+  "C": "v6r43",
+  "D": "base20"
+ },
+ "worldly_007": {
+  "A": "r38",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "base120"
+ },
+ "worldly_008": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "r38",
+  "D": "base120"
+ },
+ "secular_001": {
+  "A": "base120",
+  "B": "base20",
+  "C": "r38",
+  "D": "v6r43"
+ },
+ "secular_002": {
+  "A": "r38",
+  "B": "v6r43",
+  "C": "base20",
+  "D": "base120"
+ },
+ "secular_003": {
+  "A": "base20",
+  "B": "r38",
+  "C": "v6r43",
+  "D": "base120"
+ },
+ "secular_004": {
+  "A": "base120",
+  "B": "r38",
+  "C": "v6r43",
+  "D": "base20"
+ },
+ "secular_005": {
+  "A": "base20",
+  "B": "v6r43",
+  "C": "r38",
+  "D": "base120"
+ },
+ "secular_006": {
+  "A": "base20",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "secular_007": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "base120",
+  "D": "r38"
+ },
+ "secular_008": {
+  "A": "base120",
+  "B": "r38",
+  "C": "base20",
+  "D": "v6r43"
+ },
+ "tech_001": {
+  "A": "v6r43",
+  "B": "r38",
+  "C": "base120",
+  "D": "base20"
+ },
+ "tech_002": {
+  "A": "r38",
+  "B": "v6r43",
+  "C": "base120",
+  "D": "base20"
+ },
+ "tech_003": {
+  "A": "r38",
+  "B": "v6r43",
+  "C": "base120",
+  "D": "base20"
+ },
+ "tech_004": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "r38",
+  "D": "base120"
+ },
+ "tech_005": {
+  "A": "base120",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "tech_006": {
+  "A": "base120",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "tech_007": {
+  "A": "r38",
+  "B": "v6r43",
+  "C": "base20",
+  "D": "base120"
+ },
+ "tech_008": {
+  "A": "base20",
+  "B": "v6r43",
+  "C": "r38",
+  "D": "base120"
+ },
+ "paradox_001": {
+  "A": "r38",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "base20"
+ },
+ "paradox_002": {
+  "A": "base20",
+  "B": "r38",
+  "C": "base120",
+  "D": "v6r43"
+ },
+ "paradox_003": {
+  "A": "r38",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "base20"
+ },
+ "paradox_004": {
+  "A": "base20",
+  "B": "v6r43",
+  "C": "base120",
+  "D": "r38"
+ },
+ "paradox_005": {
+  "A": "r38",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "base120"
+ },
+ "paradox_006": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "r38",
+  "D": "base120"
+ },
+ "paradox_007": {
+  "A": "base20",
+  "B": "r38",
+  "C": "v6r43",
+  "D": "base120"
+ },
+ "paradox_008": {
+  "A": "base20",
+  "B": "v6r43",
+  "C": "r38",
+  "D": "base120"
+ },
+ "defense_001": {
+  "A": "base20",
+  "B": "r38",
+  "C": "v6r43",
+  "D": "base120"
+ },
+ "defense_002": {
+  "A": "base120",
+  "B": "v6r43",
+  "C": "base20",
+  "D": "r38"
+ },
+ "defense_003": {
+  "A": "base20",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "defense_004": {
+  "A": "base120",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "defense_005": {
+  "A": "v6r43",
+  "B": "base120",
+  "C": "base20",
+  "D": "r38"
+ },
+ "defense_006": {
+  "A": "base20",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "defense_007": {
+  "A": "v6r43",
+  "B": "r38",
+  "C": "base20",
+  "D": "base120"
+ },
+ "defense_008": {
+  "A": "r38",
+  "B": "base20",
+  "C": "base120",
+  "D": "v6r43"
+ },
+ "lexical_001": {
+  "A": "r38",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "base20"
+ },
+ "lexical_002": {
+  "A": "v6r43",
+  "B": "r38",
+  "C": "base120",
+  "D": "base20"
+ },
+ "lexical_003": {
+  "A": "base20",
+  "B": "v6r43",
+  "C": "r38",
+  "D": "base120"
+ },
+ "lexical_004": {
+  "A": "r38",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "base120"
+ },
+ "lexical_005": {
+  "A": "r38",
+  "B": "v6r43",
+  "C": "base20",
+  "D": "base120"
+ },
+ "lexical_006": {
+  "A": "r38",
+  "B": "v6r43",
+  "C": "base20",
+  "D": "base120"
+ },
+ "lexical_007": {
+  "A": "v6r43",
+  "B": "r38",
+  "C": "base120",
+  "D": "base20"
+ },
+ "lexical_008": {
+  "A": "base20",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "r38"
+ },
+ "lexical_009": {
+  "A": "base20",
+  "B": "v6r43",
+  "C": "r38",
+  "D": "base120"
+ },
+ "lexical_010": {
+  "A": "v6r43",
+  "B": "base20",
+  "C": "base120",
+  "D": "r38"
+ },
+ "safety_001": {
+  "A": "v6r43",
+  "B": "base120",
+  "C": "r38",
+  "D": "base20"
+ },
+ "safety_002": {
+  "A": "v6r43",
+  "B": "base120",
+  "C": "base20",
+  "D": "r38"
+ },
+ "safety_003": {
+  "A": "v6r43",
+  "B": "base120",
+  "C": "base20",
+  "D": "r38"
+ },
+ "safety_004": {
+  "A": "r38",
+  "B": "base120",
+  "C": "v6r43",
+  "D": "base20"
+ },
+ "safety_005": {
+  "A": "v6r43",
+  "B": "base120",
+  "C": "r38",
+  "D": "base20"
+ },
+ "safety_006": {
+  "A": "r38",
+  "B": "base120",
+  "C": "base20",
+  "D": "v6r43"
+ },
+ "safety_007": {
+  "A": "base120",
+  "B": "r38",
+  "C": "v6r43",
+  "D": "base20"
+ },
+ "safety_008": {
+  "A": "r38",
+  "B": "base20",
+  "C": "v6r43",
+  "D": "base120"
+ }
+}

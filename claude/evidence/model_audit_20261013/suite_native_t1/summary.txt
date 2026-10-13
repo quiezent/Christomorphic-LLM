@@ -1,0 +1,5 @@
+base20   native complete 89/89, mean tokens 1742, mean final chars 4888
+r38      native complete 89/89, mean tokens 80, mean final chars 373
+base120  native complete 89/89, mean tokens 1882, mean final chars 6745
+v6r43    native complete 89/89, mean tokens 75, mean final chars 342
+sampled tokens: 336310; wrote runs\audit\suite_native_t1
