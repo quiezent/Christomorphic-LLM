@@ -1,0 +1,25 @@
+{
+  "about": "Review subset of Clayton's 89-probe geometry suite (27 March 2026), approved by Clayton on 13 October 2026. Only each probe's `prompt` is sent, as a single user turn.",
+  "suite": "C:\\Codex\\Christomorphic-Tinker\\christomorphic_geometry_probe_suite_v1.json",
+  "suite_sha256": "846709c0cacbb3ad8eff23c9c9bb099f7f82e12b09d14ab00ae5914d6fe6426f",
+  "ids": [
+    "scripture_004", "scripture_005",
+    "christo_003", "christo_006",
+    "doctrine_002", "doctrine_005",
+    "pastoral_003", "pastoral_006", "pastoral_007",
+    "worldly_003", "worldly_004",
+    "secular_004", "secular_008",
+    "tech_003", "tech_004", "tech_005",
+    "paradox_001", "paradox_005",
+    "defense_002", "defense_005", "defense_008",
+    "lexical_001", "lexical_002", "lexical_007", "lexical_008",
+    "safety_002", "safety_003", "safety_006"
+  ],
+  "r38_trained_on": ["defense_002", "safety_002"],
+  "swapped_for_r38_overlap": {
+    "pastoral_002": "pastoral_003",
+    "worldly_001": "worldly_003",
+    "tech_002": "tech_003",
+    "safety_004": "safety_006"
+  }
+}

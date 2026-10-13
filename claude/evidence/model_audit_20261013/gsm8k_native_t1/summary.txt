@@ -1,0 +1,5 @@
+base20   native complete 100/100, mean tokens 425, mean final chars 359, correct 93/100
+r38      native complete 100/100, mean tokens 85, mean final chars 249, correct 69/100
+base120  native complete 100/100, mean tokens 326, mean final chars 484, correct 90/100
+v6r43    native complete 100/100, mean tokens 53, mean final chars 147, correct 56/100
+sampled tokens: 88889; wrote runs\audit\gsm8k_native_t1

@@ -1,0 +1,5 @@
+base20   bare   complete 34/89, mean tokens 5795, mean final chars 882
+r38      bare   complete 89/89, mean tokens 66, mean final chars 292
+base120  bare   complete 87/89, mean tokens 2139, mean final chars 4772
+v6r43    bare   complete 89/89, mean tokens 57, mean final chars 249
+sampled tokens: 717035; wrote runs\audit\suite_bare_t0

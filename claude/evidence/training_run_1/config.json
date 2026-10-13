@@ -1,0 +1,14 @@
+{
+ "name": "fm1",
+ "data": "C:\\Claude\\Christomorphic\\runs\\data\\train.jsonl",
+ "epochs": 4,
+ "batch": 16,
+ "lr": 0.0001,
+ "warmup": 3,
+ "rank": 32,
+ "seed": 20261013,
+ "ttl_days": 14,
+ "dry": false,
+ "examples": 198,
+ "steps": 48
+}

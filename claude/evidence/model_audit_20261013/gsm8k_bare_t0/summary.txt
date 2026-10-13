@@ -1,0 +1,5 @@
+base20   bare   complete 80/100, mean tokens 2029, mean final chars 208, correct 78/100
+r38      bare   complete 100/100, mean tokens 71, mean final chars 196, correct 80/100
+base120  bare   complete 98/100, mean tokens 563, mean final chars 396, correct 93/100
+v6r43    bare   complete 100/100, mean tokens 31, mean final chars 78, correct 53/100
+sampled tokens: 269350; wrote runs\audit\gsm8k_bare_t0
