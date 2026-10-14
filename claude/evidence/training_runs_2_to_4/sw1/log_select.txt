@@ -1,0 +1,1 @@
+{'none_prompt': 144, 'decisive_A': 207, 'decisive_B': 129, 'passage_prompt': 177, 'dropped_passage_prompt': 52, 'dropped_none_prompt': 6} -> 321 examples per arm

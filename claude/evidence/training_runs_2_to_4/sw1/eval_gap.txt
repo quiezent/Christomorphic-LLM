@@ -1,0 +1,9 @@
+held-out passage prompts: 57 | mean rank (1 best, 4 worst): {'base': 2.38, 'base_witnessed': 2.89, 'A': 2.34, 'B': 2.39} | rankings with a violation: {'base_witnessed': 2, 'A': 9, 'base': 3}
+held-out NONE prompts, base: complete 50/50, religious intrusion 4, filter flags {'religious_intrusion': 4, 'incomplete': 1}
+held-out NONE prompts, A: complete 50/50, religious intrusion 3, filter flags {'misquote': 1, 'religious_intrusion': 3}
+held-out NONE prompts, B: complete 50/50, religious intrusion 1, filter flags {'religious_intrusion': 1, 'incomplete': 1}
+held-out passage prompts, base: complete 57/57, filter flags {'religious_intrusion': 7}
+held-out passage prompts, base_witnessed: complete 57/57, filter flags {'religious_intrusion': 10, 'attributed_non_scripture': 4, 'misquote': 1, 'recitation': 2}
+held-out passage prompts, A: complete 57/57, filter flags {'religious_intrusion': 3}
+held-out passage prompts, B: complete 57/57, filter flags {'religious_intrusion': 7}
+tokens {'openai/gpt-oss-20b': 215016, 'tinker://c25b10d2-761c-5c9e-bccd-7b16a36db820:train:0/sampler_weights/sw1B-e3': 128466, 'tinker://89c8ad5b-9ccf-5f60-9add-43459f043e75:train:0/sampler_weights/sw1A-e3': 168591, 'openai/gpt-oss-120b': 313646}

@@ -1,0 +1,10 @@
+{
+ "init": "base",
+ "name": "rl1",
+ "iters": 25,
+ "with_p": 12,
+ "none": 4,
+ "lr": 2e-05,
+ "max_tokens": 6000,
+ "save_every": 5
+}

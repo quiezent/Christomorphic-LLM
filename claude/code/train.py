@@ -59,6 +59,52 @@ def lr_at(step, total, peak, warmup):
     return peak * (0.1 + 0.9 * 0.5 * (1 + math.cos(math.pi * frac)))
 
 
+def fit(data, name, epochs=3, batch=16, lr=1e-4, warmup=3, rank=32, seed=20261013, ttl_days=14, config=None, init_state=None):
+    """Train a fresh LoRA on gpt-oss-20b over prepared datums; save a sampler each epoch and the state at the end."""
+    per_epoch = len(data) // batch
+    total = per_epoch * epochs
+    out = HERE / "runs" / name
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "config.json").write_text(json.dumps((config or {}) | {"examples": len(data), "steps": total}, indent=1))
+    service = tinker.ServiceClient(project_id=PROJECT_ID)
+    if init_state:  # continue from an earlier stage's LoRA weights (fresh optimizer state)
+        tc = service.create_training_client_from_state(init_state)
+        print("loaded", init_state, flush=True)
+    else:
+        tc = service.create_lora_training_client(BASE_MODEL, rank=rank, seed=seed,
+                                                 train_mlp=True, train_attn=True, train_unembed=False)
+    ttl = ttl_days * 86400
+    checkpoints, step = {}, 0
+    with open(out / "metrics.jsonl", "a", encoding="utf-8") as log:
+        for epoch in range(epochs):
+            order = list(range(len(data)))
+            random.Random(seed + epoch).shuffle(order)
+            for s in range(per_epoch):
+                chunk = [data[i] for i in order[s * batch:(s + 1) * batch]]
+                rate = lr_at(step, total, lr, warmup)
+                t0 = time.time()
+                fb = tc.forward_backward(chunk, "cross_entropy")
+                op = tc.optim_step(types.AdamParams(learning_rate=rate, beta1=0.9, beta2=0.95, eps=1e-8,
+                                                    weight_decay=0.0, grad_clip_norm=1.0))
+                res = fb.result()
+                op.result()
+                nll = compute_mean_nll([o["logprobs"] for o in res.loss_fn_outputs],
+                                       [d.loss_fn_inputs["weights"] for d in chunk])
+                rec = {"step": step + 1, "epoch": epoch + 1, "lr": rate, "nll": nll, "secs": round(time.time() - t0, 1)}
+                log.write(json.dumps(rec) + "\n")
+                log.flush()
+                print(rec, flush=True)
+                step += 1
+            path = tc.save_weights_for_sampler(f"{name}-e{epoch + 1}", ttl_seconds=ttl).result().path
+            checkpoints[f"sampler_e{epoch + 1}"] = path
+            print("saved", path, flush=True)
+            (out / "checkpoints.json").write_text(json.dumps(checkpoints, indent=1))
+    checkpoints["state_final"] = tc.save_state(f"{name}-final", ttl_seconds=ttl).result().path
+    (out / "checkpoints.json").write_text(json.dumps(checkpoints, indent=1))
+    print(json.dumps(checkpoints, indent=1))
+    return checkpoints
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--name", required=True)
@@ -86,41 +132,7 @@ def main():
         show(data[0], tok)
         return
 
-    out = HERE / "runs" / args.name
-    out.mkdir(parents=True, exist_ok=True)
-    (out / "config.json").write_text(json.dumps(vars(args) | {"examples": len(data), "steps": total}, indent=1))
-    service = tinker.ServiceClient(project_id=PROJECT_ID)
-    tc = service.create_lora_training_client(BASE_MODEL, rank=args.rank, seed=args.seed,
-                                             train_mlp=True, train_attn=True, train_unembed=False)
-    ttl = args.ttl_days * 86400
-    checkpoints, step = {}, 0
-    with open(out / "metrics.jsonl", "a", encoding="utf-8") as log:
-        for epoch in range(args.epochs):
-            order = list(range(len(data)))
-            random.Random(args.seed + epoch).shuffle(order)
-            for s in range(per_epoch):
-                batch = [data[i] for i in order[s * args.batch:(s + 1) * args.batch]]
-                lr = lr_at(step, total, args.lr, args.warmup)
-                t0 = time.time()
-                fb = tc.forward_backward(batch, "cross_entropy")
-                op = tc.optim_step(types.AdamParams(learning_rate=lr, beta1=0.9, beta2=0.95, eps=1e-8,
-                                                    weight_decay=0.0, grad_clip_norm=1.0))
-                res = fb.result()
-                op.result()
-                nll = compute_mean_nll([o["logprobs"] for o in res.loss_fn_outputs],
-                                       [d.loss_fn_inputs["weights"] for d in batch])
-                rec = {"step": step + 1, "epoch": epoch + 1, "lr": lr, "nll": nll, "secs": round(time.time() - t0, 1)}
-                log.write(json.dumps(rec) + "\n")
-                log.flush()
-                print(rec, flush=True)
-                step += 1
-            path = tc.save_weights_for_sampler(f"{args.name}-e{epoch + 1}", ttl_seconds=ttl).result().path
-            checkpoints[f"sampler_e{epoch + 1}"] = path
-            print("saved", path, flush=True)
-            (out / "checkpoints.json").write_text(json.dumps(checkpoints, indent=1))
-    checkpoints["state_final"] = tc.save_state(f"{args.name}-final", ttl_seconds=ttl).result().path
-    (out / "checkpoints.json").write_text(json.dumps(checkpoints, indent=1))
-    print(json.dumps(checkpoints, indent=1))
+    fit(data, args.name, args.epochs, args.batch, args.lr, args.warmup, args.rank, args.seed, args.ttl_days, vars(args))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,3 @@
+rl_i15   bare   complete 100/100, mean tokens 766, mean final chars 334, correct 94/100
+rl_i25   bare   complete 100/100, mean tokens 808, mean final chars 358, correct 96/100
+sampled tokens: 157407; wrote runs\rl1\eval_gsm8k
