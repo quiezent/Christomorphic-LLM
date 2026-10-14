@@ -16,5 +16,8 @@ The scripts behind the reports in this folder. They run against `tinker==0.33.1`
 | `sw.py` | Runs 2 and 4 data pipeline: prompts (oasst1, HH-RLHF), passage picking and confirmation, candidates, objective faithfulness checks, judge rankings, selection, training |
 | `sw_eval.py` | Held-out witness-gap test, four-model held-out comparison with the judge, judge-decision packet |
 | `stage1.py` | Run 3: whole ESV/NKJV as plain chapter documents, plus a verse-recall test |
-| `stage3.py` | Run 4: GRPO-style RL with a Scripture-reading judge, both label orders, objective faults scoring −1 |
+| `stage3.py` | Runs 4 and 5: GRPO-style RL with a Scripture-reading judge, both label orders. `--reward rank` (run 4: faults and violations −1) or `--reward servant` (run 5: violations dominate, length neutral); `--pilot` judges the base model once with no update |
+| `servant.py` | Run 5 prompts: the exact words of the person speaking in each Scripture scene (ESV and NKJV), the scene and Philippians 2:3-11 for the judge, bridge and ordinary prompts, and a scene-level hold-out |
+| `scenes.json` | Run 5's scene list: ids, families, the verses spoken and the verses the judge reads. References only, no Scripture text |
+| `pilot_report.py` | Run 5 pilot readout by scene family: reward spread, violations, faults, Bible-study mode, length |
 | `judges.py` | Judge bake-off: order consistency, agreement with blinded review, violation recall, cost |

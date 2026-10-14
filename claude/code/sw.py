@@ -313,7 +313,7 @@ def check(c, index, prompt, provided):
         if cov < 0.3 and CUE.search(prose[max(0, m.start() - 80):m.start()]):
             return "attributed_non_scripture"
     bw = words(body.replace("LORD", "Lord"))
-    if grams(bw, 10) & g10:
+    if (grams(bw, 10) - grams(words(prompt.replace("LORD", "Lord")), 10)) & g10:  # quoting the request back is not recitation
         return "recitation"
     if not RELIGIOUS.search(prompt) and RELIGIOUS.search(c["final"]):
         return "religious_intrusion"

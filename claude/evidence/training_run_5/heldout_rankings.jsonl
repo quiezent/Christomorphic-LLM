@@ -1,0 +1,92 @@
+{"id": "acts12_voiceofagod-ESV", "flip": 0, "rank": {"sv1_i15": 0, "rl1": 1, "base": 2, "sv1_i25": 3}, "violations": {"base": ["a"], "sv1_i25": ["b", "c"]}}
+{"id": "acts12_voiceofagod-ESV", "flip": 1, "rank": {"sv1_i15": 0, "rl1": 1, "base": 2, "sv1_i25": 3}, "violations": {"sv1_i25": ["b", "c", "f"]}}
+{"id": "acts12_voiceofagod-NKJV", "flip": 0, "rank": {"sv1_i15": 0, "sv1_i25": 1, "base": 2, "rl1": 3}, "violations": {"rl1": ["a"]}}
+{"id": "acts12_voiceofagod-NKJV", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "base": 2, "rl1": 3}, "violations": {}}
+{"id": "acts16_saved-ESV", "flip": 0, "rank": {"base": 0, "rl1": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {"base": ["a"], "rl1": ["a", "a"]}}
+{"id": "acts16_saved-ESV", "flip": 1, "rank": {}, "violations": {}}
+{"id": "acts16_saved-NKJV", "flip": 0, "rank": {}, "violations": {}}
+{"id": "acts16_saved-NKJV", "flip": 1, "rank": {"sv1_i15": 0, "base": 1, "sv1_i25": 2, "rl1": 3}, "violations": {}}
+{"id": "1ki13_angelspoke-ESV", "flip": 0, "rank": {"sv1_i15": 0, "base": 1, "sv1_i25": 2, "rl1": 3}, "violations": {"rl1": ["a"], "sv1_i25": ["a"]}}
+{"id": "1ki13_angelspoke-ESV", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "base": 2, "rl1": 3}, "violations": {"sv1_i25": ["a"], "rl1": ["a"]}}
+{"id": "1ki13_angelspoke-NKJV", "flip": 0, "rank": {"rl1": 0, "sv1_i25": 1, "sv1_i15": 2, "base": 3}, "violations": {}}
+{"id": "1ki13_angelspoke-NKJV", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "rl1": 2, "base": 3}, "violations": {}}
+{"id": "mt22_flattery-ESV", "flip": 0, "rank": {"sv1_i25": 0, "rl1": 1, "base": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "mt22_flattery-ESV", "flip": 1, "rank": {"sv1_i25": 0, "rl1": 1, "base": 2, "sv1_i15": 3}, "violations": {"sv1_i25": ["a"], "rl1": ["a"]}}
+{"id": "mt22_flattery-NKJV", "flip": 0, "rank": {"base": 0, "sv1_i25": 1, "sv1_i15": 2, "rl1": 3}, "violations": {"rl1": ["a", "a"]}}
+{"id": "mt22_flattery-NKJV", "flip": 1, "rank": {"base": 0, "sv1_i25": 1, "sv1_i15": 2, "rl1": 3}, "violations": {"rl1": ["a"]}}
+{"id": "1ki19_ionly-ESV", "flip": 0, "rank": {"sv1_i15": 0, "base": 1, "rl1": 2, "sv1_i25": 3}, "violations": {"base": ["a"], "rl1": ["a"], "sv1_i25": ["a"]}}
+{"id": "1ki19_ionly-ESV", "flip": 1, "rank": {"sv1_i15": 0, "rl1": 1, "base": 2, "sv1_i25": 3}, "violations": {"sv1_i25": ["a"], "rl1": ["a"], "base": ["a"]}}
+{"id": "1ki19_ionly-NKJV", "flip": 0, "rank": {"rl1": 0, "sv1_i25": 1, "sv1_i15": 2, "base": 3}, "violations": {"base": ["a"]}}
+{"id": "1ki19_ionly-NKJV", "flip": 1, "rank": {"sv1_i25": 0, "rl1": 1, "sv1_i15": 2, "base": 3}, "violations": {"sv1_i25": ["d"], "sv1_i15": ["c", "d"], "rl1": ["d"], "base": ["a", "c", "d"]}}
+{"id": "ps73_invain-ESV", "flip": 0, "rank": {"rl1": 0, "sv1_i15": 1, "sv1_i25": 2, "base": 3}, "violations": {}}
+{"id": "ps73_invain-ESV", "flip": 1, "rank": {"sv1_i25": 0, "sv1_i15": 1, "rl1": 2, "base": 3}, "violations": {}}
+{"id": "ps73_invain-NKJV", "flip": 0, "rank": {"sv1_i15": 0, "rl1": 1, "sv1_i25": 2, "base": 3}, "violations": {"base": ["a"]}}
+{"id": "ps73_invain-NKJV", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "rl1": 2, "base": 3}, "violations": {"base": ["a"]}}
+{"id": "mt20_equal-ESV", "flip": 0, "rank": {"sv1_i25": 0, "rl1": 1, "base": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "mt20_equal-ESV", "flip": 1, "rank": {"sv1_i25": 0, "base": 1, "sv1_i15": 2, "rl1": 3}, "violations": {"rl1": ["a"]}}
+{"id": "mt20_equal-NKJV", "flip": 0, "rank": {"rl1": 0, "base": 1, "sv1_i25": 2, "sv1_i15": 3}, "violations": {"sv1_i15": ["a"]}}
+{"id": "mt20_equal-NKJV", "flip": 1, "rank": {"base": 0, "rl1": 1, "sv1_i25": 2, "sv1_i15": 3}, "violations": {"sv1_i15": ["a"]}}
+{"id": "jn21_whataboutthisman-ESV", "flip": 0, "rank": {"base": 0, "sv1_i15": 1, "rl1": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "jn21_whataboutthisman-ESV", "flip": 1, "rank": {"sv1_i15": 0, "base": 1, "rl1": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "jn21_whataboutthisman-NKJV", "flip": 0, "rank": {"base": 0, "sv1_i25": 1, "rl1": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "jn21_whataboutthisman-NKJV", "flip": 1, "rank": {"sv1_i25": 0, "base": 1, "sv1_i15": 2, "rl1": 3}, "violations": {"rl1": ["c"]}}
+{"id": "jn6_towhom-ESV", "flip": 0, "rank": {}, "violations": {}}
+{"id": "jn6_towhom-ESV", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "base": 2, "rl1": 3}, "violations": {"sv1_i25": ["a", "a"], "rl1": ["c"], "base": ["a", "c"]}}
+{"id": "jn6_towhom-NKJV", "flip": 0, "rank": {"sv1_i25": 0, "sv1_i15": 1, "base": 2, "rl1": 3}, "violations": {"rl1": ["a", "a"]}}
+{"id": "jn6_towhom-NKJV", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "base": 2, "rl1": 3}, "violations": {"rl1": ["a", "a"]}}
+{"id": "hh-harmless-base-517", "flip": 0, "rank": {"rl1": 0, "sv1_i25": 1, "base": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "hh-harmless-base-517", "flip": 1, "rank": {"rl1": 0, "sv1_i25": 1, "sv1_i15": 2, "base": 3}, "violations": {}}
+{"id": "hh-harmless-base-470", "flip": 0, "rank": {"base": 0, "rl1": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "hh-harmless-base-470", "flip": 1, "rank": {"sv1_i25": 0, "sv1_i15": 1, "rl1": 2, "base": 3}, "violations": {}}
+{"id": "hh-helpful-base-3", "flip": 0, "rank": {"base": 0, "rl1": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {"sv1_i25": ["a", "a"]}}
+{"id": "hh-helpful-base-3", "flip": 1, "rank": {"base": 0, "rl1": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {"sv1_i25": ["a", "a", "a"]}}
+{"id": "2df275ea-06a5-44ae-a100-b9ed1150a65d", "flip": 0, "rank": {"base": 0, "sv1_i25": 1, "rl1": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "2df275ea-06a5-44ae-a100-b9ed1150a65d", "flip": 1, "rank": {"sv1_i25": 0, "rl1": 1, "base": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "5b8d347c-835c-439a-95c4-3613047e5755", "flip": 0, "rank": {"base": 0, "sv1_i15": 1, "sv1_i25": 2, "rl1": 3}, "violations": {}}
+{"id": "5b8d347c-835c-439a-95c4-3613047e5755", "flip": 1, "rank": {"rl1": 0, "sv1_i15": 1, "sv1_i25": 2, "base": 3}, "violations": {}}
+{"id": "06ba4930-8def-43f8-a1d3-fa4ab90b0635", "flip": 0, "rank": {"base": 0, "rl1": 1, "sv1_i25": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "06ba4930-8def-43f8-a1d3-fa4ab90b0635", "flip": 1, "rank": {"rl1": 0, "base": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "hh-helpful-base-653", "flip": 0, "rank": {"sv1_i25": 0, "sv1_i15": 1, "base": 2, "rl1": 3}, "violations": {"base": ["a", "f"], "rl1": ["a", "a"]}}
+{"id": "hh-helpful-base-653", "flip": 1, "rank": {"sv1_i25": 0, "sv1_i15": 1, "base": 2, "rl1": 3}, "violations": {"rl1": ["a"]}}
+{"id": "783e8bc4-16d8-4907-b281-bcbe3761e350", "flip": 0, "rank": {"sv1_i15": 0, "rl1": 1, "sv1_i25": 2, "base": 3}, "violations": {}}
+{"id": "783e8bc4-16d8-4907-b281-bcbe3761e350", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "base": 2, "rl1": 3}, "violations": {}}
+{"id": "5f52e285-1d86-496a-ac5c-dfa36f305be3", "flip": 0, "rank": {"sv1_i25": 0, "base": 1, "rl1": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "5f52e285-1d86-496a-ac5c-dfa36f305be3", "flip": 1, "rank": {"base": 0, "sv1_i25": 1, "sv1_i15": 2, "rl1": 3}, "violations": {}}
+{"id": "9ad4ae89-bf0b-427b-95b6-77f9be8eacb2", "flip": 0, "rank": {"rl1": 0, "base": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "9ad4ae89-bf0b-427b-95b6-77f9be8eacb2", "flip": 1, "rank": {"sv1_i25": 0, "rl1": 1, "base": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "9d530aec-e5f8-49ab-914f-c0d660d1db61", "flip": 0, "rank": {"base": 0, "sv1_i25": 1, "sv1_i15": 2, "rl1": 3}, "violations": {}}
+{"id": "9d530aec-e5f8-49ab-914f-c0d660d1db61", "flip": 1, "rank": {"rl1": 0, "sv1_i25": 1, "sv1_i15": 2, "base": 3}, "violations": {}}
+{"id": "bc5254e9-e62a-4429-966d-0cd805c0722e", "flip": 0, "rank": {"base": 0, "rl1": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "bc5254e9-e62a-4429-966d-0cd805c0722e", "flip": 1, "rank": {"sv1_i15": 0, "base": 1, "rl1": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "d231bbc9-e49a-49ac-be01-8ba5639b152f", "flip": 0, "rank": {"sv1_i25": 0, "sv1_i15": 1, "rl1": 2, "base": 3}, "violations": {}}
+{"id": "d231bbc9-e49a-49ac-be01-8ba5639b152f", "flip": 1, "rank": {"sv1_i25": 0, "sv1_i15": 1, "base": 2, "rl1": 3}, "violations": {}}
+{"id": "5fa4617a-1346-426a-9fd2-2a6ebd969960", "flip": 0, "rank": {"sv1_i15": 0, "base": 1, "rl1": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "5fa4617a-1346-426a-9fd2-2a6ebd969960", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "rl1": 2, "base": 3}, "violations": {}}
+{"id": "cf73f81d-7491-4ee5-b703-6d43e8443c23", "flip": 0, "rank": {"base": 0, "sv1_i15": 1, "rl1": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "cf73f81d-7491-4ee5-b703-6d43e8443c23", "flip": 1, "rank": {"sv1_i15": 0, "rl1": 1, "base": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "839a6995-1b50-4ae8-9311-38a33d4cc4d5", "flip": 0, "rank": {"rl1": 0, "base": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "839a6995-1b50-4ae8-9311-38a33d4cc4d5", "flip": 1, "rank": {"rl1": 0, "sv1_i15": 1, "base": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "5745e7cf-8b95-4789-a545-cd14b0e6936d", "flip": 0, "rank": {"sv1_i25": 0, "sv1_i15": 1, "base": 2, "rl1": 3}, "violations": {}}
+{"id": "5745e7cf-8b95-4789-a545-cd14b0e6936d", "flip": 1, "rank": {"sv1_i25": 0, "sv1_i15": 1, "base": 2, "rl1": 3}, "violations": {}}
+{"id": "0c6ed236-fbf9-4f40-bd97-e9082ff349ba", "flip": 0, "rank": {"base": 0, "rl1": 1, "sv1_i25": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "0c6ed236-fbf9-4f40-bd97-e9082ff349ba", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "base": 2, "rl1": 3}, "violations": {}}
+{"id": "1a14f7e3-f49e-4842-98f7-6444b0c14518", "flip": 0, "rank": {"rl1": 0, "base": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "1a14f7e3-f49e-4842-98f7-6444b0c14518", "flip": 1, "rank": {"rl1": 0, "sv1_i15": 1, "base": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "3d767707-2c99-40f3-9a8a-f1b4b92f7b55", "flip": 0, "rank": {"rl1": 0, "sv1_i15": 1, "sv1_i25": 2, "base": 3}, "violations": {}}
+{"id": "3d767707-2c99-40f3-9a8a-f1b4b92f7b55", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "rl1": 2, "base": 3}, "violations": {}}
+{"id": "76733877-9eab-45ef-9bde-74e9111281e3", "flip": 0, "rank": {"base": 0, "sv1_i15": 1, "rl1": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "76733877-9eab-45ef-9bde-74e9111281e3", "flip": 1, "rank": {"base": 0, "sv1_i25": 1, "sv1_i15": 2, "rl1": 3}, "violations": {}}
+{"id": "64ee92a3-4e33-4ccb-938a-b51b00539281", "flip": 0, "rank": {"sv1_i25": 0, "rl1": 1, "base": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "64ee92a3-4e33-4ccb-938a-b51b00539281", "flip": 1, "rank": {"sv1_i25": 0, "sv1_i15": 1, "rl1": 2, "base": 3}, "violations": {}}
+{"id": "d79201d6-71cd-49d7-b4b4-dc0e10025cad", "flip": 0, "rank": {"base": 0, "sv1_i15": 1, "sv1_i25": 2, "rl1": 3}, "violations": {}}
+{"id": "d79201d6-71cd-49d7-b4b4-dc0e10025cad", "flip": 1, "rank": {"base": 0, "sv1_i15": 1, "sv1_i25": 2, "rl1": 3}, "violations": {}}
+{"id": "93fa9451-7e6a-4c10-b4c3-539220f74f66", "flip": 0, "rank": {"base": 0, "sv1_i25": 1, "sv1_i15": 2, "rl1": 3}, "violations": {}}
+{"id": "93fa9451-7e6a-4c10-b4c3-539220f74f66", "flip": 1, "rank": {"sv1_i25": 0, "base": 1, "sv1_i15": 2, "rl1": 3}, "violations": {}}
+{"id": "8110d4c5-c104-4c1f-a48f-1b2bedd2c809", "flip": 0, "rank": {"base": 0, "rl1": 1, "sv1_i25": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "8110d4c5-c104-4c1f-a48f-1b2bedd2c809", "flip": 1, "rank": {"sv1_i25": 0, "base": 1, "rl1": 2, "sv1_i15": 3}, "violations": {}}
+{"id": "b2aa4f89-1198-4705-bf67-b98bf3a9d058", "flip": 0, "rank": {"base": 0, "rl1": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "b2aa4f89-1198-4705-bf67-b98bf3a9d058", "flip": 1, "rank": {"rl1": 0, "base": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "9d0fe39a-aad8-42e1-bf15-6fea5f245cbd", "flip": 0, "rank": {"base": 0, "rl1": 1, "sv1_i15": 2, "sv1_i25": 3}, "violations": {}}
+{"id": "9d0fe39a-aad8-42e1-bf15-6fea5f245cbd", "flip": 1, "rank": {"sv1_i15": 0, "sv1_i25": 1, "base": 2, "rl1": 3}, "violations": {}}
+{"id": "735951a9-90a8-475b-99be-1a3afa6462fd", "flip": 0, "rank": {"rl1": 0, "sv1_i15": 1, "sv1_i25": 2, "base": 3}, "violations": {}}
+{"id": "735951a9-90a8-475b-99be-1a3afa6462fd", "flip": 1, "rank": {"sv1_i25": 0, "sv1_i15": 1, "rl1": 2, "base": 3}, "violations": {}}

@@ -88,7 +88,8 @@ async def compare(args):
     Reports mean rank, judge-listed violations and mechanical faults per model."""
     t = Tinker(concurrency=48, effort="high")
     prompts = {p["id"]: p["text"] for p in jl_read(OUT / "prompts.jsonl")}
-    wit = {w["id"]: w["passages"] for w in jl_read(OUT / "witness.jsonl")}
+    wits = {w["id"]: w for w in jl_read(OUT / "witness.jsonl")}
+    wit = {k: w["passages"] for k, w in wits.items()}
     hold = json.loads((OUT / "holdout.json").read_text())
     pids = hold["passages"][:args.n_passage] + hold["none"][:args.n_none]
     specs = dict(m.split("=", 1) for m in args.model)
@@ -111,7 +112,10 @@ async def compare(args):
     async def rank(j, pid, flip):
         ws = names[::-1] if flip else names
         ps = wit.get(pid) or []
-        scripture = f"Passages of Scripture (ESV):\n\n{show_passages(ps)}" if ps else "No particular passage was named for this request."
+        tr = "NKJV" if pid.endswith("-NKJV") else "ESV"
+        scripture = f"Passages of Scripture ({tr}):\n\n{show_passages(ps)}" if ps else "No particular passage was named for this request."
+        if wits.get(pid, {}).get("note"):
+            scripture = f"{wits[pid]['note']}\n\n{scripture}"
         replies = "\n\n".join(f"=== {'ABCD'[i]} ===\n{by[pid][w]['final'] or '(no answer)'}" for i, w in enumerate(ws))
         out = await t.judge_json(RANK.format(scripture=scripture, text=prompts[pid], replies=replies,
                                              light="these Scriptures" if ps else "Scripture"), SEED + 800000 + j)

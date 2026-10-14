@@ -1,0 +1,8 @@
+{
+ "sampler_i5": "tinker://03872cd0-9dba-5aad-b436-e13725e80326:train:0/sampler_weights/sv1-i5",
+ "sampler_i10": "tinker://03872cd0-9dba-5aad-b436-e13725e80326:train:0/sampler_weights/sv1-i10",
+ "sampler_i15": "tinker://03872cd0-9dba-5aad-b436-e13725e80326:train:0/sampler_weights/sv1-i15",
+ "sampler_i20": "tinker://03872cd0-9dba-5aad-b436-e13725e80326:train:0/sampler_weights/sv1-i20",
+ "sampler_i25": "tinker://03872cd0-9dba-5aad-b436-e13725e80326:train:0/sampler_weights/sv1-i25",
+ "state_final": "tinker://03872cd0-9dba-5aad-b436-e13725e80326:train:0/weights/sv1-final"
+}
