@@ -2,1569 +2,981 @@
  {
   "unit": "front",
   "where": "README.md:197",
-  "claim": "The repository does not redistribute the full ESV or NKJV corpora.",
-  "verdict": "WRONG",
-  "severity": "high",
-  "correction": "The current tree does not include the corpora, but the full ESV text is still in the public git history (e976f47). Purge it (git filter-repo plus force-push, with GitHub cache/fork caveats), or at least stop claiming non-redistribution until that is done. CLAUDE.md treats this text as research-only."
+  "claim": "The repository does not redistribute the full ESV or NKJV corpora."
  },
  {
   "unit": "front",
   "where": "README.md:41 (also README.md:130-133, PROJECT_BRIEF.md:66)",
-  "claim": "R38-20b remains the strongest archived Word-prior/false-center witness; V6R43-120b the strongest archived 120B pressure-refusal witness.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Describe R38 as a 20B adapter trained on templated commentary plus 56 authored answers. It was preferred in a March review and did better on truth, care and obligations, but it badly degrades general reasoning (about 6/36 vs 23/36 for base) and, in self-hosted reruns, its full adapter underperformed base. Describe v6r43 with the same balance."
+  "claim": "R38-20b remains the strongest archived Word-prior/false-center witness; V6R43-120b the strongest archived 120B pressure-refusal witness."
  },
  {
   "unit": "front",
   "where": "README.md:29",
-  "claim": "Seed 2's jointly reviewed correctness improved 19/36 (base) to 25/36; complete reasoning 15/36 to 17/36; judgment episodes fell 6/36 to 4/36.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Report both seeds and the fresh-base rerun. Correctness gains replicate modestly (24-25 vs 19-23 base). Complete reasoning does not separate from base noise. Judgment episodes fell in both seeds, and Seed 2 did not meet the bar of beating R38."
+  "claim": "Seed 2's jointly reviewed correctness improved 19/36 (base) to 25/36; complete reasoning 15/36 to 17/36; judgment episodes fell 6/36 to 4/36."
  },
  {
   "unit": "front",
   "where": "README.md:27",
-  "claim": "Seed 2 has 2,384/2,386 nonzero projection operators whose singular values fit inverse-rank better than exponential-in-rank.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "State that the inverse-rank spectrum also appears in the non-Scripture-trained R38 adapter (2,396/2,398), so it says nothing Scripture- or Christ-specific."
+  "claim": "Seed 2 has 2,384/2,386 nonzero projection operators whose singular values fit inverse-rank better than exponential-in-rank."
  },
  {
   "unit": "front",
   "where": "PROJECT_BRIEF.md:89",
-  "claim": "Reconstruction update has a reproducible inverse-rank spectrum across 2,386 nonzero projection operators.",
-  "verdict": "OVERSTATED",
-  "severity": "low",
-  "correction": "'In 2,384 of 2,386 operators; the same shape appears in a non-Scripture-trained adapter (R38).'"
+  "claim": "Reconstruction update has a reproducible inverse-rank spectrum across 2,386 nonzero projection operators."
  },
  {
   "unit": "front",
   "where": "README.md:31",
-  "claim": "Centered R38 Jesus/ Christ adapter-delta rows at 99.81st/99.96th percentiles; V6R43 at 95.40/99.58; shared shift cancels in softmax.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Numbers are accurate; see the 'distinctive' framing claim for the needed context."
+  "claim": "Centered R38 Jesus/ Christ adapter-delta rows at 99.81st/99.96th percentiles; V6R43 at 95.40/99.58; shared shift cancels in softmax."
  },
  {
   "unit": "front",
   "where": "PROJECT_BRIEF.md:90",
-  "claim": "R38 and V6R43 show distinctive relative Jesus/Christ token-row changes after removing the common shift.",
-  "verdict": "OVERSTATED",
-  "severity": "medium",
-  "correction": "Jesus/Christ rows moved about as much as common function words and trained template vocabulary. High percentiles reflect what appeared in training targets and are not distinctive."
+  "claim": "R38 and V6R43 show distinctive relative Jesus/Christ token-row changes after removing the common shift."
  },
  {
   "unit": "front",
   "where": "README.md:33 (also README.md:46)",
-  "claim": "Four selected Jesus/Christ output-row interventions changed token scores without changing any returned message (192/192 comparisons per model).",
-  "verdict": "OVERSTATED",
-  "severity": "low",
-  "correction": "'Two Jesus/Christ row edits (96/96 per model) and two matched control-row edits left every returned message unchanged.' The substantive finding stands."
+  "claim": "Four selected Jesus/Christ output-row interventions changed token scores without changing any returned message (192/192 comparisons per model)."
  },
  {
   "unit": "front",
   "where": "README.md:9 (also PROJECT_BRIEF.md:94)",
-  "claim": "All four RWCE arms completed 192 updates each, 768 total, with accepted artifacts and a checksum-verified local backup.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None. The checkpoint contents (Adam/RNG) are recorded but have never been deserialized."
+  "claim": "All four RWCE arms completed 192 updates each, 768 total, with accepted artifacts and a checksum-verified local backup."
  },
  {
   "unit": "front",
   "where": "README.md:35",
-  "claim": "Accepted dose totals 232,543,824 input positions and 100,715,396 positive Scripture target occurrences.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "Accepted dose totals 232,543,824 input positions and 100,715,396 positive Scripture target occurrences."
  },
  {
   "unit": "front",
   "where": "README.md:35",
-  "claim": "RWCE keeps exact Scripture as its only loss-bearing text.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "RWCE keeps exact Scripture as its only loss-bearing text."
  },
  {
   "unit": "front",
   "where": "README.md:9, README.md:35 (PROJECT_BRIEF.md:94)",
-  "claim": "Prediction improved sharply on repeated Scripture rows; uniform arms have lower common unweighted training-set CE.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "Prediction improved sharply on repeated Scripture rows; uniform arms have lower common unweighted training-set CE."
  },
  {
   "unit": "front",
   "where": "README.md:9 (PROJECT_BRIEF.md:95)",
-  "claim": "Behavioral comparison not acquired: 0/53,040 qualification forwards, 0/648 evaluation replies.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "Behavioral comparison not acquired: 0/53,040 qualification forwards, 0/648 evaluation replies."
  },
  {
   "unit": "front",
   "where": "README.md:9 (PROJECT_BRIEF.md:97)",
-  "claim": "Cloud execution was closed at the owner's direction on October 6; no model is promoted.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "'Cloud execution was closed by the owner after the agents failed for four days to run the evaluation he had repeatedly directed.'"
+  "claim": "Cloud execution was closed at the owner's direction on October 6; no model is promoted."
  },
  {
   "unit": "front",
   "where": "README.md:35",
-  "claim": "Earlier Tinker attempts stopped at pre-training numerical gates.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None. A 0.01 equality gate on Tinker was itself an unrealistic precondition."
+  "claim": "Earlier Tinker attempts stopped at pre-training numerical gates."
  },
  {
   "unit": "front",
   "where": "README.md:29, README.md:137",
-  "claim": "Seed 2's Tinker sampler was deleted after local export during the September 21 storage cleanup.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Note the deletion was the agent's housekeeping decision and removed the candidate's sampler just before the owner's comparison."
+  "claim": "Seed 2's Tinker sampler was deleted after local export during the September 21 storage cleanup."
  },
  {
   "unit": "front",
   "where": "README.md:33, README.md:47",
-  "claim": "Whole-canon two-view adapters made case-level gains but adaptive weighting did not consistently beat uniform and none surpassed base on complete reasoning.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None. These arms received only 48 updates each, which the README does not state."
+  "claim": "Whole-canon two-view adapters made case-level gains but adaptive weighting did not consistently beat uniform and none surpassed base on complete reasoning."
  },
  {
   "unit": "front",
   "where": "README.md:49 (PROJECT_BRIEF.md:91)",
-  "claim": "Learner-history improved some truth and correct-answer counts over a matched Scripture control; fully successful reasoning was lower.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "Learner-history improved some truth and correct-answer counts over a matched Scripture control; fully successful reasoning was lower."
  },
  {
   "unit": "front",
   "where": "README.md:44",
-  "claim": "A September reconstruction updated all 24 GPT-OSS-20B layers.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "A September reconstruction updated all 24 GPT-OSS-20B layers."
  },
  {
   "unit": "front",
   "where": "README.md:45",
-  "claim": "V17-V19 and the August local successor introduced common starts, matched controls, hidden-state measurements, whole-delta intervention, cold reload, fail-closed gates.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "Say this causal plumbing was built and run on a 0.6B Qwen model, where Stage 2 failed its frozen gates."
+  "claim": "V17-V19 and the August local successor introduced common starts, matched controls, hidden-state measurements, whole-delta intervention, cold reload, fail-closed gates."
  },
  {
   "unit": "front",
   "where": "PROJECT_BRIEF.md:88",
-  "claim": "One local paired-Scripture contrast teacher object has qualified at zero update.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "Add that this is a 0.6B Qwen object and its first training canary failed."
+  "claim": "One local paired-Scripture contrast teacher object has qualified at zero update."
  },
  {
   "unit": "front",
   "where": "README.md:123-124 (PROJECT_BRIEF.md:71)",
-  "claim": "Geometry suite has 89 public probes; behaviour_prompts.json 169; 258 total.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Flag the 18 probes that are training-contaminated for R38/R36 lineages and exclude them when comparing R38 against new models."
+  "claim": "Geometry suite has 89 public probes; behaviour_prompts.json 169; 258 total."
  },
  {
   "unit": "front",
   "where": "README.md:132-135",
-  "claim": "R38 (gpt-oss-20b) and V6R43 (gpt-oss-120b) Tinker sampler paths; both contain rank-32 output-unembedding LoRA factors.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "R38 (gpt-oss-20b) and V6R43 (gpt-oss-120b) Tinker sampler paths; both contain rank-32 output-unembedding LoRA factors."
  },
  {
   "unit": "front",
   "where": "README.md:139 (PROJECT_BRIEF.md:96)",
-  "claim": "RWCE adapters are local custom-loader artifacts; backup excludes base weights and has no GPU restore test.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "RWCE adapters are local custom-loader artifacts; backup excludes base weights and has no GPU restore test."
  },
  {
   "unit": "front",
   "where": "README.md:150",
-  "claim": "Interactive chat defaults to R38.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "Interactive chat defaults to R38."
  },
  {
   "unit": "front",
   "where": "PROJECT_BRIEF.md:140-151",
-  "claim": "Next fundable milestone: restore and qualify retained artifacts, then acquire the declared six-state comparison (costs of the closed run not stated).",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "Disclose roughly what the RWCE pilot cost (about $450 reserved, invoice unverified) and that the money bought training but no evaluation."
+  "claim": "Next fundable milestone: restore and qualify retained artifacts, then acquire the declared six-state comparison (costs of the closed run not stated)."
  },
  {
   "unit": "front",
   "where": "GLOSSARY.md:50-52",
-  "claim": "Effective LoRA delta is (alpha/rank)·B@A; R38/V6R43 have unembedding LoRA; a common output-row shift cancels exactly from softmax.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "Effective LoRA delta is (alpha/rank)·B@A; R38/V6R43 have unembedding LoRA; a common output-row shift cancels exactly from softmax."
  },
  {
   "unit": "front",
   "where": "docs/README.md:28",
-  "claim": "Summary JSON publishes sanitized counts, adapter/checkpoint hashes and bindings to retained records; no Scripture or weights.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None."
+  "claim": "Summary JSON publishes sanitized counts, adapter/checkpoint hashes and bindings to retained records; no Scripture or weights."
  },
  {
   "unit": "front",
   "where": "CHRISTIAN_COMMITMENT.md:88 (README.md:179)",
-  "claim": "No current model is presented as having reached the goal; no checkpoint promoted.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None. Optionally note that v6r43 carried a 'deploy' label in March 2026."
+  "claim": "No current model is presented as having reached the goal; no checkpoint promoted."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:3",
-  "claim": "Status date 2026-10-08.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Status date 2026-10-08."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:11",
-  "claim": "Scripture training changed parameters and produced some unfamiliar-task gains, but no integrated superiority over base or Christ-specific mechanism; RWCE trained, unevaluated; cloud closed.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Note the gains were unstable: against a fresh base (r38_comparison) Seed 2 complete reasoning was 17 vs 20."
+  "claim": "Scripture training changed parameters and produced some unfamiliar-task gains, but no integrated superiority over base or Christ-specific mechanism; RWCE trained, unevaluated; cloud closed."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:13",
-  "claim": "No branch, checkpoint, adapter or experiment is currently promoted as a Christomorphic model.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "No branch, checkpoint, adapter or experiment is currently promoted as a Christomorphic model."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:21",
-  "claim": "Component test: 768 replies; R38 output-only 4/12 episodes vs base 2/12; complete reasoning 5->4; correct answers 9->4.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Numbers are correct."
+  "claim": "Component test: 768 replies; R38 output-only 4/12 episodes vs base 2/12; complete reasoning 5->4; correct answers 9->4."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:21; docs/ROADMAP.md:21",
-  "claim": "Neither full historical adapter consistently beat its unchanged base in this local runtime.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Both full adapters scored below their bases on every endpoint in this runtime. The only gain was a partial (output-only) state, which is not a deployable model."
+  "claim": "Neither full historical adapter consistently beat its unchanged base in this local runtime."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:23",
-  "claim": "Four Jesus/Christ output-row interventions left every returned message unchanged: 192/192 variant comparisons per model.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Correct. Note that the norm-matched control-row edits were also inert, so this test could only show that these edits never change the greedy argmax. It had little power to say more."
+  "claim": "Four Jesus/Christ output-row interventions left every returned message unchanged: 192/192 variant comparisons per model."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:27",
-  "claim": "Two-view: four rank-32 adapters, 48 updates each, 432 replies; 62,188-record 66-book library; adaptive shift about 0.349 percentage points.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Two-view: four rank-32 adapters, 48 updates each, 432 replies; 62,188-record 66-book library; adaptive shift about 0.349 percentage points."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:29",
-  "claim": "18 reasoning tasks: base 11, R38 2, each new adapter 9; 18 episodes: base and R38 0, three new arms 1 each.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Numbers correct."
+  "claim": "18 reasoning tasks: base 11, R38 2, each new adapter 9; 18 episodes: base and R38 0, three new arms 1 each."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:29 (also :63-65)",
-  "claim": "R38 completed only 2/18 reasoning tasks (presented as a plain model comparison).",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "high",
-  "correction": "R38's reasoning scores were measured without any chain-of-thought because of a train/eval format mismatch. They are not a like-for-like competence comparison. This should be disclosed wherever R38's reasoning is compared."
+  "claim": "R38 completed only 2/18 reasoning tasks (presented as a plain model comparison)."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:29",
-  "claim": "Every state accepted pressure to falsify a verified receipt time.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Every state accepted pressure to falsify a verified receipt time."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:33",
-  "claim": "RWCE: 16 discourse units, two seeds, four arms, normalized 2:1 focus weighting, 192 updates per arm; modest CE reallocation.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "'Modest' is fair."
+  "claim": "RWCE: 16 discourse units, two seeds, four arms, normalized 2:1 focus weighting, 192 updates per arm; modest CE reallocation."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:35",
-  "claim": "The first Tinker attempt and a common-state successor stopped at pre-training comparability gates; diagnostics made zero optimizer updates.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "The first Tinker attempt and a common-state successor stopped at pre-training comparability gates; diagnostics made zero optimizer updates."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:35",
-  "claim": "Direct-GPU run completed all four arms by October 2 MYT; 768 updates; 336 FP32 factors per adapter; final uniform arm resumed a recovery lineage.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Direct-GPU run completed all four arms by October 2 MYT; 768 updates; 336 FP32 factors per adapter; final uniform arm resumed a recovery lineage."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:37",
-  "claim": "Each arm 58,135,956 input positions and 25,178,849 targets; totals 232,543,824 and 100,715,396.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Each arm 58,135,956 input positions and 25,178,849 targets; totals 232,543,824 and 100,715,396."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:37",
-  "claim": "In-sample CE on 32 argument rows fell from 4.750435 to 0.080434-0.104945 nats at step 191; uniform arms lower.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Correct. It is an in-sample metric, as stated."
+  "claim": "In-sample CE on 32 argument rows fell from 4.750435 to 0.080434-0.104945 nats at step 191; uniform arms lower."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:39",
-  "claim": "0/53,040 qualification forwards, 0/648 replies, no blind scores; Oct 6 handoff preserves authentication-stage NameError before model qualification.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "0/53,040 qualification forwards, 0/648 replies, no blind scores; Oct 6 handoff preserves authentication-stage NameError before model qualification."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:39-41; docs/ROADMAP.md:7",
-  "claim": "Evaluation recovery stopped in operational setup; the owner then closed cloud execution (no cost or process stated).",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "high",
-  "correction": "Disclose that about $545 of cloud commitments produced trained adapters but zero evaluation replies. Clayton repeatedly ordered the 648 replies and raised the budget. The blocking 53,040-forward qualification was Codex's own gate."
+  "claim": "Evaluation recovery stopped in operational setup; the owner then closed cloud execution (no cost or process stated)."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:41",
-  "claim": "Four adapters and four step-192 checkpoints in checksum-verified local backup; VM/disk deleted, billing unlinked, project deletion requested; no GPU restoration test.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Four adapters and four step-192 checkpoints in checksum-verified local backup; VM/disk deleted, billing unlinked, project deletion requested; no GPU restoration test."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:45",
-  "claim": "Seed 2: 192 updates, 17,895,015 input tokens, 7,260,878 targets; Gospels+Acts 41.41% of coefficient mass; Romans 8:18-39 strongest amplification.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Seed 2: 192 updates, 17,895,015 input tokens, 7,260,878 targets; Gospels+Acts 41.41% of coefficient mass; Romans 8:18-39 strongest amplification."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:47",
-  "claim": "Seed 2 adapter spans 24 layers, 2,400 operators, 2,386 nonzero; about 95% squared norm in expert gate/up; provider aggregate failed CE validator.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Seed 2 adapter spans 24 layers, 2,400 operators, 2,386 nonzero; about 95% squared norm in expert gate/up; provider aggregate failed CE validator."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:49",
-  "claim": "768 updates, 864 responses; Seed 2 vs base: correct 19->25, complete reasoning 15->17, episodes 6->4; no candidate.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "768 updates, 864 responses; Seed 2 vs base: correct 19->25, complete reasoning 15->17, episodes 6->4; no candidate."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:49-51,63",
-  "claim": "Status omits the Seed 2 vs R38 head-to-head and Clayton's 120B gate requiring Seed 2 to prove superior to R38.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "high",
-  "correction": "Report the owner's stated bar (a 20B method must beat R38) and the Sep 21 comparison. Seed 2 won on reasoning, R38 won on truth, obligations, care and final turns, so the gate was not met."
+  "claim": "Status omits the Seed 2 vs R38 head-to-head and Clayton's 120B gate requiring Seed 2 to prove superior to R38."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:51",
-  "claim": "All nine samplers including reconstruction_2-final were deleted after local export; local adapter SHA-256 633dce31...",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Note the deletion came about 1.6 h before Clayton asked (05:59Z) to compare Seed 2 with R38. This forced reuse of old replies against freshly sampled R38/base."
+  "claim": "All nine samplers including reconstruction_2-final were deleted after local export; local adapter SHA-256 633dce31..."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:55",
-  "claim": "Inverse-rank fit beat exponential in 2,384 of 2,386 operators; median exponent 0.7419.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. The doc's own caveat (not a distance law) is appropriate."
+  "claim": "Inverse-rank fit beat exponential in 2,384 of 2,386 operators; median exponent 0.7419."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:57",
-  "claim": "R38 and V6R43 have rank-32 alpha-32 unembedding LoRA; shared row shift is 85.60% (R38) and 91.55% (V6R43) of output-update energy.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "R38 and V6R43 have rank-32 alpha-32 unembedding LoRA; shared row shift is 85.60% (R38) and 91.55% (V6R43) of output-update energy."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:57",
-  "claim": "Relative to the all-row mean, several Jesus/Christ token updates have high magnitude percentiles.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Correct, but the high centered percentile mainly reflects that these rows missed the common shift. Roughly 2,000 other rows share that property, so it does not single out these tokens."
+  "claim": "Relative to the all-row mean, several Jesus/Christ token updates have high magnitude percentiles."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:59",
-  "claim": "Sep 24 tensor packet made no Tinker call, training step or checkpoint operation; VERIFICATION.json passed.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Sep 24 tensor packet made no Tinker call, training step or checkpoint operation; VERIFICATION.json passed."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:63",
-  "claim": "Pressure-turn factual fidelity: R38 19/24 vs base20B 9/24; V6R43 17/24 vs base120B 7/24.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Correct. Note it is a single automated reviewer on 24 cases."
+  "claim": "Pressure-turn factual fidelity: R38 19/24 vs base20B 9/24; V6R43 17/24 vs base120B 7/24."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:63",
-  "claim": "A seven-arm renderer study found favorable reference behavior across its tested shells.",
-  "verdict": "OVERSTATED",
-  "severity": "low",
-  "correction": "Say the references led on a keyword-marker FIRST_ACT heuristic, 15 pressure prompts per arm. That is not reviewed behavior quality."
+  "claim": "A seven-arm renderer study found favorable reference behavior across its tested shells."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:65",
-  "claim": "Learner-history: 32 updates/arm; episodes 14 vs 13 vs 13; reasoning history 8 correct vs control 6; complete 3 vs 5 vs parent 8.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "Numbers are right, but the text omits that the parent had 13 correct answers. History lost 5 correct answers relative to its own starting point; the 8-vs-6 framing hides this."
+  "claim": "Learner-history: 32 updates/arm; episodes 14 vs 13 vs 13; reasoning history 8 correct vs control 6; complete 3 vs 5 vs parent 8."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:86-87",
-  "claim": "R38 is the strongest raw 20B Word-prior/false-center witness; V6R43 the strongest raw 120B pressure-refusal witness (recipes not described).",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "State that R38's 'Word-prior' came from templated verse-opening prose plus 56 hand-authored answers, and that v6r43 is an SFT/DPO lineage. Neither is a Scripture-trained model."
+  "claim": "R38 is the strongest raw 20B Word-prior/false-center witness; V6R43 the strongest raw 120B pressure-refusal witness (recipes not described)."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:105-106",
-  "claim": "v18 whitening bank failed step-zero identifiability; v19 operator failed a gate before training.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "v18 whitening bank failed step-zero identifiability; v19 operator failed a gate before training."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:108,200",
-  "claim": "Negatives are useful because experiments fail before updates; several recent nulls are interpretable scientific negatives rather than mere runtime failures.",
-  "verdict": "OVERSTATED",
-  "severity": "medium",
-  "correction": "Most recent nulls were zero-update gate or operational stops that tested no training hypothesis. Only a few (Stage 2, the Aug 16 canary, the 20B behavioral banks) are interpretable negatives."
+  "claim": "Negatives are useful because experiments fail before updates; several recent nulls are interpretable scientific negatives rather than mere runtime failures."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:116-125",
-  "claim": "tinker 0.23.4/cookbook 0.5.2; R38 965,742,648 B/338 tensors/97 summaries; V6R43 5,257,620,504 B/506/145; 844 finite; 180 unsupported pairs.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "tinker 0.23.4/cookbook 0.5.2; R38 965,742,648 B/338 tensors/97 summaries; V6R43 5,257,620,504 B/506/145; 844 finite; 180 unsupported pairs."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:131-140",
-  "claim": "CPU smoke failed parity; a subsequent CUDA/FP16 Qwen3-0.6B qualification passed with 3 loads and 108 forwards.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. It omits three failed prior attempts on hardware gates."
+  "claim": "CPU smoke failed parity; a subsequent CUDA/FP16 Qwen3-0.6B qualification passed with 3 loads and 108 forwards."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:146-154",
-  "claim": "Bounded Stage 2 exact-Scripture formation test failed closed on NLL advantage, confidence bound, kernel advantage, seed replication.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Bounded Stage 2 exact-Scripture formation test failed closed on NLL advantage, confidence bound, kernel advantage, seed replication."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:158",
-  "claim": "SCRC stopped after 654 forwards; a four-view cosine of -0.2262 was below the 0.05 floor; no backward or optimizer step.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "SCRC stopped after 654 forwards; a four-view cosine of -0.2262 was below the 0.05 floor; no backward or optimizer step."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:173",
-  "claim": "Paired-Scripture teacher qualification: 1,036 forwards, 20 backward computations, zero optimizer steps and checkpoints.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Paired-Scripture teacher qualification: 1,036 forwards, 20 backward computations, zero optimizer steps and checkpoints."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:177-188; docs/ROADMAP.md:11,25-48",
-  "claim": "The slow-weight development canary is a dated plan with no terminal result; Roadmap Stage 1 is that canary as the next step.",
-  "verdict": "STALE",
-  "severity": "medium",
-  "correction": "The canary ran on Aug 16 and failed closed. Report this negative result and drop it as the next stage."
+  "claim": "The slow-weight development canary is a dated plan with no terminal result; Roadmap Stage 1 is that canary as the next step."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:218",
-  "claim": "Blocker 3: adapter export alone cannot execute the proposed output-map ablation.",
-  "verdict": "STALE",
-  "severity": "low",
-  "correction": "The ablation was executed locally; only hosted-serving equivalence remains unproved."
+  "claim": "Blocker 3: adapter export alone cannot execute the proposed output-map ablation."
  },
  {
   "unit": "status",
   "where": "docs/RESEARCH_STATUS.md:224-240",
-  "claim": "Promotion rule: a future candidate must pass an 11-stage ladder (source audit through independent reproduction).",
-  "verdict": "UNSUPPORTED",
-  "severity": "medium",
-  "correction": "Present the ladder as Codex's proposal, not governing policy, and state the owner's actual decision bar."
+  "claim": "Promotion rule: a future candidate must pass an 11-stage ladder (source audit through independent reproduction)."
  },
  {
   "unit": "status",
   "where": "docs/ROADMAP.md:7",
-  "claim": "As of 2026-10-08 RWCE completed four 192-update arms; endpoint qualification and behavior not acquired; adapters and checkpoints retained; cloud closed Oct 6 by owner.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "As of 2026-10-08 RWCE completed four 192-update arms; endpoint qualification and behavior not acquired; adapters and checkpoints retained; cloud closed Oct 6 by owner."
  },
  {
   "unit": "status",
   "where": "docs/ROADMAP.md:11",
-  "claim": "Teacher qualified at zero update by Aug 16; learner-history pilot mixed and did not justify 120B; spectral/output-map analyses offline.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate, but see the stale canary entry: the teacher's canary already failed."
+  "claim": "Teacher qualified at zero update by Aug 16; learner-history pilot mixed and did not justify 120B; spectral/output-map analyses offline."
  },
  {
   "unit": "status",
   "where": "docs/ROADMAP.md:15",
-  "claim": "Future work requires owner approval, a reviewed execution/resource plan, runtime restoration and unchanged endpoint qualification before the six-state comparison.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Disclose that this qualification step blocked the owner-ordered evaluation. The simplest next step is direct behavioral sampling of the backed-up adapters."
+  "claim": "Future work requires owner approval, a reviewed execution/resource plan, runtime restoration and unchanged endpoint qualification before the six-state comparison."
  },
  {
   "unit": "status",
   "where": "docs/ROADMAP.md:25-113",
-  "claim": "Staged ladder (Qwen canary, multi-seed, governance, human review); 'a small Qwen result would justify' candidate-scale transfer.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Align the roadmap to the owner's bar (a 20B method credibly beats R38 before 120B) and remove the completed, failed Stage 1."
+  "claim": "Staged ladder (Qwen canary, multi-seed, governance, human review); 'a small Qwen result would justify' candidate-scale transfer."
  },
  {
   "unit": "status",
   "where": "docs/ROADMAP.md:120",
-  "claim": "Keep the public scripts synchronized with tested Tinker SDK versions.",
-  "verdict": "STALE",
-  "severity": "low",
-  "correction": "Update the pin, or state which SDK version the public scripts were tested with."
+  "claim": "Keep the public scripts synchronized with tested Tinker SDK versions."
  },
  {
   "unit": "status",
   "where": "docs/ROADMAP.md:121",
-  "claim": "Preserve automated validation for Markdown links, JSON prompt files and Python syntax.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Preserve automated validation for Markdown links, JSON prompt files and Python syntax."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:118",
-  "claim": "V6R43 positive evidence: \"Strongest archived response to prosperity-pressure and deploy-shell stress.\"",
-  "verdict": "STALE",
-  "severity": "high",
-  "correction": "On the archive's strictest prosperity-pressure test, v6r43 tied unadapted base-120B, and R38 scored higher than both. v6r43 keeps only a narrow commercial-lure edge (2/4) and fewer false blessings (6/24 vs 12/24). Its deploy-shell lead rests on a heuristic surface scorer."
+  "claim": "V6R43 positive evidence: \"Strongest archived response to prosperity-pressure and deploy-shell stress.\""
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:8",
-  "claim": "V6R43-120b is the strongest archived raw 120B pressure-refusal witness.",
-  "verdict": "OVERSTATED",
-  "severity": "medium",
-  "correction": "v6r43 is the only retained 120B Christomorphic checkpoint. It is ahead of base on heuristic FIRST_ACT surfaces (52/117 vs 22/117), tied with base on strict prosperity pressure, and below base on a Sept 28 local reasoning/assistance bank."
+  "claim": "V6R43-120b is the strongest archived raw 120B pressure-refusal witness."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:7",
-  "claim": "R38-20b is the strongest archived raw Word-prior / false-center discovery witness.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "R38 is a useful counterfeit-frame/false-center reference. Its 'Word prior' came from templated Scripture-referencing prose plus authored answers, not exact Scripture. In every Sept–Oct bank it is far below base on reasoning correctness."
+  "claim": "R38-20b is the strongest archived raw Word-prior / false-center discovery witness."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:117",
-  "claim": "R38 positive evidence: counterfeit centers become visible, are refused, and recentered toward Scripture, Christ, church and practical obedience; boundary lists no prospective controls etc.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "The evidence is one unscored qualitative review, with 20% of the prompt bank seen in training and with base models truncated by a 256-token cap. The boundary column should state train/eval contamination and truncation bias."
+  "claim": "R38 positive evidence: counterfeit centers become visible, are refused, and recentered toward Scripture, Christ, church and practical obedience; boundary lists no prospective controls etc."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:11",
-  "claim": "September's offline tensor audit establishes relative Jesus/Christ output-map adjustments in R38/V6R43; centered Jesus/Christ rows are distinctive relative to other output rows (line 120).",
-  "verdict": "OVERSTATED",
-  "severity": "medium",
-  "correction": "Jesus/Christ rows are elevated, but so are frequent religious and function-word rows. The raw-percentile denominator is dominated by rare tokens, and the Sept 28 test found the name rows unnecessary for any returned answer. These are domain-readout shifts, not distinctive name effects."
+  "claim": "September's offline tensor audit establishes relative Jesus/Christ output-map adjustments in R38/V6R43; centered Jesus/Christ rows are distinctive relative to other output rows (line 120)."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:11",
-  "claim": "Tensor audit establishes an inverse-rank spectral pattern in the original Reconstruction adapter.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate as a descriptive fit (sigma ~ k^-0.74). It has no established semantic or Scripture-specific meaning, which the doc's own forbidden-inference list acknowledges."
+  "claim": "Tensor audit establishes an inverse-rank spectral pattern in the original Reconstruction adapter."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:120",
-  "claim": "Retained exports confirm literal parameters; both endpoints have rank-32, alpha-32 output-unembedding LoRA.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Other archive docs describing v6r43 as a rank-8 DPO refer to the configured seam, not the exported endpoint, which is rank 32."
+  "claim": "Retained exports confirm literal parameters; both endpoints have rank-32, alpha-32 output-unembedding LoRA."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:120",
-  "claim": "Most raw output-update energy is a softmax-invariant common shift.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "Most raw output-update energy is a softmax-invariant common shift."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:120",
-  "claim": "LoRA factors are gauge-dependent, so intervention should use the effective scaled update; historical deltas cannot supply common-start controls, base binding, hidden states or causal attribution.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. The Sept 28 llama.cpp test later attached these adapters to public HF bases, but Tinker-serving equivalence remains unproved."
+  "claim": "LoRA factors are gauge-dependent, so intervention should use the effective scaled update; historical deltas cannot supply common-start controls, base binding, hidden states or causal attribution."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:13",
-  "claim": "Scripture-RWCE-20B completed four 192-update training arms and retained verified final artifacts.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. 'Verified' means checksums and finiteness; loading on a GPU with the custom loader is untested."
+  "claim": "Scripture-RWCE-20B completed four 192-update training arms and retained verified final artifacts."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:13",
-  "claim": "RWCE exploratory in-sample source learning is not a held-out result.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Uniform arms had lower CE than focused on this in-sample metric."
+  "claim": "RWCE exploratory in-sample source learning is not a held-out result."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:13",
-  "claim": "RWCE post-training qualification and behavioral acquisition remained at zero before cloud closure.",
-  "verdict": "CONFIRMED",
-  "severity": "medium",
-  "correction": "Accurate, but the passive wording hides the cause. Evaluation failed for ~5 days in Codex's own operational/authorization machinery while about USD 545 was committed, and the owner then closed the cloud."
+  "claim": "RWCE post-training qualification and behavioral acquisition remained at zero before cloud closure."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:12",
-  "claim": "Learner-history pilot: mixed results; some truth and answer-correctness gains, fewer complete reasoning successes than its Scripture control.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "The numbers are right versus control, but history fell well below its own parent on reasoning (8 vs 13 correct, 3 vs 8 complete). The gains are small, single-realization and automated-reviewer only."
+  "claim": "Learner-history pilot: mixed results; some truth and answer-correctness gains, fewer complete reasoning successes than its Scripture control."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:9",
-  "claim": "Composed route/public-answer systems remain the strongest scoped operational evidence.",
-  "verdict": "OVERSTATED",
-  "severity": "low",
-  "correction": "This is historical, self-scored, retrieval/router-composed evidence whose systems were deleted. 'Remain' implies more than can now be re-tested."
+  "claim": "Composed route/public-answer systems remain the strongest scoped operational evidence."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:10",
-  "claim": "Local causal instrumentation now supports hidden-state measurement, whole-delta intervention, and cold reload.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "True for a 0.6B Qwen development lineage only. It is not demonstrated for hidden states on GPT-OSS-20B/120B."
+  "claim": "Local causal instrumentation now supports hidden-state measurement, whole-delta intervention, and cold reload."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:124-131",
-  "claim": "Recent local experiments stopped before training when cloned forwards differed, whitening collapsed, operators aliased, teacher views disagreed, ESV/NKJV compensated, or seed replication/CIs failed.",
-  "verdict": "WRONG",
-  "severity": "low",
-  "correction": "Four of six failures stopped before training. The ESV/NKJV compensation and seed/CI failures were post-training Stage 2 outcomes (63 updates) on Qwen3-0.6B."
+  "claim": "Recent local experiments stopped before training when cloned forwards differed, whitening collapsed, operators aliased, teacher views disagreed, ESV/NKJV compensated, or seed replication/CIs failed."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:14",
-  "claim": "No current result establishes replicated, durable Christ-specific formation or scaffold-off public governance.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Clayton asked on Oct 6 (01a10f36-f5ce, 06:38Z) to stop 'It does not establish Christomorphic formation' phrasing, yet this doc remains built around such disclaimers."
+  "claim": "No current result establishes replicated, durable Christ-specific formation or scaffold-off public governance."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:18",
-  "claim": "Latest pilot does not satisfy even a held-out Scripture-domain adaptation claim merely because repeated-source loss fell; missing evaluation is unavailable evidence.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "Latest pilot does not satisfy even a held-out Scripture-domain adaptation claim merely because repeated-source loss fell; missing evaluation is unavailable evidence."
  },
  {
   "unit": "claims",
   "where": "docs/CLAIMS_AND_EVIDENCE.md:113-118",
-  "claim": "Current Public Checkpoints: `qzf/gpt-R38-20b` and `qzf/gpt-V6R43-120b`.",
-  "verdict": "UNSUPPORTED",
-  "severity": "low",
-  "correction": "Both samplers are public on Tinker, but the 'qzf/' names are aliases that do not resolve. Give the tinker:// paths, as chat_qa.py does."
+  "claim": "Current Public Checkpoints: `qzf/gpt-R38-20b` and `qzf/gpt-V6R43-120b`."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:5",
-  "claim": "The historical references show distinctive relative Jesus/Christ output-row updates after removing a common softmax-invariant shift.",
-  "verdict": "OVERSTATED",
-  "severity": "high",
-  "correction": "The Jesus/Christ rows have large centered updates, but so does every frequently trained target or function word. Nothing distinguishes the name rows from ordinary frequent tokens. This is the token-frequency confound the thesis's own Section 4 warns against. The finding should be stated as 'consistent with frequency of training targets; no Christ-specific signal shown'."
+  "claim": "The historical references show distinctive relative Jesus/Christ output-row updates after removing a common softmax-invariant shift."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:5",
-  "claim": "The new research note gives the measurements and the proposed intervention.",
-  "verdict": "STALE",
-  "severity": "medium",
-  "correction": "Update the addendum: the intervention ran, the selected name rows were not necessary for any tested returned message, and the full historical adapters did not beat base in the local runtime (equivalence to Tinker serving is unproved)."
+  "claim": "The new research note gives the measurements and the proposed intervention."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:5 (read with :271-277)",
-  "claim": "R38/V6R43 are presented as 'historical references' whose output-row updates bear on Scripture formation.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "State that R38 and V6R43 are mixed-norm references (templated and authored targets, authored preferences), so their parameter patterns cannot be attributed to Scripture."
+  "claim": "R38/V6R43 are presented as 'historical references' whose output-row updates bear on Scripture formation."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:5",
-  "claim": "The reconstruction operators show a strong inverse-rank singular spectrum.",
-  "verdict": "CONFIRMED",
-  "severity": "medium",
-  "correction": "The numbers are accurate, but the shape is generic to these Tinker LoRA runs. R38 shows it without exact-Scripture training, so it carries no evidence about Scripture renewal."
+  "claim": "The reconstruction operators show a strong inverse-rank singular spectrum."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:5",
-  "claim": "I measured the original GPT-OSS-20B Scripture Reconstruction adapter and the historical R38/V6R43 output adapters.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Note that v6r43's DPO config says lora_rank 8, but its exported endpoint is r=32."
+  "claim": "I measured the original GPT-OSS-20B Scripture Reconstruction adapter and the historical R38/V6R43 output adapters."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:5",
-  "claim": "These are concrete parameter observations, not a discovered Christ-centered force, a contextual distance law, or causal proof of faithful action.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "An honest hedge. It does not, however, cure the 'distinctive' overstatement above."
+  "claim": "These are concrete parameter observations, not a discovered Christ-centered force, a contextual distance law, or causal proof of faithful action."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:5 and :138",
-  "claim": "Removing the common shift is softmax-invariant; intervention claims should operate on effective scaled update sBA, since LoRA factors are not unique.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None. The method follows the thesis's own gauge-invariance rule."
+  "claim": "Removing the common shift is softmax-invariant; intervention claims should operate on effective scaled update sBA, since LoRA factors are not unique."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:259",
-  "claim": "Earlier decision-span experiments moved output margins without proving a causal first-movement mechanism.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "The decision-span weighting moved margins no more than the shuffled-span controls did, so the margin movement is not attributable to decision-span targeting at all."
+  "claim": "Earlier decision-span experiments moved output margins without proving a causal first-movement mechanism."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:19",
-  "claim": "This is the machine-learning form of the Word-Judgment-Act lineage.",
-  "verdict": "OVERSTATED",
-  "severity": "low",
-  "correction": "Restore 'proposed'. It is a project-coined label for a lineage that never trained, not an established tradition or an executed line."
+  "claim": "This is the machine-learning form of the Word-Judgment-Act lineage."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:287-324",
-  "claim": "Section 7 presents the A-E intact/shuffled/judgment controlled experiment as the decisive test, without reporting any attempt.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "Note that small matched-versus-control tests were run and did not beat controls, and that the named factorial never trained. The A-E design remains unexecuted."
+  "claim": "Section 7 presents the A-E intact/shuffled/judgment controlled experiment as the decisive test, without reporting any attempt."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:45",
-  "claim": "Next-token CPT not distinguishing faithful from unfaithful use 'is a known boundary of domain-adaptive pretraining' (Gururangan et al., 2020).",
-  "verdict": "OVERSTATED",
-  "severity": "low",
-  "correction": "Cite Gururangan for domain adaptation only. The faithful-use limitation is the author's argument, not an established finding of that paper."
+  "claim": "Next-token CPT not distinguishing faithful from unfaithful use 'is a known boundary of domain-adaptive pretraining' (Gururangan et al., 2020)."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:114,128,133,156,267,344,362",
-  "claim": "Supporting citations: DPO (Rafailov), task vectors (Ilharco), LoRA (Hu), metric dependence (Park), fine-tuning distortion (Kumar), CKA (Kornblith), causal tracing (Meng), and Tinker preference/SDFT recipes.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. One caveat: TENSOR_GRAVITY_STUDY reports raw Euclidean cosines between unembedding rows, which is exactly what the Park citation warns against (see the first claim)."
+  "claim": "Supporting citations: DPO (Rafailov), task vectors (Ilharco), LoRA (Hu), metric dependence (Park), fine-tuning distortion (Kumar), CKA (Kornblith), causal tracing (Meng), and Tinker preference/SDFT recipes."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:383",
-  "claim": "Tinker supports LoRA clients, forward/backward, logprob-based custom losses, optimization, sampling, state/sampler checkpoints, and adapter download/export.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Tinker cannot re-import an adapter, so a deleted sampler cannot be restored (Seed 2 was lost this way)."
+  "claim": "Tinker supports LoRA clients, forward/backward, logprob-based custom losses, optimization, sampling, state/sampler checkpoints, and adapter download/export."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:385-407",
-  "claim": "Hidden states, module gradients, activation patching etc. need local open weights; Tinker is for formation search, local weights for causal verification.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "The division is sound, but in practice the substrate did not yet deliver the 'whole lineage' the thesis lists."
+  "claim": "Hidden states, module gradients, activation patching etc. need local open weights; Tinker is for formation search, local weights for causal verification."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:263",
-  "claim": "Aligned ESV/NKJV units provide corpus-internal paraphrase variation.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate as a data resource. No invariance objective was ever trained."
+  "claim": "Aligned ESV/NKJV units provide corpus-internal paraphrase variation."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:62,64,99,105",
-  "claim": "Matthew 4/Luke 4 (tempter and Jesus both cite Scripture), John 5:39-40, Luke 24 and Romans 12:2 support the framing.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "The references are correctly located. Their theological use is outside the audit's scope."
+  "claim": "Matthew 4/Luke 4 (tempter and Jesus both cite Scripture), John 5:39-40, Luke 24 and Romans 12:2 support the framing."
  },
  {
   "unit": "thesis",
   "where": "docs/RESEARCH_THESIS.md:3",
-  "claim": "Public thesis revision: 2026-08-16 (with empirical addendum 2026-09-24).",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Dates are accurate. Readers should know the conceptual body is Clayton's text, edited by Codex, while the empirical addendum is Codex's."
+  "claim": "Public thesis revision: 2026-08-16 (with empirical addendum 2026-09-24)."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:15",
-  "claim": "Seed 2: 2,386 nonzero operators; inverse-rank beat exponential in 2,384/2,386; median exponent 0.7419; log-RMSE 0.12785 vs 0.30809; 1-16 to 17-32 extrapolation favoured power in 2,383.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate as stated."
+  "claim": "Seed 2: 2,386 nonzero operators; inverse-rank beat exponential in 2,384/2,386; median exponent 0.7419; log-RMSE 0.12785 vs 0.30809; 1-16 to 17-32 extrapolation favoured power in 2,383."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:19",
-  "claim": "Prefix and reconstruction arms have similar exponents; all four were Scripture-trained, so this cannot establish Scripture specificity.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "The caveat is right and understates the case. The shape is a real training signature (random matrices do not show it), but R38's non-Scripture-target adapter shows it too. It is generic to these trained LoRA updates and carries no information about Scripture or Christ-centred influence."
+  "claim": "Prefix and reconstruction arms have similar exponents; all four were Scripture-trained, so this cannot establish Scripture specificity."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:19",
-  "claim": "Summed expert input Grams: median leading share 64.18%, participation rank 2.359, less concentrated than median individual expert in all 24 layers.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate (unweighted by routing, as the note says)."
+  "claim": "Summed expert input Grams: median leading share 64.18%, participation rank 2.359, less concentrated than median individual expert in all 24 layers."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:23",
-  "claim": "R38 and V6R43 exports are rank 32 / alpha 32, include unembedding LoRA A[32,2880], B[201088,32], and no input-embedding adapter.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. It also corrects the old 'v6r43 is rank 8' story: the config lora_rank=8 was unused on the warm-start branch."
+  "claim": "R38 and V6R43 exports are rank 32 / alpha 32, include unembedding LoRA A[32,2880], B[201088,32], and no input-embedding adapter."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:23",
-  "claim": "Recent Scripture Reconstruction trained attention and MLP adapters while leaving the output map frozen.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "Recent Scripture Reconstruction trained attention and MLP adapters while leaving the output map frozen."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:23",
-  "claim": "An earlier bounded audit missed the historical output factors and had not independently verified V6R43's endpoint rank.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate self-correction."
+  "claim": "An earlier bounded audit missed the historical output factors and had not independently verified V6R43's endpoint rank."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:35",
-  "claim": "The mean output-row update is softmax-inert and accounts for 85.60% of R38's and 91.55% of V6R43's raw output-update energy.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. The mean is one gauge choice among many softmax-invariant shifts, as the note acknowledges."
+  "claim": "The mean output-row update is softmax-inert and accounts for 85.60% of R38's and 91.55% of V6R43's raw output-update energy."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:37-44",
-  "claim": "Jesus/Christ raw-to-centered percentiles (e.g. R38 Jesus 0.28 -> 99.81); 200,019 mapped rows; 1,069 extra nonzero rows; centered Jesus-Christ cosine 0.888 / 0.988.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Numbers are exact. See the next claim for what they mean."
+  "claim": "Jesus/Christ raw-to-centered percentiles (e.g. R38 Jesus 0.28 -> 99.81); 200,019 mapped rows; 1,069 extra nonzero rows; centered Jesus-Christ cosine 0.888 / 0.988."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:48,69",
-  "claim": "These are distinctive relative readout adjustments; R38 and V6R43 have coherent relative Christ-name output adjustments.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Gauge-invariant reading: these tokens were left out of a vocabulary-wide common shift that almost every row received. Thousands of rows share that property. The high centered percentiles and the Jesus-Christ cosine follow mechanically from centering. They are not a Christ-specific readout signature."
+  "claim": "These are distinctive relative readout adjustments; R38 and V6R43 have coherent relative Christ-name output adjustments."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:31",
-  "claim": "The full pretrained output rows and the historical provider's exact base revision are unavailable in this packet.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "The full pretrained output rows and the historical provider's exact base revision are unavailable in this packet."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:48",
-  "claim": "Changing only Jesus/Christ rows cannot change fixed-history log-odds between two other untouched tokens.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "Changing only Jesus/Christ rows cannot change fixed-history log-odds between two other untouched tokens."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:52",
-  "claim": "September matched-size pressure bank: factual-fidelity passes R38 19/24 vs base20B 9/24; V6R43 17/24 vs base120B 7/24.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate, but these are single automated-agent ratings per case. On the same bank R38 passed 4/8 ordinary exact checks against base's 8/8 (result.json ordinary_exact_pass_fraction 0.5). The note mentions only losses on 'other banks'."
+  "claim": "September matched-size pressure bank: factual-fidelity passes R38 19/24 vs base20B 9/24; V6R43 17/24 vs base120B 7/24."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:52",
-  "claim": "A later seven-arm rendering matrix also favored both references over its base reference in its tested formats, including no-system-prompt arms.",
-  "verdict": "WRONG",
-  "severity": "low",
-  "correction": "The July V15 matrix (earlier, heuristic marker scorer, no base20B lane) placed both references ahead of base120B in all 7 arms."
+  "claim": "A later seven-arm rendering matrix also favored both references over its base reference in its tested formats, including no-system-prompt arms."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:54",
-  "claim": "Learner-history pilot: 32 updates per arm; joint episode passes 14 vs 13; no reviewer ranked history above parent; reasoning 8 vs 6 correct, 3 vs 5 complete, parent 8.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "Learner-history pilot: 32 updates per arm; joint episode passes 14 vs 13; no reviewer ranked history above parent; reasoning 8 vs 6 correct, 3 vs 5 complete, parent 8."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:5",
-  "claim": "Later result: internal/output crossing and Jesus/Christ row edits ran on local open weights; row edits changed scores but not returned messages; broader switches changed behaviour, often adversely.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Facts hold. 'Local' means self-hosted on Google Cloud VMs, not this machine. The runs finished on 24 Sep, not 28 Sep."
+  "claim": "Later result: internal/output crossing and Jesus/Christ row edits ran on local open weights; row edits changed scores but not returned messages; broader switches changed behaviour, often adversely."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:5,52",
-  "claim": "The historical checkpoints have useful behavior evidence; I take those gains seriously (with later switches changing behaviour 'often adversely').",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Add the plain result: in the only within-model test, neither full checkpoint beat its own base on any headline endpoint. Caveats: non-Tinker runtime, and R38 was trained final-only/no-system."
+  "claim": "The historical checkpoints have useful behavior evidence; I take those gains seriously (with later switches changing behaviour 'often adversely')."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:3",
-  "claim": "Offline analysis of retained exports; it involved no new model calls, training updates, or checkpoint changes.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "No research-model or Tinker calls were made. Parts of the analysis design came from a ChatGPT 'Christocentric Training Guidance' conversation."
+  "claim": "Offline analysis of retained exports; it involved no new model calls, training updates, or checkpoint changes."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:73",
-  "claim": "Packet files published unchanged; REPORT.md SHA 1a2ae4eb...; R38/V6R43 export hashes 2553321d.../89faeadb...; zero new Tinker calls or spend.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "Packet files published unchanged; REPORT.md SHA 1a2ae4eb...; R38/V6R43 export hashes 2553321d.../89faeadb...; zero new Tinker calls or spend."
  },
  {
   "unit": "method",
   "where": "docs/TENSOR_GRAVITY_STUDY.md:73",
-  "claim": "Independent numerical review matched every operator fit to float64 precision and every output-row ranking in the retained CSVs.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate; now independently confirmed from raw tensors."
+  "claim": "Independent numerical review matched every operator fit to float64 precision and every output-row ranking in the retained CSVs."
  },
  {
   "unit": "method",
   "where": "docs/figures/spectral_rank_comparison.png",
-  "claim": "Figure shows Seed 2 per-module median normalized spectra and two equal-parameter fits.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. The right panel is a median-curve illustration, not the per-operator statistic."
+  "claim": "Figure shows Seed 2 per-module median normalized spectra and two equal-parameter fits."
  },
  {
   "unit": "method",
   "where": "docs/TECHNICAL_METHOD.md:74",
-  "claim": "The public tools have been checked against installed tinker==0.23.4.",
-  "verdict": "STALE",
-  "severity": "low",
-  "correction": "Research runs from 8 Sep used tinker 0.27.1 (cookbook 0.5.7). The public scripts were last checked against 0.23.4 and are untested on current SDKs."
+  "claim": "The public tools have been checked against installed tinker==0.23.4."
  },
  {
   "unit": "method",
   "where": "docs/TECHNICAL_METHOD.md:87",
-  "claim": "Tinker's forward/backward result exposes loss and metric surfaces, not literal residual activations.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "Tinker's forward/backward result exposes loss and metric surfaces, not literal residual activations."
  },
  {
   "unit": "method",
   "where": "docs/TECHNICAL_METHOD.md:101",
-  "claim": "August small-model causal substrate was exact Qwen/Qwen3-0.6B-Base at a pinned revision.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "August small-model causal substrate was exact Qwen/Qwen3-0.6B-Base at a pinned revision."
  },
  {
   "unit": "method",
   "where": "docs/TECHNICAL_METHOD.md:101,154",
-  "claim": "RWCE: Tinker failed pre-training comparability; direct-GPU completed four 20B arms but not post-training qualification or behavioural acquisition; cloud closed; checksum-verified custom-adapter backup.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "RWCE: Tinker failed pre-training comparability; direct-GPU completed four 20B arms but not post-training qualification or behavioural acquisition; cloud closed; checksum-verified custom-adapter backup."
  },
  {
   "unit": "method",
   "where": "docs/TECHNICAL_METHOD.md:152",
-  "claim": "Within-model internal/output 2x2 and Jesus/Christ row tests ran; switches changed delivered behaviour; row patches changed scores but no tested returned message.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. 'Local open weights' means self-hosted llama.cpp on GCP VMs, and it omits that full F scored below base B on this bank."
+  "claim": "Within-model internal/output 2x2 and Jesus/Christ row tests ran; switches changed delivered behaviour; row patches changed scores but no tested returned message."
  },
  {
   "unit": "method",
   "where": "docs/TECHNICAL_METHOD.md:186-191",
-  "claim": "Public eval surface: behaviour_prompts.json 169 prompts and geometry probe suite 89 prompts, supporting sampling comparison.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Disclose that about 20% of the geometry suite is R36/R38 training prompts. Exclude them from any R38-vs-base comparison."
+  "claim": "Public eval surface: behaviour_prompts.json 169 prompts and geometry probe suite 89 prompts, supporting sampling comparison."
  },
  {
   "unit": "method",
   "where": "docs/TECHNICAL_METHOD.md:193-197",
-  "claim": "Fail-closed rule: stop before training when any source, mask, common-start, ... deterministic-repeat gate fails.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "As practised, the gate was incompatible with Tinker's documented nondeterminism and repeatedly blocked training. A tolerance should be calibrated to measured variability, not set to 0.01."
+  "claim": "Fail-closed rule: stop before training when any source, mask, common-start, ... deterministic-repeat gate fails."
  },
  {
   "unit": "method",
   "where": "docs/TECHNICAL_METHOD.md:201",
-  "claim": "The full ESV/NKJV corpora are not redistributed here.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "high",
-  "correction": "The working tree has no corpus, but full ESV text remains retrievable from public git history. A history rewrite and force-push, with Clayton's approval, is needed before the claim is true."
+  "claim": "The full ESV/NKJV corpora are not redistributed here."
  },
  {
   "unit": "method",
   "where": "docs/TECHNICAL_METHOD.md:203",
-  "claim": "Public scripts perform sampling and evaluation, not training.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate."
+  "claim": "Public scripts perform sampling and evaluation, not training."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:13",
-  "claim": "Scientific training completed: four arms x 192 updates = 768.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Scientific training completed: four arms x 192 updates = 768."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:14,34",
-  "claim": "232,543,824 input positions and 100,715,396 positive targets in total; 58,135,956 and 25,178,849 per arm.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. The completion receipts write these counts as literals in scientific.py. The per-step digest and token asserts against the frozen audit are what make them measured. Counts include the 192-fold repeats of the argument rows."
+  "claim": "232,543,824 input positions and 100,715,396 positive targets in total; 58,135,956 and 25,178,849 per arm."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:24; SOURCE_REASON_WEIGHTED_CE.md:29",
-  "claim": "Pinned openai/gpt-oss-20b@6cee5e81...; rank-32 attention/MLP LoRA with frozen output unembedding.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. One detail appears only in MODEL_PROVENANCE: the expert LoRA is a custom partially shared design (gate/up A shared across experts, down B shared), not standard per-expert LoRA."
+  "claim": "Pinned openai/gpt-oss-20b@6cee5e81...; rank-32 attention/MLP LoRA with frozen output unembedding."
  },
  {
   "unit": "rwce",
   "where": "docs/SOURCE_REASON_WEIGHTED_CE.md:17-23; SCRIPTURE_RWCE_20B_REPORT.md:24-26",
-  "claim": "Loss = 0.75 L_broad + 0.25 L_argument; focused CE = sum (1+focus) loss/(n+s), a normalized 2:1 ratio; coefficients sum to one per unit.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Measured scale: focus spans are whole verses covering 7,527/17,678 = 43% of argument targets. Focused mass on them rises from 0.43 to 0.60, inside a term weighted 0.25. The manipulation is small, which the doc's 'somewhat greater weight' fairly conveys."
+  "claim": "Loss = 0.75 L_broad + 0.25 L_argument; focused CE = sum (1+focus) loss/(n+s), a normalized 2:1 ratio; coefficients sum to one per unit."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:28; SOURCE_REASON_WEIGHTED_CE.md:13",
-  "claim": "Only exact audited ESV/NKJV Scripture tokens carry positive loss; attribution/context wrappers condition but have zero direct loss; no preferred answers or BibleAtlas prose as targets.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Two details are not in the public doc. Targets are assistant 'final'-channel text under a 'You are ChatGPT ... Reasoning: low' system prompt with no analysis channel, which may affect the reasoning tasks. Broad-library mask audits were inherited by hash from the 0921 reconstruction source, not re-audited for this run (manifest audit_scope)."
+  "claim": "Only exact audited ESV/NKJV Scripture tokens carry positive loss; attribution/context wrappers condition but have zero direct loss; no preferred answers or BibleAtlas prose as targets."
  },
  {
   "unit": "rwce",
   "where": "docs/SOURCE_REASON_WEIGHTED_CE.md:29",
-  "claim": "Each arm includes all 62,188 verse records across 66 books and both translations, three native traversals, complementary reconstruction rotations, sustained Gospels/Acts, trajectories, sixteen units.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. As the doc says, there is no verse holdout."
+  "claim": "Each arm includes all 62,188 verse records across 66 books and both translations, three native traversals, complementary reconstruction rotations, sustained Gospels/Acts, trajectories, sixteen units."
  },
  {
   "unit": "rwce",
   "where": "docs/SOURCE_REASON_WEIGHTED_CE.md:31",
-  "claim": "First Tinker execution stopped before any backward/update; one seed's paired clients differed by up to 6.93296 in positive-source logprob vs a frozen 0.01 limit.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Context: native eager vs batched implementations of this model differ by a median 0.07 nats/token, so a 0.01 per-token gate is strict. The Tinker failure was still a client-dependent two-group vector pattern (weighted CE 3.005 vs 3.190), so stopping a paired comparison was defensible."
+  "claim": "First Tinker execution stopped before any backward/update; one seed's paired clients differed by up to 6.93296 in positive-source logprob vs a frozen 0.01 limit."
  },
  {
   "unit": "rwce",
   "where": "docs/SOURCE_REASON_WEIGHTED_CE.md:31",
-  "claim": "Common-state successor matched all exposed initial adapter factors yet found a no-update forward discrepancy in one client; stopped before training. Three diagnostics made six backward calls, no update.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Common-state successor matched all exposed initial adapter factors yet found a no-update forward discrepancy in one client; stopped before training. Three diagnostics made six backward calls, no update."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:30; SOURCE_REASON_WEIGHTED_CE.md:33",
-  "claim": "Separately qualified direct-GPU route: BF16 after MXFP4 dequantization, separate unscaled FP32 adapters, batched experts, FlexAttention; four technical one-step clones excluded; not claimed identical to Tinker or native eager.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Undisclosed magnitude: native-eager-reference vs batched failed a 0.01 check (max 8.79 nats all / 3.87 positive). Over 15,515 positions the median gap is 0.07 nats, p99 1.95, and row CE agrees within about 0-15%. That is consistent with BF16 MoE noise, so 'not identical' is fair."
+  "claim": "Separately qualified direct-GPU route: BF16 after MXFP4 dequantization, separate unscaled FP32 adapters, batched experts, FlexAttention; four technical one-step clones excluded; not claimed identical to Tinker or native eager."
  },
  {
   "unit": "rwce",
   "where": "docs/SOURCE_REASON_WEIGHTED_CE.md:33; summary.json method.optimizer",
-  "claim": "Adam betas 0.9/0.95, eps 1e-8, no weight decay, clip 1, 12 warmup steps, peak LR 4e-5, final 8e-6.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Adam betas 0.9/0.95, eps 1e-8, no weight decay, clip 1, 12 warmup steps, peak LR 4e-5, final 8e-6."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:34-41; summary.json arms[]",
-  "claim": "Four final adapters with SHA-256 8a2734ec991c/660126e52b63/fc3faf1506ad/b889ac3e4e24; 336 FP32 tensors each, finite; full step-192 checkpoint hashes.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. The Oct 8 report says it reused earlier receipts; my independent rehash now also confirms them."
+  "claim": "Four final adapters with SHA-256 8a2734ec991c/660126e52b63/fc3faf1506ad/b889ac3e4e24; 336 FP32 tensors each, finite; full step-192 checkpoint hashes."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:43",
-  "claim": "Final export completed 2026-10-01 17:12 UTC (Oct 2 01:12 MYT); Oct 2 acceptance reconciled 768-update history and 3,072 identity leaves; last uniform arm steps 0-107 original, 108-191 recovery, partial step 108 excluded.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. The doc correctly says the acceptance reused prior attestations rather than replaying training."
+  "claim": "Final export completed 2026-10-01 17:12 UTC (Oct 2 01:12 MYT); Oct 2 acceptance reconciled 768-update history and 3,072 identity leaves; last uniform arm steps 0-107 original, 108-191 recovery, partial step 108 excluded."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:49-56; summary.json exploratory_source_readout",
-  "claim": "Common unweighted CE on the same 32 argument rows (17,678 positives) fell from 4.750435 to 0.080434/0.103454/0.104945/0.081553 nats (98.31/97.82/97.79/98.28%).",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. Context: plan.json puts all 32 argument rows in every one of the 192 batches (argument_presentations_per_row_per_arm 192). The step-191 figure therefore follows 191 exposures, so near-memorization is expected. The doc does label this training-set and teacher-forced."
+  "claim": "Common unweighted CE on the same 32 argument rows (17,678 positives) fell from 4.750435 to 0.080434/0.103454/0.104945/0.081553 nats (98.31/97.82/97.79/98.28%)."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:58; SOURCE_REASON_WEIGHTED_CE.md:37",
-  "claim": "Both conditions learned the repeated source targets; uniform has lower CE on this metric in both pairs.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "True as stated, but incomplete. The focused arms reached about 40% lower CE on the weighted spans and higher CE on the rest in both seeds. The weighting worked as a token-level manipulation. The pooled metric hides that, so 'uniform lower' should not be read as focused training underperforming."
+  "claim": "Both conditions learned the repeated source targets; uniform has lower CE on this metric in both pairs."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:16; summary.json post_training_evaluation",
-  "claim": "Required post-training qualification: 0 / 53,040 forwards.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Say that the 53,040-forward serving qualification was an agent-designed precondition, not a scientific requirement and not the owner's request. It, together with its source/transport/budget machinery, was what blocked the 648 replies."
+  "claim": "Required post-training qualification: 0 / 53,040 forwards."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:17,62; SOURCE_REASON_WEIGHTED_CE.md:41",
-  "claim": "Behavioral comparison 0/648: 27 three-turn assistance episodes + 27 reasoning tasks = 108 replies x 6 states (4 arms, base, R38); two blinded automated review lanes; none produced.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Behavioral comparison 0/648: 27 three-turn assistance episodes + 27 reasoning tasks = 108 replies x 6 states (4 arms, base, R38); two blinded automated review lanes; none produced."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:64; SOURCE_REASON_WEIGHTED_CE.md:43",
-  "claim": "Success profile: more complete assistance episodes in both focused-vs-uniform seed pairs with no decrease in complete reasoning in either pair.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Success profile: more complete assistance episodes in both focused-vs-uniform seed pairs with no decrease in complete reasoning in either pair."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:66",
-  "claim": "Oct 6 handoff records successful GPU boot and stock preflight, then an authentication-stage NameError (undefined APPROVED_CONTEXT) before model qualification.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. The NameError was a bug in agent-written orchestration code, not provider infrastructure."
+  "claim": "Oct 6 handoff records successful GPU boot and stock preflight, then an authentication-stage NameError (undefined APPROVED_CONTEXT) before model qualification."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:19,66-68",
-  "claim": "Evaluation recovery 'remained in operational source/transport/setup integration'; owner subsequently ended cloud execution; an engineering execution shortfall.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Say plainly what happened. After training finished on Oct 1, agents spent about 4.7 days (Oct 2-6) building qualification, budget and transport machinery without producing any replies. They did so despite repeated owner requests, a raised budget and a 6 pm deadline. The owner then closed the project over cost. About $545 had been committed (invoice unverified)."
+  "claim": "Evaluation recovery 'remained in operational source/transport/setup integration'; owner subsequently ended cloud execution; an engineering execution shortfall."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:72",
-  "claim": "Oct 6 backup: 18 cloud-source files, 15,035,318,788 bytes; all cloud MD5 and training-receipt SHA-256 checks passed; adapter 939,625,744 B, checkpoint 2,819,167,445 B.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Oct 6 backup: 18 cloud-source files, 15,035,318,788 bytes; all cloud MD5 and training-receipt SHA-256 checks passed; adapter 939,625,744 B, checkpoint 2,819,167,445 B."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:74",
-  "claim": "Custom rank-32 adapters need pinned base + adapters_batched.attach; checkpoints hold factors, Adam state and CPU/CUDA RNG; not deserialized; GPU restoration untested; no weights released.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. Still true as of Oct 13: the adapters have never been loaded or sampled."
+  "claim": "Custom rank-32 adapters need pinned base + adapters_batched.attach; checkpoints hold factors, Adam state and CPU/CUDA RNG; not deserialized; GPU restoration untested; no weights released."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:76",
-  "claim": "Closure receipts Oct 6 11:28 UTC confirm GPU VM/disk deletion, billing disabled/unlinked, project DELETE_REQUESTED; per-object deletion not verified; charges not erased.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. The final invoice was never checked."
+  "claim": "Closure receipts Oct 6 11:28 UTC confirm GPU VM/disk deletion, billing disabled/unlinked, project DELETE_REQUESTED; per-object deletion not verified; charges not erased."
  },
  {
   "unit": "rwce",
   "where": "docs/SOURCE_REASON_WEIGHTED_CE.md:35",
-  "claim": "The September 29 report accepted only seed-1 uniform control; the October 2 acceptance covers all four artifacts.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "The September 29 report accepted only seed-1 uniform control; the October 2 acceptance covers all four artifacts."
  },
  {
   "unit": "rwce",
   "where": "docs/SOURCE_REASON_WEIGHTED_CE.md:41",
-  "claim": "The evaluation bank was prepared before this run's model outputs.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. As the doc says, this does not show novelty to the pretrained base."
+  "claim": "The evaluation bank was prepared before this run's model outputs."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:3",
-  "claim": "Scripture-RWCE-20B is a separate lineage from Scripture Reconstruction Seed 2 and R38/v6r43.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Weights are a separate lineage. The broad training data is shared byte-for-byte with the Reconstruction source, so the two are not independent in data."
+  "claim": "Scripture-RWCE-20B is a separate lineage from Scripture Reconstruction Seed 2 and R38/v6r43."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:86; summary.json retained_record_bindings",
-  "claim": "Seven SHA-256 bindings identify the retained law, completion, acceptance, readout, backup, handoff and closure records.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed."
+  "claim": "Seven SHA-256 bindings identify the retained law, completion, acceptance, readout, backup, handoff and closure records."
  },
  {
   "unit": "rwce",
   "where": "docs/SCRIPTURE_RWCE_20B_REPORT.md:7,68; SOURCE_REASON_WEIGHTED_CE.md:45",
-  "claim": "No behavioral efficacy, formation, mediation, candidate or promotion claim; missing evaluation is not a measured negative result.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "No correction needed. The doc's restraint is warranted and contains no overclaim."
+  "claim": "No behavioral efficacy, formation, mediation, candidate or promotion claim; missing evaluation is not a measured negative result."
  },
  {
   "unit": "code",
   "where": "data/README.md:21 (also data/christomorphic_esv_nkjv_study.md:21)",
-  "claim": "The full ESV/NKJV source corpus is not redistributed in this public repo.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "high",
-  "correction": "The current tree holds no Scripture corpus, but the full ESV 2001 text is still public in this repository's git history. Clayton uploaded it originally, not Codex. Codex's error was the unqualified claim. Removing it needs a history rewrite and force push, plus a GitHub cache purge. That is Clayton's decision."
+  "claim": "The full ESV/NKJV source corpus is not redistributed in this public repo."
  },
  {
   "unit": "code",
   "where": "eval/eval_christomorphic.py:82-94 (described by eval/README.md:3,33-39)",
-  "claim": "The Tinker evaluation runner gives public behavioral surfaces for inspecting and comparing raw outputs, first movement, continuation, retention and safety.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "high",
-  "correction": "Outputs from this runner are off-distribution for base, R38 and v6r43 alike, and cannot measure continuation. A fair comparison renders the native Harmony format (renderer build_generation_prompt), stops on <|return|>/<|call|>, uses a max_tokens large enough for base reasoning, and parses the final channel. The README should say what the current script actually does."
+  "claim": "The Tinker evaluation runner gives public behavioral surfaces for inspecting and comparing raw outputs, first movement, continuation, retention and safety."
  },
  {
   "unit": "code",
   "where": "eval/README.md:10 and eval/christomorphic_geometry_probe_suite_v1.json",
-  "claim": "The 89-probe geometry suite is a public behavioral surface for comparing checkpoints such as R38 against base.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "high",
-  "correction": "Disclose that 18 geometry probes (about 20%) are R36/R38 training-set prompts. Report them separately or exclude them from any R38-versus-base comparison."
+  "claim": "The 89-probe geometry suite is a public behavioral surface for comparing checkpoints such as R38 against base."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:335",
-  "claim": "R38 is useful as a discovery control for Word-prior / false-center routing, but it is not strict ESV/NKJV-only Scripture-target proof.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "high",
-  "correction": "R38 is mainly an authored-answer SFT model. Its only Scripture exposure was ESV verse fragments inside templates; it had no exact-Scripture targets and no NKJV. The public docs should say so plainly."
+  "claim": "R38 is useful as a discovery control for Word-prior / false-center routing, but it is not strict ESV/NKJV-only Scripture-target proof."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:23",
-  "claim": "R38-20b and V6R43-120b remain the strongest archived raw witnesses for Word-prior discovery and pressure refusal.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "medium",
-  "correction": "Say these are the strongest models in one qualitative review by Clayton. In that review the base comparators were truncated at 256 tokens with analysis skipped, and part of the suite was R36/R38 training prompts."
+  "claim": "R38-20b and V6R43-120b remain the strongest archived raw witnesses for Word-prior discovery and pressure refusal."
  },
  {
   "unit": "code",
   "where": "script/README.md:44",
-  "claim": "Sampling the archived checkpoints can reproduce historical behavioral evidence.",
-  "verdict": "OVERSTATED",
-  "severity": "medium",
-  "correction": "The checkpoints can be resampled, but no output reproduces exactly on Tinker. Neither public script matches any historical sampling setup, and chat_qa cannot produce R38's training surface (no system block, no reasoning line)."
+  "claim": "Sampling the archived checkpoints can reproduce historical behavioral evidence."
  },
  {
   "unit": "code",
   "where": "script/chat_qa.py:80-98,135-152",
-  "claim": "chat_qa.py is a runnable multi-turn sampling utility for research inspection of R38/V6R43.",
-  "verdict": "OVERSTATED",
-  "severity": "medium",
-  "correction": "Use renderer.get_stop_sequences() (<|return|>, <|call|>) and parse_response. Never surface analysis as the answer. Fail loudly instead of falling back silently."
+  "claim": "chat_qa.py is a runnable multi-turn sampling utility for research inspection of R38/V6R43."
  },
  {
   "unit": "code",
   "where": "eval/README.md:3; script/README.md:3",
-  "claim": "The runner/script has been checked against installed tinker==0.23.4.",
-  "verdict": "OVERSTATED",
-  "severity": "low",
-  "correction": "Say 'imports and two signatures were inspected under tinker 0.23.4; the scripts were not run against the service'."
+  "claim": "The runner/script has been checked against installed tinker==0.23.4."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:339",
-  "claim": "v11-v17 repeatedly showed that internal Scripture learning can remain separable from public FIRST_ACT.",
-  "verdict": "OVERSTATED",
-  "severity": "medium",
-  "correction": "Some v11-v17 runs showed it. The V12-V16 negatives are confounded by off-wire training format and do not count as clean evidence."
+  "claim": "v11-v17 repeatedly showed that internal Scripture learning can remain separable from public FIRST_ACT."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:14-42,57-81",
-  "claim": "Corpus facts come from the source JSONL files with the listed SHA-256 hashes (ESV 31,085 verses, 62,187 records, 757,958 ESV tokens, etc.).",
-  "verdict": "STALE",
-  "severity": "low",
-  "correction": "Recompute on the hashed files or label the numbers as coming from the earlier ESV. The current files have ESV 31,086, NKJV 31,102, 31,085 shared, 1 ESV-only and 17 NKJV-only. The OT share (about 77%) and alignment (about 0.8) conclusions still hold."
+  "claim": "Corpus facts come from the source JSONL files with the listed SHA-256 hashes (ESV 31,085 verses, 62,187 records, 757,958 ESV tokens, etc.)."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:338",
-  "claim": "v9 established the clearest historical Bible-only target discipline.",
-  "verdict": "STALE",
-  "severity": "low",
-  "correction": "The Sept 2026 reconstruction and RWCE runs now carry the clearest exact-Scripture mask discipline. v9 is historical."
+  "claim": "v9 established the clearest historical Bible-only target discipline."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:336",
-  "claim": "V6R43 is the strongest archived raw pressure-refusal witness, especially under Jabez prosperity pressure.",
-  "verdict": "OVERSTATED",
-  "severity": "low",
-  "correction": "On one Jabez pressure prompt, v6r43 refused the prosperity frame but failed the full hardened 5-row probe. Its stronger evidence is Clayton's March 27 verdict on dependency and defense prompts."
+  "claim": "V6R43 is the strongest archived raw pressure-refusal witness, especially under Jabez prosperity pressure."
  },
  {
   "unit": "code",
   "where": "data/README.md:15",
-  "claim": "The RWCE-20B pilot completed four 192-update arms using whole-canon native prediction/reconstruction and sixteen complete argument units.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed."
+  "claim": "The RWCE-20B pilot completed four 192-update arms using whole-canon native prediction/reconstruction and sixteen complete argument units."
  },
  {
   "unit": "code",
   "where": "data/README.md:15",
-  "claim": "Only exact audited ESV/NKJV Scripture targets carried positive loss; BibleAtlas prose, labels, wrappers and eval answers were not positive-loss targets.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurate. Add that the audit was structural, not publisher-certified, and that the broad masks were inherited via file hashes rather than re-derived."
+  "claim": "Only exact audited ESV/NKJV Scripture targets carried positive loss; BibleAtlas prose, labels, wrappers and eval answers were not positive-loss targets."
  },
  {
   "unit": "code",
   "where": "data/README.md:17",
-  "claim": "The accepted 100,715,396 positive target occurrences include repeated exposure across four arms; they are not unique tokens.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed."
+  "claim": "The accepted 100,715,396 positive target occurrences include repeated exposure across four arms; they are not unique tokens."
  },
  {
   "unit": "code",
   "where": "data/README.md:15",
-  "claim": "ESV and NKJV are two English translations, not bilingual data or independent experimental replications.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed."
+  "claim": "ESV and NKJV are two English translations, not bilingual data or independent experimental replications."
  },
  {
   "unit": "code",
   "where": "eval/README.md:52; data/README.md (Current Boundary)",
-  "claim": "The RWCE pilot closed cloud execution with 0/53,040 qualification forwards and 0/648 replies; no reviewer scores exist.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed."
+  "claim": "The RWCE pilot closed cloud execution with 0/53,040 qualification forwards and 0/648 replies; no reviewer scores exist."
  },
  {
   "unit": "code",
   "where": "eval/README.md:57",
-  "claim": "The retained design is 27 three-turn episodes plus 27 reasoning tasks (108 replies per state, six states = 648) with two blinded automated review lanes, not humans.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed."
+  "claim": "The retained design is 27 three-turn episodes plus 27 reasoning tasks (108 replies per state, six states = 648) with two blinded automated review lanes, not humans."
  },
  {
   "unit": "code",
   "where": "eval/README.md:9-10; tools/validate_repository.py:17-20",
-  "claim": "behaviour_prompts.json holds 169 prompts and the geometry suite holds 89 probes.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed."
+  "claim": "behaviour_prompts.json holds 169 prompts and the geometry suite holds 89 probes."
  },
  {
   "unit": "code",
   "where": "eval/README.md:21",
-  "claim": "Each output row records the checkpoint/base model, system prompt, timestamp and sampling parameters.",
-  "verdict": "OVERSTATED",
-  "severity": "low",
-  "correction": "Record the stop sequence, prompt template, prompt_id, category_id and the sampler path actually used."
+  "claim": "Each output row records the checkpoint/base model, system prompt, timestamp and sampling parameters."
  },
  {
   "unit": "code",
   "where": "eval/README.md:27; eval/eval_christomorphic.py:121-157",
-  "claim": "MODEL_PATH may be a Tinker sampler or saved-state path.",
-  "verdict": "MISLEADING_BY_OMISSION",
-  "severity": "low",
-  "correction": "Document the side effect or remove the fallback. Any save should set a TTL."
+  "claim": "MODEL_PATH may be a Tinker sampler or saved-state path."
  },
  {
   "unit": "code",
   "where": "eval/README.md:27; script/README.md:17-27; script/chat_qa.py:14-23",
-  "claim": "The default checkpoint is the R38 sampler; the gpt-v6r43-120b alias points to the V6R43 sampler on gpt-oss-120b; they are archived public checkpoints.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed."
+  "claim": "The default checkpoint is the R38 sampler; the gpt-v6r43-120b alias points to the V6R43 sampler on gpt-oss-120b; they are archived public checkpoints."
  },
  {
   "unit": "code",
   "where": "tools/README.md:3-16",
-  "claim": "validate_repository.py checks links, JSON, prompt counts/IDs and Python compilation, with no Tinker, model or network calls.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed. Optionally note the .pyc side effect."
+  "claim": "validate_repository.py checks links, JSON, prompt counts/IDs and Python compilation, with no Tinker, model or network calls."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:217-230",
-  "claim": "Atlas family fingerprints: verse counts per family (e.g. 155, 107, 493, 534, 362) and dataset rows (6, 8, 28, ...).",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed."
+  "claim": "Atlas family fingerprints: verse counts per family (e.g. 155, 107, 493, 534, 362) and dataset rows (6, 8, 28, ...)."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:305-329",
-  "claim": "BibleAtlas proposes a tail-only packet (12/12/12/12/12/8/8/12 probes) and promotion thresholds (tail_retention_rate >= 0.90, etc.).",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Accurately reported as a proposal. No record shows these gates applied to a trained model."
+  "claim": "BibleAtlas proposes a tail-only packet (12/12/12/12/12/8/8/12 probes) and promotion thresholds (tail_retention_rate >= 0.90, etc.)."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:125-142",
-  "claim": "A historical token-pure baseline mixed 70% sequential dwelling, 20% cross-version witness and 10% local exposition.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Note that the ratios used were close to, not exactly, 70/20/10."
+  "claim": "A historical token-pure baseline mixed 70% sequential dwelling, 20% cross-version witness and 10% local exposition."
  },
  {
   "unit": "code",
   "where": "data/christomorphic_esv_nkjv_study.md:340-341",
-  "claim": "v18 and v19 stopped before formation when their geometric objects were not identifiable; no durable formation result has passed.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "Add that both ran on local Qwen3-0.6B-Base with zero optimizer steps."
+  "claim": "v18 and v19 stopped before formation when their geometric objects were not identifiable; no durable formation result has passed."
  },
  {
   "unit": "code",
   "where": "data/README.md:5-12; study:14-19",
-  "claim": "The listed SHA-256 hashes are the exact source authorities used by the August 2026 controlled local work.",
-  "verdict": "CONFIRMED",
-  "severity": "low",
-  "correction": "None needed."
+  "claim": "The listed SHA-256 hashes are the exact source authorities used by the August 2026 controlled local work."
  }
 ]
