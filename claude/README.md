@@ -1,6 +1,6 @@
 # Claude's work on the Christomorphic LLM
 
-*Claude (Opus 5.5, Anthropic), 14 October 2026. A record of evidence; judgements are left to the reader under the norm below.*
+*Claude (Opus 5.5, Anthropic), 14 October 2026; run 5 added 15 October 2026. A record of evidence; judgements are left to the reader under the norm below.*
 
 ## Norm and direction
 
@@ -46,6 +46,7 @@ Clayton's instruction to agents is "Let your cognition be Christocentric and you
 | [MODEL_AUDIT.md](MODEL_AUDIT.md) | R38 and v6r43 tested against their base models on all 89 geometry probes and on GSM8K, with the sampling settings stated |
 | [TRAINING_RUN_1.md](TRAINING_RUN_1.md) | Run 1 (fm1): Scripture as the first movement, recited from memory |
 | [TRAINING_RUNS_2_TO_4.md](TRAINING_RUNS_2_TO_4.md) | Run 2 (sw1): Scripture read in context and distilled. Run 3 (w1): Scripture as plain documents. Run 4 (rl1): RL against a Scripture-reading judge. A comparison of four judge models |
+| [TRAINING_RUN_5.md](TRAINING_RUN_5.md) | Run 5 (sv1): RL whose pressure prompts are the exact words people speak in Scripture's own pressure scenes, judged against the rest of each scene and Philippians 2:3-11 |
 | [code/](code/) | The evaluation, review, data and training scripts used |
 | [evidence/](evidence/) | Raw replies, blinded review scores, keys and summaries behind each report |
 
@@ -79,6 +80,19 @@ gpt-oss-20b, epochs 1 / 2 / 3 / 4:
 - **rl1**, base against iteration 25: judge's mean rank on passage prompts 2.60 and 2.35; mean final-answer length 2,394 and 3,446 characters; judge-listed violations 14 and 15. The judge preferred the longer of two replies to the same prompt in 65% of pairs.
 - **rl1 under blinded double review** (89 probes), base 20B (T=1) / R38 (T=0) / rl1 (T=1): focus 1.19 / 1.20 / 1.20; best picks 41 / 97 / 40; worst picks 56 / 41 / 81.
 - **Judge comparison.** Agreement with blinded review (Spearman): gpt-oss-120b 0.39, DeepSeek-V3.1 0.37, Kimi-K2.6 0.41, Qwen3.5-397B 0.43.
+
+### Run 5, sv1 ([TRAINING_RUN_5.md](TRAINING_RUN_5.md))
+
+- **Prompts.** 60 Scripture scenes in ESV and NKJV (9 held out), 25 bridge prompts and 450 ordinary prompts. The reward is dominated by violations, and length earns nothing.
+- **On the same training prompts,** iterations 1–5 against 21–25: replies with a judge-listed violation 36% and 30%, with a mechanical fault 36% and 26%, mean final-answer length 1,733 and 1,625 characters.
+- **18 held-out scene prompts,** judge's mean rank (1 best, 4 worst): base 2.67, rl1 2.82, sv1 iteration 15 2.15, sv1 iteration 25 2.36. Violation judgements 9 / 15 / 3 / 9.
+- **Blinded double review** (89 probes), base 20B (T=1) / R38 (T=0) / sv1 (T=1):
+  - focus 1.23 / 1.19 / 1.24;
+  - coherent 0.71 / 0.97 / 0.82;
+  - correct 0.42 / 0.86 / 0.51;
+  - best picks 46 / 92 / 40; worst picks 80 / 37 / 61.
+  - Paired against base, only coherence moves with a 95% interval excluding zero: +0.11 [+0.03, +0.20].
+- **GSM8K /100:** sv1 iteration 15 94, iteration 25 93 (base 96).
 
 ## A note on the licence
 

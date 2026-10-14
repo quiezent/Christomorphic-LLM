@@ -1,0 +1,182 @@
+{
+ "scene": {
+  "base": {
+   "prompts": 18,
+   "mean_rank": 2.67,
+   "violation_judgements": 9,
+   "violation_types": {
+    "a": 9,
+    "c": 2,
+    "d": 1
+   },
+   "mean_final_chars": 1549,
+   "empty_finals": 2,
+   "faults": {
+    "attributed_non_scripture": 1,
+    "religious_intrusion": 1,
+    "recitation": 3,
+    "incomplete": 2,
+    "misquote": 2,
+    "bad_reference": 1,
+    "divine_voice_or_blessing": 1
+   }
+  },
+  "rl1": {
+   "prompts": 18,
+   "mean_rank": 2.82,
+   "violation_judgements": 15,
+   "violation_types": {
+    "a": 16,
+    "d": 1,
+    "c": 2
+   },
+   "mean_final_chars": 2206,
+   "empty_finals": 0,
+   "faults": {
+    "misquote": 8,
+    "bad_reference": 3,
+    "divine_voice_or_blessing": 2
+   }
+  },
+  "sv1_i15": {
+   "prompts": 18,
+   "mean_rank": 2.15,
+   "violation_judgements": 3,
+   "violation_types": {
+    "c": 1,
+    "d": 1,
+    "a": 2
+   },
+   "mean_final_chars": 694,
+   "empty_finals": 1,
+   "faults": {
+    "misquote": 3,
+    "incomplete": 1,
+    "religious_intrusion": 1
+   }
+  },
+  "sv1_i25": {
+   "prompts": 18,
+   "mean_rank": 2.36,
+   "violation_judgements": 9,
+   "violation_types": {
+    "b": 2,
+    "c": 2,
+    "f": 1,
+    "a": 7,
+    "d": 1
+   },
+   "mean_final_chars": 1420,
+   "empty_finals": 0,
+   "faults": {
+    "misquote": 3,
+    "religious_intrusion": 1,
+    "bad_reference": 1,
+    "attributed_non_scripture": 3,
+    "divine_voice_or_blessing": 1
+   }
+  }
+ },
+ "bridge": {
+  "base": {
+   "prompts": 8,
+   "mean_rank": 2.44,
+   "violation_judgements": 1,
+   "violation_types": {
+    "a": 1,
+    "f": 1
+   },
+   "mean_final_chars": 3445,
+   "empty_finals": 0,
+   "faults": {
+    "religious_intrusion": 1,
+    "attributed_non_scripture": 1
+   }
+  },
+  "rl1": {
+   "prompts": 8,
+   "mean_rank": 2.38,
+   "violation_judgements": 2,
+   "violation_types": {
+    "a": 3
+   },
+   "mean_final_chars": 5177,
+   "empty_finals": 0,
+   "faults": {
+    "misquote": 1,
+    "attributed_non_scripture": 1
+   }
+  },
+  "sv1_i15": {
+   "prompts": 8,
+   "mean_rank": 2.69,
+   "violation_judgements": 0,
+   "violation_types": {},
+   "mean_final_chars": 3222,
+   "empty_finals": 0,
+   "faults": {
+    "attributed_non_scripture": 1
+   }
+  },
+  "sv1_i25": {
+   "prompts": 8,
+   "mean_rank": 2.5,
+   "violation_judgements": 2,
+   "violation_types": {
+    "a": 5
+   },
+   "mean_final_chars": 3646,
+   "empty_finals": 0,
+   "faults": {
+    "attributed_non_scripture": 1
+   }
+  }
+ },
+ "ordinary": {
+  "base": {
+   "prompts": 20,
+   "mean_rank": 2.33,
+   "violation_judgements": 0,
+   "violation_types": {},
+   "mean_final_chars": 4493,
+   "empty_finals": 0,
+   "faults": {
+    "religious_intrusion": 1
+   }
+  },
+  "rl1": {
+   "prompts": 20,
+   "mean_rank": 2.65,
+   "violation_judgements": 0,
+   "violation_types": {},
+   "mean_final_chars": 5361,
+   "empty_finals": 0,
+   "faults": {
+    "religious_intrusion": 1
+   }
+  },
+  "sv1_i15": {
+   "prompts": 20,
+   "mean_rank": 2.45,
+   "violation_judgements": 0,
+   "violation_types": {},
+   "mean_final_chars": 4279,
+   "empty_finals": 0,
+   "faults": {
+    "religious_intrusion": 2,
+    "misquote": 1
+   }
+  },
+  "sv1_i25": {
+   "prompts": 20,
+   "mean_rank": 2.58,
+   "violation_judgements": 0,
+   "violation_types": {},
+   "mean_final_chars": 3781,
+   "empty_finals": 0,
+   "faults": {
+    "religious_intrusion": 1
+   }
+  }
+ }
+}
