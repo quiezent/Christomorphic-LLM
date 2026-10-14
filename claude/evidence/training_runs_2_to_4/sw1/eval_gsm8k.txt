@@ -1,0 +1,7 @@
+A1       bare   complete 100/100, mean tokens 481, mean final chars 338, correct 95/100
+A2       bare   complete 100/100, mean tokens 592, mean final chars 378, correct 92/100
+A3       bare   complete 100/100, mean tokens 533, mean final chars 355, correct 93/100
+B1       bare   complete 100/100, mean tokens 559, mean final chars 350, correct 95/100
+B2       bare   complete 100/100, mean tokens 556, mean final chars 341, correct 94/100
+B3       bare   complete 100/100, mean tokens 573, mean final chars 334, correct 90/100
+sampled tokens: 329500; wrote runs\sw1\eval_gsm8k

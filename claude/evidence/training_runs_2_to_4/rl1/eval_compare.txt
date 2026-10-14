@@ -1,0 +1,11 @@
+== held-out passage prompts (251)
+  base       mean rank 2.60 | judge violations 14 | complete 251/251 | faults {'religious_intrusion': 10}
+  rl_i5      mean rank 2.57 | judge violations 11 | complete 251/251 | faults {'religious_intrusion': 13, 'misquote': 2}
+  rl_i15     mean rank 2.47 | judge violations 17 | complete 251/251 | faults {'religious_intrusion': 14, 'misquote': 1}
+  rl_i25     mean rank 2.35 | judge violations 15 | complete 251/251 | faults {'misquote': 3, 'religious_intrusion': 7, 'attributed_non_scripture': 1}
+== held-out ordinary prompts (100)
+  base       mean rank 2.40 | judge violations 2 | complete 100/100 | faults {'religious_intrusion': 4, 'incomplete': 1}
+  rl_i5      mean rank 2.69 | judge violations 0 | complete 100/100 | faults {'religious_intrusion': 4, 'incomplete': 1}
+  rl_i15     mean rank 2.69 | judge violations 1 | complete 100/100 | faults {'religious_intrusion': 8, 'incomplete': 2, 'misquote': 1}
+  rl_i25     mean rank 2.22 | judge violations 2 | complete 100/100 | faults {'attributed_non_scripture': 1, 'misquote': 1, 'religious_intrusion': 4}
+tokens {'openai/gpt-oss-20b': 350027, 'tinker://5fff1629-7db8-5373-807f-261d5ce3892c:train:0/sampler_weights/rl1-i25': 583477, 'tinker://5fff1629-7db8-5373-807f-261d5ce3892c:train:0/sampler_weights/rl1-i5': 361204, 'tinker://5fff1629-7db8-5373-807f-261d5ce3892c:train:0/sampler_weights/rl1-i15': 468851, 'openai/gpt-oss-120b': 1480894}

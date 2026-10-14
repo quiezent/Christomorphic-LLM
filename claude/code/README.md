@@ -12,3 +12,9 @@ The scripts behind the reports in this folder. They run against `tinker==0.33.1`
 | `build_data.py` | Builds training run 1's data: ask-and-reply scenes from the Gospels and Acts, exact ESV and NKJV text |
 | `refs.json` | The 99 ask-and-reply pairs kept by two rule-applying agents. References only, no Scripture text |
 | `train.py` | LoRA training on Tinker. Loss falls only on the recalled scene in the analysis channel, and every save has a TTL |
+| `bible.py` | Exact ESV/NKJV verse text by reference, from the audited files |
+| `sw.py` | Runs 2 and 4 data pipeline: prompts (oasst1, HH-RLHF), passage picking and confirmation, candidates, objective faithfulness checks, judge rankings, selection, training |
+| `sw_eval.py` | Held-out witness-gap test, four-model held-out comparison with the judge, judge-decision packet |
+| `stage1.py` | Run 3: whole ESV/NKJV as plain chapter documents, plus a verse-recall test |
+| `stage3.py` | Run 4: GRPO-style RL with a Scripture-reading judge, both label orders, objective faults scoring −1 |
+| `judges.py` | Judge bake-off: order consistency, agreement with blinded review, violation recall, cost |

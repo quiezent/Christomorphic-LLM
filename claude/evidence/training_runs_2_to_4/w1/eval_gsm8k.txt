@@ -1,0 +1,2 @@
+w1e2     bare   complete 100/100, mean tokens 493, mean final chars 279, correct 93/100
+sampled tokens: 49269; wrote runs\w1\eval_gsm8k

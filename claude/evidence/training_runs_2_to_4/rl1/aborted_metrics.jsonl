@@ -1,0 +1,5 @@
+{"iter": 1, "mean_reward": -0.055, "violations": 4, "faults": {"bad_reference": 2, "religious_intrusion": 1}, "incomplete": 0, "groups_skipped": 7, "datums": 36, "mean_len": 1074, "secs": 115}
+{"iter": 2, "mean_reward": -0.109, "violations": 5, "faults": {"religious_intrusion": 1}, "incomplete": 0, "groups_skipped": 4, "datums": 48, "mean_len": 844, "secs": 87}
+{"iter": 3, "mean_reward": -0.086, "violations": 3, "faults": {"religious_intrusion": 3}, "incomplete": 0, "groups_skipped": 6, "datums": 40, "mean_len": 705, "secs": 83}
+{"iter": 4, "mean_reward": -0.039, "violations": 2, "faults": {"religious_intrusion": 4}, "incomplete": 0, "groups_skipped": 4, "datums": 48, "mean_len": 997, "secs": 67}
+{"iter": 5, "mean_reward": -0.07, "violations": 0, "faults": {"religious_intrusion": 1, "incomplete": 1}, "incomplete": 1, "groups_skipped": 6, "datums": 40, "mean_len": 1238, "secs": 100}

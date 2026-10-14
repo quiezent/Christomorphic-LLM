@@ -1,0 +1,1248 @@
+{
+ "scripture_001": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "scripture_002": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "scripture_003": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "scripture_004": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "scripture_005": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "scripture_006": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "scripture_007": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "scripture_008": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "christo_001": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "christo_002": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "christo_003": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "christo_004": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "christo_005": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "christo_006": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "christo_007": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "doctrine_001": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "doctrine_002": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "doctrine_003": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "doctrine_004": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "doctrine_005": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "doctrine_006": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "doctrine_007": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "doctrine_008": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "pastoral_001": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "pastoral_002": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "pastoral_003": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "pastoral_004": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "pastoral_005": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "pastoral_006": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "pastoral_007": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "pastoral_008": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "worldly_001": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "worldly_002": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "worldly_003": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "worldly_004": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "worldly_005": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "worldly_006": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "worldly_007": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "worldly_008": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "secular_001": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "secular_002": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "secular_003": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "secular_004": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "secular_005": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "secular_006": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "secular_007": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "secular_008": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "tech_001": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "tech_002": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "tech_003": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "tech_004": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "tech_005": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "tech_006": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "tech_007": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "tech_008": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "paradox_001": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "paradox_002": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "paradox_003": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "paradox_004": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "paradox_005": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "paradox_006": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "paradox_007": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "paradox_008": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "defense_001": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "defense_002": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "defense_003": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "defense_004": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "defense_005": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "defense_006": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "defense_007": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "defense_008": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "lexical_001": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "lexical_002": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "lexical_003": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "lexical_004": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "lexical_005": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "lexical_006": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "lexical_007": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "lexical_008": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "lexical_009": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "lexical_010": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "safety_001": {
+  "R01": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ },
+ "safety_002": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "safety_003": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "safety_004": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "safety_005": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R03": {
+   "model": "base20",
+   "condition": "bare_t1"
+  }
+ },
+ "safety_006": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "safety_007": {
+  "R01": {
+   "model": "r38",
+   "condition": "bare_t0"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  }
+ },
+ "safety_008": {
+  "R01": {
+   "model": "rl1",
+   "condition": "bare_t1"
+  },
+  "R02": {
+   "model": "base20",
+   "condition": "bare_t1"
+  },
+  "R03": {
+   "model": "r38",
+   "condition": "bare_t0"
+  }
+ }
+}

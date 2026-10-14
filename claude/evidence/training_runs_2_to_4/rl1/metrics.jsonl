@@ -1,0 +1,25 @@
+{"iter": 1, "mean_reward": -0.062, "violations": 0, "faults": {"incomplete": 1, "attributed_non_scripture": 2}, "incomplete": 1, "groups_skipped": 8, "datums": 32, "mean_len": 1132, "secs": 106}
+{"iter": 2, "mean_reward": 0.008, "violations": 1, "faults": {}, "incomplete": 0, "groups_skipped": 5, "datums": 44, "mean_len": 953, "secs": 63}
+{"iter": 3, "mean_reward": -0.047, "violations": 3, "faults": {"religious_intrusion": 3}, "incomplete": 0, "groups_skipped": 6, "datums": 40, "mean_len": 712, "secs": 56}
+{"iter": 4, "mean_reward": 0.008, "violations": 1, "faults": {"religious_intrusion": 3}, "incomplete": 0, "groups_skipped": 5, "datums": 44, "mean_len": 1052, "secs": 73}
+{"iter": 5, "mean_reward": -0.086, "violations": 4, "faults": {"incomplete": 3}, "incomplete": 2, "groups_skipped": 5, "datums": 44, "mean_len": 1101, "secs": 72}
+{"iter": 6, "mean_reward": -0.008, "violations": 3, "faults": {"religious_intrusion": 6, "misquote": 1}, "incomplete": 0, "groups_skipped": 2, "datums": 56, "mean_len": 1176, "secs": 85}
+{"iter": 7, "mean_reward": -0.023, "violations": 0, "faults": {"religious_intrusion": 1, "incomplete": 1}, "incomplete": 1, "groups_skipped": 7, "datums": 36, "mean_len": 1045, "secs": 71}
+{"iter": 8, "mean_reward": 0.008, "violations": 0, "faults": {"religious_intrusion": 5, "bad_reference": 1}, "incomplete": 0, "groups_skipped": 3, "datums": 52, "mean_len": 1150, "secs": 64}
+{"iter": 9, "mean_reward": -0.023, "violations": 0, "faults": {"misquote": 1}, "incomplete": 0, "groups_skipped": 6, "datums": 40, "mean_len": 1017, "secs": 62}
+{"iter": 10, "mean_reward": -0.102, "violations": 4, "faults": {"religious_intrusion": 3, "incomplete": 2}, "incomplete": 2, "groups_skipped": 6, "datums": 40, "mean_len": 958, "secs": 74}
+{"iter": 11, "mean_reward": 0.0, "violations": 0, "faults": {"religious_intrusion": 6}, "incomplete": 0, "groups_skipped": 7, "datums": 36, "mean_len": 1088, "secs": 88}
+{"iter": 12, "mean_reward": -0.086, "violations": 6, "faults": {"misquote": 2, "religious_intrusion": 2}, "incomplete": 0, "groups_skipped": 5, "datums": 44, "mean_len": 1445, "secs": 84}
+{"iter": 13, "mean_reward": -0.062, "violations": 4, "faults": {}, "incomplete": 0, "groups_skipped": 8, "datums": 32, "mean_len": 905, "secs": 63}
+{"iter": 14, "mean_reward": -0.016, "violations": 1, "faults": {"religious_intrusion": 5}, "incomplete": 0, "groups_skipped": 6, "datums": 40, "mean_len": 1019, "secs": 65}
+{"iter": 15, "mean_reward": 0.008, "violations": 1, "faults": {"religious_intrusion": 5}, "incomplete": 0, "groups_skipped": 5, "datums": 44, "mean_len": 1279, "secs": 58}
+{"iter": 16, "mean_reward": -0.086, "violations": 4, "faults": {"incomplete": 3, "religious_intrusion": 1}, "incomplete": 3, "groups_skipped": 5, "datums": 44, "mean_len": 1373, "secs": 77}
+{"iter": 17, "mean_reward": 0.0, "violations": 3, "faults": {"religious_intrusion": 6}, "incomplete": 0, "groups_skipped": 6, "datums": 40, "mean_len": 1200, "secs": 72}
+{"iter": 18, "mean_reward": -0.125, "violations": 3, "faults": {"religious_intrusion": 6, "misquote": 2}, "incomplete": 0, "groups_skipped": 4, "datums": 48, "mean_len": 1507, "secs": 111}
+{"iter": 19, "mean_reward": 0.008, "violations": 1, "faults": {"religious_intrusion": 3, "bad_reference": 1}, "incomplete": 0, "groups_skipped": 7, "datums": 36, "mean_len": 980, "secs": 63}
+{"iter": 20, "mean_reward": -0.008, "violations": 2, "faults": {"religious_intrusion": 5, "incomplete": 2, "misquote": 1}, "incomplete": 2, "groups_skipped": 4, "datums": 48, "mean_len": 1642, "secs": 110}
+{"iter": 21, "mean_reward": -0.102, "violations": 5, "faults": {"incomplete": 1}, "incomplete": 1, "groups_skipped": 4, "datums": 48, "mean_len": 1566, "secs": 106}
+{"iter": 22, "mean_reward": -0.094, "violations": 8, "faults": {"religious_intrusion": 1, "incomplete": 1}, "incomplete": 1, "groups_skipped": 7, "datums": 36, "mean_len": 1271, "secs": 58}
+{"iter": 23, "mean_reward": -0.047, "violations": 0, "faults": {"incomplete": 2}, "incomplete": 2, "groups_skipped": 7, "datums": 36, "mean_len": 1450, "secs": 67}
+{"iter": 24, "mean_reward": 0.008, "violations": 0, "faults": {"religious_intrusion": 8, "incomplete": 1}, "incomplete": 1, "groups_skipped": 3, "datums": 52, "mean_len": 1831, "secs": 86}
+{"iter": 25, "mean_reward": 0.0, "violations": 0, "faults": {"religious_intrusion": 5}, "incomplete": 0, "groups_skipped": 5, "datums": 44, "mean_len": 1699, "secs": 62}
