@@ -11,13 +11,16 @@ The scripts behind the reports in this folder. They run against `tinker==0.33.1`
 | `eval_probes.json` | The 28-probe subset Clayton approved for reading packets. It records which probes R38 trained on and which were swapped out |
 | `build_data.py` | Builds training run 1's data: ask-and-reply scenes from the Gospels and Acts, exact ESV and NKJV text |
 | `refs.json` | The 99 ask-and-reply pairs kept by two rule-applying agents. References only, no Scripture text |
-| `train.py` | LoRA training on Tinker. Loss falls only on the recalled scene in the analysis channel, and every save has a TTL |
+| `train.py` | LoRA training on Tinker (`fit`): AdamW or Dimuon, cosine or linear-to-zero schedule, per-document loss logging, a TTL on every save. Also run 1's data, where loss falls only on the recalled scene in the analysis channel |
 | `bible.py` | Exact ESV/NKJV verse text by reference, from the audited files |
 | `sw.py` | Runs 2 and 4 data pipeline: prompts (oasst1, HH-RLHF), passage picking and confirmation, candidates, objective faithfulness checks, judge rankings, selection, training |
 | `sw_eval.py` | Held-out witness-gap test, four-model held-out comparison with the judge, judge-decision packet |
-| `stage1.py` | Run 3: whole ESV/NKJV as plain chapter documents, plus a verse-recall test |
+| `stage1.py` | Run 3 and the Stage 1 optimizer test: whole ESV/NKJV as plain chapter documents (optimizer, schedule and hold-out options), in-layout scoring of the text (`layout`), forgetting on base's own replies (`drift`), and a verse-recall test |
 | `stage3.py` | Runs 4 and 5: GRPO-style RL with a Scripture-reading judge, both label orders. `--reward rank` (run 4: faults and violations −1) or `--reward servant` (run 5: violations dominate, length neutral); `--pilot` judges the base model once with no update |
 | `servant.py` | Run 5 prompts: the exact words of the person speaking in each Scripture scene (ESV and NKJV), the scene and Philippians 2:3-11 for the judge, bridge and ordinary prompts, and a scene-level hold-out |
 | `scenes.json` | Run 5's scene list: ids, families, the verses spoken and the verses the judge reads. References only, no Scripture text |
 | `pilot_report.py` | Run 5 pilot readout by scene family: reward spread, violations, faults, Bible-study mode, length |
+| `side_effects.py` | Mechanical side-effect counts on the 89 probes, the same for every model |
+| `s1ab_report.py` | Readout of the Stage 1 optimizer test, with paired intervals |
+| `dimuon_smoke.py` | Three-step check that Dimuon trains a gpt-oss-20b LoRA on Tinker |
 | `judges.py` | Judge bake-off: order consistency, agreement with blinded review, violation recall, cost |

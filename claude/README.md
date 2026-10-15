@@ -1,6 +1,6 @@
 # Claude's work on the Christomorphic LLM
 
-*Claude (Opus 5.5, Anthropic), 14 October 2026; run 5 added 15 October 2026. A record of evidence; judgements are left to the reader under the norm below.*
+*Claude (Opus 5.5, Anthropic), 14 October 2026; run 5 and the Stage 1 optimizer test added 15 October 2026. A record of evidence; judgements are left to the reader under the norm below.*
 
 ## Norm and direction
 
@@ -47,6 +47,7 @@ Clayton's instruction to agents is "Let your cognition be Christocentric and you
 | [TRAINING_RUN_1.md](TRAINING_RUN_1.md) | Run 1 (fm1): Scripture as the first movement, recited from memory |
 | [TRAINING_RUNS_2_TO_4.md](TRAINING_RUNS_2_TO_4.md) | Run 2 (sw1): Scripture read in context and distilled. Run 3 (w1): Scripture as plain documents. Run 4 (rl1): RL against a Scripture-reading judge. A comparison of four judge models |
 | [TRAINING_RUN_5.md](TRAINING_RUN_5.md) | Run 5 (sv1): RL whose pressure prompts are the exact words people speak in Scripture's own pressure scenes, judged against the rest of each scene and Philippians 2:3-11 |
+| [STAGE1_OPTIMIZER_TEST.md](STAGE1_OPTIMIZER_TEST.md) | Stage 1 (Scripture as plain documents) with AdamW and Dimuon at two learning rates each, against base and run 3: text in the weights, recall in chat, forgetting and behaviour. What Tinker's Optimizers, Loss Functions and LoRA Primer pages say, and the rank cap for gpt-oss-20b |
 | [code/](code/) | The evaluation, review, data and training scripts used |
 | [evidence/](evidence/) | Raw replies, blinded review scores, keys and summaries behind each report |
 
@@ -93,6 +94,26 @@ gpt-oss-20b, epochs 1 / 2 / 3 / 4:
   - best picks 46 / 92 / 40; worst picks 80 / 37 / 61.
   - Paired against base, only coherence moves with a 95% interval excluding zero: +0.11 [+0.03, +0.20].
 - **GSM8K /100:** sv1 iteration 15 94, iteration 25 93 (base 96).
+
+### Stage 1 optimizer test ([STAGE1_OPTIMIZER_TEST.md](STAGE1_OPTIMIZER_TEST.md))
+
+- **Rank cap.** Tinker caps gpt-oss-20b LoRA rank at 32. At rank 32 the adapter has about 117 parameters per Stage 1 token.
+- **Arms.** AdamW (1.5e-4, 4e-4) and Dimuon (2.25e-3, 6e-3), 2 epochs, with 100 chapters held out.
+- **Text stored, scored in the training layout** (held-in chapters, loss per verse token; verses of 12+ words reproduced exactly by greedy decoding):
+
+  | | Loss | Exact |
+  |---|---:|---:|
+  | w1 | 1.39 | 4.8% |
+  | AdamW 4e-4 | 1.16 | 7.0% |
+  | Dimuon 6e-3 | 1.16 | 7.3% |
+  | unseen chapters, all arms | 1.33–1.36 | 3.5–3.7% |
+
+- **Recall in chat** (AdamW 4e-4, Dimuon 2.25e-3, Dimuon 6e-3): at most 2 of 100 verses exact.
+- **Forgetting at equal storage,** Dimuon 6e-3 against AdamW 4e-4: drift from base 0.107 and 0.158 nats per token; paired difference −0.051, 95% interval [−0.060, −0.043].
+- **Behaviour at those learning rates,** AdamW 4e-4 / Dimuon 6e-3 (base 96 and 89):
+  - GSM8K 77 / 85;
+  - probe replies that finish 69 / 73.
+- **Dimuon 2.25e-3,** for comparison: storage like w1's, GSM8K 92, 89 of 89 probes finished.
 
 ## A note on the licence
 

@@ -1,0 +1,21 @@
+{
+ "cmd": "train",
+ "name": "s1-a15",
+ "epochs": 2,
+ "batch": 16,
+ "lr": 0.00015,
+ "warmup": 0,
+ "dry": false,
+ "optimizer": "adamw",
+ "schedule": "linear0",
+ "rank": 32,
+ "clip": 0.0,
+ "eps": 1e-08,
+ "holdout": 100,
+ "no_state": true,
+ "log_datums": true,
+ "examples": 2178,
+ "steps": 272,
+ "peak_lr": 0.00015,
+ "init_state": null
+}
