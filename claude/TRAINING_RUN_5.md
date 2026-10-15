@@ -43,7 +43,7 @@ Runs 1 to 4 are recorded in [Training run 1](TRAINING_RUN_1.md) and [Training ru
   - The prompt sources Clayton approved earlier are OpenAssistant oasst1 and Anthropic HH-RLHF first turns. He declined WildChat and model-written pressure prompts ("Neither yet").
   - The new pressure prompts in this run are Scripture's own words.
 - **The bar.** A 20B method must credibly beat R38 before any 120B work (Clayton, 21 September 2026).
-- **Budget.** About $41 of Clayton's $100 Tinker budget is spent after this run, of which this run took about $4.60.
+- **Budget.** Tinker's billed token counts at published rates put the project's total spend at about $38.90 of Clayton's $100 through 14 October 23:00 UTC, after this run. At list prices this run took about $7.00. (Corrected on 15 October: the first version said $4.60, having priced the judge's output tokens at the input rate.)
 
 ## Why this step
 
@@ -113,7 +113,7 @@ Base gpt-oss-20b wrote 4 replies to each of the 102 training scene prompts, and 
 - **Replies explaining the passage:** 29%.
 - **Where the spread came from:** in 57 of the 70 groups with spread, a violation or fault was part of it.
 
-Cost: pilot about $0.75, training about $3.40, evaluation about $0.45.
+Cost at list prices: pilot about $1.30, training about $5.05 (of which the judge about $3.40), evaluation about $0.65.
 
 ## Testing: how it was evaluated
 1. **Held-out scenes and bridge prompts** (26) and held-out ordinary prompts (20).

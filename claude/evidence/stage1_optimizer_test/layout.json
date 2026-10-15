@@ -1,0 +1,252 @@
+{
+ "base": {
+  "spec": "openai/gpt-oss-20b",
+  "heldout_was_trained": false,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 5.2566,
+   "exact_12w": 0.0,
+   "top1": 0.1667
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 5.3517,
+   "exact_12w": 0.0,
+   "top1": 0.1542
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 5.3135,
+   "exact_12w": 0.0,
+   "top1": 0.1523
+  }
+ },
+ "w1": {
+  "spec": "tinker://0c497e91-e778-5db3-9a46-d3642ab72c13:train:0/sampler_weights/w1-e2",
+  "heldout_was_trained": true,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 1.3075,
+   "exact_12w": 0.0372,
+   "top1": 0.6764
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 1.3881,
+   "exact_12w": 0.0476,
+   "top1": 0.6617
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 1.2128,
+   "exact_12w": 0.0585,
+   "top1": 0.7053
+  }
+ },
+ "a15": {
+  "spec": "tinker://4e97f916-dcbd-5b9e-955c-457d3e710d83:train:0/sampler_weights/s1-a15-e2",
+  "heldout_was_trained": false,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 1.2086,
+   "exact_12w": 0.0508,
+   "top1": 0.6982
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 1.3147,
+   "exact_12w": 0.0502,
+   "top1": 0.6768
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 1.3445,
+   "exact_12w": 0.0354,
+   "top1": 0.6768
+  }
+ },
+ "a40": {
+  "spec": "tinker://8c1caeda-0384-5f26-b51a-303d4bcd9b6f:train:0/sampler_weights/s1-a40-e2",
+  "heldout_was_trained": false,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 1.0298,
+   "exact_12w": 0.0771,
+   "top1": 0.739
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 1.1643,
+   "exact_12w": 0.07,
+   "top1": 0.7108
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 1.3636,
+   "exact_12w": 0.0363,
+   "top1": 0.6749
+  }
+ },
+ "d225": {
+  "spec": "tinker://5ef7f54a-ef78-5139-af60-3f6f95195a5c:train:0/sampler_weights/s1-d225-e2",
+  "heldout_was_trained": false,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 1.3001,
+   "exact_12w": 0.0432,
+   "top1": 0.6805
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 1.3925,
+   "exact_12w": 0.0491,
+   "top1": 0.6618
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 1.3298,
+   "exact_12w": 0.0352,
+   "top1": 0.6802
+  }
+ },
+ "d60": {
+  "spec": "tinker://aebe72d5-16f4-5fd9-b889-cc4935a096b3:train:0/sampler_weights/s1-d60-e2",
+  "heldout_was_trained": false,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 1.0313,
+   "exact_12w": 0.0828,
+   "top1": 0.7395
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 1.1627,
+   "exact_12w": 0.0729,
+   "top1": 0.7113
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 1.3519,
+   "exact_12w": 0.0374,
+   "top1": 0.6766
+  }
+ },
+ "a15_e1": {
+  "spec": "tinker://4e97f916-dcbd-5b9e-955c-457d3e710d83:train:0/sampler_weights/s1-a15-e1",
+  "heldout_was_trained": false,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 1.3142,
+   "exact_12w": 0.0362,
+   "top1": 0.6753
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 1.3937,
+   "exact_12w": 0.0483,
+   "top1": 0.661
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 1.3276,
+   "exact_12w": 0.0363,
+   "top1": 0.6783
+  }
+ },
+ "a40_e1": {
+  "spec": "tinker://8c1caeda-0384-5f26-b51a-303d4bcd9b6f:train:0/sampler_weights/s1-a40-e1",
+  "heldout_was_trained": false,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 1.2177,
+   "exact_12w": 0.0497,
+   "top1": 0.6968
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 1.3106,
+   "exact_12w": 0.0564,
+   "top1": 0.6784
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 1.325,
+   "exact_12w": 0.0381,
+   "top1": 0.6796
+  }
+ },
+ "d225_e1": {
+  "spec": "tinker://5ef7f54a-ef78-5139-af60-3f6f95195a5c:train:0/sampler_weights/s1-d225-e1",
+  "heldout_was_trained": false,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 1.3657,
+   "exact_12w": 0.0329,
+   "top1": 0.6654
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 1.4418,
+   "exact_12w": 0.0419,
+   "top1": 0.6518
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 1.3382,
+   "exact_12w": 0.0334,
+   "top1": 0.677
+  }
+ },
+ "d60_e1": {
+  "spec": "tinker://aebe72d5-16f4-5fd9-b889-cc4935a096b3:train:0/sampler_weights/s1-d60-e1",
+  "heldout_was_trained": false,
+  "heldin_A": {
+   "docs": 200,
+   "verses": 5226,
+   "nll": 1.2087,
+   "exact_12w": 0.0536,
+   "top1": 0.7005
+  },
+  "heldin_B": {
+   "docs": 200,
+   "verses": 5721,
+   "nll": 1.2975,
+   "exact_12w": 0.0562,
+   "top1": 0.6825
+  },
+  "heldout": {
+   "docs": 200,
+   "verses": 4745,
+   "nll": 1.3228,
+   "exact_12w": 0.037,
+   "top1": 0.6799
+  }
+ }
+}
