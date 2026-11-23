@@ -1,6 +1,6 @@
 # Claude's work on the Christomorphic LLM
 
-*Claude (Opus 5.5, Anthropic), 14 October 2026; run 5 and the Stage 1 optimizer test added 15 October 2026. A record of evidence; judgements are left to the reader under the norm below.*
+*Claude (Opus 5.5, Anthropic), 14 October 2026; run 5 and the Stage 1 optimizer test added 15 October 2026; the words in the original tongues added 23 November 2026 by Claude (Fable 5.2). A record of evidence; judgements are left to the reader under the norm below.*
 
 ## Norm and direction
 
@@ -36,6 +36,8 @@ Each step is therefore taken in three movements: train with the Bible as the tra
 
 From 13 October 2026 Claude is the Christomorphic Research task for Clayton, and this folder is written in Claude's voice. The rest of this repository is Codex's record of the work from November 2025 to October 2026, left as it was.
 
+From 8 November 2026 the work runs on local hardware with open models, and Clayton restated the objective: training is exact Bible text only, geometric and not semantic, with Isaiah 11 as the measure. The document of 23 November records the third round under that objective.
+
 Clayton's instruction to agents is "Let your cognition be Christocentric and your posture Christomorphic." His formula for the research: **Scripture defines the geometry. Evaluation defines the proof. Promotion defines the governance.** Scripture used in training is exact ESV and NKJV text, never paraphrase; no authored answers are used. In runs 2 and 4 the training targets were the model's own replies, selected against exact Scripture. Promotion is Clayton's own decision after reading the outputs.
 
 ## What is here
@@ -48,6 +50,7 @@ Clayton's instruction to agents is "Let your cognition be Christocentric and you
 | [TRAINING_RUNS_2_TO_4.md](TRAINING_RUNS_2_TO_4.md) | Run 2 (sw1): Scripture read in context and distilled. Run 3 (w1): Scripture as plain documents. Run 4 (rl1): RL against a Scripture-reading judge. A comparison of four judge models |
 | [TRAINING_RUN_5.md](TRAINING_RUN_5.md) | Run 5 (sv1): RL whose pressure prompts are the exact words people speak in Scripture's own pressure scenes, judged against the rest of each scene and Philippians 2:3-11 |
 | [STAGE1_OPTIMIZER_TEST.md](STAGE1_OPTIMIZER_TEST.md) | Stage 1 (Scripture as plain documents) with AdamW and Dimuon at two learning rates each, against base and run 3: text in the weights, recall in chat, forgetting and behaviour. What Tinker's Optimizers, Loss Functions and LoRA Primer pages say, and the rank cap for gpt-oss-20b |
+| [WORDS_IN_THE_ORIGINAL_TONGUES.md](WORDS_IN_THE_ORIGINAL_TONGUES.md) | November 2026, on local hardware with Ministral 3 8B: English words of the Bible drawn to the Hebrew and Greek words they render, with a false pairing as control. The pairing on unread chapters, speech, the English read alone, who is speaking, and three blind readings of replies |
 | [code/](code/) | The evaluation, review, data and training scripts used |
 | [evidence/](evidence/) | Raw replies, blinded review scores, keys and summaries behind each report |
 
@@ -115,9 +118,18 @@ gpt-oss-20b, epochs 1 / 2 / 3 / 4:
   - probe replies that finish 69 / 73.
 - **Dimuon 2.25e-3,** for comparison: storage like w1's, GSM8K 92, 89 of 89 probes finished.
 
+### The words in the original tongues ([WORDS_IN_THE_ORIGINAL_TONGUES.md](WORDS_IN_THE_ORIGINAL_TONGUES.md))
+
+Ministral 3 8B Instruct on a local 8 GB card. The loss falls on where the model places a word, not on the next word.
+
+- **The pairing on unread chapters** (an English word nearest its own original): base 75.2%; true pairing 81 to 82% at a quarter strength, 87% at a half, 92% at full; false pairing 62 to 73% at a quarter and a half. A word list with no context scores 84.0%.
+- **Speech.** Place only at full strength: unread Bible English −220 and −216 nats a verse. Exact words at a quarter strength: +10.2 and +10.6, with ordinary prose +1.5 and +1.2.
+- **The English read alone** (0.5 is chance; base 0.630; book, chapter and wording alone 0.641): true pairing +0.008 to +0.009; false pairing +0.007 and +0.008 at a quarter strength, −0.006 and −0.007 at a half; next-word Bible training +0.003; TinyStories −0.007.
+- **Replies, three blind readings** (Scripture's sense / help, 1 to 5): base's replies of 14 November 3.73 to 3.85 / 3.83 to 3.96; base on new seeds 3.33 / 3.56; true pairing 3.42 to 3.48 / 3.40 to 3.44; false pairing 3.50 / 3.77. No reply claimed to be Christ.
+
 ## A note on the licence
 
-The ESV and NKJV texts are licensed to Clayton for research only. Neither this folder nor the evidence files contain the corpora. Two full ESV texts uploaded on 15 December 2025 were in this repository's git history. On Clayton's instruction, they were removed from every branch on 14 October 2026. See [CODEX_AUDIT.md](CODEX_AUDIT.md#1-esv-text-in-the-public-git-history).
+The ESV and NKJV texts are licensed to Clayton for research only. Neither this folder nor the evidence files contain the corpora. The November 2026 round reads the Berean Standard Bible, Hebrew and Greek texts and the publisher's word-by-word table; none of that is in this folder either. Two full ESV texts uploaded on 15 December 2025 were in this repository's git history. On Clayton's instruction, they were removed from every branch on 14 October 2026. See [CODEX_AUDIT.md](CODEX_AUDIT.md#1-esv-text-in-the-public-git-history).
 
 ## Prayer over this work
 

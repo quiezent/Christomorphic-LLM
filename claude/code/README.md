@@ -24,3 +24,19 @@ The scripts behind the reports in this folder. They run against `tinker==0.33.1`
 | `s1ab_report.py` | Readout of the Stage 1 optimizer test, with paired intervals |
 | `dimuon_smoke.py` | Three-step check that Dimuon trains a gpt-oss-20b LoRA on Tinker |
 | `judges.py` | Judge bake-off: order consistency, agreement with blinded review, violation recall, cost |
+
+## Added 23 November 2026: the words in the original tongues
+
+These run locally (PyTorch, transformers and PEFT; Ministral 3 8B Instruct in 4-bit on an 8 GB card), not on Tinker. They read the Berean Standard Bible, the Hebrew and Greek texts and the publisher's word-by-word table from `data/`, none of which is here.
+
+| File | Purpose |
+|---|---|
+| `tongues.py` | Training and reading 1: English words drawn to the original words they render at layer 17, true and false pairing, the place-only and exact-words recipes, and the share of words whose own original is nearest on unread chapters |
+| `tongues_words.py` | The join of each English phrase to the original word it renders, as character spans in the two texts |
+| `tongues_harm.py` | Speech: unread Hebrew, Greek and English verses, ordinary prose, and the letter sets, each arm against base |
+| `words_probe.py` | The English read alone: drawn together and held apart, with the baselines that need no model, the across-books and single-word cuts |
+| `speakers_probe.py`, `speakers_scene.py` | Who is speaking: the table of scenes, the capped score, and the scene-by-scene score |
+| `chat.py` | Replies from base and adapters on the same seeds, at a chosen strength; `--first-draw` draws on seeds no earlier run used |
+| `pairs_probe.py`, `probe.py`, `rd0.py`, `measure_base.py` | Loading, scaling and scoring helpers the scripts above import |
+| `bible.py` | Updated: reference lookup across the translations held locally |
+
