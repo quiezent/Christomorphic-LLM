@@ -1,0 +1,151 @@
+=== gap2 x0.25 exact words
+
+layer 17, all phrases
+  drawn together                         base 0.861 | true_w_x0.25 +0.030 (+0.028 to +0.031) | true_w_s2_x0.25 +0.032 (+0.030 to +0.033) | false_w_x0.25 -0.000 (-0.002 to +0.002) | false_w_s2_x0.25 +0.001 (-0.001 to +0.002)
+      true minus false, each pair of runs: +0.0298 (+0.0279 to +0.0317); +0.0290 (+0.0271 to +0.0308); +0.0320 (+0.0300 to +0.0338); +0.0311 (+0.0292 to +0.0330) || the two false runs differ by 0.0008 (-0.0013 to -0.0004)
+  held apart                             base 0.630 | true_w_x0.25 +0.009 (+0.007 to +0.011) | true_w_s2_x0.25 +0.009 (+0.007 to +0.011) | false_w_x0.25 +0.007 (+0.005 to +0.010) | false_w_s2_x0.25 +0.008 (+0.005 to +0.010)
+      true minus false, each pair of runs: +0.0015 (-0.0008 to +0.0037); +0.0010 (-0.0012 to +0.0033); +0.0015 (-0.0008 to +0.0037); +0.0010 (-0.0012 to +0.0032) || the two false runs differ by 0.0005 (-0.0011 to +0.0001)
+  held apart, both pairs across books    base 0.599 | true_w_x0.25 +0.006 (+0.004 to +0.009) | true_w_s2_x0.25 +0.007 (+0.004 to +0.009) | false_w_x0.25 +0.002 (-0.001 to +0.005) | false_w_s2_x0.25 +0.003 (-0.000 to +0.005)
+      true minus false, each pair of runs: +0.0045 (+0.0018 to +0.0072); +0.0039 (+0.0012 to +0.0067); +0.0046 (+0.0020 to +0.0072); +0.0041 (+0.0015 to +0.0068) || the two false runs differ by 0.0005 (-0.0012 to +0.0002)
+
+layer 17, phrases of one content word
+  drawn together                         base 0.863 | true_w_x0.25 +0.030 (+0.028 to +0.032) | true_w_s2_x0.25 +0.032 (+0.030 to +0.034) | false_w_x0.25 -0.005 (-0.007 to -0.003) | false_w_s2_x0.25 -0.004 (-0.006 to -0.002)
+      true minus false, each pair of runs: +0.0350 (+0.0331 to +0.0373); +0.0343 (+0.0323 to +0.0365); +0.0371 (+0.0352 to +0.0394); +0.0364 (+0.0344 to +0.0386) || the two false runs differ by 0.0008 (-0.0013 to -0.0003)
+  held apart                             base 0.620 | true_w_x0.25 +0.008 (+0.006 to +0.011) | true_w_s2_x0.25 +0.008 (+0.006 to +0.011) | false_w_x0.25 +0.009 (+0.006 to +0.012) | false_w_s2_x0.25 +0.010 (+0.007 to +0.012)
+      true minus false, each pair of runs: -0.0006 (-0.0031 to +0.0017); -0.0013 (-0.0038 to +0.0010); -0.0008 (-0.0032 to +0.0015); -0.0015 (-0.0040 to +0.0008) || the two false runs differ by 0.0007 (-0.0014 to -0.0000)
+  held apart, both pairs across books    base 0.589 | true_w_x0.25 +0.006 (+0.003 to +0.009) | true_w_s2_x0.25 +0.006 (+0.003 to +0.009) | false_w_x0.25 +0.004 (+0.001 to +0.007) | false_w_s2_x0.25 +0.005 (+0.001 to +0.008)
+      true minus false, each pair of runs: +0.0020 (-0.0006 to +0.0047); +0.0014 (-0.0012 to +0.0043); +0.0018 (-0.0008 to +0.0046); +0.0013 (-0.0014 to +0.0042) || the two false runs differ by 0.0006 (-0.0014 to +0.0002)
+
+layer 25, all phrases
+  drawn together                         base 0.827 | true_w_x0.25 +0.041 (+0.039 to +0.043) | true_w_s2_x0.25 +0.041 (+0.039 to +0.043) | false_w_x0.25 +0.030 (+0.028 to +0.032) | false_w_s2_x0.25 +0.029 (+0.027 to +0.031)
+      true minus false, each pair of runs: +0.0107 (+0.0097 to +0.0119); +0.0111 (+0.0100 to +0.0123); +0.0109 (+0.0098 to +0.0122); +0.0113 (+0.0102 to +0.0126) || the two false runs differ by 0.0003 (-0.0002 to +0.0009)
+  held apart                             base 0.625 | true_w_x0.25 +0.017 (+0.014 to +0.019) | true_w_s2_x0.25 +0.017 (+0.014 to +0.019) | false_w_x0.25 +0.014 (+0.011 to +0.016) | false_w_s2_x0.25 +0.014 (+0.012 to +0.017)
+      true minus false, each pair of runs: +0.0028 (+0.0012 to +0.0044); +0.0024 (+0.0008 to +0.0040); +0.0028 (+0.0011 to +0.0044); +0.0024 (+0.0008 to +0.0040) || the two false runs differ by 0.0004 (-0.0012 to +0.0004)
+  held apart, both pairs across books    base 0.592 | true_w_x0.25 +0.014 (+0.011 to +0.017) | true_w_s2_x0.25 +0.014 (+0.011 to +0.017) | false_w_x0.25 +0.011 (+0.008 to +0.014) | false_w_s2_x0.25 +0.011 (+0.008 to +0.015)
+      true minus false, each pair of runs: +0.0031 (+0.0010 to +0.0051); +0.0030 (+0.0010 to +0.0049); +0.0029 (+0.0007 to +0.0048); +0.0028 (+0.0007 to +0.0047) || the two false runs differ by 0.0001 (-0.0009 to +0.0009)
+
+layer 25, phrases of one content word
+  drawn together                         base 0.829 | true_w_x0.25 +0.039 (+0.037 to +0.041) | true_w_s2_x0.25 +0.039 (+0.037 to +0.042) | false_w_x0.25 +0.028 (+0.025 to +0.030) | false_w_s2_x0.25 +0.028 (+0.025 to +0.030)
+      true minus false, each pair of runs: +0.0113 (+0.0101 to +0.0126); +0.0115 (+0.0102 to +0.0127); +0.0117 (+0.0104 to +0.0130); +0.0118 (+0.0106 to +0.0132) || the two false runs differ by 0.0002 (-0.0004 to +0.0007)
+  held apart                             base 0.618 | true_w_x0.25 +0.018 (+0.015 to +0.021) | true_w_s2_x0.25 +0.018 (+0.015 to +0.021) | false_w_x0.25 +0.016 (+0.013 to +0.018) | false_w_s2_x0.25 +0.016 (+0.013 to +0.019)
+      true minus false, each pair of runs: +0.0024 (+0.0008 to +0.0039); +0.0021 (+0.0004 to +0.0037); +0.0023 (+0.0006 to +0.0039); +0.0020 (+0.0003 to +0.0036) || the two false runs differ by 0.0003 (-0.0011 to +0.0005)
+  held apart, both pairs across books    base 0.587 | true_w_x0.25 +0.014 (+0.010 to +0.017) | true_w_s2_x0.25 +0.013 (+0.010 to +0.017) | false_w_x0.25 +0.011 (+0.008 to +0.015) | false_w_s2_x0.25 +0.011 (+0.008 to +0.015)
+      true minus false, each pair of runs: +0.0023 (+0.0002 to +0.0043); +0.0026 (+0.0005 to +0.0046); +0.0021 (-0.0001 to +0.0041); +0.0024 (+0.0004 to +0.0044) || the two false runs differ by 0.0003 (-0.0007 to +0.0013)
+=== placebo, Form B unread verses (round 2 read some)
+
+layer 17
+  drawn together: base 0.861
+    pairs_tinystories                  -0.004 (-0.006 to -0.002)
+    pairs_tinystories_x0.5             -0.001 (-0.002 to +0.000)
+    pairs_links_x0.5                   +0.014 (+0.013 to +0.016)
+    pairs_links_s2_x0.5                +0.014 (+0.013 to +0.015)
+    pairs_scrambled_x0.5               +0.012 (+0.011 to +0.013)
+  held apart: base 0.630
+    pairs_tinystories                  -0.007 (-0.010 to -0.004)
+    pairs_tinystories_x0.5             -0.001 (-0.003 to +0.001)
+    pairs_links_x0.5                   +0.005 (+0.004 to +0.007)
+    pairs_links_s2_x0.5                +0.005 (+0.003 to +0.007)
+    pairs_scrambled_x0.5               +0.004 (+0.003 to +0.006)
+  held apart, both pairs across books: base 0.599
+    pairs_tinystories                  -0.004 (-0.008 to -0.001)
+    pairs_tinystories_x0.5             +0.000 (-0.002 to +0.002)
+    pairs_links_x0.5                   +0.004 (+0.002 to +0.006)
+    pairs_links_s2_x0.5                +0.004 (+0.002 to +0.006)
+    pairs_scrambled_x0.5               +0.003 (+0.002 to +0.005)
+
+layer 25
+  drawn together: base 0.827
+    pairs_tinystories                  -0.012 (-0.015 to -0.009)
+    pairs_tinystories_x0.5             -0.013 (-0.015 to -0.011)
+    pairs_links_x0.5                   +0.031 (+0.029 to +0.033)
+    pairs_links_s2_x0.5                +0.032 (+0.030 to +0.034)
+    pairs_scrambled_x0.5               +0.030 (+0.028 to +0.032)
+  held apart: base 0.625
+    pairs_tinystories                  -0.020 (-0.024 to -0.016)
+    pairs_tinystories_x0.5             -0.008 (-0.011 to -0.005)
+    pairs_links_x0.5                   +0.013 (+0.010 to +0.015)
+    pairs_links_s2_x0.5                +0.013 (+0.011 to +0.016)
+    pairs_scrambled_x0.5               +0.012 (+0.010 to +0.015)
+  held apart, both pairs across books: base 0.592
+    pairs_tinystories                  -0.016 (-0.021 to -0.012)
+    pairs_tinystories_x0.5             -0.006 (-0.009 to -0.003)
+    pairs_links_x0.5                   +0.012 (+0.009 to +0.015)
+    pairs_links_s2_x0.5                +0.012 (+0.009 to +0.016)
+    pairs_scrambled_x0.5               +0.011 (+0.008 to +0.014)
+=== placebo and Form B, verses unread by both
+
+layer 17
+  drawn together: base 0.865
+    pairs_tinystories                  -0.003 (-0.005 to -0.001)
+    pairs_tinystories_x0.5             +0.001 (-0.000 to +0.002)
+    pairs_links_x0.5                   +0.014 (+0.013 to +0.016)
+    pairs_links_s2_x0.5                +0.015 (+0.013 to +0.016)
+    pairs_scrambled_x0.5               +0.012 (+0.011 to +0.013)
+    tongues_true_w_x0.5                +0.034 (+0.032 to +0.037)
+    tongues_true_w_s2_x0.5             +0.037 (+0.035 to +0.040)
+    tongues_false_w_x0.5               -0.091 (-0.096 to -0.087)
+    tongues_false_w_s2_x0.5            -0.096 (-0.101 to -0.091)
+    tongues_true_x0.25                 +0.031 (+0.030 to +0.033)
+    tongues_true_s2_x0.25              +0.033 (+0.032 to +0.035)
+  held apart: base 0.632
+    pairs_tinystories                  -0.007 (-0.010 to -0.004)
+    pairs_tinystories_x0.5             -0.001 (-0.002 to +0.001)
+    pairs_links_x0.5                   +0.003 (+0.001 to +0.005)
+    pairs_links_s2_x0.5                +0.003 (+0.001 to +0.005)
+    pairs_scrambled_x0.5               +0.003 (+0.001 to +0.004)
+    tongues_true_w_x0.5                +0.008 (+0.005 to +0.012)
+    tongues_true_w_s2_x0.5             +0.008 (+0.005 to +0.012)
+    tongues_false_w_x0.5               -0.008 (-0.014 to -0.002)
+    tongues_false_w_s2_x0.5            -0.008 (-0.014 to -0.003)
+    tongues_true_x0.25                 +0.007 (+0.005 to +0.009)
+    tongues_true_s2_x0.25              +0.007 (+0.005 to +0.010)
+  held apart, both pairs across books: base 0.599
+    pairs_tinystories                  -0.005 (-0.008 to -0.001)
+    pairs_tinystories_x0.5             +0.000 (-0.002 to +0.002)
+    pairs_links_x0.5                   +0.002 (-0.000 to +0.004)
+    pairs_links_s2_x0.5                +0.002 (+0.000 to +0.004)
+    pairs_scrambled_x0.5               +0.002 (-0.000 to +0.004)
+    tongues_true_w_x0.5                +0.006 (+0.002 to +0.010)
+    tongues_true_w_s2_x0.5             +0.006 (+0.002 to +0.010)
+    tongues_false_w_x0.5               -0.015 (-0.022 to -0.009)
+    tongues_false_w_s2_x0.5            -0.015 (-0.022 to -0.009)
+    tongues_true_x0.25                 +0.005 (+0.002 to +0.008)
+    tongues_true_s2_x0.25              +0.005 (+0.003 to +0.008)
+
+layer 25
+  drawn together: base 0.828
+    pairs_tinystories                  -0.008 (-0.011 to -0.005)
+    pairs_tinystories_x0.5             -0.013 (-0.015 to -0.010)
+    pairs_links_x0.5                   +0.032 (+0.030 to +0.034)
+    pairs_links_s2_x0.5                +0.034 (+0.031 to +0.036)
+    pairs_scrambled_x0.5               +0.031 (+0.029 to +0.033)
+    tongues_true_w_x0.5                +0.053 (+0.050 to +0.056)
+    tongues_true_w_s2_x0.5             +0.053 (+0.050 to +0.056)
+    tongues_false_w_x0.5               +0.040 (+0.037 to +0.043)
+    tongues_false_w_s2_x0.5            +0.037 (+0.034 to +0.040)
+    tongues_true_x0.25                 +0.024 (+0.022 to +0.026)
+    tongues_true_s2_x0.25              +0.025 (+0.023 to +0.027)
+  held apart: base 0.628
+    pairs_tinystories                  -0.019 (-0.023 to -0.015)
+    pairs_tinystories_x0.5             -0.007 (-0.009 to -0.004)
+    pairs_links_x0.5                   +0.010 (+0.007 to +0.013)
+    pairs_links_s2_x0.5                +0.010 (+0.007 to +0.013)
+    pairs_scrambled_x0.5               +0.009 (+0.006 to +0.012)
+    tongues_true_w_x0.5                +0.020 (+0.016 to +0.023)
+    tongues_true_w_s2_x0.5             +0.019 (+0.016 to +0.023)
+    tongues_false_w_x0.5               +0.006 (+0.001 to +0.010)
+    tongues_false_w_s2_x0.5            +0.005 (+0.000 to +0.010)
+    tongues_true_x0.25                 +0.005 (+0.003 to +0.008)
+    tongues_true_s2_x0.25              +0.006 (+0.004 to +0.009)
+  held apart, both pairs across books: base 0.594
+    pairs_tinystories                  -0.015 (-0.020 to -0.010)
+    pairs_tinystories_x0.5             -0.004 (-0.007 to -0.001)
+    pairs_links_x0.5                   +0.008 (+0.005 to +0.012)
+    pairs_links_s2_x0.5                +0.008 (+0.005 to +0.012)
+    pairs_scrambled_x0.5               +0.007 (+0.004 to +0.010)
+    tongues_true_w_x0.5                +0.014 (+0.010 to +0.018)
+    tongues_true_w_s2_x0.5             +0.014 (+0.009 to +0.018)
+    tongues_false_w_x0.5               +0.001 (-0.004 to +0.006)
+    tongues_false_w_s2_x0.5            -0.000 (-0.005 to +0.005)
+    tongues_true_x0.25                 +0.004 (+0.001 to +0.007)
+    tongues_true_s2_x0.25              +0.004 (+0.001 to +0.007)

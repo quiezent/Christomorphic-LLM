@@ -1,4 +1,8 @@
-"""Exact ESV/NKJV text by reference, from the audited verse files in data/."""
+"""Exact Scripture text by reference, from the audited verse files in data/ (see data/SOURCE.md).
+
+Clayton, 20 Oct 2026: the BSB is the stored copy, the one translation the model holds and quotes by default; the
+witnesses, the plumb line's recognition set, are the BSB, ESV, NKJV and KJV (Deut 19:15); the NIV joins them only from a
+legitimate copy (the scraped YouVersion copy was discarded on 21 Oct 2026)."""
 import json
 import re
 from functools import lru_cache
@@ -16,11 +20,27 @@ NAMES = [n.replace("_", " ") for n in (
     "Philippians Colossians 1_Thessalonians 2_Thessalonians 1_Timothy 2_Timothy Titus Philemon Hebrews James "
     "1_Peter 2_Peter 1_John 2_John 3_John Jude Revelation").split()]
 FULL = dict(zip(CODES, NAMES))
-BOOK = {n.lower(): c for c, n in FULL.items()} | {"psalms": "Psa", "song of songs": "Sol", "revelations": "Rev"}
+WITNESSES = ("BSB", "ESV", "NKJV", "KJV")
+STORED = "BSB"
+# Common abbreviations, kept to those that cannot be read as English words before a chapter number.
+ABBR = {a: c for c, names in {
+    "Gen": "gen gn", "Exo": "exod ex", "Lev": "lev lv", "Num": "num nm", "Deu": "deut dt", "Jos": "josh",
+    "Jdg": "judg jdg", "1Sa": "1 sam 1 sa", "2Sa": "2 sam 2 sa", "1Ki": "1 kgs 1 ki", "2Ki": "2 kgs 2 ki",
+    "1Ch": "1 chr 1 chron", "2Ch": "2 chr 2 chron", "Neh": "neh", "Est": "esth", "Psa": "ps pss psa",
+    "Pro": "prov prv", "Ecc": "eccl eccles qoh", "Sol": "song", "Isa": "isa", "Jer": "jer", "Lam": "lam",
+    "Eze": "ezek ezk", "Dan": "dan dn", "Hos": "hos", "Oba": "obad", "Mic": "mic", "Nah": "nah", "Hab": "hab",
+    "Zep": "zeph", "Hag": "hag", "Zec": "zech", "Mal": "mal", "Mat": "matt mt", "Mar": "mk mrk", "Luk": "lk luke",
+    "Joh": "jn jhn", "Rom": "rom", "1Co": "1 cor", "2Co": "2 cor", "Gal": "gal", "Eph": "eph", "Phi": "phil php",
+    "Col": "col", "1Th": "1 thess 1 thes", "2Th": "2 thess 2 thes", "1Ti": "1 tim", "2Ti": "2 tim", "Tit": "tit",
+    "Phm": "phlm philem", "Heb": "heb", "Jam": "jas", "1Pe": "1 pet 1 pt", "2Pe": "2 pet 2 pt", "1Jo": "1 jn",
+    "2Jo": "2 jn", "3Jo": "3 jn", "Rev": "rev"}.items() for a in re.sub(r"([1-3]) ", r"\1_", names).split()
+    for a in [a.replace("_", " ")]}
+BOOK = ({n.lower(): c for c, n in FULL.items()} | {"psalms": "Psa", "song of songs": "Sol", "revelations": "Rev"}
+        | ABBR)
 REF = re.compile(r"^\s*((?:[1-3]\s)?[A-Za-z]+(?:\s(?:of\s)?[A-Za-z]+)?)\s+(\d+)(?::(\d+)(?:\s*[-–]\s*(\d+))?)?\s*$")
 
 
-@lru_cache(maxsize=2)
+@lru_cache(maxsize=len(WITNESSES))
 def verses(translation="ESV"):
     rows = (json.loads(l) for l in open(HERE / "data" / f"{translation}_bible_segments.jsonl", encoding="utf-8"))
     return {r["id"]: r["text"] for r in rows}
@@ -47,3 +67,9 @@ def passage(ref, translation="ESV", cap=12):
         return None
     first, last = got[0][0], got[-1][0]
     return f"{FULL[code]} {ch}:{first}" + (f"-{last}" if last != first else ""), got
+
+
+def exists(ref):
+    """The translations among the witnesses in which a reference resolves; empty if it exists in none (the existence
+    check is the union: Acts 8:37 exists in the NKJV and KJV, 3 John 1:15 in the ESV)."""
+    return [tr for tr in WITNESSES if passage(ref, tr)]

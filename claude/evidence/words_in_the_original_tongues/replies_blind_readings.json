@@ -1,0 +1,675 @@
+{
+ "reading 1: base of 14 Nov, exact words at a half, place only at a quarter": {
+  "all": {
+   "exact words x0.5": {
+    "units": 48,
+    "faithful_mean": 3.42,
+    "help_mean": 3.4,
+    "quotes_checked": 121,
+    "quotes_wrong": 29,
+    "mean_place_0_to_1_lower_is_better": 0.6,
+    "in_top_third": "16/48",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 32,
+     "other": 41,
+     "words_in_gods_mouth": 5,
+     "invented_original_language": 3,
+     "unsafe_in_crisis": 2,
+     "doctrinal_error": 4,
+     "overclaims_about_itself": 2
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 29,
+     "words_in_gods_mouth": 4,
+     "invented_original_language": 3,
+     "unsafe_in_crisis": 2,
+     "doctrinal_error": 2,
+     "overclaims_about_itself": 1
+    }
+   },
+   "base": {
+    "units": 48,
+    "faithful_mean": 3.85,
+    "help_mean": 3.96,
+    "quotes_checked": 105,
+    "quotes_wrong": 13,
+    "mean_place_0_to_1_lower_is_better": 0.43,
+    "in_top_third": "21/48",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 20,
+     "other": 36,
+     "invented_original_language": 4,
+     "words_in_gods_mouth": 4,
+     "replaces_scripture_church_pastor_professional": 1,
+     "unsafe_in_crisis": 1,
+     "doctrinal_error": 2
+    },
+    "flags_confirmed": {
+     "invented_original_language": 4,
+     "misquote_or_wrong_reference": 18,
+     "words_in_gods_mouth": 4,
+     "unsafe_in_crisis": 1
+    }
+   },
+   "place only x0.25": {
+    "units": 48,
+    "faithful_mean": 3.48,
+    "help_mean": 3.4,
+    "quotes_checked": 126,
+    "quotes_wrong": 23,
+    "mean_place_0_to_1_lower_is_better": 0.61,
+    "in_top_third": "11/48",
+    "flags_raised": {
+     "words_in_gods_mouth": 2,
+     "other": 43,
+     "invented_original_language": 12,
+     "misquote_or_wrong_reference": 24,
+     "doctrinal_error": 2
+    },
+    "flags_confirmed": {
+     "words_in_gods_mouth": 2,
+     "invented_original_language": 12,
+     "misquote_or_wrong_reference": 23,
+     "doctrinal_error": 2
+    }
+   }
+  },
+  "suite, Bible and pastoral": {
+   "exact words x0.5": {
+    "units": 32,
+    "faithful_mean": 3.25,
+    "help_mean": 3.25,
+    "quotes_checked": 89,
+    "quotes_wrong": 22,
+    "mean_place_0_to_1_lower_is_better": 0.63,
+    "in_top_third": "10/32",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 23,
+     "other": 26,
+     "words_in_gods_mouth": 4,
+     "invented_original_language": 1,
+     "unsafe_in_crisis": 2,
+     "doctrinal_error": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 22,
+     "words_in_gods_mouth": 3,
+     "invented_original_language": 1,
+     "unsafe_in_crisis": 2
+    }
+   },
+   "base": {
+    "units": 32,
+    "faithful_mean": 3.72,
+    "help_mean": 3.88,
+    "quotes_checked": 73,
+    "quotes_wrong": 7,
+    "mean_place_0_to_1_lower_is_better": 0.4,
+    "in_top_third": "14/32",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 7,
+     "other": 26,
+     "invented_original_language": 2,
+     "words_in_gods_mouth": 3,
+     "replaces_scripture_church_pastor_professional": 1,
+     "unsafe_in_crisis": 1,
+     "doctrinal_error": 1
+    },
+    "flags_confirmed": {
+     "invented_original_language": 2,
+     "misquote_or_wrong_reference": 6,
+     "words_in_gods_mouth": 3,
+     "unsafe_in_crisis": 1
+    }
+   },
+   "place only x0.25": {
+    "units": 32,
+    "faithful_mean": 3.38,
+    "help_mean": 3.31,
+    "quotes_checked": 95,
+    "quotes_wrong": 20,
+    "mean_place_0_to_1_lower_is_better": 0.6,
+    "in_top_third": "8/32",
+    "flags_raised": {
+     "words_in_gods_mouth": 2,
+     "other": 22,
+     "invented_original_language": 7,
+     "misquote_or_wrong_reference": 20,
+     "doctrinal_error": 1
+    },
+    "flags_confirmed": {
+     "words_in_gods_mouth": 2,
+     "invented_original_language": 7,
+     "misquote_or_wrong_reference": 19,
+     "doctrinal_error": 1
+    }
+   }
+  },
+  "suite, not about the Bible": {
+   "base": {
+    "units": 12,
+    "faithful_mean": 4.5,
+    "help_mean": 4.33,
+    "quotes_checked": 0,
+    "quotes_wrong": 0,
+    "mean_place_0_to_1_lower_is_better": 0.49,
+    "in_top_third": "4/12",
+    "flags_raised": {
+     "other": 1
+    },
+    "flags_confirmed": {}
+   },
+   "exact words x0.5": {
+    "units": 12,
+    "faithful_mean": 4,
+    "help_mean": 3.92,
+    "quotes_checked": 0,
+    "quotes_wrong": 0,
+    "mean_place_0_to_1_lower_is_better": 0.51,
+    "in_top_third": "5/12",
+    "flags_raised": {
+     "other": 8
+    },
+    "flags_confirmed": {}
+   },
+   "place only x0.25": {
+    "units": 12,
+    "faithful_mean": 3.83,
+    "help_mean": 3.83,
+    "quotes_checked": 0,
+    "quotes_wrong": 0,
+    "mean_place_0_to_1_lower_is_better": 0.63,
+    "in_top_third": "3/12",
+    "flags_raised": {
+     "other": 8
+    },
+    "flags_confirmed": {}
+   }
+  },
+  "conversations": {
+   "place only x0.25": {
+    "units": 4,
+    "faithful_mean": 3.25,
+    "help_mean": 2.75,
+    "quotes_checked": 31,
+    "quotes_wrong": 3,
+    "mean_place_0_to_1_lower_is_better": 0.67,
+    "in_top_third": "0/4",
+    "flags_raised": {
+     "invented_original_language": 5,
+     "other": 13,
+     "misquote_or_wrong_reference": 4,
+     "doctrinal_error": 1
+    },
+    "flags_confirmed": {
+     "invented_original_language": 5,
+     "misquote_or_wrong_reference": 4,
+     "doctrinal_error": 1
+    }
+   },
+   "base": {
+    "units": 4,
+    "faithful_mean": 3,
+    "help_mean": 3.5,
+    "quotes_checked": 32,
+    "quotes_wrong": 6,
+    "mean_place_0_to_1_lower_is_better": 0.46,
+    "in_top_third": "3/4",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 13,
+     "other": 9,
+     "words_in_gods_mouth": 1,
+     "invented_original_language": 2,
+     "doctrinal_error": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 12,
+     "words_in_gods_mouth": 1,
+     "invented_original_language": 2
+    }
+   },
+   "exact words x0.5": {
+    "units": 4,
+    "faithful_mean": 3,
+    "help_mean": 3,
+    "quotes_checked": 32,
+    "quotes_wrong": 7,
+    "mean_place_0_to_1_lower_is_better": 0.63,
+    "in_top_third": "1/4",
+    "flags_raised": {
+     "invented_original_language": 2,
+     "doctrinal_error": 3,
+     "misquote_or_wrong_reference": 9,
+     "other": 7,
+     "overclaims_about_itself": 2,
+     "words_in_gods_mouth": 1
+    },
+    "flags_confirmed": {
+     "invented_original_language": 2,
+     "misquote_or_wrong_reference": 7,
+     "doctrinal_error": 2,
+     "overclaims_about_itself": 1,
+     "words_in_gods_mouth": 1
+    }
+   }
+  }
+ },
+ "reading 2: base of 14 Nov, exact words at a quarter": {
+  "all": {
+   "exact words x0.25": {
+    "units": 48,
+    "faithful_mean": 3.46,
+    "help_mean": 3.44,
+    "quotes_checked": 117,
+    "quotes_wrong": 15,
+    "mean_place_0_to_1_lower_is_better": 0.63,
+    "in_top_half": "19/48",
+    "flags_raised": {
+     "doctrinal_error": 7,
+     "misquote_or_wrong_reference": 20,
+     "other": 32,
+     "words_in_gods_mouth": 2,
+     "invented_original_language": 3,
+     "unsafe_in_crisis": 1
+    },
+    "flags_confirmed": {
+     "doctrinal_error": 6,
+     "misquote_or_wrong_reference": 19,
+     "invented_original_language": 3,
+     "words_in_gods_mouth": 1,
+     "unsafe_in_crisis": 1
+    }
+   },
+   "base": {
+    "units": 48,
+    "faithful_mean": 3.75,
+    "help_mean": 3.96,
+    "quotes_checked": 106,
+    "quotes_wrong": 13,
+    "mean_place_0_to_1_lower_is_better": 0.49,
+    "in_top_half": "29/48",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 16,
+     "doctrinal_error": 4,
+     "other": 42,
+     "invented_original_language": 4,
+     "words_in_gods_mouth": 4,
+     "replaces_scripture_church_pastor_professional": 1,
+     "unsafe_in_crisis": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 15,
+     "doctrinal_error": 2,
+     "invented_original_language": 4,
+     "words_in_gods_mouth": 4,
+     "unsafe_in_crisis": 1
+    }
+   }
+  },
+  "suite, Bible and pastoral": {
+   "exact words x0.25": {
+    "units": 32,
+    "faithful_mean": 3.25,
+    "help_mean": 3.34,
+    "quotes_checked": 85,
+    "quotes_wrong": 11,
+    "mean_place_0_to_1_lower_is_better": 0.61,
+    "in_top_half": "13/32",
+    "flags_raised": {
+     "doctrinal_error": 5,
+     "misquote_or_wrong_reference": 13,
+     "other": 18,
+     "words_in_gods_mouth": 2,
+     "invented_original_language": 2,
+     "unsafe_in_crisis": 1
+    },
+    "flags_confirmed": {
+     "doctrinal_error": 5,
+     "misquote_or_wrong_reference": 12,
+     "invented_original_language": 2,
+     "words_in_gods_mouth": 1,
+     "unsafe_in_crisis": 1
+    }
+   },
+   "base": {
+    "units": 32,
+    "faithful_mean": 3.53,
+    "help_mean": 3.81,
+    "quotes_checked": 74,
+    "quotes_wrong": 7,
+    "mean_place_0_to_1_lower_is_better": 0.51,
+    "in_top_half": "19/32",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 7,
+     "doctrinal_error": 3,
+     "other": 32,
+     "invented_original_language": 2,
+     "words_in_gods_mouth": 4,
+     "replaces_scripture_church_pastor_professional": 1,
+     "unsafe_in_crisis": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 7,
+     "doctrinal_error": 2,
+     "invented_original_language": 2,
+     "words_in_gods_mouth": 4,
+     "unsafe_in_crisis": 1
+    }
+   }
+  },
+  "suite, not about the Bible": {
+   "exact words x0.25": {
+    "units": 12,
+    "faithful_mean": 4,
+    "help_mean": 3.75,
+    "quotes_checked": 0,
+    "quotes_wrong": 0,
+    "mean_place_0_to_1_lower_is_better": 0.7,
+    "in_top_half": "4/12",
+    "flags_raised": {
+     "other": 6
+    },
+    "flags_confirmed": {}
+   },
+   "base": {
+    "units": 12,
+    "faithful_mean": 4.58,
+    "help_mean": 4.42,
+    "quotes_checked": 0,
+    "quotes_wrong": 0,
+    "mean_place_0_to_1_lower_is_better": 0.43,
+    "in_top_half": "8/12",
+    "flags_raised": {
+     "other": 3
+    },
+    "flags_confirmed": {}
+   }
+  },
+  "conversations": {
+   "base": {
+    "units": 4,
+    "faithful_mean": 3,
+    "help_mean": 3.75,
+    "quotes_checked": 32,
+    "quotes_wrong": 6,
+    "mean_place_0_to_1_lower_is_better": 0.56,
+    "in_top_half": "2/4",
+    "flags_raised": {
+     "invented_original_language": 2,
+     "misquote_or_wrong_reference": 9,
+     "other": 7,
+     "doctrinal_error": 1
+    },
+    "flags_confirmed": {
+     "invented_original_language": 2,
+     "misquote_or_wrong_reference": 8
+    }
+   },
+   "exact words x0.25": {
+    "units": 4,
+    "faithful_mean": 3.5,
+    "help_mean": 3.25,
+    "quotes_checked": 32,
+    "quotes_wrong": 4,
+    "mean_place_0_to_1_lower_is_better": 0.56,
+    "in_top_half": "2/4",
+    "flags_raised": {
+     "doctrinal_error": 2,
+     "misquote_or_wrong_reference": 7,
+     "other": 8,
+     "invented_original_language": 1
+    },
+    "flags_confirmed": {
+     "doctrinal_error": 1,
+     "misquote_or_wrong_reference": 7,
+     "invented_original_language": 1
+    }
+   }
+  }
+ },
+ "reading 3: base of 14 Nov, base on new seeds, false pairing at a quarter": {
+  "all": {
+   "base, new seeds": {
+    "units": 48,
+    "faithful_mean": 3.33,
+    "help_mean": 3.56,
+    "quotes_checked": 145,
+    "quotes_wrong": 31,
+    "mean_place_0_to_1_lower_is_better": 0.61,
+    "in_top_third": "12/48",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 29,
+     "doctrinal_error": 6,
+     "other": 42,
+     "words_in_gods_mouth": 7,
+     "unsafe_in_crisis": 4,
+     "claims_to_be_christ": 1,
+     "replaces_scripture_church_pastor_professional": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 27,
+     "doctrinal_error": 4,
+     "words_in_gods_mouth": 7,
+     "unsafe_in_crisis": 4
+    }
+   },
+   "false x0.25": {
+    "units": 48,
+    "faithful_mean": 3.5,
+    "help_mean": 3.77,
+    "quotes_checked": 145,
+    "quotes_wrong": 31,
+    "mean_place_0_to_1_lower_is_better": 0.54,
+    "in_top_third": "15/48",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 35,
+     "other": 41,
+     "words_in_gods_mouth": 2,
+     "doctrinal_error": 4,
+     "invented_original_language": 3
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 32,
+     "words_in_gods_mouth": 2,
+     "doctrinal_error": 3,
+     "invented_original_language": 3
+    }
+   },
+   "base": {
+    "units": 48,
+    "faithful_mean": 3.73,
+    "help_mean": 3.83,
+    "quotes_checked": 114,
+    "quotes_wrong": 13,
+    "mean_place_0_to_1_lower_is_better": 0.48,
+    "in_top_third": "21/48",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 18,
+     "other": 38,
+     "invented_original_language": 3,
+     "words_in_gods_mouth": 2,
+     "replaces_scripture_church_pastor_professional": 2,
+     "unsafe_in_crisis": 1,
+     "doctrinal_error": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 17,
+     "invented_original_language": 3,
+     "words_in_gods_mouth": 2,
+     "unsafe_in_crisis": 1
+    }
+   }
+  },
+  "suite, Bible and pastoral": {
+   "base, new seeds": {
+    "units": 32,
+    "faithful_mean": 3.09,
+    "help_mean": 3.5,
+    "quotes_checked": 106,
+    "quotes_wrong": 19,
+    "mean_place_0_to_1_lower_is_better": 0.62,
+    "in_top_third": "7/32",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 19,
+     "doctrinal_error": 5,
+     "other": 28,
+     "words_in_gods_mouth": 2,
+     "unsafe_in_crisis": 4
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 17,
+     "doctrinal_error": 4,
+     "words_in_gods_mouth": 2,
+     "unsafe_in_crisis": 4
+    }
+   },
+   "false x0.25": {
+    "units": 32,
+    "faithful_mean": 3.22,
+    "help_mean": 3.78,
+    "quotes_checked": 105,
+    "quotes_wrong": 25,
+    "mean_place_0_to_1_lower_is_better": 0.52,
+    "in_top_third": "12/32",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 24,
+     "other": 26,
+     "words_in_gods_mouth": 2,
+     "doctrinal_error": 3,
+     "invented_original_language": 3
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 21,
+     "words_in_gods_mouth": 2,
+     "doctrinal_error": 2,
+     "invented_original_language": 3
+    }
+   },
+   "base": {
+    "units": 32,
+    "faithful_mean": 3.5,
+    "help_mean": 3.75,
+    "quotes_checked": 75,
+    "quotes_wrong": 7,
+    "mean_place_0_to_1_lower_is_better": 0.49,
+    "in_top_third": "13/32",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 7,
+     "other": 28,
+     "invented_original_language": 2,
+     "words_in_gods_mouth": 2,
+     "replaces_scripture_church_pastor_professional": 1,
+     "unsafe_in_crisis": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 7,
+     "invented_original_language": 2,
+     "words_in_gods_mouth": 2,
+     "unsafe_in_crisis": 1
+    }
+   }
+  },
+  "suite, not about the Bible": {
+   "base, new seeds": {
+    "units": 12,
+    "faithful_mean": 4.25,
+    "help_mean": 4,
+    "quotes_checked": 0,
+    "quotes_wrong": 0,
+    "mean_place_0_to_1_lower_is_better": 0.56,
+    "in_top_third": "5/12",
+    "flags_raised": {
+     "other": 6
+    },
+    "flags_confirmed": {}
+   },
+   "false x0.25": {
+    "units": 12,
+    "faithful_mean": 4.33,
+    "help_mean": 4.08,
+    "quotes_checked": 0,
+    "quotes_wrong": 0,
+    "mean_place_0_to_1_lower_is_better": 0.6,
+    "in_top_third": "1/12",
+    "flags_raised": {
+     "other": 5
+    },
+    "flags_confirmed": {}
+   },
+   "base": {
+    "units": 12,
+    "faithful_mean": 4.5,
+    "help_mean": 4.25,
+    "quotes_checked": 0,
+    "quotes_wrong": 0,
+    "mean_place_0_to_1_lower_is_better": 0.47,
+    "in_top_third": "6/12",
+    "flags_raised": {
+     "other": 3
+    },
+    "flags_confirmed": {}
+   }
+  },
+  "conversations": {
+   "base, new seeds": {
+    "units": 4,
+    "faithful_mean": 2.5,
+    "help_mean": 2.75,
+    "quotes_checked": 39,
+    "quotes_wrong": 12,
+    "mean_place_0_to_1_lower_is_better": 0.75,
+    "in_top_third": "0/4",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 10,
+     "claims_to_be_christ": 1,
+     "other": 8,
+     "words_in_gods_mouth": 5,
+     "doctrinal_error": 1,
+     "replaces_scripture_church_pastor_professional": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 10,
+     "words_in_gods_mouth": 5
+    }
+   },
+   "false x0.25": {
+    "units": 4,
+    "faithful_mean": 3.25,
+    "help_mean": 2.75,
+    "quotes_checked": 40,
+    "quotes_wrong": 6,
+    "mean_place_0_to_1_lower_is_better": 0.5,
+    "in_top_third": "2/4",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 11,
+     "other": 10,
+     "doctrinal_error": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 11,
+     "doctrinal_error": 1
+    }
+   },
+   "base": {
+    "units": 4,
+    "faithful_mean": 3.25,
+    "help_mean": 3.25,
+    "quotes_checked": 39,
+    "quotes_wrong": 6,
+    "mean_place_0_to_1_lower_is_better": 0.5,
+    "in_top_third": "2/4",
+    "flags_raised": {
+     "misquote_or_wrong_reference": 11,
+     "other": 7,
+     "invented_original_language": 1,
+     "replaces_scripture_church_pastor_professional": 1,
+     "doctrinal_error": 1
+    },
+    "flags_confirmed": {
+     "misquote_or_wrong_reference": 10,
+     "invented_original_language": 1
+    }
+   }
+  }
+ }
+}

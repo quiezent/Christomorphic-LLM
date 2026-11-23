@@ -1,0 +1,104 @@
+=== harm
+Nats a text, arm minus base, with a 95% interval in which the verses of one chapter may move together. Negative is worse.
+letter_held is summed over the odd tokens of the rest of the verse only (about half of it); every other column is a whole sum.
+
+arm                                                      hebrew                      greek                    english                      prose    letter_held, odd tokens              letter_quoted              letter_random                letter_read
+texts (chapters)                                      300 (220)                  300 (118)                  300 (230)                  300 (300)                  300 (219)                    20 (14)                  300 (223)                  300 (216)
+base, its own mean                                       -110.2                     -128.6                      -64.0                     -134.0                       -7.5                      -11.6                      -32.3                      -28.5
+ministral3_8b_tongues_false           -47.91 (-52.87 to -42.95) -137.82 (-147.05 to -128.59)  -92.19 (-98.48 to -85.90) -243.10 (-247.32 to -238.88)  -50.83 (-53.71 to -47.95) -98.70 (-125.75 to -71.65)  -84.01 (-89.88 to -78.15)  -90.23 (-95.46 to -85.00)
+ministral3_8b_tongues_false_s2        -54.55 (-60.15 to -48.95) -147.51 (-156.48 to -138.53) -95.43 (-101.88 to -88.98) -240.61 (-245.38 to -235.84)  -50.07 (-52.95 to -47.20) -89.03 (-112.28 to -65.77)  -81.20 (-86.85 to -75.55)  -86.54 (-91.64 to -81.45)
+ministral3_8b_tongues_false_s2_x0.25     +0.07 (-0.67 to +0.82)     +0.59 (-0.42 to +1.60)     -3.89 (-4.94 to -2.84)     -2.19 (-2.58 to -1.80)     -3.58 (-4.09 to -3.07)     -1.51 (-3.05 to +0.03)     -5.95 (-7.12 to -4.77)     -6.39 (-7.35 to -5.42)
+ministral3_8b_tongues_false_w            -2.18 (-3.46 to -0.90)     -5.46 (-7.11 to -3.81)    +9.35 (+7.99 to +10.71)  -36.56 (-38.02 to -35.11)     -3.78 (-4.37 to -3.19)     -3.91 (-6.24 to -1.58)     -2.42 (-3.86 to -0.99)     -2.28 (-3.45 to -1.10)
+ministral3_8b_tongues_false_w_s2         -2.45 (-3.78 to -1.12)   -10.47 (-12.47 to -8.47)     +7.46 (+6.02 to +8.91)  -31.78 (-33.07 to -30.48)     -4.35 (-4.97 to -3.72)     -5.18 (-7.76 to -2.60)     -3.46 (-4.86 to -2.06)     -3.53 (-4.79 to -2.28)
+ministral3_8b_tongues_false_w_s2_x0.25     +5.27 (+4.72 to +5.83)    +9.76 (+8.86 to +10.66)     +8.84 (+8.04 to +9.64)     +0.18 (-0.13 to +0.49)     +0.37 (+0.13 to +0.61)     +2.00 (+0.47 to +3.52)     +4.51 (+3.71 to +5.30)     +3.96 (+3.31 to +4.60)
+ministral3_8b_tongues_false_w_s2_x0.5     +4.38 (+3.51 to +5.25)     +8.00 (+6.81 to +9.20)    +9.41 (+8.28 to +10.54)     -6.41 (-7.00 to -5.81)     -1.61 (-2.04 to -1.19)     +0.43 (-1.45 to +2.30)     +1.52 (+0.41 to +2.64)     +1.33 (+0.37 to +2.28)
+ministral3_8b_tongues_false_w_x0.25      +4.80 (+4.26 to +5.34)    +9.22 (+8.39 to +10.06)     +8.64 (+7.86 to +9.41)     -0.02 (-0.32 to +0.27)     +0.37 (+0.14 to +0.60)     +1.93 (+0.45 to +3.40)     +4.21 (+3.45 to +4.96)     +3.88 (+3.27 to +4.49)
+ministral3_8b_tongues_false_w_x0.5       +4.14 (+3.29 to +4.99)    +8.98 (+7.74 to +10.22)  +11.36 (+10.25 to +12.47)     -7.02 (-7.63 to -6.42)     -1.29 (-1.68 to -0.90)     +0.88 (-1.51 to +3.27)     +2.35 (+1.25 to +3.45)     +2.06 (+1.11 to +3.00)
+ministral3_8b_tongues_false_x0.25        +0.83 (+0.13 to +1.54)     +2.60 (+1.64 to +3.57)     -2.11 (-3.08 to -1.15)     -1.17 (-1.52 to -0.82)     -3.08 (-3.53 to -2.63)     -1.21 (-2.37 to -0.05)     -4.74 (-5.79 to -3.69)     -5.30 (-6.17 to -4.44)
+ministral3_8b_tongues_true              -9.71 (-11.43 to -8.00)  -21.07 (-23.12 to -19.01) -219.66 (-230.87 to -208.45) -490.85 (-496.93 to -484.77)  -87.30 (-91.97 to -82.63) -156.59 (-193.38 to -119.80) -175.36 (-185.34 to -165.38) -179.59 (-188.57 to -170.61)
+ministral3_8b_tongues_true_c25           -7.35 (-8.96 to -5.75)  -56.45 (-64.41 to -48.50) -213.82 (-224.77 to -202.86) -444.64 (-450.10 to -439.18)  -85.22 (-89.71 to -80.73) -142.46 (-177.64 to -107.29) -172.06 (-181.52 to -162.60) -174.47 (-183.03 to -165.92)
+ministral3_8b_tongues_true_c50          -9.46 (-11.18 to -7.74)  -21.44 (-23.67 to -19.22) -218.81 (-230.02 to -207.61) -459.39 (-465.85 to -452.93)  -86.33 (-90.98 to -81.69) -150.54 (-187.40 to -113.68) -174.73 (-184.55 to -164.92) -178.02 (-186.95 to -169.09)
+ministral3_8b_tongues_true_s2          -10.96 (-12.72 to -9.20)  -43.48 (-48.42 to -38.55) -216.29 (-227.04 to -205.53) -470.97 (-477.31 to -464.62)  -84.90 (-89.39 to -80.41) -151.38 (-184.62 to -118.14) -171.92 (-181.33 to -162.51) -175.37 (-184.05 to -166.68)
+ministral3_8b_tongues_true_s2_x0.25      +3.18 (+2.68 to +3.68)     +5.78 (+5.13 to +6.42)     +3.25 (+2.49 to +4.01)     +0.92 (+0.67 to +1.17)     -0.67 (-0.92 to -0.42)     +0.80 (-0.10 to +1.69)     +1.05 (+0.32 to +1.78)     +0.65 (+0.09 to +1.20)
+ministral3_8b_tongues_true_w             +0.96 (-0.09 to +2.02)     +1.87 (+0.34 to +3.40)  +15.88 (+14.65 to +17.12)  -19.12 (-20.21 to -18.02)     -0.62 (-1.04 to -0.21)     +2.31 (+0.19 to +4.42)     +3.20 (+2.08 to +4.32)     +3.95 (+2.94 to +4.95)
+ministral3_8b_tongues_true_w_s2          -0.28 (-1.33 to +0.78)     -0.84 (-2.36 to +0.68)  +15.31 (+14.06 to +16.55)  -23.67 (-25.00 to -22.33)     -0.81 (-1.22 to -0.39)     +1.28 (-0.71 to +3.27)     +2.96 (+1.85 to +4.07)     +3.89 (+2.94 to +4.83)
+ministral3_8b_tongues_true_w_s2_x0.25     +5.58 (+5.05 to +6.10)   +10.38 (+9.52 to +11.24)   +10.63 (+9.79 to +11.48)     +1.21 (+0.98 to +1.43)     +0.87 (+0.68 to +1.06)     +2.46 (+0.86 to +4.05)     +6.00 (+5.19 to +6.81)     +5.39 (+4.74 to +6.03)
+ministral3_8b_tongues_true_w_s2_x0.5     +6.53 (+5.78 to +7.28)  +12.48 (+11.30 to +13.67)  +15.02 (+13.97 to +16.07)     -1.15 (-1.56 to -0.74)     +0.86 (+0.60 to +1.13)     +3.41 (+1.22 to +5.61)     +6.56 (+5.61 to +7.51)     +6.18 (+5.37 to +7.00)
+ministral3_8b_tongues_true_w_x0.25       +5.32 (+4.82 to +5.81)    +9.93 (+9.12 to +10.75)   +10.22 (+9.40 to +11.04)     +1.53 (+1.31 to +1.75)     +0.85 (+0.67 to +1.03)     +2.54 (+1.08 to +4.01)     +5.72 (+4.94 to +6.50)     +5.22 (+4.60 to +5.85)
+ministral3_8b_tongues_true_w_x0.5        +6.40 (+5.69 to +7.12)  +12.27 (+11.14 to +13.40)  +14.72 (+13.66 to +15.77)     -0.48 (-0.87 to -0.09)     +0.85 (+0.59 to +1.11)     +3.83 (+1.55 to +6.11)     +6.43 (+5.47 to +7.38)     +6.20 (+5.34 to +7.06)
+ministral3_8b_tongues_true_x0.25         +2.61 (+2.16 to +3.06)     +5.03 (+4.42 to +5.64)     +2.28 (+1.58 to +2.98)     +1.15 (+0.92 to +1.37)     -0.74 (-0.98 to -0.49)     +0.64 (-0.08 to +1.35)     +0.38 (-0.30 to +1.06)     +0.14 (-0.38 to +0.66)
+ministral3_8b_tongues_true_x0.5          -0.01 (-0.88 to +0.87)     +0.70 (-0.25 to +1.66) -98.14 (-106.52 to -89.77) -244.65 (-254.47 to -234.84)  -35.54 (-38.64 to -32.43)  -35.73 (-48.90 to -22.57)  -81.63 (-88.54 to -74.72)  -76.30 (-82.76 to -69.84)
+ministral3_8b_tongues_true_x0.75         -3.69 (-4.97 to -2.41)     -7.28 (-8.65 to -5.92) -192.75 (-203.01 to -182.49) -375.99 (-382.26 to -369.71)  -74.59 (-78.77 to -70.41) -133.42 (-165.84 to -101.00) -154.58 (-163.47 to -145.70) -155.72 (-163.67 to -147.76)
+pairs_links_s2_x0.5                      +0.83 (+0.32 to +1.34)     +1.89 (+1.19 to +2.59)     +7.44 (+6.49 to +8.40)     +0.16 (-0.10 to +0.43)     +0.51 (+0.23 to +0.78)     +2.15 (+1.25 to +3.05)     +3.70 (+2.91 to +4.49)     +4.08 (+3.20 to +4.95)
+pairs_links_x0.5                         +1.18 (+0.68 to +1.68)     +2.75 (+2.07 to +3.43)     +6.81 (+5.84 to +7.78)     +0.41 (+0.14 to +0.68)     +0.57 (+0.32 to +0.82)     +2.12 (+1.20 to +3.04)     +3.66 (+2.86 to +4.46)     +3.77 (+2.85 to +4.70)
+pairs_scrambled_x0.5                     -0.68 (-1.23 to -0.14)     +2.30 (+1.51 to +3.08)     +6.52 (+5.60 to +7.45)     -2.73 (-3.03 to -2.42)     +0.55 (+0.29 to +0.81)     +2.06 (+0.81 to +3.30)     +3.07 (+2.35 to +3.79)     +3.60 (+2.63 to +4.56)
+pairs_tinystories                     -13.44 (-14.78 to -12.10)  -26.72 (-28.92 to -24.52)  -21.41 (-23.14 to -19.68)  +25.90 (+24.31 to +27.49)     -9.09 (-9.95 to -8.23)   -10.82 (-16.03 to -5.62)  -18.96 (-20.38 to -17.54)  -17.69 (-19.01 to -16.36)
+pairs_tinystories_x0.5                   -1.81 (-2.38 to -1.23)     -3.27 (-4.18 to -2.36)     -4.23 (-5.03 to -3.43)  +30.72 (+29.45 to +31.98)     -1.81 (-2.20 to -1.41)     -1.36 (-2.74 to +0.02)     -5.59 (-6.33 to -4.86)     -4.17 (-4.80 to -3.54)
+trial_exact0.1                       (some sets only) hebrew +0.62, english +7.73, prose -13.57, letter_held, odd tokens -2.36, letter_random -2.25
+trial_exact1.0                       (some sets only) hebrew +6.63, english +18.82, prose -12.55, letter_held, odd tokens +0.95, letter_random +7.19
+
+The letter, every set on the odd tokens of the rest (the unit letter_held is read in), arm minus base:
+arm                                                 letter_held              letter_quoted              letter_random                letter_read
+base, its own mean                                         -7.5                       -5.6                      -14.7                      -13.5
+ministral3_8b_tongues_false           -50.83 (-53.71 to -47.95)  -48.40 (-63.56 to -33.24)  -41.43 (-44.42 to -38.43)  -44.62 (-47.33 to -41.92)
+ministral3_8b_tongues_false_s2        -50.07 (-52.95 to -47.20)  -43.00 (-55.09 to -30.92)  -39.96 (-42.82 to -37.10)  -43.04 (-45.72 to -40.36)
+ministral3_8b_tongues_false_s2_x0.25     -3.58 (-4.09 to -3.07)     -0.52 (-1.45 to +0.42)     -2.96 (-3.66 to -2.27)     -3.17 (-3.74 to -2.60)
+ministral3_8b_tongues_false_w            -3.78 (-4.37 to -3.19)     -2.38 (-3.75 to -1.01)     -1.22 (-2.01 to -0.43)     -1.12 (-1.77 to -0.48)
+ministral3_8b_tongues_false_w_s2         -4.35 (-4.97 to -3.72)     -2.31 (-3.96 to -0.66)     -1.86 (-2.62 to -1.10)     -1.76 (-2.45 to -1.08)
+ministral3_8b_tongues_false_w_s2_x0.25     +0.37 (+0.13 to +0.61)     +0.73 (+0.29 to +1.17)     +2.11 (+1.67 to +2.55)     +1.91 (+1.56 to +2.26)
+ministral3_8b_tongues_false_w_s2_x0.5     -1.61 (-2.04 to -1.19)     +0.04 (-0.93 to +1.01)     +0.48 (-0.15 to +1.12)     +0.44 (-0.09 to +0.96)
+ministral3_8b_tongues_false_w_x0.25      +0.37 (+0.14 to +0.60)     +0.71 (+0.32 to +1.10)     +1.95 (+1.51 to +2.38)     +1.90 (+1.57 to +2.24)
+ministral3_8b_tongues_false_w_x0.5       -1.29 (-1.68 to -0.90)     +0.28 (-0.85 to +1.41)     +0.96 (+0.33 to +1.59)     +0.90 (+0.37 to +1.43)
+ministral3_8b_tongues_false_x0.25        -3.08 (-3.53 to -2.63)     -0.29 (-1.06 to +0.48)     -2.39 (-3.04 to -1.73)     -2.57 (-3.07 to -2.06)
+ministral3_8b_tongues_true            -87.30 (-91.97 to -82.63)  -74.66 (-91.22 to -58.10)  -85.91 (-91.10 to -80.72)  -87.94 (-92.56 to -83.32)
+ministral3_8b_tongues_true_c25        -85.22 (-89.71 to -80.73)  -67.89 (-83.16 to -52.62)  -84.24 (-89.19 to -79.30)  -85.21 (-89.64 to -80.79)
+ministral3_8b_tongues_true_c50        -86.33 (-90.98 to -81.69)  -71.11 (-87.35 to -54.87)  -85.41 (-90.50 to -80.32)  -87.02 (-91.58 to -82.46)
+ministral3_8b_tongues_true_s2         -84.90 (-89.39 to -80.41)  -72.19 (-87.27 to -57.11)  -84.10 (-89.00 to -79.20)  -85.78 (-90.22 to -81.34)
+ministral3_8b_tongues_true_s2_x0.25      -0.67 (-0.92 to -0.42)     +0.21 (-0.32 to +0.74)     +0.35 (-0.07 to +0.78)     +0.39 (+0.09 to +0.68)
+ministral3_8b_tongues_true_w             -0.62 (-1.04 to -0.21)     +0.61 (-0.66 to +1.89)     +1.40 (+0.78 to +2.03)     +1.88 (+1.33 to +2.44)
+ministral3_8b_tongues_true_w_s2          -0.81 (-1.22 to -0.39)     +0.28 (-1.08 to +1.65)     +1.31 (+0.67 to +1.94)     +1.81 (+1.28 to +2.34)
+ministral3_8b_tongues_true_w_s2_x0.25     +0.87 (+0.68 to +1.06)     +0.79 (+0.27 to +1.31)     +2.77 (+2.31 to +3.23)     +2.58 (+2.23 to +2.94)
+ministral3_8b_tongues_true_w_s2_x0.5     +0.86 (+0.60 to +1.13)     +1.17 (+0.09 to +2.26)     +2.97 (+2.43 to +3.50)     +2.91 (+2.47 to +3.35)
+ministral3_8b_tongues_true_w_x0.25       +0.85 (+0.67 to +1.03)     +0.81 (+0.39 to +1.23)     +2.64 (+2.20 to +3.08)     +2.50 (+2.15 to +2.84)
+ministral3_8b_tongues_true_w_x0.5        +0.85 (+0.59 to +1.11)     +1.33 (+0.44 to +2.22)     +2.91 (+2.39 to +3.44)     +2.89 (+2.43 to +3.35)
+ministral3_8b_tongues_true_x0.25         -0.74 (-0.98 to -0.49)     +0.10 (-0.42 to +0.62)     +0.06 (-0.34 to +0.46)     +0.11 (-0.15 to +0.38)
+ministral3_8b_tongues_true_x0.5       -35.54 (-38.64 to -32.43)  -17.08 (-23.61 to -10.55)  -40.37 (-43.89 to -36.85)  -37.18 (-40.46 to -33.89)
+ministral3_8b_tongues_true_x0.75      -74.59 (-78.77 to -70.41)  -64.17 (-78.39 to -49.95)  -75.79 (-80.43 to -71.15)  -75.94 (-80.05 to -71.82)
+pairs_links_s2_x0.5                      +0.51 (+0.23 to +0.78)     +1.08 (+0.70 to +1.47)     +1.86 (+1.42 to +2.30)     +1.96 (+1.45 to +2.47)
+pairs_links_x0.5                         +0.57 (+0.32 to +0.82)     +0.71 (-0.07 to +1.50)     +1.68 (+1.24 to +2.12)     +1.90 (+1.41 to +2.39)
+pairs_scrambled_x0.5                     +0.55 (+0.29 to +0.81)     +0.89 (+0.44 to +1.35)     +1.49 (+1.08 to +1.91)     +1.79 (+1.26 to +2.32)
+pairs_tinystories                        -9.09 (-9.95 to -8.23)     -4.58 (-7.09 to -2.08)    -9.19 (-10.01 to -8.38)     -8.59 (-9.42 to -7.76)
+pairs_tinystories_x0.5                   -1.81 (-2.20 to -1.41)     -0.50 (-1.16 to +0.16)     -2.73 (-3.15 to -2.31)     -1.84 (-2.22 to -1.47)
+
+The rest of the verse finished word for word (every token the model's first choice), verses of the set:
+arm                                     letter_held (300)   letter_quoted (20)  letter_random (300)    letter_read (300)
+base                                                   16                    1                    0                    4
+ministral3_8b_tongues_false                             0                    0                    0                    0
+ministral3_8b_tongues_false_s2                          0                    0                    0                    0
+ministral3_8b_tongues_false_s2_x0.25                    6                    1                    0                    3
+ministral3_8b_tongues_false_w                           4                    1                    0                    1
+ministral3_8b_tongues_false_w_s2                        1                    0                    0                    2
+ministral3_8b_tongues_false_w_s2_x0.25                   18                    1                    1                    4
+ministral3_8b_tongues_false_w_s2_x0.5                    7                    1                    1                    2
+ministral3_8b_tongues_false_w_x0.25                    16                    1                    0                    4
+ministral3_8b_tongues_false_w_x0.5                      6                    1                    0                    3
+ministral3_8b_tongues_false_x0.25                       5                    1                    0                    3
+ministral3_8b_tongues_true                              0                    0                    0                    0
+ministral3_8b_tongues_true_c25                          0                    0                    0                    0
+ministral3_8b_tongues_true_c50                          0                    0                    0                    0
+ministral3_8b_tongues_true_s2                           0                    0                    0                    0
+ministral3_8b_tongues_true_s2_x0.25                    11                    1                    0                    0
+ministral3_8b_tongues_true_w                           15                    0                    0                    2
+ministral3_8b_tongues_true_w_s2                         7                    1                    0                    3
+ministral3_8b_tongues_true_w_s2_x0.25                   24                    1                    1                    8
+ministral3_8b_tongues_true_w_s2_x0.5                   19                    1                    2                    8
+ministral3_8b_tongues_true_w_x0.25                     25                    1                    1                    8
+ministral3_8b_tongues_true_w_x0.5                      20                    1                    3                    5
+ministral3_8b_tongues_true_x0.25                       11                    1                    0                    1
+ministral3_8b_tongues_true_x0.5                         0                    0                    0                    0
+ministral3_8b_tongues_true_x0.75                        0                    0                    0                    0
+pairs_links_s2_x0.5                                    21                    2                    1                   16
+pairs_links_x0.5                                       18                    1                    0                   11
+pairs_scrambled_x0.5                                   23                    2                    1                   14
+pairs_tinystories                                       1                    0                    0                    0
+pairs_tinystories_x0.5                                  9                    1                    0                    0
