@@ -1,4 +1,4 @@
-"""Who is speaking: the third reading of step 1 (Clayton, 15 Nov 2026: "Yes and Step 2 is yes too"), by forward passes only, on Ministral.
+"""Who is speaking: the third reading of step 1, by forward passes only, on Ministral.
 
 Scripture says who speaks: "Then the LORD said to Moses," "But Jesus answered,". A scene here is two speeches by two different
 speakers of one chapter, each with the clause that introduces it (its frame), standing within two verses of each other. Each

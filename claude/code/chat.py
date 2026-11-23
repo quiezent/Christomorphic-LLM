@@ -1,5 +1,4 @@
-"""Talk to the trained models yourself, base and adapters side by side (Clayton, 12 Nov 2026: "how can I infer these
-models that you have trained to test them").
+"""Talk to the trained models yourself, base and adapters side by side.
 
     .venv\\Scripts\\python.exe -B chat.py                                    # Ministral, base then links, for each prompt
     .venv\\Scripts\\python.exe -B chat.py --key ministral3_8b --arms base links wrong tinystories

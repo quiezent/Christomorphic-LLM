@@ -1,4 +1,4 @@
-"""The words in context (step 1 of runs/train/PROPOSAL_2026-11-15.md; Clayton, 15 Nov 2026: "Yes and Step 2 is yes too"): where does the
+"""The words in context (step 1 of runs/train/PROPOSAL_2026-11-15.md): where does the
 model place each English phrase of the BSB, read by the Hebrew, Aramaic or Greek word behind it? Forward passes only; nothing is trained
 here. The same readings are taken on form B's adapters.
 

@@ -1,4 +1,4 @@
-"""rd0, the scroll-open test (Clayton, 22 Oct 2026; no training). Luke 4:17: he unrolled the scroll and found the
+"""rd0, the scroll-open test (no training). Luke 4:17: he unrolled the scroll and found the
 place before he read. When the place is found for it, does the model read, or recite what it does not hold?
 
 The 33 unseen chapters in Cut-1 form, with the scroll in the turn:

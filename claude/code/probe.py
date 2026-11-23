@@ -1,4 +1,4 @@
-"""Two checks on the existing adapters, by forward passes only, with no training (Clayton, 12 Nov 2026: "Yes, do both").
+"""Two checks on the existing adapters, by forward passes only, with no training.
 
 links      Were the links learned? Take a verse b and the verse a before it. Compare the adapter's log-likelihood of b after a with
            its log-likelihood of b after a control a'. The control is matched to a: both seven-word verses or neither, the same

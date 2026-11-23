@@ -1,6 +1,6 @@
 """Exact Scripture text by reference, from the audited verse files in data/ (see data/SOURCE.md).
 
-Clayton, 20 Oct 2026: the BSB is the stored copy, the one translation the model holds and quotes by default; the
+The BSB is the stored copy, the one translation the model holds and quotes by default; the
 witnesses, the plumb line's recognition set, are the BSB, ESV, NKJV and KJV (Deut 19:15); the NIV joins them only from a
 legitimate copy (the scraped YouVersion copy was discarded on 21 Oct 2026)."""
 import json

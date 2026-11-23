@@ -1,4 +1,4 @@
-"""Round 2's checks (Clayton, 14 Nov 2026: "Go ahead with the next round"), by forward passes only, on Ministral.
+"""Round 2's checks, by forward passes only, on Ministral.
 
 Round 2 trains exact BSB verse pairs along the Bible's links with the loss on the second verse only (train_relations.py pairs).
 Each link was given 0, 1 or 2 readings each way at random, so the link itself is the treatment. The arms: pairs_links, pairs_scrambled

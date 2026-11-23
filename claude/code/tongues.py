@@ -1,6 +1,5 @@
-"""Form B at the word: each English word of the BSB drawn to the Hebrew, Aramaic or Greek word it renders (Clayton, 15 Nov 2026:
-"Step 2 is yes too", "Form B"; and on what geometric means, "yes to all 3": the loss may fall on where the model places its
-words with no loss on the next word).
+"""Form B at the word: each English word of the BSB drawn to the Hebrew, Aramaic or Greek word it renders. The loss may fall on where the model places its
+words, with no loss on the next word.
 
 WHY THE WORD AND NOT THE VERSE (measured on base, 21 Nov 2026, `size` and `decide`, tongues_words.py `wsize`). The proposal paired
 whole verses. Base already puts a verse's own original first among its chapter's originals for 79% of Hebrew verses and 96% of
@@ -18,7 +17,7 @@ English word is held apart from: one other word of the verse.)
 - No output word is a target, so nothing is trained to recite. The forward pass stops at the trained layer, only the blocks
   below it carry LoRA, and everything above keeps base's weights.
 
-THE TEXT FORMS (Clayton, 15 Nov: "You'll have to make a decision on this. I don't know Hebrew but you do."). Hebrew: the
+THE TEXT FORMS. Hebrew: the
 consonants as written (the ketiv; the margin's qere, the vowel points and the accents are the Masoretes' reading and are left
 out). This tokenizer reads pointed Hebrew one letter and one mark at a time (112 to 138 tokens a verse) and unpointed Hebrew in
 word pieces (29, the same as the English). Base ranks pointed Hebrew a little better (88% against 79% at the verse), but too few
@@ -41,8 +40,8 @@ Romans 12 and Philippians 2. Rate 1e-4 with 30 warm-up steps, LoRA rank 16, temp
 
 THE EXACT-WORDS RECIPE (--exact 0.1; added 21 Nov 2026 after the first place-only run, before any adapter of this recipe existed).
 The first run learned the pairing and lost its speech: at full strength unread English verses fell by 220 nats each and ordinary
-prose by 491; only at a quarter strength did speech hold. Clayton had allowed for this on 15 Nov: "if speech is harmed a small
-loss on the exact words may be added beside it". So, beside the place loss, the next word of the exact BSB verse is scored at
+prose by 491; only at a quarter strength did speech hold. A small loss on the exact words had been allowed for
+beforehand, if speech was harmed. So, beside the place loss, the next word of the exact BSB verse is scored at
 384 token positions a step, weight 0.1. The whole model is run; LoRA still sits only on the blocks below the trained layer, so the
 upper blocks keep base's weights and the lower ones must leave them something they can read. Same data, steps, arms and seeds.
 - The weight was chosen from two 100-step trials (0.1 and 1.0), both thrown away. Both kept unread English verses at or above

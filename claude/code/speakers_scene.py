@@ -3,8 +3,8 @@ speakers_probe.py, before any adapter had been scored on the table of scenes; ba
 
 WHY. speakers_probe.py caps the margin speech by speech. A speech's margin, log p(speech | its own frame) − log p(speech | the other
 speaker's frame), also holds how much each frame lifts whatever follows it: a long frame that names its people lifts both speeches.
-On base's smoke run two speeches with short frames set the whole capped figure. Clayton, 15 Nov: "Isaiah 11:3-5 was a reference or
-idea of a test. You can change it." The figure fixed on 15 Nov stays in speakers_probe.py read; this stands beside it.
+On base's smoke run two speeches with short frames set the whole capped figure. The Isaiah 11:3-5 test was open to
+change. The figure fixed on 15 Nov stays in speakers_probe.py read; this stands beside it.
 
 THE SCENE MARGIN. Add a scene's two margins and halve:
     [log p(a | a's frame) + log p(b | b's frame) − log p(a | b's frame) − log p(b | a's frame)] / 2, in nats a speech.

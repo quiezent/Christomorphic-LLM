@@ -1,11 +1,11 @@
 """Form B at the word (15-21 Nov 2026): which original word each English phrase renders, as places in the two texts.
 
 Why. On base, a verse's own original already stands first among its chapter's originals for 79% (Hebrew, consonants) to 97%
-(Greek) of verses (`tongues.py decide`), so the verse-level loss has little left to teach. Clayton also said yes to "the same word
-in the tongue it was written in" as the relation to mirror first. So the pairing is taken down to the word: the publisher's
+(Greek) of verses (`tongues.py decide`), so the verse-level loss has little left to teach. The relation to mirror first is the same word
+in the tongue it was written in. So the pairing is taken down to the word: the publisher's
 word-by-word table (data/orig/BSB_tables.jsonl) says which English phrase renders which Hebrew, Aramaic or Greek word of the verse.
-That table, with its Strong's numbers, is a judgment from outside the text. It was used in round 3 before Clayton had been asked
-about it for Form B. Asked on 22 Nov 2026 whether the pairing may come from it, Clayton answered: "Yes, allowed".
+That table, with its Strong's numbers, is a judgment from outside the text. Its use for the pairing was approved after
+round 3 had used it.
 
 What this file gives (CPU): for every verse, the original verse in the chosen form with the character span of each written word,
 and for each English phrase of words_probe.py's table the span of its content word and the index of the original word it renders.

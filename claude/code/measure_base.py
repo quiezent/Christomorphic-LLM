@@ -1,4 +1,4 @@
-"""The middot of the weights, before any training (Clayton, 9 Nov 2026): in a base model's hidden states, do verses that
+"""The middot of the weights, before any training: in a base model's hidden states, do verses that
 the Bible links sit nearer each other than the same verses with their links scrambled? No training, no generated text.
 
 Each BSB verse goes in alone, as plain text. Its vector at a layer is the mean of that layer's hidden states over the
@@ -387,7 +387,7 @@ SIX_LINKS = "The six other words, both trained, not a wrong-links pair"
 SIX_WRONG = "Wrong-links image of the six other words, both trained, not a real link"
 RUACH_LINKS = "רוּחַ alone, both trained, not a wrong-links pair"
 RUACH_WRONG = "Wrong-links image of רוּחַ, both trained, not a real link"
-SEED_RULE = ("Rule set before seed 2 was trained (Clayton approved the run on 11 Nov 2026). On 'Same word, both trained': seed 2's links − scrambled "
+SEED_RULE = ("Rule set before seed 2 was trained. On 'Same word, both trained': seed 2's links − scrambled "
              "keeps seed 1's sign and reaches at least 0.005. The two same-arm differences (links seed 1 − seed 2, scrambled seed 1 − seed 2) hold only "
              "training-run noise: about 0.002 or less means seed 1's gap is several times that noise; 0.005 or more means it is near noise.")
 
@@ -413,7 +413,7 @@ def seed_section(rows, primary, d, v):
     return md
 
 
-WRONG_RULE = ("Rule set before the wrong-links arm was trained (Clayton approved it on 11 Nov 2026), and revised before training after an "
+WRONG_RULE = ("Rule set before the wrong-links arm was trained, and revised before training after an "
               "independent review. The wrong-links arm reads the links arm's walks with each trained seven-word verse replaced by another read "
               "exactly as often: an order as consistent as the Bible's, whose relations are the Bible's only by chance. 2,253 of its 9,345 steps "
               "are still real links: 482 through the 10 verses alone in their visit count, which keep their place (Isaiah 11:2 among them), and "
@@ -694,7 +694,7 @@ def keep_running():
     k.SetProcessInformation.argtypes = [wintypes.HANDLE, ctypes.c_int, ctypes.c_void_p, wintypes.DWORD]
     state = Throttle(1, 0x1, 0)  # execution speed is controlled here, and never throttled
     k.SetProcessInformation(k.GetCurrentProcess(), 4, ctypes.byref(state), ctypes.sizeof(state))  # 4: ProcessPowerThrottling
-    k.SetThreadExecutionState(0x80000000 | 0x00000001)  # continuous: system required. Never the display: the Legion 5 screen is OLED (Clayton, 11 Nov)
+    k.SetThreadExecutionState(0x80000000 | 0x00000001)  # continuous: system required. Never the display: the Legion 5 screen is OLED
 
 
 def in_venv():
